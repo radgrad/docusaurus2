@@ -70,7 +70,7 @@ function Home() {
                 styles.getStarted,
               )}
               style={{color: 'white'}}
-              to={useBaseUrl('docs/motivation')}>
+              to={useBaseUrl('docs/overview/motivation')}>
               Learn More
             </Link>
           </div>

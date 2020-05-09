@@ -1,6 +1,9 @@
 module.exports = {
   someSidebar: {
-    Documentation: ['motivation', 'how-to-apply'],
-    "Site Management": ['site-management/docusaurus', 'site-management/markdown-reference', 'site-management/mdx'],
+    Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/markdown-reference', 'overview/mdx'],
+    RadGrad2: ['radgrad2/radgrad2-goals'],
+    DevOps: ['devops/devops-goals'],
+    InternBit: ['internbit/internbit-goals'],
+    CSExplore: ['csexplore/csexplore-goals']
   },
 };

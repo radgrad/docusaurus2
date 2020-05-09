@@ -72,8 +72,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/radgrad/docusaurus2/edit/master',
+
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
