@@ -1,2 +1,3 @@
-# docusaurus2
-Docusaurus 2 for next gen RadGrad website
+# RadGrad Documentation site
+
+See the site for documentation.
