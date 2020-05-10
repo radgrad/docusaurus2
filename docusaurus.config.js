@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Documentation for RadGrad 2, CSExplore, and InternBit',
   url: 'https://radgrad.github.io',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/radgrad.ico',
   organizationName: 'radgrad', // Usually your GitHub org/user name.
   projectName: 'radgrad.github.io', // Usually your repo name.
   themeConfig: {
@@ -15,7 +15,7 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/motivation',
+          to: 'docs/overview/motivation',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
