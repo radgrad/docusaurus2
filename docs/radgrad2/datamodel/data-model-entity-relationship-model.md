@@ -1,5 +1,4 @@
 ---
-id: data-model-entity-relationship-model
 title: Entity-Relationship Model
 sidebar_label: Entity-Relationship Model
 ---
@@ -12,7 +11,7 @@ This section documents the direct relationships between data model entities.  De
 
 One of the more complicated representations in RadGrad is a user. (This is unfortunate, but the following complicated representation is the simplest one we could come up with that works effectively.)
 
-<img src="/img/Profiles.png" width="100%"/> 
+<img src="/img/radgrad2/datamodel/Profiles.png" width="100%"/> 
 
 Each user in RadGrad is represented in two ways.  The first way is as a document in the Meteor Users collection.  Meteor provides a built-in accounts package which we use for authentication and authorization which provides this Users collection. So, in order for someone to be able to login to RadGrad, they must exist as an entry in the Users collection.   The Users collection has a very simple representation: each user has a username, which is their email address. In addition, each user has an email field, which is also their email address, and a roles field, which is managed by the standard Roles package. 
 
@@ -28,7 +27,7 @@ The ERD in the illustration only shows the relationships for the common properti
 
 RadGrad represents courses through two entities: Course and CourseInstance.
 
-<img src="/img/Course.png" width="100%"/> 
+<img src="/img/radgrad2/datamodel/Course.png" width="100%"/> 
  
 Course represents semester and student-independent information about a course. 
 
@@ -40,7 +39,7 @@ CourseInstances in the present semester or future semester are typically created
 
 In RadGrad, extracurricular events and activities are called "Opportunities", and are represented by three entities: Opportunity, OpportunityType, and OpportunityInstance. 
 
-<img src="/img/Opportunity.png" width="100%"/> 
+<img src="/img/radgrad2/datamodel/Opportunity.png" width="100%"/> 
  
 OpportunityType specifies the kind of Opportunity: club, event, online course, etc.
 
@@ -52,7 +51,7 @@ OpportunityInstance represents an "instantiation" of the Opportunity in a specif
 
 The primary "connective tissue" in RadGrad is Interests. These are topical areas in the discipline. For computer science, example Interests might be "blockchain", "bioinformatics", "Java", and so forth. Interests are grouped together through the InterestType entity. Example InterestTypes might be "Club", "Research Project", etc. 
 
-<img src="/img/Interest.png" width="100%"/> 
+<img src="/img/radgrad2/datamodel/Interest.png" width="100%"/> 
 
 This diagram indicates that:
  
@@ -71,7 +70,7 @@ In addition, degree programs evolve over time.  So, let's say a B.S. in CS is es
 
 RadGrad's Academic Plans provide a way to represent the evolving nature of degree programs:
 
-<img src="/img/AcademicPlans.png" width="100%"/>
+<img src="/img/radgrad2/datamodel/AcademicPlans.png" width="100%"/>
 
 A "DesiredDegree" is an entity representing a degree plan such as "B.S. in Computer Science".  A set of "PlanChoices" represent the requirements for that desired degree.  The Semester indicates the time at which an Academic Plan comes into being.  The Slug just assigns the AcademicPlan a unique string identifier, such as "BS-Computer-Science-2017".
 
@@ -101,7 +100,7 @@ Slugs form a unique namespace across all entities: you cannot use the same strin
 
 Here is an ERD that illustrates which entities use Slugs:
 
-<img src="/img/Slug.png" width="100%"/>
+<img src="/img/radgrad2/datamodel/Slug.png" width="100%"/>
 
 ## Other entities 
 

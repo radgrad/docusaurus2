@@ -1,5 +1,4 @@
 ---
-id: data-model-pub-sub
 title: Pub-Sub Caching
 sidebar_label: Pub-Sub Caching
 ---

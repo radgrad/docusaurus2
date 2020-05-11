@@ -1,5 +1,4 @@
 ---
-id: data-model-ice
 title: ICE (Innovation, Competency, Experience)
 sidebar_label: ICE (Innovation, Competency, Experience)
 ---

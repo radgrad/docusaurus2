@@ -1,5 +1,4 @@
 ---
-id: data-model-integrity-checking
 title: Integrity Checking
 sidebar_label: Integrity Checking
 ---
@@ -36,7 +35,7 @@ Here, for example, is the checkIntegrity method for the CareerGoal class, which 
 
 You can invoke the Integrity Checking system manually from the Administrator account. Here's what happens after pressing the "Check Integrity" button:
 
-<img src="/img/CheckIntegrity.png" width="100%"/>
+<img src="/img/radgrad2/datamodel/CheckIntegrity.png" width="100%"/>
 
 Because Meteor maintains a MongoDB database on both the client and server sides, the Integrity Checker runs twice, once on the client and once on the server, and reports both results. It is useful to note that if you subscribe to a subset of the database, it is possible to find integrity problems on the client side but not on the server side. For example, you might subscribe to a User document that contains a field with InterestIDs without subscribing to the Interest collection in a way that does not replicate one or more of those InterestIDs to the client.   
 

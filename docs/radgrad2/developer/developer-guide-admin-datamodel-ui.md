@@ -1,5 +1,4 @@
 ---
-id: developer-guide-admin-datamodel-ui
 title: Admin Data Model UI
 sidebar_label: Admin Data Model UI
 ---

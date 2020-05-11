@@ -1,5 +1,4 @@
 ---
-id: data-model-overview
 title: Data Model Overview
 sidebar_label: Overview
 ---

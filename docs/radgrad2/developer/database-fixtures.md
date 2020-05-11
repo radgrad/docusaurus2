@@ -1,5 +1,4 @@
 ---
-id: developer-guide-database-fixtures
 title: Database Fixtures
 sidebar_label: Database Fixtures
 ---

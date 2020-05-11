@@ -9,15 +9,15 @@ module.exports = {
         type: 'category',
         label: 'Developer Guide',
         items: [
-          "radgrad2/developer/developer-guide-installation",
-          "radgrad2/developer/developer-guide-ide",
-          "radgrad2/developer/developer-guide-source-code-organization",
-          "radgrad2/developer/developer-guide-coding-standards",
-          "radgrad2/developer/developer-guide-testing",
-          "radgrad2/developer/developer-guide-building-academic-plans",
-          "radgrad2/developer/developer-guide-database-fixtures",
-          "radgrad2/developer/developer-guide-continuous-integration",
-          "radgrad2/developer/developer-guide-radgrad.org"
+          "radgrad2/developer/installation",
+          "radgrad2/developer/ide",
+          "radgrad2/developer/source-code-organization",
+          "radgrad2/developer/coding-standards",
+          "radgrad2/developer/testing",
+          "radgrad2/developer/building-academic-plans",
+          "radgrad2/developer/database-fixtures",
+          "radgrad2/developer/continuous-integration",
+          "radgrad2/developer/radgrad.org"
         ],
       },
       {

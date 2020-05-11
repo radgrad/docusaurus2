@@ -1,5 +1,4 @@
 ---
-id: developer-guide-ide
 title: IDE Setup
 sidebar_label: IDE Setup
 ---

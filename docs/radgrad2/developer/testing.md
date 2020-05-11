@@ -1,5 +1,4 @@
 ---
-id: developer-guide-testing
 title: Testing
 sidebar_label: Testing
 ---

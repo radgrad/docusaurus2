@@ -1,5 +1,4 @@
 ---
-id: data-model-dump-restore
 title: Database Dump-Restore
 sidebar_label: Database Dump-Restore
 ---

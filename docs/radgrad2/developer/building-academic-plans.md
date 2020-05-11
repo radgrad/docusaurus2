@@ -1,5 +1,4 @@
 ---
-id: developer-guide-building-academic-plans
 title: Understanding RadGrad Academic Plans
 sidebar_label: Academic Plans
 ---
@@ -8,7 +7,7 @@ The University of Hawaii, Manoa's ICS Department has many different academic pla
 
 To represent these and other academic plan choices we created a flexible and complicated mechanism for representing Academic Plans. The following image shows the Update Academic Plan widget in the Admin datamodel page.
 
-<img src="/img/update-academic-plan.png" width="100%"/>
+<img src="/img/radgrad2/developer/update-academic-plan.png" width="100%"/>
 
 Academic plans have:
  

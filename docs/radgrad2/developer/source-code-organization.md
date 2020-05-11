@@ -1,5 +1,4 @@
 ---
-id: developer-guide-source-code-organization
 title: Source Code Organization
 sidebar_label: Source code organization
 ---

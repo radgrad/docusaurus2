@@ -1,5 +1,4 @@
 ---
-id: developer-guide-radgrad.org
 title: Organization of radgrad.org
 sidebar_label: radgrad.org
 ---
