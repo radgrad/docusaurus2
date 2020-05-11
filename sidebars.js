@@ -24,14 +24,14 @@ module.exports = {
         type: 'category',
         label: 'Data Model',
         items: [
-          "radgrad2/datamodel/data-model-overview",
-          "radgrad2/datamodel/data-model-class-hierarchy",
-          "radgrad2/datamodel/data-model-entity-relationship-model",
-          "radgrad2/datamodel/data-model-user-management",
-          "radgrad2/datamodel/data-model-ice",
-          "radgrad2/datamodel/data-model-dump-restore",
-          "radgrad2/datamodel/data-model-pub-sub",
-          "radgrad2/datamodel/data-model-integrity-checking"
+          "radgrad2/datamodel/overview",
+          "radgrad2/datamodel/class-hierarchy",
+          "radgrad2/datamodel/entity-relationship-model",
+          "radgrad2/datamodel/user-management",
+          "radgrad2/datamodel/ice",
+          "radgrad2/datamodel/dump-restore",
+          "radgrad2/datamodel/pub-sub",
+          "radgrad2/datamodel/integrity-checking"
 
         ],
       },
