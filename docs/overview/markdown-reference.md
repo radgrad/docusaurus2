@@ -1,5 +1,4 @@
 ---
-id: markdown-reference
 title: Markdown Reference Guide
 sidebar_label: Markdown Guide
 ---

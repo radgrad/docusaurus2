@@ -1,5 +1,4 @@
 ---
-id: radgrad2-goals
 title: RadGrad2 Goals
 sidebar_label: Goals
 ---

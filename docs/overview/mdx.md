@@ -1,5 +1,4 @@
 ---
-id: mdx
 title: Using JSX/Markdown
 ---
 

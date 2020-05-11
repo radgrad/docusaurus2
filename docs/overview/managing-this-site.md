@@ -1,5 +1,4 @@
 ---
-id: managing-this-site
 title: Managing this site
 sidebar_label: Managing this site
 ---

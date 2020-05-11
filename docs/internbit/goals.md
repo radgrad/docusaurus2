@@ -1,5 +1,4 @@
 ---
-id: internbit-goals
 title: InternBit Goals
 sidebar_label: Goals
 ---

@@ -1,5 +1,4 @@
 ---
-id: csexplore-goals
 title: CSExplore Goals
 sidebar_label: Goals
 ---

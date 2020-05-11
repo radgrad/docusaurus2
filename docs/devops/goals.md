@@ -1,5 +1,4 @@
 ---
-id: devops-goals
 title: DevOps Goals
 sidebar_label: Goals
 ---
