@@ -17,5 +17,8 @@ Note that Windows-based Docker is not supported for OPQ, so it will not be suppo
   * [Docker](https://docs.docker.com/get-docker/). Official Docker documentation.
   * [Docker Compose](https://docs.docker.com/compose/install/).
   * [Docker Desktop](https://www.docker.com/products/docker-desktop). Mac only.
+  * [DevOps with Docker](https://devopswithdocker.com/). Introductory course to docker and docker compose.
+
+
 
 
