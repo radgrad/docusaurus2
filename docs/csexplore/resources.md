@@ -14,4 +14,10 @@ How can the CSExplore project leverage the following resources, but also do some
 
   * [Code.org High School Curriculum Resources](https://code.org/educate/curriculum/high-school). Links to a variety of high-school oriented curriculum materials.
   * [Exploring Computer Science](http://www.exploringcs.org/). A year-long curriculum that focuses on broadening participation in computing.
+  * [UMass CS Careers Page](https://www.cics.umass.edu/careers/)
+  * [Hack Club](https://hackclub.com/)
+
+## Technologies
+  * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
+  * [Figma](https://www.figma.com/)
 

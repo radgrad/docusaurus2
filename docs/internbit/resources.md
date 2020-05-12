@@ -15,3 +15,8 @@ The "special sauce" for InternBit is access to the student's RadGrad data, which
   * [Building an internship recommendation system](https://medium.com/@ishannangia/building-an-internship-recommendation-system-i-introduction-8ab428131483)
   * [An AI-based recommendation system](https://techxplore.com/news/2019-03-ai-based-internship-placements.html)
   * [Google Search for "internship"](https://www.google.com/search?q=internship). Note that this gives local internships.
+
+## Technologies
+  * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
+  * [Figma](https://www.figma.com/)
+

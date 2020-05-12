@@ -18,6 +18,7 @@ Note that Windows-based Docker is not supported for OPQ, so it will not be suppo
   * [Docker Compose](https://docs.docker.com/compose/install/).
   * [Docker Desktop](https://www.docker.com/products/docker-desktop). Mac only.
   * [DevOps with Docker](https://devopswithdocker.com/). Introductory course to docker and docker compose.
+  * [banjerluke/meteor-dockerfile](https://github.com/banjerluke/meteor-dockerfile). Self contained Meteor dockerfile. Could be useful contrast to the OPQ Meteor dockerfile.
 
 
 
