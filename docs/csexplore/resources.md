@@ -20,4 +20,5 @@ How can the CSExplore project leverage the following resources, but also do some
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
   * [Figma](https://www.figma.com/)
+  * [Flipper: extensible mobile app debugger](https://fbflipper.com/)
 
