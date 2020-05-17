@@ -16,6 +16,7 @@ How can the CSExplore project leverage the following resources, but also do some
   * [Exploring Computer Science](http://www.exploringcs.org/). A year-long curriculum that focuses on broadening participation in computing.
   * [UMass CS Careers Page](https://www.cics.umass.edu/careers/)
   * [Hack Club](https://hackclub.com/)
+  * [Tableau Data Kids](https://www.tableau.com/data-for-kids)
 
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
