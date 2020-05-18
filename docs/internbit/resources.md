@@ -16,6 +16,10 @@ The "special sauce" for InternBit is access to the student's RadGrad data, which
   * [An AI-based recommendation system](https://techxplore.com/news/2019-03-ai-based-internship-placements.html)
   * [Google Search for "internship"](https://www.google.com/search?q=internship). Note that this gives local internships.
 
+## Internship sites
+
+  * LinkedIn.com, Glassdoor.com, Internships.com, InternMatch.com, YouTern.com, Idealist.org, CoolWorks.com, Indeed.com, ZipRecruiter.com, SimplyHired.com, Careershift.com, USAJobs.gov, Experience.com, Handshake.com, StudentOpportunityCenter.com, and of course the NSF REU Site Directory.
+
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
   * [Figma](https://www.figma.com/)
