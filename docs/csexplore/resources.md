@@ -21,6 +21,7 @@ How can the CSExplore project leverage the following resources, but also do some
   * [UMass CS Careers Page](https://www.cics.umass.edu/careers/)
   * [Hack Club](https://hackclub.com/)
   * [Tableau Data Kids](https://www.tableau.com/data-for-kids)
+  * [Hawaii DOE Senior Capstone Requirements](https://docs.google.com/document/d/1CgTzqHZr4kImwllx0L5Xn3ppPAWqvqS1xrGQqh6py0Q/edit?usp=sharing)
 
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
