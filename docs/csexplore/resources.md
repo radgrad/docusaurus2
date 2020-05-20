@@ -14,6 +14,10 @@ How can the CSExplore project leverage the following resources, but also do some
 
   * [Code.org High School Curriculum Resources](https://code.org/educate/curriculum/high-school). Links to a variety of high-school oriented curriculum materials.
   * [Exploring Computer Science](http://www.exploringcs.org/). A year-long curriculum that focuses on broadening participation in computing.
+  * [CodeHS](https://codehs.com/info/) A teaching platform made to help teach computer science in schools.
+  * [Computer Science for All in SF](https://www.csinsf.org/high.html) Links to high-school resources for learning Computer Science.
+  * [The Beauty and Joy of Computing](https://bjc.berkeley.edu/) An introduction course curriculum for Computer Science principles.
+  * [Teaching Kids Programming](http://teachingkidsprogramming.org/) Open source courseware to teach programming.
   * [UMass CS Careers Page](https://www.cics.umass.edu/careers/)
   * [Hack Club](https://hackclub.com/)
   * [Tableau Data Kids](https://www.tableau.com/data-for-kids)
