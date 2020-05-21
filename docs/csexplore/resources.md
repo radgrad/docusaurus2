@@ -37,3 +37,8 @@ How can the CSExplore project leverage the following resources, but also do some
 
   * [Why don't students use RadGrad? A Qualitative Study of Factors That Inhibit RadGrad Adoption](http://csdl.ics.hawaii.edu/techreports/2020/20-05/20-05.pdf)
 
+## Local Organizations and Hacks 
+  * [Stem Works Hawaii](https://www.stemworkshawaii.org/home)
+  * [Kaiser High School Computer Science Club Twitter](https://twitter.com/khscsclub)
+  * [Friends of Hawaii Robotics](http://www.friendsofhawaiirobotics.org/)
+  * [AT&T Hackathon Hawaii](https://www.htdc.org/events/att-hackathon-hawaii/)                                                                                         
