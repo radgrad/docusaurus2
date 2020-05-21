@@ -27,4 +27,8 @@ How can the CSExplore project leverage the following resources, but also do some
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
   * [Figma](https://www.figma.com/)
   * [Flipper: extensible mobile app debugger](https://fbflipper.com/)
+  
+## Research Proposals
+
+  * [Why don't students use RadGrad? A Qualitative Study of Factors That Inhibit RadGrad Adoption](http://csdl.ics.hawaii.edu/techreports/2020/20-05/20-05.pdf)
 
