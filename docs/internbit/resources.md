@@ -17,6 +17,7 @@ The "special sauce" for InternBit is access to the student's RadGrad data, which
   * [Google Search for "internship"](https://www.google.com/search?q=internship). Note that this gives local internships.
   * [How to Build a Simple Web Crawler](https://towardsdatascience.com/how-to-build-a-simple-web-crawler-66082fc82470)
   * [Recommender Systems](https://builtin.com/data-science/recommender-systems)
+  * [Introduction to Recommender Systems](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
   
 ## Internship sites
 
