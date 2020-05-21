@@ -22,6 +22,11 @@ How can the CSExplore project leverage the following resources, but also do some
   * [Hack Club](https://hackclub.com/)
   * [Tableau Data Kids](https://www.tableau.com/data-for-kids)
   * [Hawaii DOE Senior Capstone Requirements](https://docs.google.com/document/d/1CgTzqHZr4kImwllx0L5Xn3ppPAWqvqS1xrGQqh6py0Q/edit?usp=sharing)
+  * [Code With Google](https://edu.google.com/code-with-google) Coding curriculums, scholarships and internship programs.
+  * [Code For Life](https://www.codeforlife.education/) CS curriculum for teachers and independent students.
+  * [Computer Science Online](https://www.computerscienceonline.org/computer-science-programs-before-college/) Resources and roadmap for K-12.
+  * [Hawaii Public Schools](http://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/CSforHI/Pages/default.aspx) Framework for CS education in Hawaiis public schools as well as resources.
+  * [Common Sense](https://www.commonsense.org/education/teaching-strategies/get-started-with-coding-in-the-classroom) Teaching strategies and resources for classroom coding.
 
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
