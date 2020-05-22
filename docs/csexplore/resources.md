@@ -27,6 +27,10 @@ How can the CSExplore project leverage the following resources, but also do some
   * [Computer Science Online](https://www.computerscienceonline.org/computer-science-programs-before-college/) Resources and roadmap for K-12.
   * [Hawaii Public Schools](http://www.hawaiipublicschools.org/TeachingAndLearning/StudentLearning/CSforHI/Pages/default.aspx) Framework for CS education in Hawaiis public schools as well as resources.
   * [Common Sense](https://www.commonsense.org/education/teaching-strategies/get-started-with-coding-in-the-classroom) Teaching strategies and resources for classroom coding.
+  * [Code Wars](https://www.codewars.com/) A platform to learn various coding skills through challenge.
+  * [Kahoot](https://kahoot.com/what-is-kahoot/)  A popular game-based learning platform.
+  * [STEM Scouts](https://stemscouts.org/high-school/)  A pilot program from the Boy Scouts which focuses on learning about STEM.
+  * [State fact-sheet from code.org](https://code.org/advocacy/state-facts/HI.pdf)
 
 ## Technologies
   * [The best wireframing tools](https://www.integromat.com/en/blog/best-wireframing-tools/)
