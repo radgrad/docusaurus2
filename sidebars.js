@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/markdown-reference', 'overview/mdx'],
     DevOps: ['devops/goals', 'devops/resources'],
-    InternBit: ['internbit/goals', 'internbit/resources'],
+    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping'],
     CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle'],
     RadGrad2: ['radgrad2/goals',
       {
