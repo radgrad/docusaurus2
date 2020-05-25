@@ -81,5 +81,55 @@ Currently, we don't have end-to-end tests for all the pages, widgets, and compon
 
 ## Writing TestCafe tests
 
+### Adding a new UI 'component' id
+When we want add a new test for a component, we need to do several things.
+
+  1. Create an id for the component if it doesn't already have one. Ids are the camelcase names for the component. For example, the id for the FilterCourseWidget is `filterCourseWidget`. We export the id from the `e2e-names.ts` file in the directory of the component.
+```ts
+// In ui/components/shared/e2e-names.ts
+export const courseFilterWidget = 'courseFilterWidget';
+```
+  
+  2. Add the id to the component.
+```tsx
+// In ui/components/shared/CourseFilterWidget.tsx
+import { courseFilterWidget } from './e2e-names';
+...
+  return (
+    <div id={courseFilterWidget}>
+...
+```
+  
+  3. Create one or more TestCafe selectors for the component. We export the selector from the `e2e-selectors.ts` file in the same directory as the component.
+```ts
+// In ui/components/shared/e2e-selectors.ts
+import { courseFilterWidget } from './e2e-names';
+...
+export const courseFilterWidgetChoicesSelector = Selector('.ui.radio.checkbox');
+export const courseFilterWidgetAllChoiceSelector = courseFilterWidgetChoicesSelector.withText('All');
+export const courseFilterWidget300PlusChoiceSelector = courseFilterWidgetChoicesSelector.withText('300+');
+export const courseFilterWidget400PlusChoiceSelector = courseFilterWidgetChoicesSelector.withText('400+');
+export const courseFilterWidget600PlusChoiceSelector = courseFilterWidgetChoicesSelector.withText('600+');
+
+```
+
+  4. Use the selectors in a test.
+```ts
+test('Course Explorer Page Filter', async (browser: any) => {
+  await browser.click('#abi'); // choose student Abigail
+  await browser.click(student2ndMenuExplorerPageSelector); // go to the Explorer page
+  await browser.click(selectExplorerMenuSelector); // got to open the menu before selecting the choice
+  await browser.click(coursesExplorerSelector); // go to the Course Explorer
+  await browser.expect(cardExplorerWidgetTitleSelector.textContent).contains('COURSES');
+  await browser.click(courseFilterWidget300PlusChoiceSelector); // select the 300+ courses
+  await browser.expect(cardExplorerWidgetCardSelector.nth(1).child('.content').child('.header').textContent).contains('Machine-Level'); // ensure the second card is 312
+  await browser.click(courseFilterWidget400PlusChoiceSelector); // select the 400+
+  await browser.expect(cardExplorerWidgetCardSelector.nth(1).child('.content').child('.header').textContent).contains('ICS 419'); // check the correct class
+  await browser.click(courseFilterWidget600PlusChoiceSelector); // select 600+
+  await browser.expect(cardExplorerWidgetCardSelector.count).eql(0); // there are no 600+ courses for Abi
+  await browser.click(courseFilterWidgetAllChoiceSelector); // select All filter
+  await browser.expect(cardExplorerWidgetCardSelector.nth(1).child('.content').child('.header').textContent).contains('ICS 101'); // check the right course
+});
+```
 ## Run RadGrad2 with known database
 
