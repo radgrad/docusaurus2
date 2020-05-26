@@ -61,6 +61,7 @@ Here are some of the research questions we'll want to answer:
   3. Community Engagement.  What percentage of students who use the app go on to get involved with a community organization presented to them by the app?
   4. UH Engagement. What percentage of students who use the app go on to UH and ICS?
   5. Demographics. What are the demographics of student users? Are we engaging a (more) diverse audience?
+  6. Curriculum evaluation. Which levels and/or units are found to be most interesting and popular by students?
 
 ## What's next
 
