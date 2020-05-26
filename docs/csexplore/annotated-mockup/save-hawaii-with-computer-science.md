@@ -48,9 +48,17 @@ This is a first draft of the UI for content in the game: a map of Oahu, with pus
 
 Push pins could be locked if the user has not completed prerequisite tasks.
 
+For Level 1, I show just two push pins. One of them would provide a basic, short overview of computer science, and the other would provide a basic, short overview of sustainability issues in Hawaii (maybe referencing the [Aloha Plus Dashboard](https://aloha-challenge.hawaiigreengrowth.org/dashboard/).
+
 ### Computer Science Is Not Just Video Games
 
 This is a page that might appear when the user clicks on a push pin on the previous page. It contains a short video by (say) Jason Leigh in which he talks about all of the things you can do in computer science. It's the first, very high level overview.
+
+There would be an analogous page that would appear for the second push pin for Level 1, this time focusing on sustainability.
+
+### Getting to Level 2
+
+After reviewing the material in the two push pins for Level 1, the next step is to take some sort of quiz or something in order to unlock Level 2.  How would this work? I don't know yet. 
 
 ## Research evaluation
 
