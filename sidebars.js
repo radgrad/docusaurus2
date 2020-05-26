@@ -3,7 +3,14 @@ module.exports = {
     Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/markdown-reference', 'overview/mdx'],
     DevOps: ['devops/goals', 'devops/resources'],
     InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping'],
-    CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle'],
+    CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle',
+      {
+        type: 'category',
+        label: 'Mockups',
+        items: [
+            'csexplore/annotated-mockup/save-hawaii-with-computer-science'
+        ]
+      }],
     RadGrad2: ['radgrad2/goals',
       {
         type: 'category',
