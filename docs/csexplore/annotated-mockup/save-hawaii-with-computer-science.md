@@ -52,11 +52,21 @@ Push pins could be locked if the user has not completed prerequisite tasks.
 
 This is a page that might appear when the user clicks on a push pin on the previous page. It contains a short video by (say) Jason Leigh in which he talks about all of the things you can do in computer science. It's the first, very high level overview.
 
+## Research evaluation
+
+Here are some of the research questions we'll want to answer:
+
+  1. Adoption. What percentage of students who are informed about the app actually try to use it.
+  2. App Engagement.  What is the engagement of students who adopt the app?  What is the breakdown by frequency of use (i.e. once a day, several times a week, once a week, etc.)? What is the breakdown by level achieved?
+  3. Community Engagement.  What percentage of students who use the app go on to get involved with a community organization presented to them by the app?
+  4. UH Engagement. What percentage of students who use the app go on to UH and ICS?
+  5. Demographics. What are the demographics of student users? Are we engaging a (more) diverse audience?
+
 ## What's next
 
 If this design is chosen for development, then the next essential step is to develop the curriculum. What are the content items within each level, and what information will be communicated?
 
-In addition, we need to develop the evaluation criteria: how do we assess, for each content item, whether or not the student has "learned" it? 
+In addition, we need to develop the evaluation criteria: how do we assess, for each content item, whether or not the student has "learned" it?
 
 
 
