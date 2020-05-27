@@ -54,6 +54,12 @@ Finally, what student should you use as your "test subject"? I suggest, for star
 
 It might be that searching a site effectively requires the student to login (and potentially set up a profile). Can InternBit, given the student's credentials, login automatically, potentially set up any profile information, and then do the search.
 
+### Is there an API?
+
+Some sites (Chegg and Indeed?) provide a [REST API](https://restfulapi.net/) which avoids the need to scrape the HTML of the site to extract the information. If an API is available for a site, definitely use it instead of scraping!   
+
+It looks like [superagent](https://www.npmjs.com/package/superagent) is the best Javascript package for performing API calls. Please try it if you want to process a site that has an API.
+
 ## Implementation approach
 
 There's two ways to approach the implementation of spike solutions. One approach is to pick a scraper, say "Osmosis", and then see how many sites you can crawl with it.  A second approach is to pick the most important two or three sites (say, LinkedIn, Indeed, and Google), and then figure out which scraper works best on them.  You can pick whichever way appeals to you more. (Overlap between developers is fine.)
