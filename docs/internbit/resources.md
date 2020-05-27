@@ -20,6 +20,7 @@ The "special sauce" for InternBit is access to the student's RadGrad data, which
   * [Introduction to Recommender Systems](https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada)
   * [Building Web Scraper using Javascript](https://medium.com/@bretcameron/how-to-build-a-web-scraper-using-javascript-11d7cd9f77f2)
   * [Simple Web Scraping with Node.js and Javascript](http://www.netinstructions.com/simple-web-scraping-with-node-js-and-javascript/)
+  * [Building a Web Scraper From Start to Finish](https://hackernoon.com/building-a-web-scraper-from-start-to-finish-bb6b95388184)
   
 ## Internship sites
 
