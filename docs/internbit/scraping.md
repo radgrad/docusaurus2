@@ -44,6 +44,8 @@ Candidates include:
   * StudentOpportunityCenter.com
   * NSF REU Site Directory
   
+It's important to scrape as many of these sites as we can, because if we only scrape one or two, then students might wonder what the benefit of InternBit actually is--they could just do that manually themselves. A significant value-added of InternBit would come from it scraping as many Internship databases as possible, so students would be spared the time of trying all of the different ones.  Even if one site has many duplicates of others, we do not know if that might change in the future. And even if there's just a couple of non-duplicate internships, those might be the good ones for at least some students. 
+  
 ### What search parameters?
 
 This is a complex question, since the answer depends upon two factors. First, each student has different skills and interests, which affects the parameter values.  A student interested in "data science" will want to search for that, while a student interested in "machine learning" will want to search for something different. But each site will have its own query language which also affects the way the search is done.  Searching in LinkedIn will be different from searching in Indeed.com or StudentOpportunityCenter.
