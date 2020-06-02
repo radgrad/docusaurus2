@@ -22,6 +22,7 @@ module.exports = {
           "radgrad2/developer/coding-standards",
           "radgrad2/developer/testing",
           "radgrad2/developer/e2e-testing",
+          "radgrad2/developer/testing-with-different-roles",
           "radgrad2/developer/building-academic-plans",
           "radgrad2/developer/database-fixtures",
           "radgrad2/developer/continuous-integration",
