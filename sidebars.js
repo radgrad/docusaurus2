@@ -8,7 +8,8 @@ module.exports = {
         type: 'category',
         label: 'Mockups',
         items: [
-            'csexplore/annotated-mockup/save-hawaii-with-computer-science'
+            'csexplore/annotated-mockup/save-hawaii-with-computer-science',
+            'csexplore/annotated-mockup/find-the-path'
         ]
       }],
     RadGrad2: ['radgrad2/goals',
