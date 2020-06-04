@@ -23,7 +23,7 @@ sidebar_label: Build Your Community
 ## Walkthrough of the Mockup:
 
 ### Landing Page:
-![alt text](/img/mockups/build-your-community/landing-page.png 'Landing Page')
+![alt text](/img/mockups/build-your-community/landing-page.PNG 'Landing Page')
 
 The landing page before you log in shows a swipeable list of opportunities and upcoming events as an attempt to capture the students interest and have them register.
 
