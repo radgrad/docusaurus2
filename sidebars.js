@@ -9,6 +9,7 @@ module.exports = {
         label: 'Mockups',
         items: [
             'csexplore/annotated-mockup/save-hawaii-with-computer-science',
+            'csexplore/annotated-mockup/csexplore-ocean-earth',
             'csexplore/annotated-mockup/find-the-path',
             'csexplore/annotated-mockup/CS-Explore-Chat',
             'csexplore/annotated-mockup/build-your-community'
