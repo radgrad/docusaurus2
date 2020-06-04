@@ -49,11 +49,12 @@ Here are some of the research questions we'll want to answer:
 
 1.	How many high school students use the app? And how often do they visit the app?
 2.	Is the app distinguishable from other similar sites?
-3.	 Is the app interactive? Does it allow users to communicate and interactive with it? How many users post projects and communicate with other members using the app?
+3.	Is the app interactive? Does it allow users to communicate and interactive with it? How many users post projects and communicate with other members using the app?
 4.	How many students who use the app go to UH ICS?
 5.	Which subjects and projects are found to be most interesting by the users?
 
-## What's next
+## What's next 
+The next step is creating a list of content needed based on the design and collecting information. We also need to sort data from RadGrad to fit into high school students. 
 
 
 
