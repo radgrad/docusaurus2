@@ -24,13 +24,13 @@ Clearly you can only login to your one UH account assigned to you using CAS, and
 
 This can be done by commenting the entire `IF` code block (Line 68 - 79 in the image below) or just deleting the other two roles you cannot log into from the `IF` conditionals.
 
-![usercollection-code.png](../../../static/img/radgrad2/developer/testing-with-different-roles/usercollection-code.png)
+<img src="/img/radgrad2/developer/testing-with-different-roles/usercollection-code.png" alt="usercollection-code.png" />
 
 This makes it such that the Student, Faculty, and Advisor accounts are now created with a randomly generated password and can be logged into with those passwords rather than through the test CAS system. In order to generate and find the generated passwords, you must start with a clean Meteor using `meteor reset`. The first `meteor npm run start` after the reset initializes the database and will print out messages in your terminal console that contains the usernames and passwords for all the accounts whose passwords were randomly generated. Simply save at least one account for each role to be able to log into it for subsequent sessions. Note that doing `meteor reset` again will re-generate new passwords for those accounts.
 
 Now modify the `<Dropdown.Item>`'s in `RadGradLoginButtons.tsx` (Lines 60, 61, and 63 from the image below) such that we replace `onClick={handleClick}` to `as={NavLink} to="/signin"` for the `id="student"`, `id="faculty"`, and `id="advisor"` similar to the `id="mentor"`.
 
-![radgradloginbuttons-original.png](../../../static/img/radgrad2/developer/testing-with-different-roles/radgradloginbuttons-original.png)
+<img src="/img/radgrad2/developer/testing-with-different-roles/radgradloginbuttons-original.png" alt="radgradloginbuttons-original.png" />
 
 ## Mentor Login
 We already generate random passwords when we create Mentor accounts in local RadGrad2 development. Similar to how you would find the generated passwords from the "Bypassing the CAS Login" section above, you need to start with a clean Meteor using `meteor reset`. The first `meteor npm run start` then initializes the database and prints out the generated passwords for Mentor profile accounts.
