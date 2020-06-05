@@ -23,12 +23,12 @@ sidebar_label: Build Your Community
 ## Walkthrough of the Mockup:
 
 ### Landing Page:
-![alt text](/img/mockups/build-your-community/landing-page.png 'Landing Page')
+![alt text](/img/mockups/build-your-community/landing-page_img.png 'Landing Page')
 
 The landing page before you log in shows a swipeable list of opportunities and upcoming events as an attempt to capture the students interest and have them register.
 
 ### Mini Game:
-![alt text](/img/mockups/build-your-community/my-community1.png 'Virtual Community Mockups')
+![alt text](/img/mockups/build-your-community/my-community_img.png 'Virtual Community Mockups')
 
 The game revolves around a virtual community you build with donations to real life charities. The more you donate to a specific charity or category of charity, the closer you get to earning a badge for that charity. Once a certain threshold is met, the badge is unlocked and in-turn unlocks an in-game character or item to add to your community. **In essence, the more you contribute to your real life community the more your virtual community grows.** We can add on to this by adding more game-like features. In one mockup page it shows a Community Stats page, in which the player can track what his community is good at and what its lacking in. In this case the players Food stat is low and so they would want to donate to some Sustainable Farming charity to earn a badge which would increase their food stat. 
 
@@ -39,18 +39,18 @@ If the mini-game is too hard to implement, I believe you can have a similar expe
 ### Feed / Homepage
 Constantly updating feed of new courses, events, updates, messages etc. that match the students interests or are relevant to the student. Depending on how involved we make the mini game we can add mini game messages. Stuff like: "Your citizens need food! Earn a farming badge!" or "Customize your community!". 
 
-![alt text](/img/mockups/build-your-community/Feed_Explorer.png 'Feed and Explorer Pages')
+![alt text](/img/mockups/build-your-community/Feed_Explorer_img.png 'Feed and Explorer Pages')
 
 ### Explorer
 Explore different opportunities. View courses, events, groups, opportunities, internships etc. and filter by interests, newest / oldest. Homepage of explorer shows the most popular opportunities of each(courses, events, groups, internships) then links to dedicated pages for each. Some courses and opportunities would correspond to your skills page and visualize your progress in different technologies based on how far along you are and some would allow you to earn a badge for your participation.
 
 ### Badge / Charity Pages:
-![alt text](/img/mockups/build-your-community/charity.png 'Charity Explorer Pages')
+![alt text](/img/mockups/build-your-community/charity_img.png 'Charity Explorer Pages')
 
 A collection of pages which show different charities to donate to. Connected to a group of pages where you can look at what badges you've earned and how you earned that badge, as well as how to earn other badges.
 
 ### Profile
-![alt text](/img/mockups/build-your-community/profile_skills_mockup.png 'Profile and Skills Pages')
+![alt text](/img/mockups/build-your-community/profile_skills_mockup_img.png 'Profile and Skills Pages')
 
 View and customize your user profile. See your interests, events you've attended / are signed up for, courses you've taken / are taking. See a scrollable list of your badges underneath your profile picture. Depending on user settings we can also use this page for sharing and let other users see it under things like: "People attending this Event", "Members of this Group"... 
 Also see your skills and points page: a list of progress bars which show how far along you are in different skills you are learning.

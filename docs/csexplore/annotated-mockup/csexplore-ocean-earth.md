@@ -50,7 +50,7 @@ In this approach, creating a good storyline for the Bot will make users invested
 
 <img src = "/img/mockups/csexploreOE/OceanThemedMockup.png"/>
 <img src = "/img/mockups/csexploreOE/Ahupua'aVersion.png"/>
-<img src = "/img/mockups/csexploreOE/CSExplore_Social.png"/>
+<img src= "/img/mockups/csexploreOE/CSExplore_ Social.png"/>
 
 
 ### Organizing Principles
