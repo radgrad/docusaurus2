@@ -12,6 +12,7 @@ module.exports = {
           'devops/deployment/google-cloud',
           'devops/deployment/microsoft-azure',
           'devops/deployment/uh-its',
+          'devops/deployment/aws',
           'devops/deployment/waves-hosting'
         ]
       }],
