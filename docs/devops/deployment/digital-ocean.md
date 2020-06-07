@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: Digital Ocean
+sidebar_label: Digital Ocean
 ---
 
 ## Deployment Documentation

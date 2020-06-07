@@ -9,5 +9,5 @@ sidebar_label: Waves Hosting
 
 ## Evaluation
 
-Please provide information about problems that occurred. Costs of service. Performance. Availability of documentation. Anything else that would be of use in deciding whether or not to choose this service over others.
+Please provide information about problems that occurred. Costs of service. Performance. Quality of documentation. Anything else that would be of use in deciding whether or not to choose this service over others.
 

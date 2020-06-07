@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: Google Cloud
+sidebar_label: Google Cloud
 ---
 
 ## Deployment Documentation

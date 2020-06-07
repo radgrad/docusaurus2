@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: AWS
+sidebar_label: AWS
 ---
 
 ## Deployment Documentation

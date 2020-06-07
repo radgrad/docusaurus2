@@ -7,6 +7,11 @@ module.exports = {
         label: 'Deployment',
         items: [
           'devops/deployment/meteor-hero',
+          'devops/deployment/nodechef',
+          'devops/deployment/digital-ocean',
+          'devops/deployment/google-cloud',
+          'devops/deployment/microsoft-azure',
+          'devops/deployment/uh-its',
           'devops/deployment/waves-hosting'
         ]
       }],

@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: UH ITS
+sidebar_label: UH ITS
 ---
 
 ## Deployment Documentation

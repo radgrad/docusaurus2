@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: NodeChef
+sidebar_label: NodeChef
 ---
 
 ## Deployment Documentation

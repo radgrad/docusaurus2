@@ -1,6 +1,6 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: Microsoft Azure
+sidebar_label: Microsoft Azure
 ---
 
 ## Deployment Documentation
