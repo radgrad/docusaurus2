@@ -1,6 +1,6 @@
 ---
-title: Heroku
-sidebar_label: Heroku
+title: Waves Hosting
+sidebar_label: Waves Hosting
 ---
 
 ## Deployment Documentation

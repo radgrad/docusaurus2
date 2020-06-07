@@ -6,7 +6,8 @@ module.exports = {
         type: 'category',
         label: 'Deployment',
         items: [
-          'devops/deployment/heroku'
+          'devops/deployment/meteor-hero',
+          'devops/deployment/waves-hosting'
         ]
       }],
     InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping'],
