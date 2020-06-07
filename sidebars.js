@@ -1,7 +1,14 @@
 module.exports = {
   someSidebar: {
     Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/engineering-standards', 'overview/remote-pair-programming', 'overview/markdown-reference', 'overview/mdx'],
-    DevOps: ['devops/goals', 'devops/resources'],
+    DevOps: ['devops/goals', 'devops/resources',
+      {
+        type: 'category',
+        label: 'Deployment',
+        items: [
+          'devops/deployment/heroku'
+        ]
+      }],
     InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping'],
     CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle',
       {
