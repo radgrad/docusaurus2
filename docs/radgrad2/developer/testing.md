@@ -3,19 +3,19 @@ title: Testing
 sidebar_label: Testing
 ---
 
-RadGrad provides "unit" and "integration" tests. Both are designed to be run from the command line and useful for continuous integration. 
+RadGrad provides "unit" and "integration" tests. Both are designed to be run from the command line and useful for continuous integration.
 
 Unit tests are tests that run only on the server side, and which focus on verifying that the RadGrad data model (i.e. the set of Collection classes) work as intended.
-  
-Integration tests are initiated from the client side, and test to ensure that client-server interactions work as intended. Currently, integration tests only check that Meteor method implementations function correctly. We do not yet have UI tests, such as tests that would be implemented using Selenium or some other browser driver. 
 
-We use the [Mocha](https://mochajs.org/) test runner and  [Chai Expect Assertions](http://chaijs.com/guide/styles/#expect). We follow recommendations from the [Meteor Guide Unit Testing Chapter](http://guide.meteor.com/testing.html#unit-testing). 
+Integration tests are initiated from the client side, and test to ensure that client-server interactions work as intended. Currently, integration tests only check that Meteor method implementations function correctly. We do not yet have UI tests, such as tests that would be implemented using Selenium or some other browser driver.
 
-Each collection class contains its tests in a "sibling" file. For example, unit tests for CourseCollection.js are located in [CourseCollection.test.js](https://github.com/radgrad/radgrad/blob/master/app/imports/api/course/CourseCollection.test.js). Its integration tests that focus on its Meteor Methods are located in [CourseCollection.app-test.js](https://github.com/radgrad/radgrad/blob/master/app/imports/api/course/CourseInstanceCollection.methods.app-test.js). 
+We use the [Mocha](https://mochajs.org/) test runner and  [Chai Expect Assertions](http://chaijs.com/guide/styles/#expect). We follow recommendations from the [Meteor Guide Unit Testing Chapter](http://guide.meteor.com/testing.html#unit-testing).
 
-The test file names are important: Meteor wants unit tests to be in files with the suffix `test.js`, and integration tests to be in files with the suffix `app-test.js`. 
+Each collection class contains its tests in a "sibling" file. For example, unit tests for CourseCollection.js are located in [CourseCollection.test.js](https://github.com/radgrad/radgrad/blob/master/app/imports/api/course/CourseCollection.test.js). Its integration tests that focus on its Meteor Methods are located in [CourseCollection.app-test.js](https://github.com/radgrad/radgrad/blob/master/app/imports/api/course/CourseInstanceCollection.methods.app-test.js).
 
-Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](docs/radgrad2/developer/developer-guide-database-fixtures.mdide-database-fixtures.md) chapter for more details.
+The test file names are important: Meteor wants unit tests to be in files with the suffix `test.js`, and integration tests to be in files with the suffix `app-test.js`.
+
+Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](database-fixtures.md) chapter for more details.
 
 ## Unit testing
 
@@ -228,10 +228,10 @@ RadGrad collection have five required methods.
 * **dumpOne**: Returns a JSON object suitable for defining the document.
 * **checkIntegrity**: Checks each document in the collection for integrity. Returns an array of problems.
 
-All of our unit test have a standard format. We ensure that, at a minimum, we test the five methods. 
+All of our unit test have a standard format. We ensure that, at a minimum, we test the five methods.
 
 To help simplify the testing process, we create one or more functions to make a sample document for the collection. These functions are defined and exported in a file named Sample<Collection/>.ts. The SampleCourses.ts defines and exports three functions, `makeSampleCourse`, `makeSampleCourseInstance`, and `getRandomGrade`. We use these functions in other tests.
- 
+
 The standard format looks something like:
 
 ```ts
@@ -370,15 +370,15 @@ I20170829-15:22:37.613(-10)? CLIENT FAILURES: 0
 I20170829-15:22:37.614(-10)? --------------------------------
 ```
 
-As you can see, in contrast to unit tests, no server-only tests were invoked. 
+As you can see, in contrast to unit tests, no server-only tests were invoked.
 
 You can reduce the number of tests that are run by using the `MOCHA_GREP` environment variable, as discussed above.
 
- 
+
 ## Miscellaneous testing issues.
 
 Here are a few issues regarding tests.
 
 * Arrow function use with Mocha is discouraged. See [http://mochajs.org/#arrow-functions](http://mochajs.org/#arrow-functions).
 
- 
+
