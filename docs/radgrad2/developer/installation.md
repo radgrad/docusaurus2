@@ -10,7 +10,7 @@ Second, download the RadGrad source code from [https://github.com/radgrad/radgra
 Next, cd to the radgrad2/app/ directory and invoke npm:
 
 ```
-app$ npm install
+app$ meteor npm install
 ```
 
 This will download and install the third-party libraries required to run this system.
