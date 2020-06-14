@@ -4,7 +4,7 @@ sidebar_label: AWS
 ---
 
 As stated on their website “AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and IIS.”
-This allows one to simply upload their code and Elastic Beanstalk will handle the deployment and scaling as needed. AWS allows you full control over your application with access to their monitoring tools. One other benefit is AWS Beanstalk allows one to handle some spikes in traffic with its Auto Scaling option while minimizing costs. While AWS does by default handle everything related to infrastructure, they do allow the user to retain full control and management of it. 
+**This allows one to simply upload their code and Elastic Beanstalk will handle the deployment and scaling as needed.** AWS allows you full control over your application with access to their monitoring tools. One other benefit is AWS Beanstalk allows one to handle some spikes in traffic with its Auto Scaling option while minimizing costs. While AWS does by default handle everything related to infrastructure, they do allow the user to retain full control and management of it. 
 
    I was not able to use Meteor Up and its plug in Mup-AWS-Beanstalk to successfully upload the RadGrad2 Project, but the AWS Beanstalk site does say that all that’s needed is a Git repository or an IDE, such as Eclipse or Visual Studio to upload the application. They also provide tool and tutorials to help one get started with it. 
 
