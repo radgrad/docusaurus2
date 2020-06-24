@@ -16,7 +16,7 @@ module.exports = {
           'devops/deployment/waves-hosting'
         ]
       }],
-    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping', 'internbit/needs-assessment'],
+    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping', 'internbit/needs-assessment', 'internbit/canonical-schema'],
     CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle',
       {
         type: 'category',
