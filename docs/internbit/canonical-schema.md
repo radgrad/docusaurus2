@@ -6,20 +6,20 @@ sidebar_label: Canonical Schema
 The following table provides the canonical schema for our results. They follow the naming
  convention ``[site name].canonical.data.json``.
 
-| Canonical      	|                        Schema                       	|
+| Field Names      	|                        Values                       	|
 |:----------------:	|:---------------------------------------------------:	|
 |     position     	|                 title of internship                 	|
 |      company     	|            company name - if none put N/A           	|
 |     location     	|                       location                      	|
 |      posted      	|   when the internship was posted - if none put N/A  	|
 |        url       	|                   link to posting                   	|
-|      skills      	|                  if none, put N/A.                  	|
-|    lastScraped   	| follows the format of Month day year HH:MM:SS pm/am 	|
+|      skills      	|                  if none, put N/A - will gather through NLP                  	|
+|    lastScraped   	|          date of when it was last scraped         	|
 |    description   	|              description of internship              	|
 
 Eg.
 
-|  Canonical  	|                                                                                                                                                                                                                      Schema                                                                                                                                                                                                                     	|
+|  Field Names  	|                                                                                                                                                                                                                      Values                                                                                                                                                                                                                     	|
 |:-----------:	|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
 |   position  	|                                                                                                                                                                                                  Intern – Software Development/Computer Science                                                                                                                                                                                                 	|
 |   company   	|                                                                                                                                                                                                                       CCAM                                                                                                                                                                                                                      	|
