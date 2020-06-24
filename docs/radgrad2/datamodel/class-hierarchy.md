@@ -23,7 +23,7 @@ There is one exceptional class: UserCollection, which does not inherit from any 
 
 All collections that extend BaseCollection are required to implement five methods:
 
-1. **define**: The `define` method creates a document in the collection. It returns the `_id` of the resulting document. The `define` method takes and object as its one parameter. The values in the object that refer to other documents should use [slugs](entity-relationship-model.html#slugs). This supports the loading from a database fixture. For example the `CourseInstances` define method looks like 
+1. **define**: The `define` method creates a document in the collection. It returns the `_id` of the resulting document. The `define` method takes and object as its one parameter. The values in the object that refer to other documents should use [slugs](entity-relationship-model#slugs). This supports the loading from a database fixture. For example the `CourseInstances` define method looks like 
 ```ts
 CourseInstances.define({ academicTerm: 'Spring-2016',
                          course: 'ics_311',
