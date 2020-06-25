@@ -38,7 +38,7 @@ Of these directories, the only directory with a complex substructure is imports/
 
 ### radgrad2/app/imports
 
-The imports/ directory contains three subdirectories:
+The imports/ directory contains five subdirectories:
 
 ```
 imports/
