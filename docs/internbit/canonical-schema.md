@@ -9,6 +9,7 @@ Each internship opportunity is represented as a JSON object. The following table
 |:----|------|:--------------|
 | position | String | Title of internship |
 | company | String | Company Name |
+| contact | String | Contact information |
 | location | Object | { city: String, state: String, country: String, zip: String } |
 | posted | Date | When the internship was posted |
 | due | Date | Due date for applying |
@@ -31,6 +32,7 @@ Here is an example JSON object illustrating an internship opportunity using this
 {
   "position": "Intern – Software Development/Computer Science",
   "company": "CCAM",
+  "contact": "Andreas Sanias, spanias@asu.edu, (480) 965-5311",
   "location": { "city": "Prince George", "state": "VA" },
   "posted": "2020-05-01",
   "due": "2020-08-09",
