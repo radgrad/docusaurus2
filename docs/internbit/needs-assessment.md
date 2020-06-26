@@ -78,7 +78,7 @@ This needs assessment survey has accomplished two important purposes:
 
   2. It provides a baseline for what upper level ICS students think about the internship process. After InternBit is implemented, we could use a survey with many of the same questions to provide evidence regarding the effectiveness of InternBit.
 
-Note that is survey has not been effective in gathering evidence about the issues of lower level ICS students.   
+Note that this survey has not been effective in gathering evidence about the issues of lower level ICS students.
 
 
 
