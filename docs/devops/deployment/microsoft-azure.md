@@ -128,7 +128,7 @@ Click Add
 
 
 
-![](https://github.com/radgrad/docusaurus2/blob/master/static/img/devopsimages/AddApp.png)
+![](/img/devopsimages/AddApp.png)
 
 
 Create a resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. You can reuse this group in the future
@@ -215,7 +215,7 @@ Next, we will crete a "settings.json" file in the meteor-template/app directory 
 ```
 Go to Sidebar > Overview and record your app name, resource group and subscription ID
 
-![](https://github.com/radgrad/docusaurus2/blob/master/static/img/devopsimages/Overview.png)
+![](/img/devopsimages/Overview.png)
 
 You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
 
@@ -369,9 +369,9 @@ Pricing varies. There are pay as you go plans, along with set "menus".
  
 
 
-![](https://github.com/radgrad/docusaurus2/blob/master/static/img/devopsimages/Pricing.png)
-![](https://github.com/radgrad/docusaurus2/blob/master/static/img/devopsimages/Pricing2.png)
-![](https://github.com/radgrad/docusaurus2/blob/master/static/img/devopsimages/Pricing4.png)
+![](/img/devopsimages/Pricing.png)
+![](/img/devopsimages/Pricing2.png)
+![](/img/devopsimages/Pricing4.png)
 
 
 
