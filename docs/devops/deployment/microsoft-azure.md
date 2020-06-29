@@ -3,11 +3,9 @@ title: Microsoft Azure
 sidebar_label: Microsoft Azure
 ---
 
-## Deployment Documentation
+# Deployment Documentation
 
-Download a fresh meteor template , make sure everything is running locally and off we go. 
-
-cd into app and do the usual to get it up and running locally
+Download a fresh meteor template , make sure everything is running locally and off we go.
 
 ```shell script
 PS G:\GitFolder\azure-deploy\app> meteor npm install
@@ -23,7 +21,6 @@ added 416 packages from 333 contributors and audited 416 packages in 59.489s
 found 2 low severity vulnerabilities
   run `npm audit fix` to fix them, or `npm audit` for details
 ```
-
 
 ```shell script
 PS G:\GitFolder\azure-deploy\app> meteor npm run start
@@ -69,17 +66,20 @@ I20200622-15:09:48.721(-7)?   Adding: Boogie Board (admin@foo.com)
 Everything looks good. While the app is running, it's a good idea to open up another PowerShell window and cd into the app's directory.
 
 Run
+
 ```shell script
 meteor mongo --url
 ```
+
 Take note of this MONGO_URL. You will need this later.
 This is the output I obtained
+
 ```shell script
 mongodb://127.0.0.1:3001/meteor
 ```
 
+# NEXT: DOWNLOAD METEOR-AZURE
 
-#### NEXT
 Lets open up meteor-azure docs.
 
 [For more info/docs](https://meteor-azure.readthedocs.io/en/latest/)
@@ -88,91 +88,89 @@ Lets open up meteor-azure docs.
 
 aaaand [the tutorial](https://meteor-azure.readthedocs.io/en/latest/getting-started.html)
 
+## Prerequisites
 
-#### Prerequisites
 Node >=4 is necessary to run the CLI
 Meteor >=1.4 is necessary to build your application
 
-Check node version with 
+Check node version with
+
 ```shell script
 node -v
 ```
 
+Check Meteor version with
 
-Check Meteor version with 
 ```shell script
 cat .meteor/release
 ```
 
 OR
+
 ```shell script
 meteor --version # this will automatically update it to latest version
 ```
 
-
-If everything checks out, we install meteor-azure. This is a global installation. Local installation is also possible and found in the docs
+If everything checks out, install meteor-azure. This is a global installation. Local installation is also possible and found in the docs
 
 ```shell script
 npm install -g meteor-azure
 ```
 
-#### NEXT STEP: MICROSOFT AZURE
-Alright. first, lets make our account
-Hit up azure with 
-https://azure.microsoft.com/en-us/free/students/
+# NEXT: MICROSOFT AZURE
 
-Sign up. Get the free trial/student trial.
-Go to the portal if you are not there already. Button should be in the top right corner.
+First, [lets make our account](https://azure.microsoft.com/en-us/free/students/)
+
+Sign up. Get the free trial/student trial. Go to the portal if you are not there already. Button should be in the top right corner. We will start a new App Service.
+
 Side bar > App Services
 Click Add
 
+<<<<<<< HEAD
 
+=======
 
-![](/img/devopsimages/AddApp.png)
-
+> > > > > > > #6-aws
+> > > > > > > ![](/img/devopsimages/AddApp.png)
 
 Create a resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. You can reuse this group in the future
 
+- Give your App a name
 
-Give your App a name
+- Publish: Code
 
-Publish: Code
+- Runtime Stack: Node 12 LTS
 
-Runtime Stack: Node 12 LTS 
+- Region: West US
 
-Region: West US
+- Windows Plan: Azure created a new one for me and I did not touch this.
 
-Windows Plan: Azure created a new one for me and I did not touch this.
-
-Sku and size: //IMPORTANT. Select the one you need. Default will be a production plan with a going rate of $75/month, but if you have the free trial it doesnt matter.
+- Sku and size: //IMPORTANT. Select the one you need. Default will be a production plan with a going rate of \$75/month, but if you have the free trial it doesnt matter.
 
 There is a free developer version, but I have found it inadequate in terms of space for the meteor template. If you wish to select it, click "Change size > Dev/Test tab > Select "F1".
 
-
 Click "Review + Create" at the bottom of the page
 Verify your info.
-Click "Create"
-
-You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
+Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
+# NEXT: METEOR-AZURE DEPLOYMENT
 
-#### NEXT: METEOR-AZURE
 Navigate to
-Sidebar > Configuration > Application Settings (should take you here by default)
 
-Clear off any existing entries in the application settings. This can easily be done by selecting "Advanced edit" and clearing everything between these [ ] top level brakets.
+- Sidebar > Configuration > Application Settings (should take you here by default)
 
+  - Clear off any existing entries in the application settings. This can easily be done by selecting "Advanced edit" and clearing everything between these [ ] top level brackets.
 
-Navigate to General Settings tab. Ensure “Web sockets” and “ARR affinity” are enabled. 
+  - Click on the General Settings tab. Ensure “Web sockets” and “ARR affinity” are enabled.
 
+* Sidebar > Deployment Center > FTP and click the "Dashboard" button at the bottom > User Credentials
 
-Navigate to Sidebar > Deployment Center > FTP and click the "Dashboard" button at the bottom > User Credentials
+  - Make a username in the form of yourappname\yourusername, along with a password
 
-Here you will make a username in the form of yourappname\yourusername, along with a password
+  - **Although the password requires you to input some characters, most characters are NOT accepted.** Make sure you do not have any of these, or Azure isnt going to like it.
 
-Although the password requires you to input some characters, most characters are NOT accepted. Make sure you do not have any of these, or Azure isnt going to like it.
 ```shell script
 _ (underscore)
 #
@@ -191,8 +189,8 @@ _ -
 ` ~
 ```
 
+Add the following code to settings.development.json file in app/config directory
 
-Next, we will crete a "settings.json" file in the meteor-template/app directory with the following code. We will edit this file with our own information.
 ```shell script
 {
   "meteor-azure": {
@@ -213,37 +211,41 @@ Next, we will crete a "settings.json" file in the meteor-template/app directory 
   // ... keys for Meteor.settings
 }
 ```
-Go to Sidebar > Overview and record your app name, resource group and subscription ID
+
+- Sidebar > Overview
+  - Record your app name, resource group and subscription ID
 
 ![](/img/devopsimages/Overview.png)
 
-You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
+- You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
 
-Enter your FTP user credentials.
+- Enter your FTP user credentials.
 
-Edit your ROOT_URL with your app name. 
-We obtained out MONGO_URL when we ran our machine locally at the start. 
+- Edit your ROOT_URL with your app name.
+- We obtained out MONGO_URL when we ran our machine locally at the start.
+
 ```shell script
 mongodb://127.0.0.1:3001/meteor
 ```
 
-
-#### NEXT: Lets deploy!
+# NEXT: Lets deploy!
 
 Navigate to the project directory on your local machine and run:
+
 ```shell script
-meteor-azure --settings path-to-settings-json
+meteor-azure --settings path-to-settings-development.json
 ```
 
 My personal deployment
+
 ```shell script
-PS G:\GitFolder\azure-deploy\app> meteor-azure --settings settings.json
+PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\config\settings.development.json
 ```
 
 Your project should now be live at https://yourappname.azurewebsites.net
 
-
 This is my log after running command. This log has debug mode turned on. It is not necessary to turn it on.
+
 ```shell script
 info:    Targetting 64-bit Node architecture
 info:    Validating settings file (settings.json)
@@ -278,8 +280,10 @@ info:    meteortestdeploy: Polling server status...
 info:    meteortestdeploy: Finished successfully
 ```
 
-## Deployment error
+# Deployed, but still have a problem
+
 After deploying, I am getting an ERROR 500, with the following log. Will be making a StackOverflow question about this.
+
 ```shell script
 Sat Jun 27 2020 02:32:21 GMT+0000 (Greenwich Mean Time): Application has thrown an uncaught exception and is terminated:
 MongoNetworkError: failed to connect to server [127.0.0.1:3001] on first connect [Error: connect EACCES 127.0.0.1:3001
@@ -303,19 +307,16 @@ MongoNetworkError: failed to connect to server [127.0.0.1:3001] on first connect
     at processTicksAndRejections (internal/process/task_queues.js:84:21)
 ```
 
+# TROUBLESHOOTING. Problems I encountered and how I solved them.
 
+If you are having trouble, debug mode might be insightful. Turn it on with.
 
-
-
-
-##TROUBLESHOOTING
-If you are having trouble, debug mode might be insightful. Turn it on with. 
 ```shell script
 meteor-azure -debug
 ```
 
-
 #### settings.json file is not being read
+
 ```shell script
 PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\settings.json
 info:    Targetting 32-bit Node architecture
@@ -323,10 +324,10 @@ info:    Validating settings file (G:\GitFolder\azure-deploy\settings.json)
 error:   Could not read settings file at 'G:\GitFolder\azure-deploy\settings.json'
 ```
 
-Your settings.json file might not be in the correct format. Try check if there is a proper about of brackets. Single quotations are not supported I believe. It is possible that your file contains hidden chars (like UTF byte order mark) possibly because of copy / paste. 
+Your settings.json file might not be in the correct format. Try check if there is a proper about of brackets. Single quotations are not supported I believe. It is possible that your file contains hidden chars (like UTF byte order mark) possibly because of copy / paste.
 
- 
 #### invalid architecture
+
 ```shell script
 PS G:\GitFolder\azure-deploy\app> meteor-azure --settings settings.json
 info:    Targetting 32-bit Node architecture
@@ -345,14 +346,10 @@ error:   exec:
 ```
 
 If you get this error, change the meteor architecture by running
+
 ```shell script
 meteor-azure --architecture 64
 ```
-
-
-
-
-
 
 ## Evaluation
 
@@ -365,13 +362,10 @@ You can access the apps server anytime by adding ".scm" into the url.
 https://meteortestdeploy.scm.azurewebsites.net
 ```
 
-Pricing varies. There are pay as you go plans, along with set "menus". 
- 
-
+Pricing varies. There are pay as you go plans, along with set "menus".
 
 ![](/img/devopsimages/Pricing.png)
 ![](/img/devopsimages/Pricing2.png)
 ![](/img/devopsimages/Pricing4.png)
-
 
 
