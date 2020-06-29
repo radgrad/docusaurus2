@@ -63,20 +63,8 @@ I20200622-15:09:48.721(-7)?   Adding: Boogie Board (admin@foo.com)
    Type Control-C twice to stop.
 ```
 
-Everything looks good. While the app is running, it's a good idea to open up another PowerShell window and cd into the app's directory.
+Everything looks good. Lets continue.
 
-Run
-
-```shell script
-meteor mongo --url
-```
-
-Take note of this MONGO_URL. You will need this later.
-This is the output I obtained
-
-```shell script
-mongodb://127.0.0.1:3001/meteor
-```
 
 # NEXT: DOWNLOAD METEOR-AZURE
 
@@ -128,7 +116,7 @@ Click Add
 
 
 
-#6-aws
+
 ![](/img/devopsimages/AddApp.png)
 
 Create a resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. You can reuse this group in the future
@@ -153,9 +141,32 @@ Click "Create". You should be rerouted to a page that says "Deployment is underw
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
-# NEXT: METEOR-AZURE DEPLOYMENT
+# NEXT: CREATE AN [AZURE COSMO DB](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal#:~:text=Go%20to%20the%20Azure%20portal,the%20new%20Azure%20Cosmos%20account.) ACCOUNT
 
-Navigate to
+What is [Azure Cosmo DB](https://azure.microsoft.com/en-us/services/cosmos-db/#overview)? Azure Cosmos DB is a fully managed NoSQL database service for modern app development. It supports Core (SQL) and MongoDB for document data, Gremlin for graph data, Azure Table, and Cassandra. 
+
+First we must set up a Azure Cosmos DB account. [Click here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal) to learn more about each of the following items
+* Search for "Azure Cosmos DB" in the search bar
+* Click "+ Add" button
+* Select your subscription and resource group
+    * Select the resource group you used to create your app
+* Create an account name
+* Select the API.
+    * From the drop down menu, select Azure CosmoDB for MongoDP API
+* Notebooks(Preview): Off
+* Location: US West
+* Apply Free Tier Discount: Apply if you are eligible for it. Should be eligible if it is your first time making an account
+* Account type: Non-Production. 
+* Version: 3.6
+* Geo-Redundancy: Disable
+* Multi-region Writes: Disable
+* Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
+
+
+
+
+# NEXT: METEOR-AZURE DEPLOYMENT
+Here, we will get out App ready for deployment on the Azure portal. Through App Service, navigate to. 
 
 - Sidebar > Configuration > Application Settings (should take you here by default)
 
@@ -187,7 +198,7 @@ _ -
 ` ~
 ```
 
-Add the following code to settings.development.json file in app/config directory
+Add the following code to settings.development.json file in your local app/config directory
 
 ```shell script
 {
@@ -209,7 +220,7 @@ Add the following code to settings.development.json file in app/config directory
   // ... keys for Meteor.settings
 }
 ```
-
+## Edit the above code with information found in...
 - Sidebar > Overview
   - Record your app name, resource group and subscription ID
 
@@ -220,11 +231,14 @@ Add the following code to settings.development.json file in app/config directory
 - Enter your FTP user credentials.
 
 - Edit your ROOT_URL with your app name.
-- We obtained out MONGO_URL when we ran our machine locally at the start.
+- MONGO_URL
+    * Click the Microsoft Azure button next to the hamburger in the top left to go to the Homepage
+    * Select your Azure Cosmo DB account
+    * Sidebar > Quickstart > Select Node.js tab 
+        * Scroll down to "Using the Node.js 3.0 driver, connect your existing MongoDB app"
+        * Our MONGO_URL is the PRIMARY CONNECTION STRING. 
 
-```shell script
-mongodb://127.0.0.1:3001/meteor
-```
+
 
 # NEXT: Lets deploy!
 
@@ -234,22 +248,18 @@ Navigate to the project directory on your local machine and run:
 meteor-azure --settings path-to-settings-development.json
 ```
 
-My personal deployment
+Some problems related to architecture might occur during deployment. This is further explained in the TROUBLESHOOTING section. I have experience them and adjusted accordingly. This is the script I used to deploy successfully.
 
 ```shell script
-PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\config\settings.development.json
+PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\config\settings.development.json --architecture 64
 ```
-
-Your project should now be live at https://yourappname.azurewebsites.net
-
-This is my log after running command. This log has debug mode turned on. It is not necessary to turn it on.
-
+## OUTPUT
 ```shell script
 info:    Targetting 64-bit Node architecture
-info:    Validating settings file (settings.json)
-info:    Validating Kudu connection (settings.json)
+info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.development.json)
+info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.development.json)
 info:    meteortestdeploy: Authenticating with interactive login...
-To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FMBV4HBY4 to authenticate.
+To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FM3DXB253 to authenticate.
 info:    meteortestdeploy: Updating Azure application settings
 info:    Compiling application bundle
 
@@ -278,32 +288,10 @@ info:    meteortestdeploy: Polling server status...
 info:    meteortestdeploy: Finished successfully
 ```
 
-# Deployed, but still have a problem
+Your project should now be live at https://yourappname.azurewebsites.net
 
-After deploying, I am getting an ERROR 500, with the following log. Will be making a StackOverflow question about this.
 
-```shell script
-Sat Jun 27 2020 02:32:21 GMT+0000 (Greenwich Mean Time): Application has thrown an uncaught exception and is terminated:
-MongoNetworkError: failed to connect to server [127.0.0.1:3001] on first connect [Error: connect EACCES 127.0.0.1:3001
-    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
-  name: 'MongoNetworkError',
-  [Symbol(mongoErrorContextSymbol)]: {}
-}]
-    at Pool.<anonymous> (D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\topologies\server.js:438:11)
-    at Pool.emit (events.js:311:20)
-    at Pool.EventEmitter.emit (domain.js:482:12)
-    at D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\connection\pool.js:561:14
-    at D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\connection\pool.js:994:11
-    at D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\connection\connect.js:31:7
-    at callback (D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\connection\connect.js:264:5)
-    at Socket.<anonymous> (D:\home\site\wwwroot\programs\server\npm\node_modules\meteor\npm-mongo\node_modules\mongodb\lib\core\connection\connect.js:294:7)
-    at Object.onceWrapper (events.js:418:26)
-    at Socket.emit (events.js:311:20)
-    at Socket.EventEmitter.emit (domain.js:482:12)
-    at emitErrorNT (internal/streams/destroy.js:92:8)
-    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
-    at processTicksAndRejections (internal/process/task_queues.js:84:21)
-```
+
 
 # TROUBLESHOOTING. Problems I encountered and how I solved them.
 
@@ -349,16 +337,18 @@ If you get this error, change the meteor architecture by running
 meteor-azure --architecture 64
 ```
 
-## Evaluation
-
-This is VERY beginner friendly, much more so than AWS. It was not hard to get around at all. One thing to note is that the Azure portal was recently redesigned, so a lot of documentation on open source programs may be slightly inaccurate in terms of where to find everything, but its still doable.
-
-It is also easier to troubleshoot, with kudu.
-You can access the apps server anytime by adding ".scm" into the url.
+It is easy to troubleshoot with kudu. 
+You can access the app's server anytime by adding ".scm" into the url.
 
 ```shell script
 https://meteortestdeploy.scm.azurewebsites.net
 ```
+
+## Evaluation
+
+This is VERY beginner friendly, much more so than AWS. It was not hard to get around at all. One thing to note is that the Azure portal was recently redesigned, so a lot of documentation on open source programs may be slightly inaccurate in terms of where to find everything, but its still doable.
+
+
 
 Pricing varies. There are pay as you go plans, along with set "menus".
 
