@@ -357,3 +357,10 @@ Pricing varies. There are pay as you go plans, along with set "menus".
 ![](/img/devopsimages/Pricing4.png)
 
 
+# PICTURES 
+![](/img/devopsimages/WebsiteIsLive.png)
+![](/img/devopsimages/login.png)
+![](/img/devopsimages/ListBefore.png)
+![](/img/devopsimages/ItemAdded.png)
+![](/img/devopsimages/ListAfter2.png)
+
