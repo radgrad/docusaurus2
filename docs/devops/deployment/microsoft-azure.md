@@ -126,12 +126,10 @@ Sign up. Get the free trial/student trial. Go to the portal if you are not there
 Side bar > App Services
 Click Add
 
-<<<<<<< HEAD
 
-=======
 
-> > > > > > > #6-aws
-> > > > > > > ![](/img/devopsimages/AddApp.png)
+#6-aws
+![](/img/devopsimages/AddApp.png)
 
 Create a resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. You can reuse this group in the future
 
