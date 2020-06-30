@@ -5,200 +5,115 @@ sidebar_label: Microsoft Azure
 
 # Deployment Documentation
 
-Download a fresh meteor template , make sure everything is running locally and off we go.
+:::note
 
-```shell script
-PS G:\GitFolder\azure-deploy\app> meteor npm install
+Hi Arslan,
 
-> core-js@3.6.4 postinstall G:\GitFolder\azure-deploy\app\node_modules\core-js
-> node -e "try{require('./postinstall')}catch(e){}"
+Here are some things you'll need to do in order to make this revised documentation work:
 
-added 416 packages from 333 contributors and audited 416 packages in 59.489s
+1. Create the meteor-example-deploy-azure repository.
+2. Add the file config/settings.production.sample.json.
+3. Install meteor-azure into meteor-example-deploy-azure using `npm install meteor-azure --save-dev`. Then, when people install the test system, they get the meteor-azure package installed automatically. That gets rid of a whole section of the documentation!
+4. Update the scripts section of meteor-example-deploy-azure/app/package.json to include a script "deploy" that invokes "meteor-azure --settings config/settings.production.json --architecture 64".
+:::
 
-21 packages are looking for funding
-  run `npm fund` for details
+To best document how to deploy a Meteor application to Microsoft Azure, we provide the [meteor-example-deploy-azure](https://github.com/meteor-example-deploy-azure) github repository.  This repository is a copy of [meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), modified with one additional file (config/settings.production.sample.json) to support deployment to Azure. It will also install the meteor-azure library.
 
-found 2 low severity vulnerabilities
-  run `npm audit fix` to fix them, or `npm audit` for details
-```
+## Install meteor-example-deploy-azure
 
-```shell script
-PS G:\GitFolder\azure-deploy\app> meteor npm run start
+First, make sure that you can install and run meteor-example-deploy-azure on your local computer.  Clone the repository, and follow the instructions in the README to install third party libraries (`meteor npm install`) and run the system (`meteor npm run start`).
 
-> meteor-application-template-react@ start G:\GitFolder\azure-deploy\app
-> meteor --no-release-check --settings ../config/settings.development.json
+You should be able to see your application running at http://localhost:3000 when this step is completed.
 
-[[[[[ ~\G\GitFolder\azure-deploy\app ]]]]]
+# Create a Microsoft Azure account
 
-=> Started proxy.
-
-Unable to resolve some modules:
-
-  "@babel/runtime/helpers/createSuper" in /G/GitFolder/azure-deploy/app/imports/ui/layouts/App.jsx (web.browser.legacy)
-
-If you notice problems related to these missing modules, consider running:
-
-  meteor npm install --save @babel/runtime
-
-=> Started MongoDB.
-W20200622-15:09:45.710(-7)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
-W20200622-15:09:46.344(-7)? (STDERR) While this implementation will work correctly, it is known to be
-W20200622-15:09:46.345(-7)? (STDERR) approximately three times slower than the native implementation.
-W20200622-15:09:46.352(-7)? (STDERR) In order to use the native implementation instead, run
-W20200622-15:09:46.353(-7)? (STDERR)
-W20200622-15:09:46.354(-7)? (STDERR)   meteor npm install --save bcrypt
-W20200622-15:09:46.355(-7)? (STDERR)
-W20200622-15:09:46.355(-7)? (STDERR) in the root directory of your application.
-I20200622-15:09:48.176(-7)? Creating the default user(s)
-I20200622-15:09:48.180(-7)?   Creating user admin@foo.com.
-I20200622-15:09:48.458(-7)?   Creating user john@foo.com.
-I20200622-15:09:48.692(-7)? Creating default data.
-I20200622-15:09:48.696(-7)?   Adding: Basket (john@foo.com)
-I20200622-15:09:48.711(-7)?   Adding: Bicycle (john@foo.com)
-I20200622-15:09:48.717(-7)?   Adding: Banana (admin@foo.com)
-I20200622-15:09:48.721(-7)?   Adding: Boogie Board (admin@foo.com)
-=> Started your app.
-
-=> App running at: http://localhost:3000/
-   Type Control-C twice to stop.
-```
-
-Everything looks good. Lets continue.
-
-
-# NEXT: DOWNLOAD METEOR-AZURE
-
-Lets open up meteor-azure docs.
-
-[For more info/docs](https://meteor-azure.readthedocs.io/en/latest/)
-
-[Prerequisites](https://meteor-azure.readthedocs.io/en/latest/installation.html)
-
-aaaand [the tutorial](https://meteor-azure.readthedocs.io/en/latest/getting-started.html)
-
-## Prerequisites
-
-Node >=4 is necessary to run the CLI
-Meteor >=1.4 is necessary to build your application
-
-Check node version with
-
-```shell script
-node -v
-```
-
-Check Meteor version with
-
-```shell script
-cat .meteor/release
-```
-
-OR
-
-```shell script
-meteor --version # this will automatically update it to latest version
-```
-
-If everything checks out, install meteor-azure. This is a global installation. Local installation is also possible and found in the docs
-
-```shell script
-npm install -g meteor-azure
-```
-
-# NEXT: MICROSOFT AZURE
-
-First, [lets make our account](https://azure.microsoft.com/en-us/free/students/)
+First, [create a free Microsoft Azure account](https://azure.microsoft.com/en-us/free/students/).
 
 Sign up. Get the free trial/student trial. Go to the portal if you are not there already. Button should be in the top right corner. We will start a new App Service.
 
-Side bar > App Services
-Click Add
+## Create a new App Service
 
+Go to the Side bar > App Services, then click Add.
 
-
+Here's the page that results with appropriately filled fields:
 
 ![](/img/devopsimages/AddApp.png)
 
-Create a resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. You can reuse this group in the future
+Here are some field settings:
 
-- Give your App a name
+  * Name: Provide a name.
 
-- Publish: Code
+  * Resource Group: You will want to create a new resource group. This will hold a group of resources together (e.g. a database, or app services) for easier management. Note that you can reuse this group in the future.
 
-- Runtime Stack: Node 12 LTS
+  * Publish: Code
 
-- Region: West US
+  * Runtime Stack: Node 12 LTS
 
-- Windows Plan: Azure created a new one for me and I did not touch this.
+  * Region: West US
 
-- Sku and size: //IMPORTANT. Select the one you need. Default will be a production plan with a going rate of \$75/month, but if you have the free trial it doesnt matter.
+:::note
+Need a screen shot to document the following page.
+:::
 
-There is a free developer version, but I have found it inadequate in terms of space for the meteor template. If you wish to select it, click "Change size > Dev/Test tab > Select "F1".
+For Windows Plan, Azure created a new one for me and I did not touch this.
 
-Click "Review + Create" at the bottom of the page
-Verify your info.
-Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
+  * Sku and size: **IMPORTANT.** Select the one you need. Default will be a production plan with a going rate of \$75/month, but if you have the free trial it doesn't matter.  There is a free developer version, but I have found it inadequate in terms of space for the meteor template. If you wish to select it, click "Change size > Dev/Test tab > Select "F1".
+
+Click "Review + Create" at the bottom of the page Verify your info. Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
-# NEXT: CREATE AN [AZURE COSMO DB](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal#:~:text=Go%20to%20the%20Azure%20portal,the%20new%20Azure%20Cosmos%20account.) ACCOUNT
+## Configure a MongoDB database
 
-What is [Azure Cosmo DB](https://azure.microsoft.com/en-us/services/cosmos-db/#overview)? Azure Cosmos DB is a fully managed NoSQL database service for modern app development. It supports Core (SQL) and MongoDB for document data, Gremlin for graph data, Azure Table, and Cassandra. 
+[Azure Cosmo DB](https://azure.microsoft.com/en-us/services/cosmos-db/#overview) provides a version of MongoDB compatible with Meteor.
 
-First we must set up a Azure Cosmos DB account. [Click here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal) to learn more about each of the following items
-* Search for "Azure Cosmos DB" in the search bar
-* Click "+ Add" button
-* Select your subscription and resource group
+First, set up a Azure Cosmos DB account [here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal).
+
+:::note
+Need a screen shot to illustrate the following settings.
+:::
+
+To set up Cosmos DB:
+
+  * Click "+ Add" button
+  * Select your subscription and resource group
     * Select the resource group you used to create your app
-* Create an account name
-* Select the API.
+  * Create an account name
+  * Select the API.
     * From the drop down menu, select Azure CosmoDB for MongoDP API
-* Notebooks(Preview): Off
-* Location: US West
-* Apply Free Tier Discount: Apply if you are eligible for it. Should be eligible if it is your first time making an account
-* Account type: Non-Production. 
-* Version: 3.6
-* Geo-Redundancy: Disable
-* Multi-region Writes: Disable
-* Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
+  * Notebooks(Preview): Off
+  * Location: US West
+  * Apply Free Tier Discount: Apply if you are eligible for it. Should be eligible if it is your first time making an account
+  * Account type: Non-Production.
+  * Version: 3.6
+  * Geo-Redundancy: Disable
+  * Multi-region Writes: Disable
+  * Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
 
+## Configure the application
 
+Here, we will get out App ready for deployment on the Azure portal. Through App Service, navigate to:
 
-
-# NEXT: METEOR-AZURE DEPLOYMENT
-Here, we will get out App ready for deployment on the Azure portal. Through App Service, navigate to. 
-
-- Sidebar > Configuration > Application Settings (should take you here by default)
+- Sidebar > Configuration > Application Settings (should take you here by default).
 
   - Clear off any existing entries in the application settings. This can easily be done by selecting "Advanced edit" and clearing everything between these [ ] top level brackets.
 
   - Click on the General Settings tab. Ensure “Web sockets” and “ARR affinity” are enabled.
 
+:::note
+Need a screen shot
+:::
+
+Next, go to:
+
 * Sidebar > Deployment Center > FTP and click the "Dashboard" button at the bottom > User Credentials
 
-  - Make a username in the form of yourappname\yourusername, along with a password
+  - Make a username in the form of yourappname\yourusername, along with a password (there are some password characters that are [not accepted](https://stackoverflow.com/questions/62601319/microsoft-azure-cannot-satisfy-password-requirements-when-making-ftp-user-cred).)
 
-  - **Although the password requires you to input some characters, most characters are NOT accepted.** Make sure you do not have any of these, or Azure isnt going to like it.
 
-```shell script
-_ (underscore)
-#
-^
-(  )
-{  }
-[  ]
-_ -
-+ =
-: ;
-" '
-< >
-, .
-/
-| \
-` ~
-```
+## Configure settings.production.json
 
-Add the following code to settings.development.json file in your local app/config directory
+The config directory contains a file called settings.production.sample.json, which is a template you can use to create the settings.production.json file. The template looks like this:
 
 ```shell script
 {
@@ -216,45 +131,38 @@ Add the following code to settings.development.json file in your local app/confi
       "MONGO_URL": "MongoDB URL"
     }
   }
-
   // ... keys for Meteor.settings
 }
 ```
-## Edit the above code with information found in...
-- Sidebar > Overview
-  - Record your app name, resource group and subscription ID
+
+Make a copy of this file (or rename it) to settings.production.json. Then edit the fields as follows:
+
+Sidebar > Overview. Record your app name, resource group and subscription ID
 
 ![](/img/devopsimages/Overview.png)
 
-- You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
+You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
 
-- Enter your FTP user credentials.
+Enter your FTP user credentials.
 
-- Edit your ROOT_URL with your app name.
-- MONGO_URL
-    * Click the Microsoft Azure button next to the hamburger in the top left to go to the Homepage
-    * Select your Azure Cosmo DB account
-    * Sidebar > Quickstart > Select Node.js tab 
-        * Scroll down to "Using the Node.js 3.0 driver, connect your existing MongoDB app"
-        * Our MONGO_URL is the PRIMARY CONNECTION STRING. 
+Edit your ROOT_URL with your app name.
+
+MONGO_URL:
+
+  * Click the Microsoft Azure button next to the hamburger in the top left to go to the Homepage
+  * Select your Azure Cosmo DB account
+  * Sidebar > Quickstart > Select Node.js tab
+    * Scroll down to "Using the Node.js 3.0 driver, connect your existing MongoDB app"
+    * Our MONGO_URL is the PRIMARY CONNECTION STRING.
 
 
-
-# NEXT: Lets deploy!
+## Deploy the meteor app to Azure
 
 Navigate to the project directory on your local machine and run:
 
 ```shell script
-meteor-azure --settings path-to-settings-development.json
-```
+meteor npm run deploy
 
-Some problems related to architecture might occur during deployment. This is further explained in the TROUBLESHOOTING section. I have experience them and adjusted accordingly. This is the script I used to deploy successfully.
-
-```shell script
-PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\config\settings.development.json --architecture 64
-```
-## OUTPUT
-```shell script
 info:    Targetting 64-bit Node architecture
 info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.development.json)
 info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.development.json)
@@ -290,10 +198,9 @@ info:    meteortestdeploy: Finished successfully
 
 Your project should now be live at https://yourappname.azurewebsites.net
 
+## Troubleshooting
 
-
-
-# TROUBLESHOOTING. Problems I encountered and how I solved them.
+### Debug mode
 
 If you are having trouble, debug mode might be insightful. Turn it on with.
 
@@ -301,66 +208,10 @@ If you are having trouble, debug mode might be insightful. Turn it on with.
 meteor-azure -debug
 ```
 
-#### settings.json file is not being read
+### Kudu
 
-```shell script
-PS G:\GitFolder\azure-deploy\app> meteor-azure --settings G:\GitFolder\azure-deploy\settings.json
-info:    Targetting 32-bit Node architecture
-info:    Validating settings file (G:\GitFolder\azure-deploy\settings.json)
-error:   Could not read settings file at 'G:\GitFolder\azure-deploy\settings.json'
-```
-
-Your settings.json file might not be in the correct format. Try check if there is a proper about of brackets. Single quotations are not supported I believe. It is possible that your file contains hidden chars (like UTF byte order mark) possibly because of copy / paste.
-
-#### invalid architecture
-
-```shell script
-PS G:\GitFolder\azure-deploy\app> meteor-azure --settings settings.json
-info:    Targetting 32-bit Node architecture
-info:    Validating settings file (settings.json)
-info:    Validating Kudu connection (settings.json)
-info:    meteortestdeploy: Authenticating with interactive login...
-To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FUPJ9NC98 to authenticate.
-info:    meteortestdeploy: Updating Azure application settings
-info:    Compiling application bundle
-Invalid architecture: os.windows.x86_32
-The following are valid Meteor architectures:
-  os.osx.x86_64
-  os.linux.x86_64
-  os.windows.x86_64
-error:   exec:
-```
-
-If you get this error, change the meteor architecture by running
-
-```shell script
-meteor-azure --architecture 64
-```
-
-It is easy to troubleshoot with kudu. 
-You can access the app's server anytime by adding ".scm" into the url.
+It is easy to troubleshoot with kudu. You can access the app's server anytime by adding ".scm" into the url.
 
 ```shell script
 https://meteortestdeploy.scm.azurewebsites.net
 ```
-
-## Evaluation
-
-This is VERY beginner friendly, much more so than AWS. It was not hard to get around at all. One thing to note is that the Azure portal was recently redesigned, so a lot of documentation on open source programs may be slightly inaccurate in terms of where to find everything, but its still doable.
-
-
-
-Pricing varies. There are pay as you go plans, along with set "menus".
-
-![](/img/devopsimages/Pricing.png)
-![](/img/devopsimages/Pricing2.png)
-![](/img/devopsimages/Pricing4.png)
-
-
-# PICTURES 
-![](/img/devopsimages/WebsiteIsLive.png)
-![](/img/devopsimages/login.png)
-![](/img/devopsimages/ListBefore.png)
-![](/img/devopsimages/ItemAdded.png)
-![](/img/devopsimages/ListAfter2.png)
-
