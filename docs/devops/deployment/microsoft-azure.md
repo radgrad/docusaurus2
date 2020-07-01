@@ -37,7 +37,7 @@ Go to the Side bar > App Services, then click Add.
 
 Here's the page that results with appropriately filled fields:
 
-![](/img/devopsimages/AddApp.png)
+![](/img/devopsimages/WebAppStart.png)
 
 Here are some field settings:
 
@@ -55,11 +55,15 @@ Here are some field settings:
 Need a screen shot to document the following page.
 :::
 
-For Windows Plan, Azure created a new one for me and I did not touch this.
+The App Service plan designates how much resources Azure makes available for you to use. This costs money. Change your cost by selecting "Create new" when selecting a plan, and then click "Change size" for your "Sku and size".
 
   * Sku and size: **IMPORTANT.** Select the one you need. Default will be a production plan with a going rate of \$75/month, but if you have the free trial it doesn't matter.  There is a free developer version, but I have found it inadequate in terms of space for the meteor template. If you wish to select it, click "Change size > Dev/Test tab > Select "F1".
+  
+  ![](/img/devopsimages/AppServicePlan.png)
 
 Click "Review + Create" at the bottom of the page Verify your info. Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
+
+![](/img/devopsimages/reviewAppService.png)
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
@@ -89,6 +93,14 @@ To set up Cosmos DB:
   * Geo-Redundancy: Disable
   * Multi-region Writes: Disable
   * Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
+  
+![](/img/devopsimages/CreateCosmo1.png)
+![](/img/devopsimages/CreateCosmo2.png)
+![](/img/devopsimages/CosmoReview.png)
+
+
+  
+  
 
 ## Configure the application
 
@@ -96,9 +108,13 @@ Here, we will get out App ready for deployment on the Azure portal. Through App 
 
 - Sidebar > Configuration > Application Settings (should take you here by default).
 
+
   - Clear off any existing entries in the application settings. This can easily be done by selecting "Advanced edit" and clearing everything between these [ ] top level brackets.
+  ![](/img/devopsimages/AppSettings.png)
 
   - Click on the General Settings tab. Ensure “Web sockets” and “ARR affinity” are enabled.
+  
+  ![](/img/devopsimages/WebSockets.png)
 
 :::note
 Need a screen shot
@@ -110,6 +126,7 @@ Next, go to:
 
   - Make a username in the form of yourappname\yourusername, along with a password (there are some password characters that are [not accepted](https://stackoverflow.com/questions/62601319/microsoft-azure-cannot-satisfy-password-requirements-when-making-ftp-user-cred).)
 
+  ![](/img/devopsimages/FTPcreds.png)
 
 ## Configure settings.production.json
 
@@ -139,7 +156,8 @@ Make a copy of this file (or rename it) to settings.production.json. Then edit t
 
 Sidebar > Overview. Record your app name, resource group and subscription ID
 
-![](/img/devopsimages/Overview.png)
+![](/img/devopsimages/gatherInfo.png)
+
 
 You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
 
@@ -155,6 +173,7 @@ MONGO_URL:
     * Scroll down to "Using the Node.js 3.0 driver, connect your existing MongoDB app"
     * Our MONGO_URL is the PRIMARY CONNECTION STRING.
 
+![](/img/devopsimages/connString.png)
 
 ## Deploy the meteor app to Azure
 
