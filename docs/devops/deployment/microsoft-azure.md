@@ -5,6 +5,7 @@ sidebar_label: Microsoft Azure
 
 # Deployment Documentation
 
+<!---
 :::note
 
 Hi Arslan,
@@ -16,6 +17,7 @@ Here are some things you'll need to do in order to make this revised documentati
 3. Install meteor-azure into meteor-example-deploy-azure using `npm install meteor-azure --save-dev`. Then, when people install the test system, they get the meteor-azure package installed automatically. That gets rid of a whole section of the documentation!
 4. Update the scripts section of meteor-example-deploy-azure/app/package.json to include a script "deploy" that invokes "meteor-azure --settings config/settings.production.json --architecture 64".
 :::
+-->
 
 To best document how to deploy a Meteor application to Microsoft Azure, we provide the [meteor-example-deploy-azure](https://github.com/meteor-example-deploy-azure) github repository.  This repository is a copy of [meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), modified with one additional file (config/settings.production.sample.json) to support deployment to Azure. It will also install the meteor-azure library.
 
@@ -35,9 +37,12 @@ Sign up. Get the free trial/student trial. Go to the portal if you are not there
 
 Go to the Side bar > App Services, then click Add.
 
+<!---
 Here's the page that results with appropriately filled fields:
+-->
 
-![](/img/devopsimages/WebAppStart.png)
+   
+   ![](/img/devopsimages/WebAppStart.png)
 
 Here are some field settings:
 
@@ -51,9 +56,11 @@ Here are some field settings:
 
   * Region: West US
 
+<!---
 :::note
 Need a screen shot to document the following page.
 :::
+-->
 
 The App Service plan designates how much resources Azure makes available for you to use. This costs money. Change your cost by selecting "Create new" when selecting a plan, and then click "Change size" for your "Sku and size".
 
@@ -63,7 +70,7 @@ The App Service plan designates how much resources Azure makes available for you
 
 Click "Review + Create" at the bottom of the page Verify your info. Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
 
-![](/img/devopsimages/reviewAppService.png)
+  ![](/img/devopsimages/reviewAppService.png)
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
@@ -73,9 +80,11 @@ Go to Sidebar > Overview > Your URL will be in the right column in the form of y
 
 First, set up a Azure Cosmos DB account [here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal).
 
+<!---
 :::note
 Need a screen shot to illustrate the following settings.
 :::
+-->
 
 To set up Cosmos DB:
 
@@ -94,9 +103,9 @@ To set up Cosmos DB:
   * Multi-region Writes: Disable
   * Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
   
-![](/img/devopsimages/CreateCosmo1.png)
-![](/img/devopsimages/CreateCosmo2.png)
-![](/img/devopsimages/CosmoReview.png)
+  ![](/img/devopsimages/CreateCosmo1.png)
+  ![](/img/devopsimages/CreateCosmo2.png)
+  ![](/img/devopsimages/CosmoReview.png)
 
 
   
@@ -116,9 +125,11 @@ Here, we will get out App ready for deployment on the Azure portal. Through App 
   
   ![](/img/devopsimages/WebSockets.png)
 
+<!---
 :::note
 Need a screen shot
 :::
+-->
 
 Next, go to:
 
