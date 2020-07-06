@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/engineering-standards', 'overview/remote-pair-programming', 'overview/markdown-reference', 'overview/mdx'],
-    DevOps: ['devops/goals', 'devops/resources',
+    DevOps: ['devops/goals', 'devops/resources', 'devops/evaluation',
       {
         type: 'category',
         label: 'Deployment',
@@ -16,8 +16,8 @@ module.exports = {
           'devops/deployment/waves-hosting'
         ]
       }],
-    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping', 'internbit/needs-assessment', 'internbit/canonical-schema'],
-    CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle',
+    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping', 'internbit/needs-assessment', 'internbit/canonical-schema', 'internbit/evaluation'],
+    CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle', 'csexplore/evaluation',
       {
         type: 'category',
         label: 'Mockups',
@@ -29,7 +29,7 @@ module.exports = {
             'csexplore/annotated-mockup/build-your-community'
         ]
       }],
-    RadGrad2: ['radgrad2/goals',
+    RadGrad2: ['radgrad2/goals', 'radgrad2/evaluation',
       {
         type: 'category',
         label: 'Developer Guide',

@@ -1,0 +1,6 @@
+---
+title: RadGrad2 Evaluation
+sidebar_label: Evaluation
+---
+
+This page will describe the mechanisms to be used to evaluate the RadGrad2 project by December, 2020.
