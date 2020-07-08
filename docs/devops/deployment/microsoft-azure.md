@@ -163,7 +163,7 @@ The config directory contains a file called settings.production.sample.json, whi
 }
 ```
 
-Make a copy of this file (or rename it) to settings.production.json. Then edit the fields as follows:
+Copy the contents of `settings.production.sample.json` over `settings.development.json`. Rename `settings.development.json` to `settings.production.json`. Then edit the fields as follows:
 
 Sidebar > Overview. Record your app name, resource group and subscription ID
 
@@ -194,8 +194,8 @@ Navigate to the project directory on your local machine and run:
 meteor npm run deploy
 
 info:    Targetting 64-bit Node architecture
-info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.development.json)
-info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.development.json)
+info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.production.json)
+info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.production.json)
 info:    meteortestdeploy: Authenticating with interactive login...
 To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FM3DXB253 to authenticate.
 info:    meteortestdeploy: Updating Azure application settings
@@ -237,6 +237,14 @@ If you are having trouble, debug mode might be insightful. Turn it on with.
 ```shell script
 meteor-azure -debug
 ```
+
+### error: Could not read settings file at 'your file here'
+
+In the package.json there is a script `"deploy": "meteor-azure --settings config/settings.production.json --architecture 64"` That deploys your application to Azure
+Changing the `--settings config/settings.production.json` to include the full path instead of the relative one might solve this problem. For example, the following may work.
+
+`--settings C:\path\to\meteor-example-deploy-azure\config\settings.production.sample.json` 
+
 
 ### Kudu
 
