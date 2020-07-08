@@ -5,6 +5,7 @@ sidebar_label: Microsoft Azure
 
 # Deployment Documentation
 
+<!---
 :::note
 
 Hi Arslan,
@@ -16,6 +17,7 @@ Here are some things you'll need to do in order to make this revised documentati
 3. Install meteor-azure into meteor-example-deploy-azure using `npm install meteor-azure --save-dev`. Then, when people install the test system, they get the meteor-azure package installed automatically. That gets rid of a whole section of the documentation!
 4. Update the scripts section of meteor-example-deploy-azure/app/package.json to include a script "deploy" that invokes "meteor-azure --settings config/settings.production.json --architecture 64".
 :::
+-->
 
 To best document how to deploy a Meteor application to Microsoft Azure, we provide the [meteor-example-deploy-azure](https://github.com/meteor-example-deploy-azure) github repository.  This repository is a copy of [meteor-application-template-react](https://github.com/ics-software-engineering/meteor-application-template-react), modified with one additional file (config/settings.production.sample.json) to support deployment to Azure. It will also install the meteor-azure library.
 
@@ -35,9 +37,12 @@ Sign up. Get the free trial/student trial. Go to the portal if you are not there
 
 Go to the Side bar > App Services, then click Add.
 
+<!---
 Here's the page that results with appropriately filled fields:
+-->
 
-![](/img/devopsimages/AddApp.png)
+   
+   ![](/img/devopsimages/WebAppStart.png)
 
 Here are some field settings:
 
@@ -51,15 +56,21 @@ Here are some field settings:
 
   * Region: West US
 
+<!---
 :::note
 Need a screen shot to document the following page.
 :::
+-->
 
-For Windows Plan, Azure created a new one for me and I did not touch this.
+The App Service plan designates how much resources Azure makes available for you to use. This costs money. Change your cost by selecting "Create new" when selecting a plan, and then click "Change size" for your "Sku and size".
 
   * Sku and size: **IMPORTANT.** Select the one you need. Default will be a production plan with a going rate of \$75/month, but if you have the free trial it doesn't matter.  There is a free developer version, but I have found it inadequate in terms of space for the meteor template. If you wish to select it, click "Change size > Dev/Test tab > Select "F1".
+  
+  ![](/img/devopsimages/AppServicePlan.png)
 
 Click "Review + Create" at the bottom of the page Verify your info. Click "Create". You should be rerouted to a page that says "Deployment is underway", and eventually will complete.
+
+  ![](/img/devopsimages/reviewAppService.png)
 
 Go to Sidebar > Overview > Your URL will be in the right column in the form of yourappname.azurewebsites.net
 
@@ -69,9 +80,11 @@ Go to Sidebar > Overview > Your URL will be in the right column in the form of y
 
 First, set up a Azure Cosmos DB account [here](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal).
 
+<!---
 :::note
 Need a screen shot to illustrate the following settings.
 :::
+-->
 
 To set up Cosmos DB:
 
@@ -89,6 +102,14 @@ To set up Cosmos DB:
   * Geo-Redundancy: Disable
   * Multi-region Writes: Disable
   * Click "Review and Create" Review your information and create. Azure will take ~10 minutes to deploy.
+  
+  ![](/img/devopsimages/CreateCosmo1.png)
+  ![](/img/devopsimages/CreateCosmo2.png)
+  ![](/img/devopsimages/CosmoReview.png)
+
+
+  
+  
 
 ## Configure the application
 
@@ -96,13 +117,19 @@ Here, we will get out App ready for deployment on the Azure portal. Through App 
 
 - Sidebar > Configuration > Application Settings (should take you here by default).
 
+
   - Clear off any existing entries in the application settings. This can easily be done by selecting "Advanced edit" and clearing everything between these [ ] top level brackets.
+  ![](/img/devopsimages/AppSettings.png)
 
   - Click on the General Settings tab. Ensure “Web sockets” and “ARR affinity” are enabled.
+  
+  ![](/img/devopsimages/WebSockets.png)
 
+<!---
 :::note
 Need a screen shot
 :::
+-->
 
 Next, go to:
 
@@ -110,6 +137,7 @@ Next, go to:
 
   - Make a username in the form of yourappname\yourusername, along with a password (there are some password characters that are [not accepted](https://stackoverflow.com/questions/62601319/microsoft-azure-cannot-satisfy-password-requirements-when-making-ftp-user-cred).)
 
+  ![](/img/devopsimages/FTPcreds.png)
 
 ## Configure settings.production.json
 
@@ -135,11 +163,12 @@ The config directory contains a file called settings.production.sample.json, whi
 }
 ```
 
-Make a copy of this file (or rename it) to settings.production.json. Then edit the fields as follows:
+Copy the contents of `settings.production.sample.json` over `settings.development.json`. Rename `settings.development.json` to `settings.production.json`. Then edit the fields as follows:
 
 Sidebar > Overview. Record your app name, resource group and subscription ID
 
-![](/img/devopsimages/Overview.png)
+![](/img/devopsimages/gatherInfo.png)
+
 
 You can find your TenantID by searching for "Tenant properties" in the search bar at the top of the page
 
@@ -155,6 +184,7 @@ MONGO_URL:
     * Scroll down to "Using the Node.js 3.0 driver, connect your existing MongoDB app"
     * Our MONGO_URL is the PRIMARY CONNECTION STRING.
 
+![](/img/devopsimages/connString.png)
 
 ## Deploy the meteor app to Azure
 
@@ -164,8 +194,8 @@ Navigate to the project directory on your local machine and run:
 meteor npm run deploy
 
 info:    Targetting 64-bit Node architecture
-info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.development.json)
-info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.development.json)
+info:    Validating settings file (G:\GitFolder\azure-deploy\config\settings.production.json)
+info:    Validating Kudu connection (G:\GitFolder\azure-deploy\config\settings.production.json)
 info:    meteortestdeploy: Authenticating with interactive login...
 To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FM3DXB253 to authenticate.
 info:    meteortestdeploy: Updating Azure application settings
@@ -207,6 +237,14 @@ If you are having trouble, debug mode might be insightful. Turn it on with.
 ```shell script
 meteor-azure -debug
 ```
+
+### error: Could not read settings file at 'your file here'
+
+In the package.json there is a script `"deploy": "meteor-azure --settings config/settings.production.json --architecture 64"` That deploys your application to Azure
+Changing the `--settings config/settings.production.json` to include the full path instead of the relative one might solve this problem. For example, the following may work.
+
+`--settings C:\path\to\meteor-example-deploy-azure\config\settings.production.sample.json` 
+
 
 ### Kudu
 
