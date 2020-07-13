@@ -34,5 +34,14 @@ In no particular order these are the goals of RadGrad2:
 * Create a standard for uploading data from the registrar. What does RadGrad need for getting student's academic data?
 
 ## Evaluating Engagement and Retention
+In the RadGrad2 system, we currently monitor user activity and engagement with the system through user interactions. Notably, we can track which pages that students visit that gives us an overview of which pages are the most visited. This has given us some insight into which items in the explorers get visited the most and also gives a clue as to which areas in computer science students are most interested in. Particularly, this data showed which career goals, interests, courses, and opportunities were viewed the most. These page interactions can then be analyzed in the Admin Analytics pages, being able to see all of the interactions for each student. However, we had no aggregated display that showed the page interactions across all users that would make analysis easier and more insightful.
 
-_Gian_
+Page Interest Views is an analysis method that specifically tracks student interest in different career goals, interests, courses, and opportunities listed in the system. Along with the implementation of this method also comes with the implementation of new pages that all users of the system can use to view all the aggregated page interest views across all users. This data has opened the possibility of exploring the question of whether we can see emergent or upcoming trends of student interests in various fields of computer science.
+
+#### Evaluation of Page Interest Views
+As we predict that most students will update their career goals, interests, courses, and opportunities by semester, evaluation of the effectiveness of this analysis technique can be done on a semester by semester basis. After each semester, through the page interest views scoreboard, we can filter all the snapshots from the start of the semester through the end of the semester. With this data:
+* View which items in career goals, interests, courses, and opportunities are viewed the most
+* Analyze any correlation between the courses offered that semester versus the increase or decrease of page interest views of career goals, interests, or opportunities related to those courses
+* Analyze any correlation between the increase or decrease of page interest views versus their respective areas in the professional world
+
+To view more long-term trends that might not necessarily be seen on a semester by semester basis, we can compare the analysis we did for a semester to the analysis done on a consecutive or previous semester(s). This allows us to see if there are trends of student interest that seem to happen every semester.
