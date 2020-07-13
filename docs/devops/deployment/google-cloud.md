@@ -5,12 +5,12 @@ sidebar_label: Google Cloud
 
 ## Deployment Documentation
 
-######Note: This was done on a Windows 10 System using Windows Subsystem for Linux 2 (WSL 2)
+###### Note: This was done on a Windows 10 System using Windows Subsystem for Linux 2 (WSL 2)
 
-#####Installation
+##### Installation
 Open up Windows Powershell as administrator and use `npm install meteor-google-cloud -g`.
 
-#####Google Cloud CLI
+##### Google Cloud CLI
 
 Login in to your google account. On the cloud console, go to the cloud selector page, and create a new project. Ensure billing is enabled.
 
@@ -24,7 +24,7 @@ Update the SDK with `sudo apt-get update`
 
 Install the SDK with `sudo apt-get install google-cloud-sdk`
 
-#####Deployment
+##### Deployment
 
 Use `git clone https://github.com/ics-software-engineering/meteor-application-template.git` to clone the Meteor Application Template from Github. Change into the app directory.
 
@@ -38,7 +38,7 @@ Change into the deploy directory and edit the `settings.json` file. Change the p
 
 Deploy using `meteor-google-cloud --settings deploy/settings.json --app deploy/app.yml --docker deploy/Dockerfile`
 
-#####Potential Problems
+##### Potential Problems
 
 During my personal attempt of deployment, it was lacking a few things. I used `meteor npm install --save @babel/runtime simpl-schema uniforms-bridge-simple-schema-2 moment lodash faker react react-dom react-redux connected-react-router react-router-dom react-router semantic-ui-react react-scroll-up-button react-slick slick-carousel react-markdown uniforms-semantic classnames uniforms sweetalert2 react-datepicker highcharts highcharts-react-official react-beautiful-dnd redux react-content-loader history` and `meteor npm install --save simpl-schema moment lodash faker` to obtain all the things I was missing. 
 
