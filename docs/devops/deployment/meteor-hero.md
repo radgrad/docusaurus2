@@ -135,12 +135,12 @@ Run git push heroku master to create a new release using this buildpack.
  * Sign up for a free account or log in. 
  * Select 'Create a new cluster'
  * Select the free cluster option. Your first one will be free
- * You will be prompted to select your hosting provider and a few other settings. The defuault ones are fine for this. Click "Create Cluster" at the bottom of the page. It will take a few minutes to deploy
+ * You will be prompted to select your hosting provider and a few other settings. The default ones are fine for this. Click "Create Cluster" at the bottom of the page. It will take a few minutes to deploy
  * Your home page will display your new cluster. Click Connect
- * Select *Connect with app*
+ * Select "Connect with app*
  * Copy the connection string and save it somewhere. I personally have a notepad I paste it into. We will modify this string and this makes it easier
-	 * replace the <password> with your password
-	 * give your database a name in the <dbname> section
+   * replace the `<password>` with your password
+   * give your database a name in the `<dbname>` section
 
 ![](/img/devopsimages/MongoAtlas/Mongo1.png)
 ![](/img/devopsimages/MongoAtlas/Mongo2.png)
@@ -153,7 +153,7 @@ Run git push heroku master to create a new release using this buildpack.
 
 # DEPLOYING
 
-Lets set our url by running `heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`, but first, change <appname> to whatever your app is called. 
+Lets set our url by running `heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`, but first, change `<appname>` to whatever your app is called. 
 
 ```
 PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku config:set ROOT_URL="https://buildpackhorse-for-heroku.herokuapp.com"
