@@ -15,9 +15,9 @@ To start, clone the sample [meteor repo](https://ics-software-engineering.github
 
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> meteor npm install
+PS G:\GitFolder\meteor-application-template-react\app> meteor npm install
 
-> core-js@3.6.4 postinstall G:\GitFolder\buildpackhorse-for-heroku\app\node_modules\core-js
+> core-js@3.6.4 postinstall G:\GitFolder\meteor-application-template-react\app\node_modules\core-js
 > node -e "try{require('./postinstall')}catch(e){}"
 
 added 416 packages from 333 contributors and audited 416 packages in 43.24s
@@ -30,18 +30,18 @@ found 22 low severity vulnerabilities
 ```
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> meteor npm run start
+PS G:\GitFolder\meteor-application-template-react\app> meteor npm run start
 
-> meteor-application-template-react@ start G:\GitFolder\buildpackhorse-for-heroku\app
+> meteor-application-template-react@ start G:\GitFolder\meteor-application-template-react\app
 > meteor --no-release-check --settings ../config/settings.development.json
 
-[[[[[ ~\G\GitFolder\buildpackhorse-for-heroku\app ]]]]]
+[[[[[ ~\G\GitFolder\meteor-application-template-react\app ]]]]]
 
 => Started proxy.
 
 Unable to resolve some modules:
 
-  "@babel/runtime/helpers/createSuper" in /G/GitFolder/buildpackhorse-for-heroku/app/imports/ui/layouts/App.jsx (web.browser.legacy)
+  "@babel/runtime/helpers/createSuper" in /G/GitFolder/meteor-application-template-react/app/imports/ui/layouts/App.jsx (web.browser.legacy)
 
 If you notice problems related to these missing modules, consider running:
 
@@ -83,13 +83,14 @@ Log into Heroku through your shell client
 ```
 cd path/to/app
 
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku login
+PS G:\GitFolder\meteor-application-template-react\app> heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 Opening browser to https://cli-auth.heroku.com/auth/cli/browser/5bfae492-b6b2-4982-a967-3e***redactedForPrivacy***
 Logging in... done
 Logged in as arslanxr@gmail.com
 ```
 
+<!---
 Before you can deploy your app to Heroku, you need to initialize a local Git repository and commit your application code to it. The following 
 
 ```
@@ -99,17 +100,22 @@ git add .
 git commit -m "My first commit"
 ```
 
-Your app’s code is now tracked in a local Git repository. It has not yet been pushed to any remote servers. The `heroku create` CLI command creates a new empty application on Heroku, along with an associated empty Git repository.
+Your app’s code is now tracked in a local Git repository. It has not yet been pushed to any remote servers. 
+
+-->
+
+
+We need to create an application on Heroku, and eventually push our code to it. The `heroku create` CLI command creates a new empty application on Heroku, along with an associated empty Git repository.
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku create
+PS G:\GitFolder\meteor-application-template-react\app> heroku create
 Creating app... done, ⬢ enigmatic-thicket-32549
 https://enigmatic-thicket-32549.herokuapp.com/ | https://git.heroku.com/enigmatic-thicket-32549.git
 ```
 
 Use the git remote command `git remote -v` to confirm that a remote named heroku has been set for your app
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> git remote -v
+PS G:\GitFolder\meteor-application-template-react\app> git remote -v
 heroku  https://git.heroku.com/enigmatic-thicket-32549.git (fetch)
 heroku  https://git.heroku.com/enigmatic-thicket-32549.git (push)
 ```
@@ -118,53 +124,34 @@ heroku  https://git.heroku.com/enigmatic-thicket-32549.git (push)
 Jumping back to Meteor Buildpack Horse docs, we move on to step 2. First, install the buildpack registry addon by running `heroku plugins:install buildpack-registry`
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku plugins:install buildpack-registry
+PS G:\GitFolder\meteor-application-template-react\app> heroku plugins:install buildpack-registry
 Installing plugin buildpack-registry... installed v1.0.1
 ```
 
 Run `heroku buildpacks:set admithub/meteor-horse` to set the buildpack to the latest version.
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku buildpacks:set admithub/meteor-horse
+PS G:\GitFolder\meteor-application-template-react\app> heroku buildpacks:set admithub/meteor-horse
 Buildpack set. Next release on enigmatic-thicket-32549 will use admithub/meteor-horse.
 Run git push heroku master to create a new release using this buildpack.
 ```
 
-# SETTING UP AN EXTERNAL MONGO DATABASE
-
-[MongoDB Atlas](https://www.mongodb.com/cloud/atlas) will be used for this. 
- * Sign up for a free account or log in. 
- * Select 'Create a new cluster'
- * Select the free cluster option. Your first one will be free
- * You will be prompted to select your hosting provider and a few other settings. The default ones are fine for this. Click "Create Cluster" at the bottom of the page. It will take a few minutes to deploy
- * Your home page will display your new cluster. Click Connect
- * Select "Connect with app*
- * Copy the connection string and save it somewhere. I personally have a notepad I paste it into. We will modify this string and this makes it easier
-   * replace the `<password>` with your password
-   * give your database a name in the `<dbname>` section
-
-![](/img/devopsimages/MongoAtlas/Mongo1.png)
-![](/img/devopsimages/MongoAtlas/Mongo2.png)
-![](/img/devopsimages/MongoAtlas/Mongo3.png)
-![](/img/devopsimages/MongoAtlas/Mongo4.png)
-![](/img/devopsimages/MongoAtlas/Mongo5.png)
-![](/img/devopsimages/MongoAtlas/Mongo6.png)
-
-
+# OBTAIN A MONGO_URL
+Instructions on how to obtain a MONGO_URL connection string can be found [here](docs/devops/deployment/mongo-url.md)
 
 # DEPLOYING
 
 Lets set our url by running `heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`, but first, change `<appname>` to whatever your app is called. 
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku config:set ROOT_URL="https://buildpackhorse-for-heroku.herokuapp.com"
+PS G:\GitFolder\meteor-application-template-react\app> heroku config:set ROOT_URL="https://meteor-application-template-react.herokuapp.com"
 Setting ROOT_URL and restarting ⬢ enigmatic-thicket-32549... done, v3
-ROOT_URL: https://buildpackhorse-for-heroku.herokuapp.com
+ROOT_URL: https://meteor-application-template-react.herokuapp.com
 ```
 
-We also set the MONGO_URL by using the connection string Atlas provided us earlier. `heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"`. Make sure to modify the string with your atlas password and give your database a name.
+We also set the MONGO_URL by using the connection string Atlas provided us. `heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"`. Make sure to modify the string with your atlas password and give your database a name.
 
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"
+PS G:\GitFolder\meteor-application-template-react\app> heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"
 Setting MONGO_URL and restarting ⬢ enigmatic-thicket-32549... done, v4
 MONGO_URL: mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true
 'w' is not recognized as an internal or external command,
@@ -174,7 +161,7 @@ operable program or batch file.
 
 Once that's done, you can deploy your app using this build pack any time by pushing to heroku with `git push heroku master`
 ```
-PS G:\GitFolder\buildpackhorse-for-heroku\app> git push heroku master
+PS G:\GitFolder\meteor-application-template-react\app> git push heroku master
 Enumerating objects: 14730, done.
 Counting objects: 100% (14730/14730), done.
 Delta compression using up to 8 threads
@@ -209,7 +196,7 @@ remote:   run `npm fund` for details
 remote:
 remote: found 22 low severity vulnerabilities
 remote:   run `npm audit fix` to fix them, or `npm audit` for details
-remote: -----> Building Meteor app with ROOT_URL: https://buildpackhorse-for-heroku.herokuapp.com
+remote: -----> Building Meteor app with ROOT_URL: https://meteor-application-template-react.herokuapp.com
 remote: app/node_modules/semantic-ui-css/semantic.css: warn: There are some @import rules in the middle of a file. This might be a bug, as imports are only valid at the beginning of a file.
 remote: Browserslist: caniuse-lite is outdated. Please run next command `npm update`
 remote:
