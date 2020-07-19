@@ -3,20 +3,28 @@ title: DevOps Evaluation
 sidebar_label: Evaluation
 ---
 
-This page will describe the mechanisms to be used to evaluate the DevOps project by December, 2020.
+The goals of the DevOps project are to: (1) explore how RadGrad can be hosted on different deployment platforms, and (2)  determine how to evaluate and improve the performance of RadGrad.
 
-# STRESS TESTING:
-These are the performance tests we should consider. Although this lists a variety of tests,it is crucial to apply a certain weight to criteria most important to the project. [Click here for more info](https://www.cigniti.com/blog/strategy-for-the-performance-testing-in-cloud/)
+## Deployment Platform Evaluation
 
-* Stress test: Stress testing validates the responsiveness, reliability, and stability of the cloud infrastructure under extremely high load. 
-* Load test: Load testing ascertains whether or not the system performs optimally when it is being used by multiple users at the same time. 
-* Browser testing: This type of testing is critical for determining the compatibility of a browser with the overall system. 
-* Latency testing: A latency test is required to measure the time taken for moving data messages between two points within a cloud network. 
-* Targeted infrastructure test: In this test, each component or layer of an application is isolated and tested for the ability to deliver the required performance. This test helps uncover any issue that would hamper with the overall system’s performance. 
-* Failover test: It determines a system’s ability to call in additional resources when it faces heavy traffic and usage to ensure that the end user’s experience is not affected. 
-* Capacity test: This test is essential for identifying and benchmarking the maximum amount of traffic or load that the cloud system can handle effectively. 
-* Soak test: Soak testing measures the performance of a system when it is exposed to heavy traffic for an extended duration to validate its behavior in the production environment. 
+Over the course of the summer, we have identified eight potential hosting platforms and technologies for RadGrad: AWS, Digital Ocean, Google Cloud, Heroku, Microsoft Azure, Node Chef, Waves Hosting, and UH ITS.
 
-# THE HOW:
+Evaluating deployment platforms involves answering the following questions:
 
-[Here](https://geekflare.com/essential-tools-to-perform-stress-test-online/) are some tools used for stress testing your site. Some are paid, some are free. Certain ones excel at certain topics, so it might be beneficial to consider using a combination of these.
+  1. Can we succeed in deploying RadGrad to that platform? Success, in this case, means that one developer has deployed RadGrad, provided documentation on how to do so, and a second developer has verified deployment by following (and potentially improving) the documentation.
+
+  2. What are the costs associated with the platform for hosting?
+
+  3. What kinds of performance and deployment monitoring tools are offered as part of the platform?
+
+  4. What is the relative responsiveness of the hosting site? To determine this, use a performance tool such as [Apache JMeter](https://jmeter.apache.org/) to make (say) 1000 requests for the listing page of the deployed sample application (retrieve this page in order to require a database access), and determine average response time.  This does not provide any absolute performance information about RadGrad, but instead enables us to evaluate the relative performance of the different hosting alternatives.
+
+  5. Are there any other issues associated with the deployment site that future developers should be aware of?
+
+
+
+# Performance Evaluation and Improvement
+
+To perform performance evaluation and improvement, we must deploy RadGrad with a production-sized database, generate a set of requests that assess its performance on a variety of pages and under a variety of circumstances, instrument the system, run the tests, and then analyze the results to determine how the code base must be changed in order to improve performance.
+
+Some initial performance evaluation and improvement should be possible independent of the hosting platform, but after identifying and removing the initial set of bottlenecks, further improvements will probably depend upon the specific hosting platform chosen.
