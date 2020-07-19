@@ -3,59 +3,50 @@ title: RadGrad2 Evaluation
 sidebar_label: Evaluation
 ---
 
-We believe that computer science must develop new and better ways to improve engagement (i.e. create wider interest in pursuing CS), retention (i.e. create mechanisms to improve the chance students, once pursuing a CS undergraduate degree, will complete it), and diversity (i.e. create ways to improve engagement and retention for women and underrepresented minorities).
+RadGrad2 is a reimplementation of the RadGrad system (which we'll refer to here as "RadGrad1"). It is intended to provide an improved design and implementation. Some of the goals are:
 
-The fundamental goal of the RadGrad Project is to provide students, faculty, and advisors with an alternative perspective on the undergraduate degree program---which traditionally boils down to a single kind of activity (coursework), and a single metric for success (grade point average). Our alternative perspective is called the Degree Experience, and it gives first class status to both curricular activities (courses) and extracurricular activities (discipline-oriented events, activities, clubs, etc.) To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called ICE that assesses student development with respect to Innovation, Competency, and Experience. Each student's Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities. Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.
+### 1. The code is easier to understand.
 
-## General Goals of RadGrad2
+RadGrad1 was a "spike solution" which we used to learn about the domain. As a result, we cut corners, cut-and-pasted code, and implemented other "quick and dirty" hacks.  RadGrad2 should build on the fact that we now have a better understanding of the application domain.  React and Typescript should help us to make the system easier to understand.  To assess this, we can compare the documentation associated with RadGrad2 to that associated with RadGrad1.   A big win would be to extract most system documentation automatically via a system like ESDoc that is both React and Typescript-aware.
 
-In no particular order these are the goals of RadGrad2:
+We don't need to document every single method and function in order to make RadGrad2 easier to understand. It would be best if we could have "just enough" documentation---i.e. good high-level documentation that shows how the components work together and what design patterns we are using, along with low-level documentation in places where we want future developers to understand a subtle aspect of the implementation.
 
-* Improve the performance of RadGrad by using React and Typescript.
-* Evaluate how well RadGrad improves engagement and retention.
-* Support STEM departments other than ICS at UH Manoa. (future work)
-* Support other Universities other than UH Manoa. (future work)
+### 2. The code is cleaner.
 
-## Evaluating Performance
+In RadGrad1, there was a lot of duplicate code, and a significant number of functions with a complicated type signature.
 
-### Performance Goals
+RadGrad2 should fix this. Duplicate code should be refactored away, and TypeScript can be used to simplify the type signature associated with functions.
 
-* 5 seconds for the initial load, full subscriptions.
-* 2 seconds for any other load, e.g. switching between pages.
+### 3. Not all features of RadGrad1 are in RadGrad2.
 
-### Evaluation Mechanisms
-These are some of the mechanisms we can use to improve performance.
+Some features of RadGrad1 have become very complicated and difficult to understand and maintain, such as the Degree Planner. Other features of RadGrad1 have not been used, such as MentorSpace.
 
-#### High-level 
-* Look at subscriptions. Are there better ways to manage the subscriptions? Load them all at the start, what we are doing right now. Or only subscribe to what you need for the page.
+RadGrad2 **should not** reimplement everything in RadGrad1.
 
-* Use the React Profiler to measure the performance of different components. https://blog.bitsrc.io/measure-performance-with-the-new-react-profiler-component-14d3801d232d. Do we have any slow components and can we improve their render times?
+### 4. RadGrad2 is more reliable.
 
-#### Low-level
-* Look at the network traffic and see what is taking time.
-* Compare RadGrad1 and RadGrad2 load times for similar databases.
-* Use Performance Tab of Dev Tools
+One way to assess reliability is through the absence of run-time errors in production. RadGrad1 produced thousands of run-time errors, with unknown impact on the user experience. With any luck, RadGrad2 will have little to no run-time errors.
 
-## Evaluating Engagement and Retention
-In the RadGrad2 system, we currently monitor user activity and engagement with the system through user interactions. Notably, we can track which pages that students visit that gives us an overview of which pages are the most visited. This has given us some insight into which items in the explorers get visited the most and also gives a clue as to which areas in computer science students are most interested in. Particularly, this data showed which career goals, interests, courses, and opportunities were viewed the most. These page interactions can then be analyzed in the Admin Analytics pages, being able to see all of the interactions for each student. However, we had no aggregated display that showed the page interactions across all users that would make analysis easier and more insightful.
+Another important way to improve reliability is through a carefully curated set of tests that can help developers understand how the system works and that fail when the developer violates a design pattern or otherwise implements a feature with an undesirable side-effect.
 
-Page Interest Views is an analysis method that specifically tracks student interest in different career goals, interests, courses, and opportunities listed in the system. Along with the implementation of this method also comes with the implementation of new pages that all users of the system can use to view all the aggregated page interest views across all users. This data has opened the possibility of exploring the question of whether we can see emergent or upcoming trends of student interests in various fields of computer science.
+### 5. The UI implementation is simpler.
 
-### Evaluation of Page Interest Views
-As we predict that most students will update their career goals, interests, courses, and opportunities by semester, evaluation of the effectiveness of this analysis technique can be done on a semester by semester basis. After each semester, through the page interest views scoreboard, we can filter all the snapshots from the start of the semester through the end of the semester. With this data:
-* View which items in career goals, interests, courses, and opportunities are viewed the most
-* Analyze any correlation between the courses offered that semester versus the increase or decrease of page interest views of career goals, interests, or opportunities related to those courses
-* Analyze any correlation between the increase or decrease of page interest views versus their respective areas in the professional world
+One of the biggest design problems with RadGrad1 is the use of Blaze, which led to complicated (and sometimes duplicated) UI code.
 
-To view more long-term trends that might not necessarily be seen on a semester by semester basis, we can compare the analysis we did for a semester to the analysis done on a consecutive or previous semester(s). This allows us to see if there are trends of student interest that seem to happen every semester.
+RadGrad2 uses React, which creates an opportunity to significantly reduce the UI code, simplify it, and make it easier to modify and extend.
 
+### 6. RadGrad2 is more performant.
 
-## Evaluating Support for Other Departments (Future Work)
+RadGrad1 is slow.  Page loads for students can require 5 to 10 seconds, or potentially even more.  This does not make sense, given the relatively small amount of data required by students to display each page.
 
-* Develop documentation on how to create a fixture for another STEM department.
-* Develop a fixture for another STEM department and document the process.
+RadGrad2 can be made more performant by the following process:
 
-## Evaluating Support for Other Universities (Future Work)
+  1. Implement a script that exercises a deployed version of the system with a realistic database. This script requires credentials to login as a student, and then performs a small set of common UI actions (displaying pages, searching for data, etc) and logs the number of seconds required.  Run the script with a single user (to assess the no-load condition), and then with (say) 50 users (to assess a moderate-load condition).  Acceptable performance is under two second page display times for both no-load and moderate-load conditions.
 
-* Create a standard for uploading data from the registrar. What does RadGrad need for getting student's academic data?
+  2. Use Application Performance Monitoring (APM) tools such as are available with Galaxy to determine where time is spent and to determine what changes are required to the code base to provide acceptable performance. Another option is [React Profiler](https://blog.bitsrc.io/measure-performance-with-the-new-react-profiler-component-14d3801d232d).
 
+### 7. RadGrad2 is easy to tailor to the needs of other organizations.
+
+A major five year NSF grant now in submission proposes to use RadGrad. We can start now to structure RadGrad2 in such a way as to make it easier to tailor for this new application domain.
+
+In addition, we should identify places where RadGrad1 built in ICS-specific functionality (such as the Banner upload capability) and refactor the code to make it easier to replace for other organizations.
