@@ -3,7 +3,7 @@ title: Obtaining MONGO_URL with MongoDB Atlas
 sidebar_label: Obtaining MONGO_URL with MongoDB Atlas
 ---
 
-# SETTING UP AN EXTERNAL MONGO DATABASE
+# Setting up a MongoDB instance.
 
 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) will be used for this. 
  * Sign up for a free account or log in. 

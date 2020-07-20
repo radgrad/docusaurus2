@@ -6,7 +6,7 @@ module.exports = {
         type: 'category',
         label: 'Deployment',
         items: [
-          'devops/deployment/meteor-hero',
+          'devops/deployment/heroku',
           'devops/deployment/nodechef',
           'devops/deployment/digital-ocean',
           'devops/deployment/google-cloud',

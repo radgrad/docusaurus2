@@ -1,88 +1,31 @@
 ---
-title: Meteor Hero
-sidebar_label: Meteor Hero
+title: Heroku
+sidebar_label: Heroku
 ---
 
-## Deployment Documentation
+## Overview
 
+(Note from Arslan: Originally tried to use [meteor-hero](https://github.com/jkrup/meteor-hero), but was unable to launch it following documentation. Error could have been on my part. Looking into other options, [Meteor Buildpack Horse](https://github.com/AdmitHub/meteor-buildpack-horse) seemed to have positive reviews. Deploying to Heroku was breeze with it, and so that is what is documented here.)
 
-Deployment to Heroku
+Instructions assume meteor, git, and npm are installed on your system.
 
-Originally recommended to use meteor-hero, but I was unable to launch it following documentation. Error could have been on my part. Looking into other options, [Meteor Buildpack Horse](https://github.com/AdmitHub/meteor-buildpack-horse) seemed to have positive reviews. Deploying to Heroku was breeze with it.
+## Install sample Meteor app
 
-To start, clone the sample [meteor repo](https://ics-software-engineering.github.io/meteor-application-template-react/)
-`cd path/to/app`. Verify everything is running well locally by running `meteor npm install` and `meteor npm run start`
+To start, clone the sample app [meteor-application-template-react](https://ics-software-engineering.github.io/meteor-application-template-react/) to your local computer.
 
+Change directories to the app/ directory, and follow the template's installation instructions to verify everything is running well locally by running `meteor npm install` and `meteor npm run start`.
 
-```
-PS G:\GitFolder\meteor-application-template-react\app> meteor npm install
+## Install Heroku
 
-> core-js@3.6.4 postinstall G:\GitFolder\meteor-application-template-react\app\node_modules\core-js
-> node -e "try{require('./postinstall')}catch(e){}"
+First, sign up for a free account on Heroku at [this page](https://signup.heroku.com/).
 
-added 416 packages from 333 contributors and audited 416 packages in 43.24s
+Next, download the [Heroku CLI tool](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). You might need to restart your shell client after instillation for it to take effect.
 
-21 packages are looking for funding
-  run `npm fund` for details
+## Create a new Heroku app
 
-found 22 low severity vulnerabilities
-  run `npm audit fix` to fix them, or `npm audit` for details
-```
+To create a Heroku app to host your Meteor app, you musts first log into Heroku through your shell client. Change directories to the app/ directory, then run `heroku login`:
 
 ```
-PS G:\GitFolder\meteor-application-template-react\app> meteor npm run start
-
-> meteor-application-template-react@ start G:\GitFolder\meteor-application-template-react\app
-> meteor --no-release-check --settings ../config/settings.development.json
-
-[[[[[ ~\G\GitFolder\meteor-application-template-react\app ]]]]]
-
-=> Started proxy.
-
-Unable to resolve some modules:
-
-  "@babel/runtime/helpers/createSuper" in /G/GitFolder/meteor-application-template-react/app/imports/ui/layouts/App.jsx (web.browser.legacy)
-
-If you notice problems related to these missing modules, consider running:
-
-  meteor npm install --save @babel/runtime
-
-=> Started MongoDB.
-W20200716-23:58:17.211(-7)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
-W20200716-23:58:17.684(-7)? (STDERR) While this implementation will work correctly, it is known to be
-W20200716-23:58:17.686(-7)? (STDERR) approximately three times slower than the native implementation.
-W20200716-23:58:17.698(-7)? (STDERR) In order to use the native implementation instead, run
-W20200716-23:58:17.699(-7)? (STDERR)
-W20200716-23:58:17.699(-7)? (STDERR)   meteor npm install --save bcrypt
-W20200716-23:58:17.701(-7)? (STDERR)
-W20200716-23:58:17.701(-7)? (STDERR) in the root directory of your application.
-I20200716-23:58:18.283(-7)? Creating the default user(s)
-I20200716-23:58:18.287(-7)?   Creating user admin@foo.com.
-I20200716-23:58:18.558(-7)?   Creating user john@foo.com.
-I20200716-23:58:18.793(-7)? Creating default data.
-I20200716-23:58:18.797(-7)?   Adding: Basket (john@foo.com)
-I20200716-23:58:18.813(-7)?   Adding: Bicycle (john@foo.com)
-I20200716-23:58:18.816(-7)?   Adding: Banana (admin@foo.com)
-I20200716-23:58:18.821(-7)?   Adding: Boogie Board (admin@foo.com)
-=> Started your app.
-
-=> App running at: http://localhost:3000/
-   Type Control-C twice to stop.
-```
-
-# SIGN UP WITH HEROKU
-
-Following step 1 of [Meteor Buildpack Horse](https://github.com/AdmitHub/meteor-buildpack-horse) docs, the app needs to be set up to deploy with Heroku. 
-
- * Sign up for a free account on Heroku.
- * Verify you have Git installed on your computer.
- * Download the [Heroku CLI tool](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) 
-     * You might need to restart your shell client after instillation for it to take effect
-
-Log into Heroku through your shell client
-```
-cd path/to/app
-
 PS G:\GitFolder\meteor-application-template-react\app> heroku login
 heroku: Press any key to open up the browser to login or q to exit:
 Opening browser to https://cli-auth.heroku.com/auth/cli/browser/5bfae492-b6b2-4982-a967-3e***redactedForPrivacy***
@@ -90,22 +33,7 @@ Logging in... done
 Logged in as arslanxr@gmail.com
 ```
 
-<!---
-Before you can deploy your app to Heroku, you need to initialize a local Git repository and commit your application code to it. The following 
-
-```
-cd path/to/app
-git init   //Initialized empty Git repository in .git/
-git add .
-git commit -m "My first commit"
-```
-
-Your app’s code is now tracked in a local Git repository. It has not yet been pushed to any remote servers. 
-
--->
-
-
-We need to create an application on Heroku, and eventually push our code to it. The `heroku create` CLI command creates a new empty application on Heroku, along with an associated empty Git repository.
+Now that you're logged in to Heroku, you can use the `heroku create` CLI command to create a new empty application on Heroku, along with an associated Git repository at Heroku:
 
 ```
 PS G:\GitFolder\meteor-application-template-react\app> heroku create
@@ -113,34 +41,42 @@ Creating app... done, ⬢ enigmatic-thicket-32549
 https://enigmatic-thicket-32549.herokuapp.com/ | https://git.heroku.com/enigmatic-thicket-32549.git
 ```
 
-Use the git remote command `git remote -v` to confirm that a remote named heroku has been set for your app
+You can use the git remote command `git remote -v` to confirm that a remote named heroku has been set for your app:
 ```
 PS G:\GitFolder\meteor-application-template-react\app> git remote -v
 heroku  https://git.heroku.com/enigmatic-thicket-32549.git (fetch)
 heroku  https://git.heroku.com/enigmatic-thicket-32549.git (push)
 ```
 
+## Install Meteor Buildpack Horse
 
-Jumping back to Meteor Buildpack Horse docs, we move on to step 2. First, install the buildpack registry addon by running `heroku plugins:install buildpack-registry`
+Now we follow step two of the [Meteor Buildpack Horse](https://github.com/AdmitHub/meteor-buildpack-horse) docs.
+
+First, install the buildpack registry addon by running `heroku plugins:install buildpack-registry`:
 
 ```
 PS G:\GitFolder\meteor-application-template-react\app> heroku plugins:install buildpack-registry
 Installing plugin buildpack-registry... installed v1.0.1
 ```
 
-Run `heroku buildpacks:set admithub/meteor-horse` to set the buildpack to the latest version.
+Next, run `heroku buildpacks:set admithub/meteor-horse` to set the buildpack to the latest version.
 ```
 PS G:\GitFolder\meteor-application-template-react\app> heroku buildpacks:set admithub/meteor-horse
 Buildpack set. Next release on enigmatic-thicket-32549 will use admithub/meteor-horse.
 Run git push heroku master to create a new release using this buildpack.
 ```
 
-# OBTAIN A MONGO_URL
-Instructions on how to obtain a MONGO_URL connection string can be found [here](docs/devops/deployment/mongo-url.md)
+## Create a MongoDB instance
 
-# DEPLOYING
+Before we can actually deploy the Meteor app, we need to set up a MongoDB database instance in which to store the data.  Heroku does not provide MongoDB hosting, so we will use the free tier of MongoDB Atlas hosting service.
 
-Lets set our url by running `heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`, but first, change `<appname>` to whatever your app is called. 
+See [Setting up a MongoDB Instance](mongo-url.md) for instructions on how to create the MongoDB instance.
+
+This process should yield a MONGO_URL connection string for use below.
+
+## Set the application and database URLs
+
+First, set the url by running `heroku config:set ROOT_URL="https://<appname>.herokuapp.com"`, changing `<appname>` to whatever your app is called.
 
 ```
 PS G:\GitFolder\meteor-application-template-react\app> heroku config:set ROOT_URL="https://meteor-application-template-react.herokuapp.com"
@@ -148,7 +84,7 @@ Setting ROOT_URL and restarting ⬢ enigmatic-thicket-32549... done, v3
 ROOT_URL: https://meteor-application-template-react.herokuapp.com
 ```
 
-We also set the MONGO_URL by using the connection string Atlas provided us. `heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"`. Make sure to modify the string with your atlas password and give your database a name.
+Second, set the MONGO_URL by using the connection string Atlas provided us and running: `heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"`. Make sure to modify the string with your atlas password and give your database a name.
 
 ```
 PS G:\GitFolder\meteor-application-template-react\app> heroku config:set MONGO_URL="mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABASENAME?retryWrites=true&w=majority"
@@ -158,8 +94,9 @@ MONGO_URL: mongodb+srv://arslanr:MYPASSWORD@cluster0.rbdff.mongodb.net/MYDATABAS
 operable program or batch file.
 ```
 
+## Deployment (and redeployment)
 
-Once that's done, you can deploy your app using this build pack any time by pushing to heroku with `git push heroku master`
+Once that's done, you can deploy your app any time by pushing your application to heroku with `git push heroku master`
 ```
 PS G:\GitFolder\meteor-application-template-react\app> git push heroku master
 Enumerating objects: 14730, done.
@@ -270,3 +207,9 @@ To https://git.heroku.com/enigmatic-thicket-32549.git
 ```
 
 The website should be running at https://enigmatic-thicket-32549.herokuapp.com/. There are ways to rename the URL `enigmatic-thicket-32549` part to anything you want.
+
+:::warning
+
+According to ROOT_URL, I think the application should be available at: https://meteor-application-template-react.herokuapp.com/, but it's not.   Did you actually set the ROOT_URL correctly in these instructions?
+
+:::
