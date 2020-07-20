@@ -19,7 +19,7 @@ Change directories to the app/ directory, and follow the template's installation
 
 First, sign up for a free account on Heroku at [this page](https://signup.heroku.com/).
 
-Next, download the [Heroku CLI tool](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). You might need to restart your shell client after instillation for it to take effect.
+Next, download the [Heroku CLI tool](https://devcenter.heroku.com/articles/heroku-cli#download-and-install). You might need to restart your shell client after installation for it to take effect.
 
 ## Create a new Heroku app
 
