@@ -213,3 +213,120 @@ The website should be running at https://enigmatic-thicket-32549.herokuapp.com/.
 According to ROOT_URL, I think the application should be available at: https://meteor-application-template-react.herokuapp.com/, but it's not.   Did you actually set the ROOT_URL correctly in these instructions?
 
 :::
+
+
+
+# Stress testing Heroku app
+
+
+Before running a load test, install logging and monitoring add-ons on load testing app. You’ll use these tools to evaluate results:
+
+A logging add-on, to view app and database logs from the test
+An application performance monitoring (APM) add-on, such as New Relic, Scout, or AppOptics, to identify slow endpoints and services
+An infrastructure monitoring add-on, such as Librato or AppSignal, to measure load on the app and database
+
+
+# Logging add-on:
+
+lets install [LogDNA](https://elements.heroku.com/addons/logdna). Theres no particular reason for this, it was simply the first one Heroku recomended.
+Go to the add-on page
+Click Install add-on on the right
+Verify you have the free version
+Search for your app
+Click "Provision add-on"
+
+
+
+
+# Infastructure Monitoring add-on:
+
+Lets install [Librato](https://devcenter.heroku.com/articles/application-load-testing#select-a-load-testing-tool)
+Follow same instructions as above
+
+
+
+
+We will be stress testing our meteor-template-react app with [New Relic APM](https://elements.heroku.com/addons/newrelic). It is advertized to "Monitor, troubleshoot, and tune production web applications. Starting at $0/mo.". Great! If its free then its for me. 
+
+First, log into your Heroku account,
+Click "Install New Relic APM" on the New Relic APM Page linked above.
+Verify that the "Add-on plan" is free
+Search for your app
+Click "Provision add-on"
+	Heroku will ask you for a credit card at this point, even though the service IS free.
+
+Click on the "New Relic APM" Link towards the bottom of the page, and it will take you to their website where you will accep their terms and conditions
+
+Select The service we want "New Relic APM"
+Select "Node.js" 
+Follow instructions on the page to set up your project
+
+Obtain your license key
+
+Install the New Relic Node.js agent
+`npm install newrelic`
+
+```
+PS G:\GitFolder\buildpackhorse-for-heroku> npm install newrelic NOTEEEE CHANGE THE DIRECTORY NAME TO METEOR +TEMPLATE
+
+> @newrelic/native-metrics@5.2.0 install G:\GitFolder\buildpackhorse-for-heroku\node_modules\@newrelic\native-metrics
+> node ./lib/pre-build.js install native_metrics
+
+============================================================================
+Attempting install in native-metrics module. Please note that this is an
+OPTIONAL dependency, and any resultant errors in this process will not
+affect the general performance of the New Relic agent, but event loop and
+garbage collection metrics will not be collected.
+============================================================================
+
+> D:\GitFiles\node.exe D:\GitFiles\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js clean configure
+> D:\GitFiles\node.exe D:\GitFiles\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js build -j 4 native_metrics
+  native_metrics.cpp
+  GCBinder.cpp
+  LoopChecker.cpp
+  RUsageMeter.cpp
+  win_delay_load_hook.cc
+     Creating library G:\GitFolder\buildpackhorse-for-heroku\node_modules\@newrelic\native-metrics\build\Release\native_metrics.lib and objec
+  t G:\GitFolder\buildpackhorse-for-heroku\node_modules\@newrelic\native-metrics\build\Release\native_metrics.exp
+  native_metrics.vcxproj -> G:\GitFolder\buildpackhorse-for-heroku\node_modules\@newrelic\native-metrics\build\Release\\native_metrics.node
+install successful: _newrelic_native_metrics-5_2_0-native_metrics-72-win32-x64
+
+> protobufjs@6.10.1 postinstall G:\GitFolder\buildpackhorse-for-heroku\node_modules\protobufjs
+> node scripts/postinstall
+
+npm WARN saveError ENOENT: no such file or directory, open 'G:\GitFolder\buildpackhorse-for-heroku\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'G:\GitFolder\buildpackhorse-for-heroku\package.json'
+npm WARN @grpc/grpc-js@1.0.5 requires a peer of google-auth-library@5.x || 6.x but none is installed. You must install peer dependencies yourself.
+npm WARN buildpackhorse-for-heroku No description
+npm WARN buildpackhorse-for-heroku No repository field.
+npm WARN buildpackhorse-for-heroku No README data
+npm WARN buildpackhorse-for-heroku No license field.
+
++ newrelic@6.11.0
+added 42 packages from 95 contributors and audited 42 packages in 35.336s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+
+Configure the newrelic.js file
+
+Copy newrelic.js from node_modules/newrelic into the root directory of your application.
+
+Set a value for app_name.
+
+Replace the license_key value with your New Relic license key from Step 1.
+
+Require New Relic
+Make this the first line of your app's startup script:
+`require('newrelic');`
+
+Deploy your application
+
+See data in 5 minutes:
+In a few minutes, your application will send data to New Relic and you'll be able to start monitoring your application's performance. You will also be automatically upgraded to New Relic PRO for a limited time.
+
+You won't see any data in your dashboard until restart has completed.
