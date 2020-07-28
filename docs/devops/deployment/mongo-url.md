@@ -1,6 +1,6 @@
 ---
 title: Obtaining MONGO_URL with MongoDB Atlas
-sidebar_label: Obtaining MONGO_URL with MongoDB Atlas
+sidebar_label: Obtaining a MONGO_URL 
 ---
 
 # Setting up a MongoDB instance.

@@ -13,6 +13,7 @@ module.exports = {
           'devops/deployment/microsoft-azure',
           'devops/deployment/uh-its',
           'devops/deployment/aws',
+          'devops/deployment/mongo-url',
           'devops/deployment/waves-hosting'
         ]
       }],
