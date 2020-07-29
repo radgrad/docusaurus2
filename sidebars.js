@@ -23,11 +23,11 @@ module.exports = {
         type: 'category',
         label: 'Mockups',
         items: [
-            'csexplore/annotated-mockup/save-hawaii-with-computer-science',
-            'csexplore/annotated-mockup/csexplore-ocean-earth',
-            'csexplore/annotated-mockup/find-the-path',
-            'csexplore/annotated-mockup/CS-Explore-Chat',
-            'csexplore/annotated-mockup/build-your-community'
+          'csexplore/annotated-mockup/save-hawaii-with-computer-science',
+          'csexplore/annotated-mockup/csexplore-ocean-earth',
+          'csexplore/annotated-mockup/find-the-path',
+          'csexplore/annotated-mockup/CS-Explore-Chat',
+          'csexplore/annotated-mockup/build-your-community'
         ]
       }],
     RadGrad2: ['radgrad2/goals', 'radgrad2/evaluation',
@@ -45,7 +45,8 @@ module.exports = {
           "radgrad2/developer/building-academic-plans",
           "radgrad2/developer/database-fixtures",
           "radgrad2/developer/continuous-integration",
-          "radgrad2/developer/radgrad.org"
+          "radgrad2/developer/radgrad.org",
+          "radgrad2/developer/radgrad-anti-patterns"
         ],
       },
       {
