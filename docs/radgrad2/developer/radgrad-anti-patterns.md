@@ -23,4 +23,3 @@ Currently, we have many circular imports in RadGrad2.
 
 * Publication and Subscription
 * User Interactions
-* Redux?

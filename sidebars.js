@@ -46,7 +46,8 @@ module.exports = {
           "radgrad2/developer/database-fixtures",
           "radgrad2/developer/continuous-integration",
           "radgrad2/developer/radgrad.org",
-          "radgrad2/developer/radgrad-anti-patterns"
+          "radgrad2/developer/radgrad-patterns",
+          "radgrad2/developer/redux"
         ],
       },
       {
