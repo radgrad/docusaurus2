@@ -42,7 +42,7 @@ As soon as you start writing your documentation, you'll want to add an entry to 
 If you want to add images, you should first add the image file to the `static/img` directory.  Feel free to create a new subdirectory to hold your images if you feel that is appropriate. Then, you can insert your image using something like:
 
 ```
-<img src="/img/Profiles.png">
+<img src="/img/Profiles.png"/>
 ```
 
 ## Publishing the site and committing changes
