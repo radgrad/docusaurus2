@@ -5,7 +5,7 @@ sidebar_label: Entity-Relationship Model
 
 The prior section illustrated the relationships between the data model entities in terms of class inheritance. That perspective reveals how code is shared.
 
-This section documents the direct relationships between data model entities.  Depending upon your perspective, you might think of these references as "pointers", "foreign keys", or "references".  For example, each document in the CourseInstance collection needs to refer to a specific Semester in which the course instance occurs, a specific student who has/is/will be taking the course, and a specific Course. These references are implemented via fields in the CourseInstance document that hold the docID to a document in the other entity's collection. So, each CourseInstance document has the following fields (among others): SemesterID, StudentID, and CourseID.
+This section documents the direct relationships between data model entities.  Depending upon your perspective, you might think of these references as "pointers", "foreign keys", or "references".  For example, each document in the CourseInstance collection needs to refer to a specific Academic Term in which the course instance occurs, a specific student who has/is/will be taking the course, and a specific Course. These references are implemented via fields in the CourseInstance document that hold the docID to a document in the other entity's collection. So, each CourseInstance document has the following fields (among others): AcademicTermID, StudentID, and CourseID.
 
 ## Users and Profiles 
 
@@ -29,11 +29,11 @@ RadGrad represents courses through two entities: Course and CourseInstance.
 
 <img src="/img/radgrad2/datamodel/Course.png" width="100%"/> 
  
-Course represents semester and student-independent information about a course. 
+Course represents academic term and student-independent information about a course. 
 
-CourseInstance represents the occurrence of a specific student taking a course for a specific semester, either in the past, present, or future. If the CourseInstance is in the past, then typically it was created as a result of uploading STAR data, in which case both the fromSTAR and verified booleans are set to true. A verified CourseInstance means that the student will earn ICE points. 
+CourseInstance represents the occurrence of a specific student taking a course for a specific academic term, either in the past, present, or future. If the CourseInstance is in the past, then typically it was created as a result of uploading STAR data, in which case both the fromSTAR and verified booleans are set to true. A verified CourseInstance means that the student will earn ICE points. 
 
-CourseInstances in the present semester or future semester are typically created as a result of the student manipulating their degree plan. These CourseInstances have their fromSTAR and verified booleans set to false.  
+CourseInstances in the present academic term or future academic term are typically created as a result of the student manipulating their degree plan. These CourseInstances have their fromSTAR and verified booleans set to false.  
 
 ## Opportunities 
 
@@ -43,9 +43,9 @@ In RadGrad, extracurricular events and activities are called "Opportunities", an
  
 OpportunityType specifies the kind of Opportunity: club, event, online course, etc.
 
-Opportunity represents the opportunity "in the abstract", specifying its description, sponsor (i.e the faculty member responsible for managing the description and verifying student participation), the ICE points, the semesters it might be available, etc.
+Opportunity represents the opportunity "in the abstract", specifying its description, sponsor (i.e the faculty member responsible for managing the description and verifying student participation), the ICE points, the academic terms it might be available, etc.
 
-OpportunityInstance represents an "instantiation" of the Opportunity in a specific semester for a specific student. It also duplicates the ICE points and the sponsorID from the Opportunity. This enables an instance to depart from its parent Opportunity with respect to these values, and also speeds lookup.
+OpportunityInstance represents an "instantiation" of the Opportunity in a specific academic term for a specific student. It also duplicates the ICE points and the sponsorID from the Opportunity. This enables an instance to depart from its parent Opportunity with respect to these values, and also speeds lookup.
 
 ## Interests 
 
@@ -72,7 +72,7 @@ RadGrad's Academic Plans provide a way to represent the evolving nature of degre
 
 <img src="/img/radgrad2/datamodel/AcademicPlans.png" width="100%"/>
 
-A "DesiredDegree" is an entity representing a degree plan such as "B.S. in Computer Science".  A set of "PlanChoices" represent the requirements for that desired degree.  The Semester indicates the time at which an Academic Plan comes into being.  The Slug just assigns the AcademicPlan a unique string identifier, such as "BS-Computer-Science-2017".
+A "DesiredDegree" is an entity representing a degree plan such as "B.S. in Computer Science".  A set of "PlanChoices" represent the requirements for that desired degree.  The Academic Term indicates the time at which an Academic Plan comes into being.  The Slug just assigns the AcademicPlan a unique string identifier, such as "BS-Computer-Science-2017".
 
 ## Slugs 
 
