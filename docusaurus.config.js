@@ -13,7 +13,7 @@ module.exports = {
         alt: 'RadGrad',
         src: 'img/radgrad_logo.png',
       },
-      links: [
+      items: [
         {
           to: 'docs/overview/motivation',
           activeBasePath: 'docs',
@@ -44,8 +44,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Slack',
-              href: 'https://radgrad2.slack.com',
+              label: 'Discord',
+              href: 'https://discord.com/',
             },
           ],
         },
