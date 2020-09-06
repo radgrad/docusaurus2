@@ -33,6 +33,13 @@ module.exports = {
     RadGrad2: ['radgrad2/goals', 'radgrad2/evaluation',
       {
         type: 'category',
+        label: 'Overview',
+        items: [
+            'radgrad2/overview/radgrad-concepts'
+        ]
+      },
+      {
+        type: 'category',
         label: 'Developer Guide',
         items: [
           "radgrad2/developer/installation",

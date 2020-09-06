@@ -21,14 +21,27 @@ The [ICS 314 instructions on ESLint in IntelliJ](http://courses.ics.hawaii.edu/i
 
 Directories are all lowercase, hyphens separate words. For example, `degree-program`.
 
-Javascript classes are named in camel-case. For example, `DegreeProgram`.
+Typescript classes are named in camel-case. For example, `DegreeProgram`.
 
 Meteor methods should be placed in their own file, typically in a directory containing the definition of the Collection that they operate on.  They should be named with the extension `methods.js`.
 
 
-## JSDoc/TSDoc conventions
+## JSDoc conventions
 
-TBD.
+Only use JSDoc comments ```/**    */``` for things we want to put in the API documentation. Use regular comments  ```// ``` or ```/*   */``` for coding instructions.
+
+Even though we are using Typescript, JSDoc does not understand Typescript so we have to supply the types of the parameters and return values to get good documentation. For example
+```ts
+  /**
+   * Returns the number of documents in this collection.
+   * @returns { Number } The number of elements in this collection.
+   */
+  public count(): number {
+    return this.collection.find().count();
+  }
+```
+generates
+<img src="/img/radgrad2/developer/BaseCollection.count.png" width="100%"/>
 
 ## Testing conventions
 

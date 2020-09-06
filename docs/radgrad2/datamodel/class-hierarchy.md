@@ -3,7 +3,7 @@ title: Class Hierarchy
 sidebar_label: Class Hierarchy
 ---
 
-Recall that every MongoDB collection is encapsulated by a Javascript class with the same name. 
+Recall that every MongoDB collection is encapsulated by a Typescript class with the same name. 
 
 As we implemented this encapsulation, we observed that there was common functionality that could be abstracted out into a set of four superclasses:
 

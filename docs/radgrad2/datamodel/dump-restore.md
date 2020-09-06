@@ -9,7 +9,7 @@ We are aware that MongoDB provides a built-in facility through [MongoDB Tools](h
 
 ## Dump
 
-As noted previously, in RadGrad, all collections are managed through a set of Javascript classes.  The classes that wrap each collection inherit from the class BaseCollection, which defines a method called `dumpOne()` whose default implementation throws an error:
+As noted previously, in RadGrad, all collections are managed through a set of Typescript classes.  The classes that wrap each collection inherit from the class BaseCollection, which defines a method called `dumpOne()` whose default implementation throws an error:
 
 ```js
  /**
@@ -43,7 +43,7 @@ Each collection class must define a dumpOne method, which is generates an object
 
 You can see that this method returns an object with four fields: name, slug, interests, and description. Name, slug, and description are Strings, and Interests is an array of Strings (the Slugs corresponding to the InterestIDs in the document).
 
-Now the question is, why is that the appropriate object to return from dumpOne?  To understand the answer, you need to also know that each Javascript class also defines a method called `define()` which accepts an object containing fields representing the initial values for a document in the underlying MongoDB collection. This is the standard way in RadGrad to create MongoDB documents in the data model.  Here, for example, is the define() method for the CareerGoal collection:
+Now the question is, why is that the appropriate object to return from dumpOne?  To understand the answer, you need to also know that each Typescript class also defines a method called `define()` which accepts an object containing fields representing the initial values for a document in the underlying MongoDB collection. This is the standard way in RadGrad to create MongoDB documents in the data model.  Here, for example, is the define() method for the CareerGoal collection:
 
 ```js
  /**
