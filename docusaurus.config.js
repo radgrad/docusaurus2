@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/radgrad.ico',
   organizationName: 'radgrad', // Usually your GitHub org/user name.
   projectName: 'radgrad.github.io', // Usually your repo name.
+  onBrokenLinks:'log',
   themeConfig: {
     navbar: {
       title: 'RadGrad',
