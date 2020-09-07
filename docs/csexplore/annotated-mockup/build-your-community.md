@@ -82,7 +82,7 @@ A place to list additional resources and articles written or curated by us. Also
 Contact local and international organizations and see if we can find one(or many...) who agree to contribute money for student engagement in our platform.
 
 2. Connect with Charities:
-Find one or many charities who would like to participate and see what kind of donation technologies they have set up to make the Sponsor->Student->Charity pipeline as easy as possible. It would be good to connect with something like [Friends of Hawaii](friendsofhawaii.org) who have a wide array of charities under their belt. Friends of Hawaii solicits funding from the private-sector and sends it through grants to a long list of their approved charities. Partnering with them or something similar would possibly solve the funding problem too.
+Find one or many charities who would like to participate and see what kind of donation technologies they have set up to make the Sponsor->Student->Charity pipeline as easy as possible. It would be good to connect with something like [Friends of Hawaii](https://www.friendsofhawaii.org/) who have a wide array of charities under their belt. Friends of Hawaii solicits funding from the private-sector and sends it through grants to a long list of their approved charities. Partnering with them or something similar would possibly solve the funding problem too.
 
 3. Find a game engine / Graphic Design:
 If we decide to make a full-fledged game. We would probably need to find a game engine to make building the game easier. The only game engine I know of that works directly with React Native is react-native-game-engine. If we want something else there's a lot of game engines that work with HTML5 or Javascript that we could run through a WebView.
