@@ -37,7 +37,7 @@ module.exports = {
           items: [
             {
               label: 'Markdown Guide',
-              to: 'docs/markdown-reference',
+              to: 'docs/overview/markdown-reference',
             },
           ],
         },
