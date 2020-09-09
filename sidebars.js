@@ -1,41 +1,12 @@
 module.exports = {
   someSidebar: {
-    Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/engineering-standards', 'overview/remote-pair-programming', 'overview/markdown-reference', 'overview/mdx'],
-    DevOps: ['devops/goals', 'devops/resources', 'devops/evaluation',
-      {
-        type: 'category',
-        label: 'Deployment',
-        items: [
-          'devops/deployment/heroku',
-          'devops/deployment/nodechef',
-          'devops/deployment/digital-ocean',
-          'devops/deployment/google-cloud',
-          'devops/deployment/microsoft-azure',
-          'devops/deployment/uh-its',
-          'devops/deployment/aws',
-          'devops/deployment/mongo-url',
-          'devops/deployment/waves-hosting'
-        ]
-      }],
-    InternBit: ['internbit/goals', 'internbit/resources', 'internbit/scraping', 'internbit/needs-assessment', 'internbit/canonical-schema', 'internbit/evaluation'],
-    CSExplore: ['csexplore/goals', 'csexplore/resources', 'csexplore/organizing-principle', 'csexplore/evaluation',
-      {
-        type: 'category',
-        label: 'Mockups',
-        items: [
-          'csexplore/annotated-mockup/save-hawaii-with-computer-science',
-          'csexplore/annotated-mockup/csexplore-ocean-earth',
-          'csexplore/annotated-mockup/find-the-path',
-          'csexplore/annotated-mockup/CS-Explore-Chat',
-          'csexplore/annotated-mockup/build-your-community'
-        ]
-      }],
-    RadGrad2: ['radgrad2/goals', 'radgrad2/evaluation',
+    Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/markdown-reference', 'overview/mdx'],
+    RadGrad2: ['radgrad2/goals',
       {
         type: 'category',
         label: 'Overview',
         items: [
-            'radgrad2/overview/radgrad-concepts'
+          'radgrad2/overview/radgrad-concepts'
         ]
       },
       {
@@ -73,5 +44,57 @@ module.exports = {
         ],
       },
     ],
+    Subprojects: [
+      {
+        type: 'category',
+        label: 'Internbit',
+        items: ['subprojects/internbit/goals', 'subprojects/internbit/resources', 'subprojects/internbit/scraping', 'subprojects/internbit/needs-assessment', 'subprojects/internbit/canonical-schema', 'subprojects/internbit/evaluation'],
+      },
+      {
+        type: 'category',
+        label: 'CSExplore',
+        items: [
+            'subprojects/csexplore/goals',
+          'subprojects/csexplore/resources',
+          'subprojects/csexplore/organizing-principle',
+          'subprojects/csexplore/evaluation',
+          {
+            type: 'category',
+            label: 'Mockups',
+            items: [
+              'subprojects/csexplore/annotated-mockup/save-hawaii-with-computer-science',
+              'subprojects/csexplore/annotated-mockup/csexplore-ocean-earth',
+              'subprojects/csexplore/annotated-mockup/find-the-path',
+              'subprojects/csexplore/annotated-mockup/CS-Explore-Chat',
+              'subprojects/csexplore/annotated-mockup/build-your-community'
+            ]
+          }],
+      },
+      {
+        type: 'category',
+        label: 'DevOps',
+        items: [
+            'subprojects/devops/goals',
+          'subprojects/devops/resources',
+          'subprojects/devops/evaluation',
+          {
+            type: 'category',
+            label: 'Deployment',
+            items: [
+              'subprojects/devops/deployment/heroku',
+              'subprojects/devops/deployment/nodechef',
+              'subprojects/devops/deployment/digital-ocean',
+              'subprojects/devops/deployment/google-cloud',
+              'subprojects/devops/deployment/microsoft-azure',
+              'subprojects/devops/deployment/uh-its',
+              'subprojects/devops/deployment/aws',
+              'subprojects/devops/deployment/mongo-url',
+              'subprojects/devops/deployment/waves-hosting'
+            ]
+          }
+        ],
+      }
+    ],
+
   },
 };

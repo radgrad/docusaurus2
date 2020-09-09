@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/research.png',
     description: (
       <>
-        The RadGrad Project is pursuing research to understand how new forms of information technology can be used to  improve engagement, diversity, and retention in undergraduate computer science programs.
+        The RadGrad Project pursues research to understand how new forms of information technology can be used to  improve engagement, diversity, and retention in undergraduate computer science programs.
       </>
     ),
   },
@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/development.png',
     description: (
       <>
-        The RadGrad Project is designing, implementing, and evaluating new technologies for engagement, diversity, and retention in undergraduate computer science.
+        The RadGrad Project designs, implements, and evaluates new technologies for engagement, diversity, and retention in undergraduate computer science.
       </>
     ),
   },
@@ -31,7 +31,7 @@ const features = [
     imageUrl: 'img/education.png',
     description: (
       <>
-        We hope that the RadGrad Project will provide new pathways to learning about computer science not just for undergraduates, but also for high school students.
+        The RadGrad Project hopes to provide new pathways to learning about computer science not just for undergraduates, but for pre-secondary school students and lifelong learners.
       </>
     ),
   },

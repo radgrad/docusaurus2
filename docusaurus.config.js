@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'RadGrad 2020',
-  tagline: 'Documentation for RadGrad 2, CSExplore, and InternBit',
+  title: 'RadGrad 2',
+  tagline: 'Documentation for RadGrad 2 and its subprojects: InternBit, CSExplore, and DevOps',
   url: 'https://radgrad.github.io',
   baseUrl: '/',
   favicon: 'img/radgrad.ico',

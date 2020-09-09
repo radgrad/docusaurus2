@@ -23,6 +23,8 @@ You should see the site appear at http://localhost:3000.
 
 To write documentation, you should create or modify the files in the docs/ directory.  The docs/ directory contains a set of *.md files organized into subdirectories.
 
+The subdirectory organization mirrors the sidebar organization.
+
 The easiest way to get started is to copy an existing markdown file that seems to contain the kind of markdown you need to use, and then edit it to provide the needed documentation.
 
 Here are some issues to be aware of:
@@ -31,7 +33,7 @@ Here are some issues to be aware of:
 
   * Docusaurus creates a "secondary sidebar" on the right side of the page that essentially provides a table of contents for that page.  This enables rather lengthy top-level documentation files.
 
-  * The docusaurus runtime environment regenerates the documentation each time it notices a file change. So, you can save out your file and the browser page should be refreshed automatically. Note that changes to docusaurus.config.js or sidebars.js require you to exit and restart docusaurus to pick up the changes.
+  * The docusaurus runtime environment regenerates the documentation each time it notices a file change. So, you can save out your file and the browser page should be refreshed automatically. Note that changes to docusaurus.config.js require you to exit and restart docusaurus to pick up the changes.
 
 ## Adding your new documentation to the sidebar
 
