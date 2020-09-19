@@ -1,5 +1,6 @@
 ---
-title: Using JSX/Markdown
+title: How to use MDX
+sidebar_label: Use MDX
 ---
 
 You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).

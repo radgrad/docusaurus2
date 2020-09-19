@@ -1,6 +1,6 @@
 ---
-title: Database Dump-Restore
-sidebar_label: Database Dump-Restore
+title: How to implement dump restore
+sidebar_label: Implement dump-restore
 ---
 
 RadGrad implements a custom mechanism for database dumping (i.e. outputting the contents of the MongoDB database in a file in JSON format) and restoring a dumped database (i.e. loading the contents of the dump file).  We call this capability database dump-restore.

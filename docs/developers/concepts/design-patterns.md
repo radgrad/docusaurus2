@@ -1,10 +1,10 @@
 ---
-title: RadGrad Patterns
-sidebar_label: RadGrad Patterns
+title: Design Patterns
 ---
 Here are some of the best practices we are using in RadGrad.
 
 ## Use exported constants instead of Strings
+
 An example of this is in RadGrad2's redux directory. Each type is an exported constant.
 ```ts
 // redux/student/degree-planner/types.ts

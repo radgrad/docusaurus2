@@ -1,6 +1,6 @@
 ---
-title: Managing this site
-sidebar_label: Managing this site
+title: How to manage this site
+sidebar_label: Manage this site
 ---
 
 This site is implemented using [Docusaurus 2](http://v2.docusaurus.io). Here is an abbreviated guide to writing documentation for this site.

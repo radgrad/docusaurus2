@@ -1,6 +1,5 @@
 ---
-title: Data Model Overview
-sidebar_label: Overview
+title: Data Model
 ---
 
 In RadGrad, we refer to the set of Typescript classes, each of which encapsulates a single MongoDB collection, as the "data model". 

@@ -1,6 +1,30 @@
 module.exports = {
   someSidebar: {
-    Overview: ['overview/motivation', 'overview/managing-this-site', 'overview/markdown-reference', 'overview/mdx'],
+    Concepts: ['concepts/ice'],
+    Users: [],
+    Developers: [
+      {
+        type: 'category',
+        label: 'Getting started'
+      },
+      {
+        type: 'category',
+        label: 'Concepts',
+        items: [
+          'developers/concepts/academic-plans',
+          'developers/concepts/class-hierarchy',
+          'developers/concepts/data-model',
+          'developers/concepts/database-fixtures',
+          'developers/concepts/design-patterns',
+          'developers/concepts/design-antipatterns',
+          'developers/concepts/engineering-standards',
+          'developers/concepts/entity-relationship-model',
+          'developers/concepts/pub-sub-caching',
+          'developers/concepts/radgrad-domain',
+          'developers/concepts/source-code-organization',
+        ]
+      },
+    ],
     RadGrad2: ['radgrad2/goals',
       {
         type: 'category',

@@ -1,6 +1,5 @@
 ---
-title: Understanding RadGrad Academic Plans
-sidebar_label: Academic Plans
+title: Academic Plans
 ---
 
 The University of Hawaii, Manoa's ICS Department has many different academic plans. Each year they are updated. Different academic plans have different number of courses per semester. Some of the choices students can make are complicated. For example, one of the choices is `Either ICS 312 or ICS 331 or Either ICS 313 or ICS 361 or ICS 355`.

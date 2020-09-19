@@ -1,19 +1,22 @@
 ---
-title: App State and Redux
-sidebar_label: State and Redux
+title: How to manage UI state with Redux
+sidebar_label: Manage UI state with Redux
 ---
 ## State
+
 In React, temporary state is managed using simple [state management tools](https://reactjs.org/docs/state-and-lifecycle.html) that provide excellent functionality. However, there comes a point where application state can get complex enough that these tools are no longer sufficient for managing it. This is where Redux comes in. 
 
 [Redux](https://redux.js.org/introduction/getting-started) is a state management library that attempts to make state mutations predictable by imposing [certain restrictions](https://redux.js.org/introduction/three-principles) on how and when updates can happen. This allows for a much more complex state to exist in an app because the restrictions create a workflow that provides clarity and vision to the life of the application state. 
 
 ## React State vs. Redux State
+
 ### Local vs. Global
 Now, with both of these tools at our disposal, it can be unclear [when to use React's state or Redux's state](https://spin.atomicobject.com/2017/06/07/react-state-vs-redux-state/). A simple rule-of-thumb is to **use React state for things that only matter at a local level and use Redux for things that matter at a global level.** 
 
 Things like toggles for UIs and the input for form fields are good use cases for React state. However, if a component needs to know the element a user clicked on in a completely different component, this would be a good use case for Redux state. One exception to this is if state needs to be shared between a parent and child component—in this case, passing React state through props is sufficient for this scenario. When you start passing the state more than once, though, you will want to consider switching to Redux state.
 
 ### Short-term vs. Medium-term
+
 Another indicator when to use React or Redux for state is persistence. **Use React state for short-term data and Redux for medium-term data.** For long-term data, use a database or other hardware storage.
 
 If you don't care about the data anymore after switching pages, then it can be considered short-term data. Scenarios here are characters in a text field, data in a form, elements currently selected, or transitory states (e.g. isWorking, isDone).
@@ -24,6 +27,7 @@ When you need to remember data as a user navigates through different pages in th
 Another indicator of when to use React state vs. Redux state is the complexity of state mutations. In this project, you will not have to worry about this scenario for the most part. This is because Meteor handles a lot of the most complex tasks that normally you would have to deal with yourself. Due to features like Tracker and Minimongo, most of the state you deal with will be UI-related. Should you find your state changes to be overly complex without fitting into one of the previous categories, you may want to consult with a team member or mentor that has experience in handling RadGrad2's state for a simpler solution.
 
 ## Redux in RadGrad2
+
 So you've decided to implement a feature's state in Redux. Before moving forward, it is necessary to have a basic understanding of the following:
 * JavaScript
 * [Redux's Three Principles](https://redux.js.org/introduction/three-principles) and the elements of Redux described [here](https://redux.js.org/basics/basic-tutorial)

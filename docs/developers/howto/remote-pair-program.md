@@ -1,6 +1,6 @@
 ---
-title: Remote Pair Programming
-sidebar_label: Remote Pair Programming
+title: How to remote pair program
+sidebar_label: Remote pair program
 ---
 
 In order to make maximal forward progress on this project, we need to develop the ability to work synchronously. Normally, that happens more easily in an office setting where physical proximity allows team members to informally work together or schedule face-to-face meetings.

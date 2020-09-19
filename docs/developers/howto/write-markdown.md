@@ -1,6 +1,6 @@
 ---
-title: Markdown Reference Guide
-sidebar_label: Markdown Guide
+title: How to write markdown
+sidebar_label: Write markdown
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

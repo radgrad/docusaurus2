@@ -1,6 +1,5 @@
 ---
-title: Class Hierarchy
-sidebar_label: Class Hierarchy
+title: MongoDB Collection Classes
 ---
 
 Recall that every MongoDB collection is encapsulated by a Typescript class with the same name. 

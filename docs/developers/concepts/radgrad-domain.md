@@ -1,6 +1,5 @@
 ---
-title: Organization of radgrad.org
-sidebar_label: radgrad.org
+title: The radgrad.org domain
 ---
 
 There are two primary functions of the radgrad.org domain:
@@ -9,7 +8,6 @@ There are two primary functions of the radgrad.org domain:
   2. Support the use of the donotreply@mailgun.radgrad.org email address for newsletters.
 
 The tech stack for accomplishing these two tasks is currently somewhat complicated.  The goal of this page is to document all the various pieces.
-
 
 ### github.com
 

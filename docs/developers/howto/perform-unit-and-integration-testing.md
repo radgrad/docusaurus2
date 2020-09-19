@@ -1,6 +1,6 @@
 ---
-title: Testing
-sidebar_label: Testing
+title: How to perform unit and integration testing
+sidebar_label: Perform unit and integration testing
 ---
 
 RadGrad provides "unit" and "integration" tests. Both are designed to be run from the command line and useful for continuous integration.

@@ -1,8 +1,8 @@
 ---
-title: RadGrad2 Goals
-sidebar_label: Goals
+title: Development Goals
 ---
-RadGrad2 is a reimplementation of the RadGrad system (which we'll refer to here as "RadGrad1"). It is intended to provide an improved design and implementation, and to remove technical debt present in RadGrad1. Some of the goals are:
+
+The current development focus of the RadGrad Project is "RadGrad2", a reimplementation of the original RadGrad system (which we'll refer to here as "RadGrad1"). RadGrad2 is intended to provide an improved design and implementation, and to remove technical debt present in RadGrad1. Some of the goals are:
 
 ### 1. The code is easier to understand.
 

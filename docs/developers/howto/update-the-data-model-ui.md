@@ -1,6 +1,6 @@
 ---
-title: Admin Data Model UI
-sidebar_label: Admin Data Model UI
+title: How to update the data model UI
+sidebar_label: Update the data model UI
 ---
 
 There are several steps involved in adding a new DataModel item to the admin interface. These steps can be done in any order, but you may want to slowly build up the page and test it as you are adding the new DataModel item.

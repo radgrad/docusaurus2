@@ -1,6 +1,6 @@
 ---
-title: End-to-End Testing
-sidebar_label: e2e Testing
+title: How to perform end-to-end testing
+sidebar_label: Perform end-to-end testing
 ---
 In RadGrad2 we are using [TestCafe](https://devexpress.github.io/testcafe/) a node.js tool to automate end-to-end web testing. We added `testcafe` as a dev dependency in the [package.json](https://github.com/radgrad/radgrad2/blob/master/app/package.json#L114) file.
 

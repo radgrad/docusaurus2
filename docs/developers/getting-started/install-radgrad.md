@@ -1,6 +1,5 @@
 ---
-title: Installation
-sidebar_label: Installation
+title: Install RadGrad
 ---
 
 First, download and install [Meteor](https://www.meteor.com/). 

@@ -1,6 +1,6 @@
 ---
-title: Coding Standards
-sidebar_label: Coding Standards
+title: How to maintain coding standards
+sidebar_label: Maintain coding standards
 ---
 
 ## ESLint

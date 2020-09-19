@@ -1,7 +1,7 @@
 ---
-title: Testing With Different Roles
-sidebar_label: Testing With Different Roles
--------------------------------------------
+title: How to perform testing with different roles
+sidebar_label: Perform testing with different roles
+---
 
 ## RadGrad Roles
 There are six roles for accounts in the RadGrad system: Admin, Student, Faculty, Advisor, Mentor, and Alumni. Logging into RadGrad as any one of these roles will show you what RadGrad looks like and how it functions to users of that role. Certain methods of collections assert particular roles that are the only roles authorized to execute those methods (otherwise they throw an unauthorized error). Therefore, it is important while developing RadGrad that you are logged into the correct role to be able to manually test the functionality of your code behaves as expected to any role constraints.
