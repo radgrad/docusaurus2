@@ -1,6 +1,6 @@
 ---
-title: ICE (Innovation, Competency, Experience)
-sidebar_label: ICE (Innovation, Competency, Experience)
+title: Innovation, Competency, Experience
+sidebar_label: ICE
 ---
 
 A high quality undergraduate computer science experience should give students three capabilities to help them succeed in their next stage of professional development: 

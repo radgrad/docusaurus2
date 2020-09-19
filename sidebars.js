@@ -1,11 +1,29 @@
 module.exports = {
   someSidebar: {
-    Concepts: ['concepts/ice'],
-    Users: [],
-    Developers: [
+    Overview: ['overview/welcome', 'overview/ice'],
+    'User Guide': [
+        'users/tutorials/why-radgrad',
+        'users/tutorials/interests',
+        'users/tutorials/career-goals',
+        'users/tutorials/opportunities',
+        'users/tutorials/verification-requests',
+        'users/tutorials/degree-plans',
+        'users/tutorials/getting-started',
+      {
+        type: 'link',
+        label: '1 Page Cheat Sheet (PDF)',
+        href: 'http://go.hawaii.edu/JuG'
+      }
+    ],
+    'Developer Guide': [
       {
         type: 'category',
-        label: 'Getting started'
+        label: 'Getting started',
+        items: [
+            'developers/getting-started/development-goals',
+            'developers/getting-started/ide-setup',
+            'developers/getting-started/install-radgrad',
+        ],
       },
       {
         type: 'category',
@@ -24,73 +42,50 @@ module.exports = {
           'developers/concepts/source-code-organization',
         ]
       },
-    ],
-    RadGrad2: ['radgrad2/goals',
       {
         type: 'category',
-        label: 'Overview',
+        label: 'How to...',
         items: [
-          'radgrad2/overview/radgrad-concepts'
+          'developers/howto/implement-dump-restore',
+          'developers/howto/maintain-coding-standards',
+          'developers/howto/maintain-data-integrity',
+          'developers/howto/manage-this-site',
+          'developers/howto/manage-ui-state-with-redux',
+          'developers/howto/manage-users',
+          'developers/howto/perform-end-to-end-testing',
+          'developers/howto/perform-testing-with-different-roles',
+          'developers/howto/perform-unit-and-integration-testing',
+          'developers/howto/remote-pair-program',
+          'developers/howto/update-the-data-model-ui',
+          'developers/howto/use-mdx',
+          'developers/howto/write-markdown',
         ]
       },
-      {
-        type: 'category',
-        label: 'Developer Guide',
-        items: [
-          "radgrad2/developer/installation",
-          "radgrad2/developer/ide",
-          "radgrad2/developer/source-code-organization",
-          "radgrad2/developer/coding-standards",
-          "radgrad2/developer/testing",
-          "radgrad2/developer/e2e-testing",
-          "radgrad2/developer/testing-with-different-roles",
-          "radgrad2/developer/building-academic-plans",
-          "radgrad2/developer/database-fixtures",
-          "radgrad2/developer/continuous-integration",
-          "radgrad2/developer/radgrad.org",
-          "radgrad2/developer/radgrad-patterns",
-          "radgrad2/developer/redux"
-        ],
-      },
-      {
-        type: 'category',
-        label: 'Data Model',
-        items: [
-          "radgrad2/datamodel/overview",
-          "radgrad2/datamodel/class-hierarchy",
-          "radgrad2/datamodel/entity-relationship-model",
-          "radgrad2/datamodel/user-management",
-          "radgrad2/datamodel/ice",
-          "radgrad2/datamodel/dump-restore",
-          "radgrad2/datamodel/pub-sub",
-          "radgrad2/datamodel/integrity-checking"
-
-        ],
-      },
     ],
-    Subprojects: [
+    'About us': ['about/about-us'],
+    Archive: [
       {
         type: 'category',
         label: 'Internbit',
-        items: ['subprojects/internbit/goals', 'subprojects/internbit/resources', 'subprojects/internbit/scraping', 'subprojects/internbit/needs-assessment', 'subprojects/internbit/canonical-schema', 'subprojects/internbit/evaluation'],
+        items: ['archive/internbit/goals', 'archive/internbit/resources', 'archive/internbit/scraping', 'archive/internbit/needs-assessment', 'archive/internbit/canonical-schema', 'archive/internbit/evaluation'],
       },
       {
         type: 'category',
         label: 'CSExplore',
         items: [
-            'subprojects/csexplore/goals',
-          'subprojects/csexplore/resources',
-          'subprojects/csexplore/organizing-principle',
-          'subprojects/csexplore/evaluation',
+          'archive/csexplore/goals',
+          'archive/csexplore/resources',
+          'archive/csexplore/organizing-principle',
+          'archive/csexplore/evaluation',
           {
             type: 'category',
             label: 'Mockups',
             items: [
-              'subprojects/csexplore/annotated-mockup/save-hawaii-with-computer-science',
-              'subprojects/csexplore/annotated-mockup/csexplore-ocean-earth',
-              'subprojects/csexplore/annotated-mockup/find-the-path',
-              'subprojects/csexplore/annotated-mockup/CS-Explore-Chat',
-              'subprojects/csexplore/annotated-mockup/build-your-community'
+              'archive/csexplore/annotated-mockup/save-hawaii-with-computer-science',
+              'archive/csexplore/annotated-mockup/csexplore-ocean-earth',
+              'archive/csexplore/annotated-mockup/find-the-path',
+              'archive/csexplore/annotated-mockup/CS-Explore-Chat',
+              'archive/csexplore/annotated-mockup/build-your-community'
             ]
           }],
       },
@@ -98,22 +93,22 @@ module.exports = {
         type: 'category',
         label: 'DevOps',
         items: [
-            'subprojects/devops/goals',
-          'subprojects/devops/resources',
-          'subprojects/devops/evaluation',
+          'archive/devops/goals',
+          'archive/devops/resources',
+          'archive/devops/evaluation',
           {
             type: 'category',
             label: 'Deployment',
             items: [
-              'subprojects/devops/deployment/heroku',
-              'subprojects/devops/deployment/nodechef',
-              'subprojects/devops/deployment/digital-ocean',
-              'subprojects/devops/deployment/google-cloud',
-              'subprojects/devops/deployment/microsoft-azure',
-              'subprojects/devops/deployment/uh-its',
-              'subprojects/devops/deployment/aws',
-              'subprojects/devops/deployment/mongo-url',
-              'subprojects/devops/deployment/waves-hosting'
+              'archive/devops/deployment/heroku',
+              'archive/devops/deployment/nodechef',
+              'archive/devops/deployment/digital-ocean',
+              'archive/devops/deployment/google-cloud',
+              'archive/devops/deployment/microsoft-azure',
+              'archive/devops/deployment/uh-its',
+              'archive/devops/deployment/aws',
+              'archive/devops/deployment/mongo-url',
+              'archive/devops/deployment/waves-hosting'
             ]
           }
         ],

@@ -7,7 +7,7 @@ You can write content using [GitHub-flavored Markdown syntax](https://github.git
 
 ## Markdown Syntax
 
-To serve as an example page when styling markdown based Docusaurus sites.
+This page provides examples of various markdown capabilities. Consult the source code for this page to see how it is implemented.
 
 ## Headers
 
@@ -171,31 +171,23 @@ This line is also a separate paragraph, but... This line is only separated by a 
 ## Admonitions
 
 :::note
-
 This is a note
-
 :::
 
 :::tip
-
 This is a tip
-
 :::
 
 :::important
-
 This is important
-
 :::
 
+
 :::caution
-
 This is a caution
-
 :::
 
 :::warning
-
 This is a warning
-
 :::
+

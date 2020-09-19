@@ -16,7 +16,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/overview/motivation',
+          to: 'docs/overview/welcome',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
@@ -31,39 +31,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Markdown Guide',
-              to: 'docs/overview/markdown-reference',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.com/',
-            },
-          ],
-        },
-        {
-          title: 'Social',
-          items: [
-            {
-              label: 'News',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/radgrad/',
-            },
-          ],
-        },
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} University of Hawaii.`,
     },
   },
