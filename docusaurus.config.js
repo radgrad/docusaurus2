@@ -31,7 +31,39 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [],
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Markdown Guide',
+              to: 'docs/overview/markdown-reference',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.com/',
+            },
+          ],
+        },
+        {
+          title: 'Social',
+          items: [
+            {
+              label: 'News',
+              to: 'blog',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/radgrad/',
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} University of Hawaii.`,
     },
   },
