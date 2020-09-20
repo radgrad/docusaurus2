@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    Overview: ['overview/motivation', 'overview/goals', 'overview/ice'],
+    Overview: ['overview/motivation', 'overview/goals', 'overview/basic-constructs'],
     'User Guide': [
         'users/tutorials/why-radgrad',
         'users/tutorials/interests',

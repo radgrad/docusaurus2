@@ -2,4 +2,4 @@
 title: Publications
 ---
 
-This page will contain publications, presentations, etc.
+This page will contain publications, presentations, funded grants, collaborations, etc.

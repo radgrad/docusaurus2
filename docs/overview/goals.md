@@ -3,7 +3,7 @@ title: RadGrad Goals
 sidebar_label: Goals
 ---
 
-The fundamental goal of RadGrad is to *improve the undergraduate degree experience*. The following subgoals provide details on how we hope to achieve that.
+The fundamental goal of RadGrad is to **improve the undergraduate degree experience**. This goal can be reached through progress on a number of subgoals:
 
 ## Improve degree planning
 
@@ -17,8 +17,6 @@ To assess progress toward this goal, we can survey students and advisors and ask
 
 RadGrad should help guide students based upon their specific interests and career goals toward an appropriate undergraduate degree experience.
 
-In addition, RadGrad must understand prerequisite requirements and other factors, such as the potential for an overloaded schedule, and warn the student away from problematic situations.
-
 To assess this goal, we can ask students if RadGrad helped guide them to an appropriate set of courses and opportunities. We can also log the presence of recommendations and warnings and see if the student responds to them. For example, when a warning is presented to the student, what percentage of the time does she take an action that removes the warning? When an opportunity is presented to a student, what percentage of the time does she add that opportunity to her degree plan? 
 
 ## Improve student engagement
@@ -31,11 +29,9 @@ To assess this goal, we can measure the percentage of student degree plans inclu
 
 ## Improve student retention
 
-RadGrad should improve retention. Less students should drop out of the degree program once they are enrolled in it.  
+RadGrad should improve retention. Less students should drop out of the degree program once they are enrolled in it.
 
-That said, we also hope that RadGrad will help certain students who are not suited to the ICS degree program to drop out early, before having invested considerable time and energy into it. 
-
-To assess this goal, we will use Banner data to see if retention rates have improved after several years of RadGrad deployment.
+To assess this goal, we will use institutional data to see if retention rates have improved after several years of RadGrad deployment.
 
 ## Improve undergraduate participation in research
 
@@ -61,7 +57,7 @@ RadGrad should lead to graduates who are better prepared and more successful in 
 
 We can measure progress toward this goal by surveying students on their job opportunities, salary, and admission to graduate programs. We can also compare professional portfolios of our students prior to RadGrad and after introduction of RadGrad.
 
-## Improve other disciplines outside of computer science
+## Improve the degree experience for other disciplines
 
 Feedback from colleagues indicates that RadGrad can provide benefits to other disciplines outside of computer science.
  
