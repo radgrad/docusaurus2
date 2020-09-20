@@ -64,7 +64,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 [I'm a reference-style link][arbitrary case-insensitive reference text]
 
-[I'm a relative reference to a repository file](./mdx)
+[I'm a relative reference to a repository file](use-mdx)
 
 [You can use numbers for reference-style link definitions][1]
 

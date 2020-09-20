@@ -51,7 +51,7 @@ Complex tests may need a DB fixture to be loaded in order to set up the DB state
 
 Methods should have integration tests to ensure that client-server communication works properly. 
 
-See the [Testing section](./testing) for more details.
+See [Perform unit and integration testing](perform-unit-and-integration-testing) for more details.
 
 ## Import paths
 

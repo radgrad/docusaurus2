@@ -19,4 +19,4 @@ Here are some possible technologies you can evaluate:
   * [CodeTogether](https://www.codetogether.com/). Provides a plugin for IntelliJ IDEA that synchronizes editor buffers. Note all plans are free during COVID.
   * [FlooBits](https://floobits.com/). Provides a plugin for IntelliJ IDEA, but also supports terminal sharing. Their free plan allows "five public workspaces" which seems OK for us.
 
-Once we gain experience with these technologies and procedures, we will hopefully produce an [Engineering Standard](engineering-standards.md) that encapsulates our best practices.
+Once we gain experience with these technologies and procedures, we will hopefully revise this document our best practices.

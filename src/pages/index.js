@@ -8,21 +8,23 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Users</>,
-    imageUrl: 'img/homepage-degreeplan.png',
+    title: <>For ICS Students</>,
     description: (
-      <>
-        The RadGrad Project pursues research to understand how new forms of information technology can be used to  improve engagement, diversity, and retention in undergraduate computer science programs.
-      </>
+        <ul>
+          <li><a href='https://radgrad.ics.hawaii.edu'>Go To ICS RadGrad</a></li>
+          <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
+          <li><a href='/docs/users/tutorials/why-radgrad'>Video Tutorials</a></li>
+        </ul>
     ),
   },
   {
-    title: <>Developers</>,
-    imageUrl: 'img/homepage-developer.png',
+    title: <>For Developers</>,
     description: (
-      <>
-        The RadGrad Project designs, implements, and evaluates new technologies for engagement, diversity, and retention in undergraduate computer science.
-      </>
+      <ul>
+        <li><a href='/docs/developers/getting-started/development-goals'>New Developer Documentation</a></li>
+        <li><a href='/docs/developers/howto/implement-dump-restore'>How To Guides</a></li>
+        <li>Reference JSDocs (TBD)</li>
+      </ul>
     ),
   },
 ];
@@ -37,17 +39,33 @@ function Feature({imageUrl, title, description}) {
         </div>
       )}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <div>{description}</div>
     </div>
   );
 }
+
+const homePageButton = props => (
+    <div className={styles.buttons}>
+      <Link
+          className={classnames(
+              'button button--outline button--secondary button--lg',
+              styles.getStarted,
+          )}
+          style={{color: 'white'}}
+          to={useBaseUrl('docs/overview/motivation')}>
+        Learn More
+      </Link>
+    </div>
+);
 
 const ProjectTitle = props => (
     <div style={{paddingTop: "0px"}}>
       <img style={{ paddingRight: "10px" }} width='55px' src={useBaseUrl('img/radgrad_logo.png')}/>
       <span style={{ fontFamily: 'Nunito', fontWeight: 700, fontSize: '460%' }} className="projectTitle">RAD</span>
       <span style={{ fontFamily: 'Nunito', fontWeight: 400, fontSize: '460%' }} className="projectTitle">GRAD</span>
-      <h2 style={{marginTop: "0em", fontWeight: 800}}>Developing awesome computer scientists, one graduate at a time</h2>
+      <h1 style={{marginBottom: "1em", fontWeight: 800}}>Developing awesome computer scientists, one graduate at a time</h1>
+      <h4 style={{margin: "0.25em"}}>The goal of the RadGrad Project is to improve the undergraduate STEM degree experience.</h4>
+      <p>Target outcomes include increased engagement and retention, particularly for women and underrepresented minorities, and improved post-graduation career opportunities for all participating students. We currently focus on computer science and computer engineering degree programs.</p>
     </div>
 );
 
@@ -61,17 +79,6 @@ function Home() {
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <ProjectTitle/>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              style={{color: 'white'}}
-              to={useBaseUrl('docs/overview/motivation')}>
-              Learn More
-            </Link>
-          </div>
         </div>
       </header>
       <main>
