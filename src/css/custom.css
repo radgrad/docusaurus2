@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 /* stylelint-disable docusaurus/copyright-header */
 /**
  * Any CSS included here will be global. The classic template
@@ -25,8 +26,8 @@
 }
 
 .hero.hero--primary {
-  --ifm-hero-background-color: #309276;
+  --ifm-hero-background-color: rgb(26, 136, 112);
   --ifm-hero-text-color: white;
-  background-color: #309276;
+  background-color: rgb(26, 136, 112);
   color: white;
 }

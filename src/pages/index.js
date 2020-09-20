@@ -8,8 +8,8 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Research</>,
-    imageUrl: 'img/research.png',
+    title: <>Users</>,
+    imageUrl: 'img/homepage-degreeplan.png',
     description: (
       <>
         The RadGrad Project pursues research to understand how new forms of information technology can be used to  improve engagement, diversity, and retention in undergraduate computer science programs.
@@ -17,21 +17,11 @@ const features = [
     ),
   },
   {
-    title: <>Development</>,
-    imageUrl: 'img/development.png',
+    title: <>Developers</>,
+    imageUrl: 'img/homepage-developer.png',
     description: (
       <>
         The RadGrad Project designs, implements, and evaluates new technologies for engagement, diversity, and retention in undergraduate computer science.
-      </>
-    ),
-  },
-
-  {
-    title: <>Education</>,
-    imageUrl: 'img/education.png',
-    description: (
-      <>
-        The RadGrad Project hopes to provide new pathways to learning about computer science not just for undergraduates, but for pre-secondary school students and lifelong learners.
       </>
     ),
   },
@@ -40,7 +30,7 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames('col col--6', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -52,17 +42,25 @@ function Feature({imageUrl, title, description}) {
   );
 }
 
+const ProjectTitle = props => (
+    <div style={{paddingTop: "0px"}}>
+      <img style={{ paddingRight: "10px" }} width='55px' src={useBaseUrl('img/radgrad_logo.png')}/>
+      <span style={{ fontFamily: 'Nunito', fontWeight: 700, fontSize: '460%' }} className="projectTitle">RAD</span>
+      <span style={{ fontFamily: 'Nunito', fontWeight: 400, fontSize: '460%' }} className="projectTitle">GRAD</span>
+      <h2 style={{marginTop: "0em", fontWeight: 800}}>Developing awesome computer scientists, one graduate at a time</h2>
+    </div>
+);
+
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="University of Hawaii/JCI Fellows Program">
+      description="Developing awesome computer scientists, one graduate at a time">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <ProjectTitle/>
           <div className={styles.buttons}>
             <Link
               className={classnames(
