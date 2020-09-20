@@ -62,7 +62,7 @@ module.exports = {
         ]
       },
     ],
-    'About us': ['about/about-us'],
+    'About us': ['about/team', 'about/publications'],
     Archive: [
       {
         type: 'category',
