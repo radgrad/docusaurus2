@@ -6,8 +6,10 @@ module.exports = {
         'users/tutorials/interests',
         'users/tutorials/career-goals',
         'users/tutorials/opportunities',
+        'users/tutorials/ice-and-levels',
         'users/tutorials/verification-requests',
         'users/tutorials/degree-plans',
+        'users/tutorials/reviews',
         'users/tutorials/getting-started',
       {
         type: 'link',

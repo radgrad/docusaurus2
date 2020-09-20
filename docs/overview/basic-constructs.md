@@ -48,12 +48,41 @@ Once again, Opportunities are associated with Interests. In the case of HACC, th
 
 ## Degree Plans
 
-Each student has a Degree Plan, which is the set of Courses and Opportunities that a student has completed previously, is currently taking, or plans to complete in upcoming semesters.  By explicitly representing and planning out curricular and extra-curricular activities, RadGrad can provide a more wholistic view of the student's disciplinary experience, not just their classroom activities.
+Each student has a Degree Plan, which is the set of Courses and Opportunities that a student has completed previously, is currently taking, or plans to complete in upcoming semesters.  By explicitly representing and planning out not just curricular but also extra-curricular activities, RadGrad can provide:
+
+  1. A more **wholistic** view of the student's disciplinary experience (because disciplinary extra-curricular activities can make fundamental contributions to the educational process), and
+
+  2. A more **cohesive** disciplinary experience (because RadGrad can use interests and career goals to guide students to compatible extra-curricular activities.
+
+Here is an example degree plan page for a hypothetical student:
+
+![Degree Plan](/img/overview/degree-plan-example-page.png)
+
 
 ## ICE
 
-ICE is a three component measure to track both progress and success within the degree program.  ICE is an acronym for its constituent measures, which are named Innovation, Competency, and Experience.  To be a well-prepared computer science graduate according to RadGrad, students must earn 100 points in each of the three measures by the end of their degree program. Typically, a student earns Competency points for completing Courses, and Innovation and Experience points for completing Opportunities. RadGrad admins are responsible for assigning the number of points earned for a given Course or Opportunity. For example, in the RadGrad deployment for the UHM computer science department, a student earns 6 points for a B in a Course, and 10 points for an A. For Opportunities, for example, students earn 15 Innovation points for a weekend hackathon, and up to 25 points for a summer-long internship.
+ICE is a three component measure to track both progress and success within the degree program.  ICE is an acronym for its constituent measures, which are named Innovation, Competency, and Experience.  To be a well-prepared computer science graduate according to RadGrad, students must earn 100 I, C, and E points by the end of their degree program.
+
+Typically, a student earns Competency points for completing Courses, and Innovation and Experience points for completing Opportunities. RadGrad admins are responsible for assigning the number of points earned for a given Course or Opportunity. For example, a student might earn 10 points for completing a course with a passing grade.  For Opportunities, a student might earn 15 Innovation points for a weekend hackathon, and 25 points for a summer-long internship.
+
+Here is a portion of a page illustrating ICE points for a hypothetical student:
+
+![Degree Plan](/img/overview/ice-example.png)
+
+ICE points can be either "planned" or "verified".  You obtain "planned" points simply by adding a course or opportunity to your degree plan.  But to actually "earn" the points, a course or opportunity must be "verified".  Verification of course points is typically done by checking with the institution's credit management system. Verification of opportunities is done by admins or faculty.
 
 ## Levels
 
-Levels respond to the need we identified during our pilot studies for RadGrad participation to have a physical manifestation. Students want to know who else is using the system, and what progress they have made so far, without having to login to the system. After several rounds of design, we decided on the use of laptop stickers with a custom RadGrad design, with a color scheme representing a six stage progression from zero ICE points to 300 points across all three categories. Our beta tests have shown that RadGrad levels and their physical manifestation as laptop stickers are an appealing and useful way to students to form communities around their degree experience plans. Students immediately put the sticker on their laptop and told us that they find it interesting to see who else has one and what color it is. Each student's level is also displayed in their navbar to the left of their ICE points once they login to RadGrad. The sample student illustrated in Figure \ref{fig:radgrad} is at Level 3 (Green).
+Levels respond to the need we identified during our pilot studies for RadGrad participation to have a physical manifestation. Students want to know who else is using the system, and what progress they have made so far. After several rounds of design, we decided on the use of laptop stickers with a custom RadGrad design, with a color scheme representing a six stage progression from zero ICE points to 300 points across all three categories.
+
+Here are the icons representing the six levels:
+
+<img width="100px" src="/img/radgrad-level-1-icon.png"/>
+<img width="100px" src="/img/radgrad-level-2-icon.png"/>
+<img width="100px" src="/img/radgrad-level-3-icon.png"/>
+<img width="100px" src="/img/radgrad-level-4-icon.png"/>
+<img width="100px" src="/img/radgrad-level-5-icon.png"/>
+<img width="100px" src="/img/radgrad-level-6-icon.png"/>
+
+Each student's level is also displayed in their navbar to the left of their ICE points once they login to RadGrad. The hypothetical student shown above (Abigail Kealoha) is at Level 5.
+
