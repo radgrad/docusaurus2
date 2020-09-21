@@ -15,7 +15,7 @@ Our alternative perspective is called the **Degree Experience**, and it gives fi
 
 To establish the first class status of extracurricular activities, the Degree Experience perspective replaces GPA as the single metric for success with a three component metric called **ICE** that assesses student development with respect to Innovation, Competency, and Experience.  Each student's Degree Experience also includes a representation of their disciplinary interests and career goals that helps them assess the relevance of potential curricular and extracurricular activities.  Finally, the Degree Experience perspective is voluntary. It complements but does not change any existing undergraduate degree requirements of a university.
 
-This project defines conceptual framework called **Degree Experience Plans** (DEP) and a supporting technology platform called **RadGrad**. The design of DEP/RadGrad is influenced by research on diversity and retention and two educational research theories:  Individualized Learning Plans (ILP) and Communities of Practice (CoP).  ILPs help students connect their current studies to their future career goals. CoP identifies the importance of practitioner networks for both formal and informal learning. We are studying how the use of DEP/RadGrad can lead to student populations with increased levels of engagement, retention, and diversity.
+The design of RadGrad is influenced by research on diversity and retention and two educational research theories:  Individualized Learning Plans (ILP) and Communities of Practice (CoP).  ILPs help students connect their current studies to their future career goals. CoP identifies the importance of practitioner networks for both formal and informal learning.
 
 
 
