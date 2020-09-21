@@ -1,6 +1,5 @@
 ---
-title: IDE Setup
-sidebar_label: IDE Setup
+title: Setup the IDE
 ---
 For RadGrad development, we recommend [IntelliJ IDEA](https://www.jetbrains.com/idea/).  IntelliJ IDEA has excellent support for Meteor application development. 
 

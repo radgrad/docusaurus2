@@ -22,46 +22,100 @@ module.exports = {
         type: 'category',
         label: 'Getting started',
         items: [
-            'developers/getting-started/development-goals',
-            'developers/getting-started/ide-setup',
-            'developers/getting-started/install-radgrad',
+          {
+            type: 'category',
+            label: 'Concepts',
+            items: [
+              'developers/getting-started/concepts/development-goals',
+              'developers/getting-started/concepts/engineering-standards',
+              'developers/getting-started/concepts/source-code-organization',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'How to...',
+            items: [
+              'developers/getting-started/howto/setup-the-ide',
+              'developers/getting-started/howto/install-radgrad',
+              'developers/getting-started/howto/maintain-coding-standards',
+              'developers/getting-started/howto/remote-pair-program',
+            ]
+          },
         ],
       },
       {
         type: 'category',
-        label: 'Concepts',
+        label: 'Design',
         items: [
-          'developers/concepts/academic-plans',
-          'developers/concepts/class-hierarchy',
-          'developers/concepts/data-model',
-          'developers/concepts/database-fixtures',
-          'developers/concepts/design-patterns',
-          'developers/concepts/design-antipatterns',
-          'developers/concepts/engineering-standards',
-          'developers/concepts/entity-relationship-model',
-          'developers/concepts/pub-sub-caching',
-          'developers/concepts/radgrad-domain',
-          'developers/concepts/source-code-organization',
-        ]
+          {
+            type: 'category',
+            label: 'Concepts',
+            items: [
+              'developers/design/concepts/academic-plans',
+              'developers/design/concepts/class-hierarchy',
+              'developers/design/concepts/data-model',
+              'developers/design/concepts/design-patterns',
+              'developers/design/concepts/design-antipatterns',
+              'developers/design/concepts/entity-relationship-model',
+              'developers/design/concepts/pub-sub-caching',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'How to...',
+            items: [
+              'developers/design/howto/maintain-data-integrity',
+              'developers/design/howto/manage-ui-state-with-redux',
+              'developers/design/howto/manage-users',
+              'developers/design/howto/update-the-data-model-ui',
+            ]
+          },
+        ],
       },
       {
         type: 'category',
-        label: 'How to...',
+        label: 'Testing',
         items: [
-          'developers/howto/implement-dump-restore',
-          'developers/howto/maintain-coding-standards',
-          'developers/howto/maintain-data-integrity',
-          'developers/howto/manage-this-site',
-          'developers/howto/manage-ui-state-with-redux',
-          'developers/howto/manage-users',
-          'developers/howto/perform-end-to-end-testing',
-          'developers/howto/perform-testing-with-different-roles',
-          'developers/howto/perform-unit-and-integration-testing',
-          'developers/howto/remote-pair-program',
-          'developers/howto/update-the-data-model-ui',
-          'developers/howto/use-mdx',
-          'developers/howto/write-markdown',
-        ]
+          {
+            type: 'category',
+            label: 'Concepts',
+            items: [
+              'developers/testing/concepts/database-fixtures',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'How to...',
+            items: [
+              'developers/testing/howto/implement-dump-restore',
+              'developers/testing/howto/perform-end-to-end-testing',
+              'developers/testing/howto/perform-testing-with-different-roles',
+              'developers/testing/howto/perform-unit-and-integration-testing',
+            ]
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Documentation',
+        items: [
+          {
+            type: 'category',
+            label: 'Concepts',
+            items: [
+              'developers/documentation/concepts/radgrad-domain',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'How to...',
+            items: [
+              'developers/documentation/howto/manage-this-site',
+              'developers/documentation/howto/use-mdx',
+              'developers/documentation/howto/write-markdown',
+            ]
+          },
+        ],
       },
     ],
     'About us': ['about/team', 'about/publications'],

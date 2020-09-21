@@ -11,13 +11,13 @@ The tech stack for accomplishing these two tasks is currently somewhat complicat
 
 ### github.com
 
-We need a place to hold the source code for the radgrad.org website.  The [github.com docusaurus repository](https://github.com/radgrad/docusaurus) does this for us.
+We need a place to hold the source code for the radgrad.org website.  The [github.com docusaurus2 repository](https://github.com/radgrad/docusaurus2) does this for us.
 
 You must be a member of the radgrad github organization with commit privileges to edit the documentation.
 
 ### netlify.com
 
-We could use GitHub to build and publish the radgrad website as radgrad.github.io/docusaurus. But, this does not allow us to use a custom domain (i.e. radgrad.org) and get https encryption at the same time.  So, we use Netlify.
+We could use GitHub to build and publish the radgrad website as radgrad.github.io. But, this does not allow us to use a custom domain (i.e. radgrad.org) and get https encryption at the same time.  So, we use Netlify.
 
 The [netlify.com radgrad account](https://app.netlify.com/sites/radgrad/) performs multiple functions:
 
