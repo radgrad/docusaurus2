@@ -2,6 +2,7 @@ module.exports = {
   someSidebar: {
     Overview: ['overview/motivation', 'overview/goals', 'overview/basic-constructs'],
     'User Guide': [
+      'users/overview',
         'users/tutorials/why-radgrad',
         'users/tutorials/interests',
         'users/tutorials/career-goals',
@@ -18,6 +19,7 @@ module.exports = {
       }
     ],
     'Developer Guide': [
+        'developers/overview',
       {
         type: 'category',
         label: 'Getting started',

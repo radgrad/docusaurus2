@@ -13,7 +13,7 @@ const features = [
         <ul>
           <li><a href='https://radgrad.ics.hawaii.edu'>Go To ICS RadGrad</a></li>
           <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
-          <li><a href='/docs/users/tutorials/why-radgrad'>Video Tutorials</a></li>
+          <li><a href='/docs/users/overview'>User Guide</a></li>
         </ul>
     ),
   },
@@ -21,8 +21,7 @@ const features = [
     title: <>For Developers</>,
     description: (
       <ul>
-        <li><a href='/docs/developers/getting-started/development-goals'>New Developer Documentation</a></li>
-        <li><a href='/docs/developers/howto/implement-dump-restore'>How To Guides</a></li>
+        <li><a href='/docs/developers/overview'>Developer Guide</a></li>
         <li>Reference JSDocs (TBD)</li>
       </ul>
     ),
