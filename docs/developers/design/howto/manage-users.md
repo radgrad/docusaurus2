@@ -3,7 +3,7 @@ title: How to manage users
 sidebar_label: Manage users
 ---
 
-RadGrad implements a user management scheme that combines two constructs: the Meteor User collection as well as a set of "Profile" collections that provide the specific information required for the role associated with a user. See the [Users and Profiles](/docs/developers/concepts/entity-relationship-model#users-and-profiles) section for more information on the representation of users and profiles.
+RadGrad implements a user management scheme that combines two constructs: the Meteor User collection as well as a set of "Profile" collections that provide the specific information required for the role associated with a user. See the [Users and Profiles](/docs/developers/design/concepts/entity-relationship-model#users-and-profiles) section for more information on the representation of users and profiles.
 
 ## Usernames
 

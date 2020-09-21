@@ -51,15 +51,7 @@ If you want to add images, you should first add the image file to the `static/im
 
 Once your documentation is just exactly perfect, you'll want to publish your changes.
 
-First, make sure that GIT_USER is set to your GitHub user name.
-
-Next, run `npm run deploy`.
-
-This will build the site and push the HTML version to the master branch of the radgrad/radgrad.github.io repository.
-
-Note: you do not need to clone the radgrad.github.io repo to your laptop. In fact, you shouldn't.
-
-In addition to deploying the site, you also need to commit and push your changes to the radgrad/docusaurus2 repository.
+To do this, just push your changes to master.  We use Netlify to build the site.
 
 ## Advanced usage
 
