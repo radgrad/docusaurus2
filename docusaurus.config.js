@@ -1,12 +1,11 @@
 module.exports = {
   title: 'RadGrad',
   tagline: 'Developing awesome computer scientists, one graduate at a time',
-  url: 'https://radgrad.github.io',
+  url: 'https://radgrad.netlify.com',
   baseUrl: '/',
   favicon: 'img/radgrad.ico',
   organizationName: 'radgrad', // Usually your GitHub org/user name.
-  projectName: 'radgrad.github.io', // Usually your repo name.
-  stylesheets: ['https://fonts.googleapis.com/css?family=Nunito'],
+  projectName: 'docusaurus2', // Usually your repo name.
   onBrokenLinks:'log',
   themeConfig: {
     navbar: {
