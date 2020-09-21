@@ -6,25 +6,25 @@ title: The Team
 
 Faculty:
 
-  * Carleton Moore
-  * Peter Leong
-  * Philip Johnson
-  * Seungoh Paek
+  * Carleton Moore (2015 - present)
+  * Peter Leong (2018 - present)
+  * Philip Johnson (2015 - present)
+  * Seungoh Paek (2018 - present)
 
 Students:
 
-  * Andre Ruiz
-  * Jennifer Hsu
-  * Jesse McDonald
-  * Quinne Uchida
-  * Rashmi Ramanatha
-  * Tina Loos
+  * Andre Ruiz (2020 - present)
+  * Jennifer Hsu  (2020 - present)
+  * Jesse McDonald (2020 - present)
+  * Quinne Uchida (2019 - present)
+  * Rashmi Ramanatha (2020 - present)
+  * Tina Loos (2020 - present)
 
 Advisory Board:
 
-  * Aaron Kagawa
-  * Henri Casanova
-  * Yuka Nagashima
+  * Aaron Kagawa (2018 - present)
+  * Henri Casanova (2018 - present)
+  * Yuka Nagashima (2018 - present)
 
 ## Ohana
 
