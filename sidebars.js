@@ -39,6 +39,7 @@ module.exports = {
             items: [
               'developers/getting-started/howto/setup-the-ide',
               'developers/getting-started/howto/install-radgrad',
+              'developers/getting-started/howto/run-scripts',
               'developers/getting-started/howto/maintain-coding-standards',
               'developers/getting-started/howto/remote-pair-program',
             ]
