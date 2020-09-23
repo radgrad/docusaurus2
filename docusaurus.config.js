@@ -19,10 +19,11 @@ module.exports = {
           to: 'docs/overview/motivation',
           activeBasePath: 'docs',
           label: 'Documentation',
-          position: 'left',
+          position: 'right',
         },
-        {to: 'blog', label: 'News', position: 'left'},
-        {href: 'https://github.com/radgrad', label: 'GitHub', position: 'left'}
+        {to: 'blog', label: 'News', position: 'right'},
+        {to: 'docs/about/opportunities', label: 'Join Us', position: 'right'},
+        {href: 'https://github.com/radgrad', label: 'GitHub', position: 'right'}
       ],
     },
     footer: {
