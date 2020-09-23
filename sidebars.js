@@ -112,7 +112,10 @@ module.exports = {
             type: 'category',
             label: 'How to...',
             items: [
-              'developers/deployment/howto/build-a-new-release',
+              'developers/deployment/howto/build-a-release',
+              'developers/deployment/howto/deploy-a-release',
+              'developers/deployment/howto/docker-management',
+              'developers/deployment/howto/setup-https',
             ]
           },
         ],

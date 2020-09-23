@@ -1,6 +1,6 @@
 ---
 title: Build and publish a new release of RadGrad
-sidebar_label: Build a new release
+sidebar_label: Build a release
 ---
 
 We utilize [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) to containerize and deploy RadGrad.  For Mongo, we use the official Mongo image without modification.
@@ -13,11 +13,7 @@ The next sections document each of these steps.
 
 Make sure you have Docker and Docker Compose installed on your development and production systems.
 
-Please refer to the official [Docker install documentation](https://docs.docker.com/install/) and [Docker-Compose install documentation](https://docs.docker.com/compose/install/) for installation instructions.  If you are on a Mac, you can install [Docker Desktop](https://www.docker.com/products/docker-desktop).
-
-:::warning
-Windows-based deployment is not currently supported
-:::
+Please refer to the official [Docker install documentation](https://docs.docker.com/install/) and [Docker-Compose install documentation](https://docs.docker.com/compose/install/) for installation instructions.  If you are on a Mac or Windows, you can install [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
 In addition, you will need an account on DockerHub, and your account will need to be a member of the [DockerHub RadGrad organization](https://hub.docker.com/u/radgrad).
 
