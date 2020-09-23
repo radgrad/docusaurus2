@@ -100,6 +100,25 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'Deployment',
+        items: [
+          {
+            type: 'category',
+            label: 'Concepts',
+            items: [
+            ]
+          },
+          {
+            type: 'category',
+            label: 'How to...',
+            items: [
+              'developers/deployment/howto/build-a-new-release',
+            ]
+          },
+        ],
+      },
+      {
+        type: 'category',
         label: 'Documentation',
         items: [
           {
