@@ -21,7 +21,9 @@ In addition, you will need an account on DockerHub, and your account will need t
 
 The radgrad2 repo contains a directory named docker/ containing a script called docker-build.sh.
 
-To build a new Docker image,  `cd` into the `/docker` subdirectory, and invoke `docker-build.sh`. A typical run looks like this:
+To build a new Docker image,  `cd` into the `/docker` subdirectory, and invoke `docker-build.sh`. This command takes 5-10 minutes to complete on my laptop.
+
+A typical run looks like this:
 
 ```
 $ ./docker-build.sh
