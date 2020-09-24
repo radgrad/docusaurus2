@@ -24,7 +24,45 @@ The radgrad2 repo contains a directory named docker/ containing a script called 
 To build a new Docker image,  `cd` into the `/docker` subdirectory, and invoke `docker-build.sh`. A typical run looks like this:
 
 ```
-docker-build.sh output here.
+$ ./docker-build.sh
+=> Installing app's npm packages, then building Meteor app bundle...
+
+(stuff deleted)
+
+Step 1/7 : FROM node:12.18.4
+ ---> 28faf336034d
+Step 2/7 : WORKDIR /radgrad
+ ---> Running in b7ac0d5db543
+Removing intermediate container b7ac0d5db543
+ ---> 1a206d81b65a
+Step 3/7 : COPY . /radgrad
+ ---> edd67610c60e
+Step 4/7 : RUN cd /radgrad/programs/server && npm install --unsafe-perm
+ ---> Running in 97db0fb25f8c
+
+(stuff deleted)
+
+Removing intermediate container 97db0fb25f8c
+ ---> 27d559ab99b7
+Step 5/7 : EXPOSE 80
+ ---> Running in 8da236f19868
+Removing intermediate container 8da236f19868
+ ---> 0abffad25026
+Step 6/7 : EXPOSE 8888
+ ---> Running in 1d356c3ea524
+Removing intermediate container 1d356c3ea524
+ ---> a5387df2a689
+Step 7/7 : CMD ["node", "main.js"]
+ ---> Running in 90e38cb8fd46
+Removing intermediate container 90e38cb8fd46
+ ---> c247633a9816
+Successfully built c247633a9816
+Successfully tagged radgrad:latest
+=> Deleting all temporary files...
+=> Docker build complete!
+=> Use the 'docker image ls' command to check that the 'radgrad' image was successfully generated
+ $
+
 ```
 
 The result of the build will be a new Docker image named `radgrad:latest`.
