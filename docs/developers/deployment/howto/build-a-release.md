@@ -103,7 +103,7 @@ You'll want to increment the major, minor, or bugfix component of the current ve
  81101ce649d5: Layer already exists
  daf45b2cad9a: Layer already exists
  8c466bf4ca6f: Layer already exists
- 1.5.0: digest: sha256:b0299638d1528390399a43fff74f71f397780e70d5f4432218cb5c12d7cf0d66 size: 2636
+ 2.0.12: digest: sha256:b0299638d1528390399a43fff74f71f397780e70d5f4432218cb5c12d7cf0d66 size: 2636
  ```
 
  ## Update the RadGrad Docker Compose .env file
