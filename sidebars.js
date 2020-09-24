@@ -101,7 +101,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Deployment',
-        items: [
+        items: [ 'developers/deployment/overview',
           {
             type: 'category',
             label: 'Concepts',
