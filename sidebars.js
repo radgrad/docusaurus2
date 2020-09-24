@@ -23,7 +23,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Getting started',
-        items: [
+        items: [ 'developers/getting-started/overview',
           {
             type: 'category',
             label: 'Concepts',
@@ -49,7 +49,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Design',
-        items: [
+        items: [ 'developers/design/overview',
           {
             type: 'category',
             label: 'Concepts',
@@ -78,7 +78,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Testing',
-        items: [
+        items: [ 'developers/testing/overview',
           {
             type: 'category',
             label: 'Concepts',
@@ -140,6 +140,12 @@ module.exports = {
               'developers/documentation/howto/write-markdown',
             ]
           },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Reference',
+        items: [ 'developers/reference/overview',
         ],
       },
     ],
