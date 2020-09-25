@@ -24,6 +24,15 @@ First, install Docker and Docker Compose on your production server.
 
 Please consult the [Docker installation documentation](https://docs.docker.com/install/) and the [Docker Compose installation documentation](https://docs.docker.com/compose/install/) for instructions.
 
+:::note
+
+TO install Docker on Ubuntu 18, I followed [these instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
+
+Note that you need to setup the user to not need sudo for docker.
+
+I followed the standard docker-compose installation instructions.
+:::
+
 ### Clone radgrad-docker
 
 Next, clone the [radgrad-docker repository](https://github.com/radgrad/radgrad-docker) with `git clone https://github.com/radgrad/radgrad-docker.git`.
@@ -101,9 +110,11 @@ Invoke the `docker ps` command to verify that all RadGrad containers are running
 
 ```shell
 $ docker ps
-CONTAINER ID        IMAGE                                      COMMAND                  CREATED             STATUS              PORTS                                                                                                   NAMES
-4c5d586b6dc7        radgrad/radgrad:2.0.3                      "node main.js"           12 minutes ago      Up 12 minutes       0.0.0.0:8888->8888/tcp                                                                                  opq-radgrad_radgrad_1
-8f7f92bf2a56        mongo:4.0.5                                "docker-entrypoint.s…"   12 minutes ago      Up 12 minutes       127.0.0.1:27017->27017/tcp                                                                              opq-radgrad_mongo_1
+  CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS                        PORTS                        NAMES
+  6d0666c48674        certbot/certbot         "/bin/sh -c 'trap ex…"   17 seconds ago      Up 16 seconds                 80/tcp, 443/tcp              radgrad-docker_certbot_1
+  a5cb7edeaeff        radgrad/radgrad:2.0.0   "docker-entrypoint.s…"   19 seconds ago      Restarting (1) 1 second ago                                radgrad-docker_radgrad_1
+  91e903641fa1        mongo:4.0.5             "docker-entrypoint.s…"   24 seconds ago      Up 19 seconds                 127.0.0.1:27017->27017/tcp   radgrad-mongo
+
 ```
 
 In addition, you should also check the RadGrad service by opening up your web browser and going to http://production-server:8888.
