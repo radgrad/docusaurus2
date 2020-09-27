@@ -116,6 +116,7 @@ module.exports = {
               'developers/deployment/howto/deploy-a-release',
               'developers/deployment/howto/docker-management',
               'developers/deployment/howto/setup-https',
+              'developers/deployment/howto/setup-ssh',
             ]
           },
         ],
