@@ -29,8 +29,8 @@ Leave the `LETSENCRYPT_STAGING_MODE` variable set to `1` for the time being. Thi
 Your `nginx.env` file should now look something like this:
 
 ```shell
-NGINX_SERVER_NAME=emilia.ics.hawaii.edu
-LETSENCRYPT_EMAIL=admin@openpowerquality.org
+NGINX_SERVER_NAME=radgrad2.ics.hawaii.edu
+LETSENCRYPT_EMAIL=johnson@hawaii.edu
 LETSENCRYPT_STAGING_MODE=1
 ```
 
