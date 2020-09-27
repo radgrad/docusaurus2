@@ -2,11 +2,11 @@
 title: Setup HTTPS
 ---
 
-Although the RadGrad application is available over HTTP on port 8888, with a few simple steps, you can easily request SSL certificates for your domain (from Let's Encrypt) and have your application running over HTTPS instead.
+RadGrad needs to run on HTTPS. Here is a procedure to request SSL certificates for your domain (from Let's Encrypt) so that it can run over HTTPS.
 
-As part of your RadGrad installation, we include the `nginx` and `certbot` services to handle the legwork of setting up HTTPS. More specifically, an Nginx web server on port 80 is automatically configured to forward HTTP traffic to an HTTPS web server on port 443, which subsequently reverse proxies traffic to the RadGrad application on port 8888.
+The RadGrad docker services include `nginx` and `certbot` to handle the legwork of setting up HTTPS. More specifically, an Nginx web server on port 80 is automatically configured to forward HTTP traffic to an HTTPS web server on port 443, which subsequently reverse proxies traffic to the RadGrad application on port 8888.
 
-As such, please make sure that your host machine has port 80 and 443 open to the outside world. It is also recommended that you setup a firewall on port 8888 once you have HTTPS up and running, otherwise the View application will still be accessible over HTTP on port 8888.
+As such, please make sure that your host machine has port 80 and 443 open to the outside world. It is also recommended that you setup a firewall on port 8888 once you have HTTPS up and running, otherwise the RadGrad application will still be accessible over HTTP on port 8888.
 
 ## Modify the nginx.env configuration file
 
@@ -55,32 +55,6 @@ Generating a RSA private key
 ............+++++
 writing new private key to '/etc/letsencrypt/live/emilia.ics.hawaii.edu/privkey.pem'
 -----
-
-### Starting nginx ...
-WARNING: The NGINX_SERVER_NAME variable is not set. Defaulting to a blank string.
-Stopping opq-docker_view_1            ... done
-Stopping opq-mongo                    ... done
-Stopping opq-docker_boxupdateserver_1 ... done
-Removing opq-docker_nginx_1           ... done
-Removing opq-docker_view_1            ... done
-Removing opq-mongo                    ... done
-Removing opq-docker_boxupdateserver_1 ... done
-Removing network opq-docker_default
-Creating network "opq-docker_default" with the default driver
-Creating opq-mongo                    ... done
-Creating opq-docker_boxupdateserver_1 ... done
-Creating opq-docker_view_1            ... done
-Creating opq-docker_makai_1           ... done
-Creating opq-docker_nginx_1           ... done
-Creating opq-docker_mauka_1           ... done
-Creating opq-docker_certbot_1         ... done
-Creating opq-docker_health_1          ... done
-
-### Deleting dummy certificate for emilia.ics.hawaii.edu ...
-Starting opq-docker_boxupdateserver_1 ... done
-Starting opq-mongo                    ... done
-Starting opq-docker_view_1            ... done
-Starting opq-docker_nginx_1           ... done
 
 ### Requesting Let's Encrypt certificate for emilia.ics.hawaii.edu ...
 Starting opq-docker_boxupdateserver_1 ... done
@@ -155,32 +129,6 @@ Generating a RSA private key
 ............................+++++
 writing new private key to '/etc/letsencrypt/live/emilia.ics.hawaii.edu/privkey.pem'
 -----
-
-### Starting nginx ...
-WARNING: The NGINX_SERVER_NAME variable is not set. Defaulting to a blank string.
-Stopping opq-docker_view_1            ... done
-Stopping opq-mongo                    ... done
-Stopping opq-docker_boxupdateserver_1 ... done
-Removing opq-docker_nginx_1           ... done
-Removing opq-docker_view_1            ... done
-Removing opq-mongo                    ... done
-Removing opq-docker_boxupdateserver_1 ... done
-Removing network opq-docker_default
-Creating network "opq-docker_default" with the default driver
-Creating opq-docker_boxupdateserver_1 ... done
-Creating opq-mongo                    ... done
-Creating opq-docker_view_1            ... done
-Creating opq-docker_makai_1           ... done
-Creating opq-docker_nginx_1           ... done
-Creating opq-docker_mauka_1           ... done
-Creating opq-docker_certbot_1         ... done
-Creating opq-docker_health_1          ... done
-
-### Deleting dummy certificate for emilia.ics.hawaii.edu ...
-Starting opq-docker_boxupdateserver_1 ... done
-Starting opq-mongo                    ... done
-Starting opq-docker_view_1            ... done
-Starting opq-docker_nginx_1           ... done
 
 ### Requesting Let's Encrypt certificate for emilia.ics.hawaii.edu ...
 Starting opq-docker_boxupdateserver_1 ... done

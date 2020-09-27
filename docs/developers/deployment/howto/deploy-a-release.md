@@ -14,50 +14,9 @@ We publish the Docker Image for the RadGrad service to the [RadGrad organization
 Windows-based deployment is not supported.
 :::
 
-## Initial setup
-
-When configuring a production server for the first time, you'll want to do the following:
-
-### Install Docker and Docker Compose
-
-First, install Docker and Docker Compose on your production server.
-
-Please consult the [Docker installation documentation](https://docs.docker.com/install/) and the [Docker Compose installation documentation](https://docs.docker.com/compose/install/) for instructions.
-
-:::note
-
-TO install Docker on Ubuntu 18, I followed [these instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
-
-Note that you need to setup the user to not need sudo for docker.
-
-I followed the standard docker-compose installation instructions.
-:::
-
-### Clone radgrad-docker
-
-Next, clone the [radgrad-docker repository](https://github.com/radgrad/radgrad-docker) with `git clone https://github.com/radgrad/radgrad-docker.git`.
-
-### Create config/settings.production.json
-
-Your local radgrad-docker directory contains a subdirectory called "sample-config" containing a sample settings.production.json file called "sample.settings.production.json".
-
-In order for RadGrad to deploy successfully, it expects to a file called "settings.production.json" in a directory named "config".
-
-To setup this directory and file using sample.settings.production.json as a template, execute the following commands:
-
-```shell
-$ mkdir config
-$ cp -R sample-config/* config
-$ mv config/sample.settings.production.json config/settings.production.json
-```
-
-:::caution
-More details on settings.production.json setup needed.
-:::
-
 ## Bring up services
 
-Now, cd into the top-level directory, where you should find a script called `docker-compose-run.sh`.  To make it executable, invoke:
+cd into the radgrad-docker directory, where you should find a script called `docker-compose-run.sh`.  To make it executable, invoke:
 
 ```
 $ chmod 775 docker-compose-run.sh

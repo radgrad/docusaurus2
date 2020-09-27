@@ -3,7 +3,7 @@ title: Setup SSH access
 sidebar_label: Setup SSH
 ---
 
-In order to deploy RadGrad to radgrad2.ics.hawaii.edu, you will generally need to configure ssh access to the radgrad account. Here's how to do it.
+In order to deploy RadGrad to a production server such as radgrad2.ics.hawaii.edu, you will generally need to configure ssh access to the radgrad account. Here's how to do it.
 
 ## Obtain user credentials
 

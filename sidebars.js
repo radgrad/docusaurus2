@@ -113,9 +113,10 @@ module.exports = {
             label: 'How to...',
             items: [
               'developers/deployment/howto/build-a-release',
+              'developers/deployment/howto/setup-production-server',
+              'developers/deployment/howto/setup-https',
               'developers/deployment/howto/deploy-a-release',
               'developers/deployment/howto/docker-management',
-              'developers/deployment/howto/setup-https',
               'developers/deployment/howto/setup-ssh',
             ]
           },
