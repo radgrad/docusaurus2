@@ -9,9 +9,15 @@ Here are some helpful commands for Docker management
 If you need to bring all services down for any reason, just change into the top-level directory (where the `docker-compose.yml` file is), and invoke `docker-compose down`:
 
 ```shell
-$ docker-compose down
+$ radgrad@radgrad2:~/radgrad-docker$ docker-compose down
+Stopping radgrad-docker_certbot_1 ... done
+Stopping radgrad-docker_nginx_1   ... done
+Stopping radgrad-docker_radgrad_1 ... done
+Stopping radgrad-mongo            ... done
+Removing radgrad-docker_certbot_1 ... done
+Removing radgrad-docker_nginx_1   ... done
 Removing radgrad-docker_radgrad_1 ... done
-Removing radgrad-docker_mongo_1   ... done
+Removing radgrad-mongo            ... done
 Removing network radgrad-docker_default
 ```
 ## Bring all services up
@@ -19,10 +25,13 @@ Removing network radgrad-docker_default
 To bring all services up, just invoke the `docker-compose-run.sh` script:
 
 ```shell
-$ ./docker-compose-run.sh
+$ radgrad@radgrad2:~/radgrad-docker$ ./docker-compose-run.sh
 Creating network "radgrad-docker_default" with the default driver
-Creating radgrad-docker_mongo_1           ... done
+Creating radgrad-mongo ... done
 Creating radgrad-docker_radgrad_1 ... done
+Creating radgrad-docker_nginx_1   ... done
+Creating radgrad-docker_certbot_1 ... done
+radgrad@radgrad2:~/radgrad-docker$
 ```
 
 ## Update a single service
