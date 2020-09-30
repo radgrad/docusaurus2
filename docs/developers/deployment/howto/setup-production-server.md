@@ -91,7 +91,7 @@ Your nginx.env file should now look something like this:
 
 ```shell
 export NGINX_SERVER_NAME=radgrad2.ics.hawaii.edu
-LETSENCRYPT_EMAIL=johnson@hawaii.edu
+LETSENCRYPT_EMAIL=admin@radgrad.org
 LETSENCRYPT_STAGING_MODE=1
 ```
 
@@ -194,8 +194,8 @@ radgrad-docker $ docker-compose down
 Then, open the opq-docker/config/nginx/nginx.env file and set the LETSENCRYPT_STAGING_MODE variable to 0. The file should now look something like this:
 
 ```shell
-NGINX_SERVER_NAME=emilia.ics.hawaii.edu
-LETSENCRYPT_EMAIL=admin@openpowerquality.org
+NGINX_SERVER_NAME=radgrad2.ics.hawaii.edu
+LETSENCRYPT_EMAIL=admin@radgrad.org
 LETSENCRYPT_STAGING_MODE=0
 ```
 
@@ -227,11 +227,9 @@ radgrad-docker$ docker logs radgrad-docker_nginx_1
 radgrad@radgrad2:~/radgrad-docker$
 ```
 
-
 ## Setup oplog tailing
 
-Meteor has a nice article called [Tuning Meteor Mongo Livedata for Scalability](https://blog.meteor.com/tuning-meteor-mongo-livedata-for-scalability-13fe9deb8908) that provides motivation for oplog tailing.
-
+TBA
 
 ## Setup DB indexes
 
@@ -250,7 +248,3 @@ Finally, invoke the ensure-indexes.sh script:
  ```shell
 radgrad-docker/scripts/mongodb $ ./ensure-indexes.sh
 ```
-
-
-
-The next section continues the documentation of the production server setup process by explaining how to set up HTTPS.
