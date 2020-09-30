@@ -230,6 +230,8 @@ radgrad@radgrad2:~/radgrad-docker$
 
 ## Setup oplog tailing
 
+Meteor has a nice article called [Tuning Meteor Mongo Livedata for Scalability](https://blog.meteor.com/tuning-meteor-mongo-livedata-for-scalability-13fe9deb8908) that provides motivation for oplog tailing.
+
 
 ## Setup DB indexes
 
