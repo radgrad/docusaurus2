@@ -112,6 +112,7 @@ module.exports = {
             type: 'category',
             label: 'How to...',
             items: [
+              'developers/deployment/howto/setup-production-server-mup',
               'developers/deployment/howto/setup-production-server',
               'developers/deployment/howto/build-a-release',
               'developers/deployment/howto/deploy-a-release',

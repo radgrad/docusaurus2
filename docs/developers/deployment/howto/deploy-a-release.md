@@ -1,5 +1,5 @@
 ---
-title: Deploy a release
+title: Deploy a release (Docker)
 ---
 
 A RadGrad release contains two services: RadGrad (the Meteor application), and MongoDB (the backend database system).

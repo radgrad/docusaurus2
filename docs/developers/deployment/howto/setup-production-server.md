@@ -1,9 +1,15 @@
 ---
-title: Setup a production server
-sidebar_label: Setup production server
+title: Setup a production server using Docker
+sidebar_label: Setup production server (Docker)
 ---
 
-This page documents the process of setting up a production server for RadGrad based upon the Ubuntu OS.
+:::warning
+We are moving to deployment based on Meteor Up.
+
+The instructions on this page are deprecated
+:::
+
+This page documents the process of setting up a production server for RadGrad using a Docker-based build mechanism.
 
 ## Setup location
 

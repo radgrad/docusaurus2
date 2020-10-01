@@ -1,6 +1,6 @@
 ---
 title: Build and publish a new release of RadGrad
-sidebar_label: Build a release
+sidebar_label: Build a release (Docker)
 ---
 
 We utilize [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) to containerize and deploy RadGrad.  For Mongo, we use the official Mongo image without modification.
