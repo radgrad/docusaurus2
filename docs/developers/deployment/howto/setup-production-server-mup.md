@@ -72,6 +72,45 @@ $ mup deploy
 
 After deployment finishes, the app should be live at [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).
 
+Here's what Docker should show on the production server when deployment succeeds:
+
+```shell
+radgrad@radgrad2:~$ docker ps
+CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS              PORTS                                      NAMES
+aa1d789a85af        mup-radgrad:latest                       "/bin/sh -c 'exec $M…"   19 seconds ago      Up 17 seconds       80/tcp, 3000/tcp                           radgrad
+107f0fc6f426        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/entr…"   8 minutes ago       Up 8 minutes                                                   mup-nginx-proxy-letsencrypt
+0031cd1616fb        jwilder/nginx-proxy                      "/app/docker-entrypo…"   8 minutes ago       Up 8 minutes        0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   mup-nginx-proxy
+7627b9bca4e2        mongo:3.4.1                              "/entrypoint.sh mong…"   2 hours ago         Up 2 hours          127.0.0.1:27017->27017/tcp                 mongodb
+radgrad@radgrad2:~$
+```
+
+## Setup Robo3T
+
+A convenient way to inspect the contents of the production database is to use [Robo3T](https://robomongo.org/).
+
+You have the choice of downloading Studio 3T or Robo 3T.  These instructions are for Robo 3T, which is simpler (and free).
+
+After downloading and installing Robo3T, you must create a connection that includes port forwarding to the production MongoDB service.
+
+First, create a new connection and name it appropriately:
+
+![](/img/deployment/robo3t-account-config.png)
+
+Next, set up SSH access to the server running the MongoDB container by clicking on the 'SSH' tab. For example, here is the dialog window for defining ssh access to radgrad2.ics.hawaii.edu:
+
+![](/img/deployment/robo3t-ssh-config.png)
+
+If you have configured things correctly, then after pressing "Save" you'll get this window:
+
+![](/img/deployment/robo3t-connect.png)
+
+And after connecting, you can inspect any collection and document:
+
+![](/img/deployment/robo3t-dashboard.png)
+
+
+
+
 ## Setup APM
 
 It is useful to have application performance monitoring.  We hope to be able to use [Monti APM](https://montiapm.com/). Unfortunately, there is a problem with the latest release of the agent, as documented [here](https://github.com/monti-apm/monti-apm-agent/issues/14#issuecomment-701714047). Hopefully that problem will be resolved soon.
