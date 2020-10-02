@@ -2,6 +2,10 @@
 title: Docker commands
 ---
 
+:::warning
+Please refer to mup commands page for current information.
+:::
+
 Here are some helpful commands for Docker management
 
 ## Bring all services down

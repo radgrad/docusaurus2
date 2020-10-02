@@ -123,6 +123,7 @@ module.exports = {
             type: 'category',
             label: 'Reference',
             items: [
+              'developers/deployment/reference/mup-commands',
               'developers/deployment/reference/docker-commands',
               'developers/deployment/reference/settings-file',
             ]
