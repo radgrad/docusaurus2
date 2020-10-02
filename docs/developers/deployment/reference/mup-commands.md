@@ -11,6 +11,12 @@ All of these commands assume you are in the app/.deploy directory.
 To stop the RadGrad service without stopping Mongo, invoke mup stop:
 
 ```shell
+mup stop
+```
+
+Sample invocation and results:
+
+```shell
 app/.deploy $ mup stop
 
 Started TaskList: Stop Meteor
@@ -22,6 +28,11 @@ app/.deploy $
 ## Start RadGrad
 
 To start the RadGrad service after it's been stopped, invoke mup start:
+
+```shell
+mup start
+```
+Sample invocation and results:
 
 ```shell
 app/.deploy $ mup start
@@ -39,6 +50,12 @@ app/.deploy $
 To see the status of your deployment containers, use ssh in conjunction with the docker ps command:
 
 ```shell
+ssh radgrad@radgrad2.ics.hawaii.edu 'docker ps'
+```
+
+Sample invocation and results:
+
+```shell
 app/.deploy $ ssh radgrad@radgrad2.ics.hawaii.edu 'docker ps'
 CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS              PORTS                                      NAMES
 ccf9e956152d        mup-radgrad:latest                       "/bin/sh -c 'exec $M…"   2 minutes ago       Up 2 minutes        80/tcp, 3000/tcp                           radgrad
@@ -53,7 +70,11 @@ This also lists the names of the containers: radgrad, mongodb, mup-nginx-proxy-l
 
 ## Logs
 
-To see logs, use ssh in conjunction with the [docker logs](https://docs.docker.com/engine/reference/commandline/logs/) command. For example:
+To see logs, use ssh in conjunction with the [docker logs](https://docs.docker.com/engine/reference/commandline/logs/) command:
+
+```shell
+ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
+```
 
 ```shell
 $ ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
@@ -65,17 +86,41 @@ $ ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
 ```
 ## Update settings
 
-If you want to restart RadGrad with a changed settings.json or mup.js file, here's how to do it:
+If you want to restart RadGrad with a changed settings.json or mup.js file, invoke mup reconfig:
 
 ```shell
-$ mup stop
-$ mup reconfig
-$ mup start
+mup reconfig
+```
+
+Sample invocation and results:
+
+```shell
+app/.deploy $ mup reconfig
+
+Started TaskList: Configuring App
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script: SUCCESS
+[radgrad2.ics.hawaii.edu] - Sending Environment Variables
+[radgrad2.ics.hawaii.edu] - Sending Environment Variables: SUCCESS
+
+Started TaskList: Start Meteor
+[radgrad2.ics.hawaii.edu] - Start Meteor
+[radgrad2.ics.hawaii.edu] - Start Meteor: SUCCESS
+[radgrad2.ics.hawaii.edu] - Verifying Deployment
+[radgrad2.ics.hawaii.edu] - Verifying Deployment: SUCCESS
+
+app/.deploy $
 ```
 
 ## List collections
 
 To see a list of all collections in the RadGrad database:
+
+```shell
+ssh radgrad@radgrad2.ics.hawaii.edu 'docker exec mongodb mongo radgrad --eval "printjson(db.getCollectionNames())"'
+```
+
+Sample invocation and results:
 
 ```shell
 $ ssh radgrad@radgrad2.ics.hawaii.edu 'docker exec mongodb mongo radgrad --eval "printjson(db.getCollectionNames())"'
@@ -128,15 +173,4 @@ MongoDB server version: 3.4.1
 ]
 $
 ```
-
-## Drop all collections
-
-Needs testing.  Stop radgrad first.
-
-```shell
-mongo [database] --eval "db.getCollectionNames().forEach(function(n){db[n].remove()});"
-
-```
-
-
 

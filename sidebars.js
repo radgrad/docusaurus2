@@ -113,10 +113,7 @@ module.exports = {
             label: 'How to...',
             items: [
               'developers/deployment/howto/setup-production-server-mup',
-              'developers/deployment/howto/setup-production-server',
-              'developers/deployment/howto/build-a-release',
-              'developers/deployment/howto/deploy-a-release',
-              'developers/deployment/howto/setup-ssh',
+              'developers/deployment/howto/reset-db'
             ]
           },
           {
@@ -124,10 +121,20 @@ module.exports = {
             label: 'Reference',
             items: [
               'developers/deployment/reference/mup-commands',
-              'developers/deployment/reference/docker-commands',
               'developers/deployment/reference/settings-file',
             ]
           },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Deployment (Docker)',
+        items: [
+            'developers/deployment/howto/setup-production-server',
+            'developers/deployment/howto/build-a-release',
+            'developers/deployment/howto/deploy-a-release',
+            'developers/deployment/howto/setup-ssh',
+            'developers/deployment/reference/docker-commands',
         ],
       },
       {

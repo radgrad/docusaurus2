@@ -1,6 +1,6 @@
 ---
 title: Setup a production server using Meteor Up
-sidebar_label: Setup production server (mup)
+sidebar_label: Setup production server
 ---
 
 This page documents the process of setting up a production server for RadGrad based upon [Meteor Up](http://meteor-up.com).
@@ -39,7 +39,7 @@ In order for the `mup setup` command to work, you must add NOPASSWD to the sudoe
 Follow the instructions at [http://meteor-up.com/docs.html#installation](http://meteor-up.com/docs.html#installation):
 
 ```shell
-$ npm install -g mup
+npm install -g mup
 ```
 
 ## Setup mup.js and settings.json
@@ -49,8 +49,7 @@ In the app/.deploy directory, there are two template files: mup.sample.js and se
 Copy mup.sample.js to mup.js and settings.sample.js to settings.js:
 
 ```shell
-$ radgrad2/app/.deploy $ cp mup.sample.js mup.js
-$ radgrad2/app/.deploy $ cp settings.sample.json settings.json
+cp mup.sample.js mup.js; cp settings.sample.json settings.json
 ```
 
 Both mup.js and settings.json are ignored by git, so you can safely add credentials into those files without fear of them being committed to GitHub.
@@ -62,30 +61,88 @@ Edit these two files, adding credentials where necessary.  See Philip if you nee
 You can now set up the server following the directions at [http://meteor-up.com/docs.html#setting-up-a-server](http://meteor-up.com/docs.html#setting-up-a-server):
 
 ```shell
-$ mup setup
+mup setup
 ```
+Sample invocation and output:
 
+```shell
+app/.deploy $ mup setup
+
+Started TaskList: Setup Docker
+[radgrad2.ics.hawaii.edu] - Setup Docker
+[radgrad2.ics.hawaii.edu] - Setup Docker: SUCCESS
+
+Started TaskList: Setup Meteor
+[radgrad2.ics.hawaii.edu] - Setup Environment
+[radgrad2.ics.hawaii.edu] - Setup Environment: SUCCESS
+
+Started TaskList: Setup Mongo
+[radgrad2.ics.hawaii.edu] - Setup Environment
+[radgrad2.ics.hawaii.edu] - Setup Environment: SUCCESS
+[radgrad2.ics.hawaii.edu] - Copying Mongo Config
+[radgrad2.ics.hawaii.edu] - Copying Mongo Config: SUCCESS
+
+Started TaskList: Start Mongo
+[radgrad2.ics.hawaii.edu] - Start Mongo
+[radgrad2.ics.hawaii.edu] - Start Mongo: SUCCESS
+
+Started TaskList: Setup proxy
+[radgrad2.ics.hawaii.edu] - Setup Environment
+[radgrad2.ics.hawaii.edu] - Setup Environment: SUCCESS
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script: SUCCESS
+[radgrad2.ics.hawaii.edu] - Pushing Nginx Config Template
+[radgrad2.ics.hawaii.edu] - Pushing Nginx Config Template: SUCCESS
+[radgrad2.ics.hawaii.edu] - Pushing Nginx Config
+[radgrad2.ics.hawaii.edu] - Pushing Nginx Config: SUCCESS
+[radgrad2.ics.hawaii.edu] - Cleaning Up SSL Certificates
+[radgrad2.ics.hawaii.edu] - Cleaning Up SSL Certificates: SUCCESS
+[radgrad2.ics.hawaii.edu] - Configure Nginx Upstream
+[radgrad2.ics.hawaii.edu] - Configure Nginx Upstream: SUCCESS
+
+Started TaskList: Start proxy
+[radgrad2.ics.hawaii.edu] - Start proxy
+[radgrad2.ics.hawaii.edu] - Start proxy: SUCCESS
+
+Next, you should run:
+    mup deploy
+```
 ## Deploy to server
 
 Now you can deploy the current version of RadGrad in your directory to the server following the directions at [http://meteor-up.com/docs.html#deploying-an-app](http://meteor-up.com/docs.html#deploying-an-app):
 
 ```shell
-$ mup deploy
+mup deploy
+```
+
+Sample invocation and output. This takes approximately 10 minutes on my machine to complete:
+
+```shell
+app/.deploy $ mup deploy
+Building App Bundle Locally
+
+Started TaskList: Pushing Meteor App
+[radgrad2.ics.hawaii.edu] - Pushing Meteor App Bundle to the Server
+[radgrad2.ics.hawaii.edu] - Pushing Meteor App Bundle to the Server: SUCCESS
+[radgrad2.ics.hawaii.edu] - Prepare Bundle
+[radgrad2.ics.hawaii.edu] - Prepare Bundle: SUCCESS
+
+Started TaskList: Configuring App
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script
+[radgrad2.ics.hawaii.edu] - Pushing the Startup Script: SUCCESS
+[radgrad2.ics.hawaii.edu] - Sending Environment Variables
+[radgrad2.ics.hawaii.edu] - Sending Environment Variables: SUCCESS
+
+Started TaskList: Start Meteor
+[radgrad2.ics.hawaii.edu] - Start Meteor
+[radgrad2.ics.hawaii.edu] - Start Meteor: SUCCESS
+[radgrad2.ics.hawaii.edu] - Verifying Deployment
+[radgrad2.ics.hawaii.edu] - Verifying Deployment: SUCCESS
+
 ```
 
 After deployment finishes, the app should be live at [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).
 
-Here's what Docker should show on the production server when deployment succeeds:
-
-```shell
-radgrad@radgrad2:~$ docker ps
-CONTAINER ID        IMAGE                                    COMMAND                  CREATED             STATUS              PORTS                                      NAMES
-aa1d789a85af        mup-radgrad:latest                       "/bin/sh -c 'exec $M…"   19 seconds ago      Up 17 seconds       80/tcp, 3000/tcp                           radgrad
-107f0fc6f426        jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/entr…"   8 minutes ago       Up 8 minutes                                                   mup-nginx-proxy-letsencrypt
-0031cd1616fb        jwilder/nginx-proxy                      "/app/docker-entrypo…"   8 minutes ago       Up 8 minutes        0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   mup-nginx-proxy
-7627b9bca4e2        mongo:3.4.1                              "/entrypoint.sh mong…"   2 hours ago         Up 2 hours          127.0.0.1:27017->27017/tcp                 mongodb
-radgrad@radgrad2:~$
-```
 
 ## Setup Robo3T
 

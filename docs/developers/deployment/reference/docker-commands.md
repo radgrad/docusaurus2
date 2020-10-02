@@ -1,10 +1,6 @@
 ---
-title: Docker commands
+title: Commands (Docker)
 ---
-
-:::warning
-Please refer to mup commands page for current information.
-:::
 
 Here are some helpful commands for Docker management
 
