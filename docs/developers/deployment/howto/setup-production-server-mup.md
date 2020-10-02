@@ -42,17 +42,20 @@ Follow the instructions at [http://meteor-up.com/docs.html#installation](http://
 $ npm install -g mup
 ```
 
-## Create the mup.js file
+## Setup mup.js and settings.json
 
-In the app/.deploy directory, there is a file called mup.sample.js that provides a template for the mup.js file.  Make a copy of that file called mup.js:
+In the app/.deploy directory, there are two template files: mup.sample.js and settings.sample.json.
+
+Copy mup.sample.js to mup.js and settings.sample.js to settings.js:
 
 ```shell
 $ radgrad2/app/.deploy $ cp mup.sample.js mup.js
+$ radgrad2/app/.deploy $ cp settings.sample.json settings.json
 ```
 
-The mup.js file is .gitignored, so you can add credentials to that file without fear of the file being committed to GitHub.
+Both mup.js and settings.json are ignored by git, so you can safely add credentials into those files without fear of them being committed to GitHub.
 
-Edit the username and password fields to provide credentials for the production server. See Philip if you need credentials.
+Edit these two files, adding credentials where necessary.  See Philip if you need credentials.
 
 ## Set up server
 
