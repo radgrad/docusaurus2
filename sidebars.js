@@ -127,17 +127,7 @@ module.exports = {
           },
         ],
       },
-      {
-        type: 'category',
-        label: 'Deployment (Docker)',
-        items: [
-            'developers/deployment/howto/setup-production-server',
-            'developers/deployment/howto/build-a-release',
-            'developers/deployment/howto/deploy-a-release',
-            'developers/deployment/howto/setup-ssh',
-            'developers/deployment/reference/docker-commands',
-        ],
-      },
+
       {
         type: 'category',
         label: 'Documentation',
@@ -169,6 +159,18 @@ module.exports = {
     ],
     'About us': ['about/team', 'about/publications', 'about/opportunities'],
     Archive: [
+      {
+        type: 'category',
+        label: 'Deployment (Docker)',
+        items: [
+          'archive/docker/setup-production-server',
+          'archive/docker/build-a-release',
+          'archive/docker/deploy-a-release',
+          'archive/docker/docker-management',
+          'archive/docker/setup-ssh',
+          'archive/docker/docker-commands',
+        ],
+      },
       {
         type: 'category',
         label: 'Internbit',
