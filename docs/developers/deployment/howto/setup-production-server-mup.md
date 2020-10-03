@@ -169,13 +169,15 @@ And after connecting, you can inspect any collection and document:
 ![](/img/deployment/robo3t-dashboard.png)
 
 
-
-
 ## Setup APM
 
-It is useful to have application performance monitoring.  We hope to be able to use [Monti APM](https://montiapm.com/). Unfortunately, there is a problem with the latest release of the agent, as documented [here](https://github.com/monti-apm/monti-apm-agent/issues/14#issuecomment-701714047). Hopefully that problem will be resolved soon.
+We use [Monti APM](https://montiapm.com/) for application monitoring.
 
-Here's what a Monti APM dashboard will look if we can get the bug resolved:
+To setup Monti APM, you will need to provide credentials in the settings.json file in the "monti" section.
+
+Monti APM provides useful metrics for performance optimization, as well as logging client and server side run-time errors.
+
+Here is a screenshot of one of the Monti APM screens:
 
 ![](/img/deployment/monti-apm-dashboard.png)
 
