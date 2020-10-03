@@ -113,6 +113,7 @@ module.exports = {
             label: 'How to...',
             items: [
               'developers/deployment/howto/setup-production-server-mup',
+              'developers/deployment/howto/build-a-release-mup',
               'developers/deployment/howto/reset-db'
             ]
           },
