@@ -96,6 +96,12 @@ module.exports = {
               'developers/testing/howto/perform-unit-and-integration-testing',
             ]
           },
+          {
+            type: 'category',
+            label: 'Reference',
+            items: [ 'developers/testing/reference/testing-scripts',
+            ],
+          },
         ],
       },
       {
@@ -153,7 +159,9 @@ module.exports = {
       {
         type: 'category',
         label: 'Reference',
-        items: [ 'developers/reference/overview',
+        items: [
+            'developers/reference/overview',
+            'developers/reference/settings',
         ],
       },
     ],
