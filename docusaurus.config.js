@@ -33,7 +33,8 @@ module.exports = {
       copyright: `RadGrad is sponsored by:<br/>
                   <a href='http://csdl.ics.hawaii.edu'>Collaborative Software Development Laboratory</a><br/>
                   <a href='http://www.ics.hawaii.edu'>Department of Information and Computer Sciences</a><br/>
-                  <a href='http://www.hawaii.edu'>University of Hawaii</a>`,
+                  <a href='http://www.hawaii.edu'>University of Hawaii</a><br/>
+                  with funding from the National Science Foundation (Awards 1829542, 2025112)`,
     },
   },
   presets: [
