@@ -3,4 +3,32 @@ title: Overview of RadGrad Testing
 sidebar_label: Overview
 ---
 
-This section provides documentation about the design and implementation of testing in RadGrad2.
+Testing in RadGrad follows the guidelines in the [Meteor Testing Guide](https://guide.meteor.com/testing.html), which is worth reading if you are new to testing and/or Meteor. The Meteor Testing Guide begins with some testing basics, including the four canonical types of tests: Unit, Integration, Acceptance, and Load.  RadGrad currently provides support for the first three of those four kinds of tests.
+
+**Unit tests** focus on one small module of the application. In the context of RadGrad, unit tests are tests that run on the server-side only.  RadGrad unit tests generally focus on the data model and test code in the api/ directory.  To run the unit tests, you can invoke:
+
+```
+$ meteor npm run test-unit
+```
+
+**Integration tests** focus on testing interactions between modules.  In the context of RadGrad, integration tests are tests that check the correct functioning of [Meteor Methods](https://guide.meteor.com/methods.html). Meteor Methods are essentially remote procedure calls from the client to the server, and so RadGrad integration tests exercise code on both the client and server side of the system. To run the integration tests, you can invoke:
+
+```
+$ meteor npm run test-integration
+```
+
+**Acceptance tests** focus on testing the application as experienced by the end user. In the context of RadGrad, acceptance tests use [TestCafe](https://devexpress.github.io/testcafe/) to step through the user interface with the goal of assessing that all pages display, all links are valid, the default database contents appear to be retrieved correctly, and that forms enter and update information correctly. To run the acceptance tests, you can invoke:
+
+```
+$ meteor npm run test-acceptance
+```
+
+**Lint.** In addition to these three kinds of tests, there is a fourth kind of "test": Lint (or, in the case of Javascript, ESLint).  ESLint tests to see that coding standards are enforced, as well as testing to see that certain design antipatterns are not present in the code.  To run the coding standards tests, you can invoke:
+
+```
+$ meteor npm run lint
+```
+
+There are variations of these scripts to support various development situations, which are documented more completely in the [Testing Scripts Reference](./reference/testing-scripts).
+
+

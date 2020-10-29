@@ -71,6 +71,7 @@ module.exports = {
               'developers/design/howto/manage-ui-state-with-redux',
               'developers/design/howto/manage-users',
               'developers/design/howto/update-the-data-model-ui',
+              'developers/design/howto/implement-dump-restore',
             ]
           },
         ],
@@ -90,10 +91,10 @@ module.exports = {
             type: 'category',
             label: 'How to...',
             items: [
-              'developers/testing/howto/implement-dump-restore',
-              'developers/testing/howto/perform-end-to-end-testing',
+              'developers/testing/howto/write-unit-tests',
+              'developers/testing/howto/write-integration-tests',
+              'developers/testing/howto/write-acceptance-tests',
               'developers/testing/howto/perform-testing-with-different-roles',
-              'developers/testing/howto/perform-unit-and-integration-testing',
             ]
           },
           {
