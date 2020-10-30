@@ -85,6 +85,7 @@ module.exports = {
             label: 'Concepts',
             items: [
               'developers/testing/concepts/database-fixtures',
+              'developers/testing/concepts/continuous-integration',
             ]
           },
           {
