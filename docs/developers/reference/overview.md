@@ -3,6 +3,6 @@ title: Overview of the Reference Guide
 sidebar_label: Overview
 ---
 
-This section provides reference guide information to RadGrad2, based on JSDocs.
+The following sections provide reference guide information.
 
-(JSDocs not yet available.)
+JSDocs are generated automatically from the source code each time a commit is made to the master branch.
