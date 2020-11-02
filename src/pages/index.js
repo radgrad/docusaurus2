@@ -22,7 +22,7 @@ const features = [
     description: (
       <ul>
         <li><a href='/docs/developers/overview'>Developer Guide</a></li>
-        <li><a href='https://radgrad.github.io/radgrad2/api-docs/index.html'>JSDocs</a></li>
+        <li><a href='https://radgrad.github.io/radgrad2/'>JSDocs</a></li>
       </ul>
     ),
   },
