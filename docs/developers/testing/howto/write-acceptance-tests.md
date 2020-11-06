@@ -34,8 +34,60 @@ So, to simply run the acceptance tests "in background", and have a development v
 $ meteor npm run test-acceptance
 ```
 
-## Structure of acceptance tests
+## Goal of acceptance testing
 
-:::note
-More details on acceptance testing to come.
-:::
+In RadGrad2, the goal of acceptance testing is to assess "availability", which is defined operationally as follows:
+
+  * All pages (and their internal components) display successfully. This verifies that there are no fatal errors in the implementation of the UI component code. It does not verify that what is displayed is correct under all circumstances.
+
+  * All pages that should display data from the database, when initialized with the default development data, should have non-empty results.  This verifies that data can be retrieved from the database and displayed. It does not verify that the correct dataset has been retrieved under all circumstances.
+
+  * All user input mechanisms (i.e. forms) work for at least one set of legal inputs. This verifies that data can be added and retrieved from the database. It does not verify that forms work under all conditions.
+
+The goal of assessing "availability" is motivated by the following pragmatic considerations:
+
+  * With a small development resources, we do not want the development and maintenance of tests to consume all of our development team's time and energy.
+
+  * Since the user interface and functionality of the system is in flux, we want to reduce the "test maintainance" burden as much as possible.
+
+## Page Object Model
+
+Acceptance tests are designed using the "Page Object Model".  This means that each page, and in some cases component, will have a corresponding Javascript class that is responsible for providing methods to manipulate the UI components on that page.
+
+Here is a simple example of a RadGrad class supporting acceptance testing according to the Page Object Model:
+
+```js
+import { Selector } from 'testcafe';
+import { NavBar } from './navbar.component';
+
+const navBar = new NavBar();
+
+export class SigninPage {
+  constructor() {
+    this.pageId = '#signin-page';
+    this.pageSelector = Selector(this.pageId);
+  }
+
+  /** Checks that this page is currently displayed. */
+  async isDisplayed(testController) {
+    await testController.expect(this.pageSelector.exists).ok();
+  }
+
+  /** Fills out and submits the form to signin, then checks to see that login was successful. */
+  async signin(testController, credentials) {
+    await this.isDisplayed(testController);
+    await testController.typeText('#signin-form-email', credentials.username);
+    await testController.typeText('#signin-form-password', credentials.password);
+    await testController.click('#signin-form-submit');
+    await navBar.isLoggedIn(testController, credentials.username);
+  }
+}
+```
+
+This class illustrates some common design patterns for acceptance testing using the Page Object Model in RadGrad:
+
+  * A constructor along with an isDisplayed() method that defines an HTML ID that can be used to identify whether or not the page is currently visible. Acceptance tests will typically use HTML IDs to select elements of a page, though this is not required.
+
+  * HTML IDs have naming standards.  Most pages should have a top-level ID that can be used in acceptance testing to assess whether the correct page is being displayed (and, more importantly, that no fatal error has occurred while attempting to display it). This ID has the default structure of the page name, followed by "-page". For example, "signin-page". For forms on a page, the ID should consist of the page name, followed by "-form-", followed by the field name.  For example, "signin-form-email".
+
+
