@@ -90,6 +90,13 @@ This class illustrates some common design patterns for acceptance testing using 
 
   * A constructor along with an isDisplayed() method that defines an HTML ID that can be used to identify whether or not the page is currently visible. Acceptance tests will typically use HTML IDs to select elements of a page, though this is not required.
 
-  * HTML IDs have naming standards.  Most pages should have a top-level ID that can be used in acceptance testing to assess whether the correct page is being displayed (and, more importantly, that no fatal error has occurred while attempting to display it). This ID has the default structure of the page name, followed by "-page". For example, "signin-page". For forms on a page, the ID should consist of the page name, followed by "-form-", followed by the field name.  For example, "signin-form-email".
+  * HTML IDs have naming conventions in RadGrad.  Here are some of them:
+
+    * Most pages should have a top-level ID that can be used in acceptance testing to assess whether the correct page is being displayed (and, more importantly, that no fatal error has occurred while attempting to display it). The naming convention for this ID is the page name, followed by "-page". For example, "signin-page".
+
+    * For forms on a page, the naming convention is the page name, followed by "-form-", followed by the field name.  For example, "signin-form-email".
+
+    * Note that HTML IDs should only contain letters, numbers, underscore, dash, and the dot (.). More specifically, the at-sign character ("@") is not legal (at least for HTML 4). Thus, do not create IDs that are email addresses!  The naming convention for IDs that must indicate a user is just their account name (i.e. "abi"), not their username (i.e. "abi@hawaii.edu"). This should not cause any problems for acceptance testing using the default dataset.
+
 
 
