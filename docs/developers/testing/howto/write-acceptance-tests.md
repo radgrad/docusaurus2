@@ -92,7 +92,7 @@ This class illustrates some common design patterns for acceptance testing using 
 
   * HTML IDs have naming conventions in RadGrad.  Here are some of them:
 
-    * Most pages should have a top-level ID that can be used in acceptance testing to assess whether the correct page is being displayed (and, more importantly, that no fatal error has occurred while attempting to display it). The naming convention for this ID is the page name, followed by "-page". For example, "signin-page".
+    * Most pages should have a top-level ID that can be used in acceptance testing to assess whether the correct page is being displayed (and, more importantly, that no fatal error has occurred while attempting to display it). One possible naming convention for this ID is the page name, followed by "-page". For example, "signin-page". In the case of pages that vary by role, then the convention is the role name (i.e. "student", "admin"), followed by the type of page (i.e. "-home"), followed by "-page". For example, "student-home-page".
 
     * For forms directly embedded in a page, the naming convention is the page name, followed by "-form-", followed by the field name.  For example, "signin-form-email".
 
