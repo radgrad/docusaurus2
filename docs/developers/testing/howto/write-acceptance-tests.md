@@ -44,11 +44,13 @@ In RadGrad2, the goal of acceptance testing is to assess "availability", which i
 
   * All user input mechanisms (i.e. forms) work for at least one set of legal inputs. This verifies that data can be added and retrieved from the database. It does not verify that forms work under all conditions.
 
-The goal of assessing "availability" is motivated by the following pragmatic considerations:
+The goal of assessing "availability" is motivated by the following considerations:
 
-  * With a small development resources, we do not want the development and maintenance of tests to consume all of our development team's time and energy.
+  * We want to increase the velocity of development by helping developers quickly assess whether or not their changes had a dramatic "ripple" effect, particularly when doing UI development. If all acceptance tests pass, then developers know that their changes did not produce fatal errors anywhere in the user interface.
 
-  * Since the user interface and functionality of the system is in flux, we want to reduce the "test maintainance" burden as much as possible.
+  * With a small development resources, we do not want the development and maintenance of tests to consume too much of our development team's time and energy.
+
+  * Since the user interface and functionality of the system is in flux, we want to reduce the "test maintainance" burden as much as possible. We don't want small UI changes to require acceptance test code modification.
 
 ## Page Object Model
 
