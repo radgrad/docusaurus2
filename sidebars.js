@@ -54,6 +54,7 @@ module.exports = {
             type: 'category',
             label: 'Concepts',
             items: [
+              'developers/design/concepts/ui-architecture',
               'developers/design/concepts/academic-plans',
               'developers/design/concepts/class-hierarchy',
               'developers/design/concepts/data-model',
