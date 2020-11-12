@@ -6,15 +6,15 @@ title: UI Architecture Review
 
 The original vision for the UI architecture in RadGrad1 was to organize the entire UI around three top-level directories:
 
-  * layouts/ implements the top-level, site-wide organization (i.e. header, page, footer)
-  * pages/ implements the section of the page between the header and the footer.
-  * components/ implements the various "widgets" that together comprise a page.
+  * layouts/ implements the top-level, site-wide organization and the routing of URLs to pages.
+  * pages/ implements pages, which are identified through a menu at the top of the page and/or a side-bar menu on the left-hand side of the page.
+  * components/ implements the various "widgets" that appear in pages.
 
 For example:
 
 <img src="/img/design/ui-architecture-review/ui-directory-ideal.png" width="25%"/>
 
-In addition to this top-level organization, each of these subdirectories would have separate areas to segregate components specific to RadGrad roles (student, advisor, mentor, etc.).  This was in recognition that RadGrad needs to provide different user interfaces depending upon the role. For example:
+In addition to this top-level organization, each of these subdirectories can have separate areas to segregate components specific to RadGrad roles (student, advisor, mentor, etc.).  This is because RadGrad provides different user interfaces depending upon the role. For example:
 
 <img src="/img/design/ui-architecture-review/pages-subdirectories.png" width="25%"/>
 
