@@ -5,7 +5,7 @@ sidebar_label: Branch and merge
 
 For RadGrad, we use the following approach to development:
 
-## Work on tasks specified by issue in branches
+## Work on tasks specified by issues in branches
 
 Work is organized into tasks, and each task is described in a GitHub issue. Work corresponding to a task/issue is done in a branch off master. The branch is named after its corresponding issue number. So, if you are working on a task described in [Issue 324](https://github.com/radgrad/radgrad2/issues/324), then that work is performed in a branch off of master called "issue-324".  For uniformity, please do not name the branch "324", or "ISSUE-324".  Please name it as the branch number, prefixed with "issue-".
 
