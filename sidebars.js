@@ -42,6 +42,7 @@ module.exports = {
               'developers/getting-started/howto/run-scripts',
               'developers/getting-started/howto/maintain-coding-standards',
               'developers/getting-started/howto/remote-pair-program',
+              'developers/getting-started/howto/branch-and-merge',
             ]
           },
         ],
