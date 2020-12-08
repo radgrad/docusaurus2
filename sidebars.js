@@ -86,7 +86,14 @@ module.exports = {
             type: 'category',
             label: 'How to...',
             items: ['developers/reviews/howto/conduct-a-review']
-          }
+          },
+          {
+            type: 'category',
+            label: 'Reference',
+            items: [ 'developers/reviews/reference/review-checklist',
+            ],
+          },
+
         ]
       },
       {
