@@ -80,6 +80,17 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'Reviews',
+        items: [ 'developers/reviews/overview',
+          {
+            type: 'category',
+            label: 'How to...',
+            items: ['developers/reviews/howto/conduct-a-review']
+          }
+        ]
+      },
+      {
+        type: 'category',
         label: 'Testing',
         items: [ 'developers/testing/overview',
           {
