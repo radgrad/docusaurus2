@@ -18,7 +18,7 @@ The body of the issue contains the following:
   * The date and time of the review meeting.
   * Any high-level goals for the review. Perhaps the developer is concerned about some specific issue with the code.
 
-After creating the issue, the developer should then create a branch called "issue-XXX", where XXX is the issue number. (This is just like our normal issue/branch naming convention.) It is helpful to edit the issue to provide links to the files under review within that new branch.
+After creating the issue, the developer should then create a branch called "review-XXX", where XXX is the issue number. (This is just like our normal issue/branch naming convention.) It is helpful to edit the issue to provide links to the files under review within that new branch.
 
 Once the issue and branch are set up, then the issue can be moved to "In progress" on the Project Board, and developers can be assigned to that issue.  Unlike other tasks, reviews are normally assigned to most or all of the RadGrad developers.
 
