@@ -11,3 +11,5 @@ Best practices for React.
 
 **REACT-03:** Are there state updates in loops?
 
+**REACT-04:** When importing a component that is exported "by default", do not rename the component.  The code is more understandable if every component is always referenced by its original name.
+
