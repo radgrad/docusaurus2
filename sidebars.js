@@ -89,8 +89,12 @@ module.exports = {
           },
           {
             type: 'category',
-            label: 'Reference',
-            items: [ 'developers/reviews/reference/review-checklist',
+            label: 'Checklists',
+            items: [
+              'developers/reviews/reference/architecture-checklist',
+              'developers/reviews/reference/design-checklist',
+              'developers/reviews/reference/js-ts-checklist',
+              'developers/reviews/reference/react-checklist',
             ],
           },
 
