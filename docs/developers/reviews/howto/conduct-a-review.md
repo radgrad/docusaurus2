@@ -36,10 +36,14 @@ The preparation phase generally lasts from three days to a week, depending upon 
 
 The meeting begins with each developer adding a comment to the issue, which is a copy-and-paste of their private notes developed during the preparation phase. This is the first time that the entire group sees each other's comments.
 
-The review meeting involves going through each of the comments and deciding how to resolve them. This can happen in a number of ways: existing comments could be edited, or a new comment could be created that documents the proposed resolutions.
+The group then decides on one person to be the "scribe". The scribe checks out the review branch from GitHub, opens up the RadGrad code in IntelliJ, and starts a Code With Me session. For details on Code With Me, please see the [IntelliJ Code With Me Documentation](https://www.jetbrains.com/help/idea/code-with-me.html). All participants join the Code With Me session so that everyone can be seeing the code in the same way, and help the scribe to update the code with comments as the review proceeds.
 
-At the conclusion of the meeting, one or more developers are tasked with performing "Resolution" activities, which can involve changes to the code base or to the RadGrad documentation.
+The review meeting involves going through each of the comments and deciding how to resolve them. When the resolution involves a change to the code base, the scribe will create a comment starting with "// TODO:" followed by a description of what needs to change in the code base.  When the resolution involves a change to the review documentation and/or checklists, then these changes are documented as an additional comment in the Issue.
+
+At the conclusion of the meeting, the scribe commits the review branch to GitHub. One or more developers are tasked with performing "Resolution" activities, which involves changes to the code base and/or changes to the review documentation and/or checklists.
 
 ## 4. Resolution Phase
 
-Developers fix the code and/or documentation. When completed, the issue is closed.
+All of the desired changes to the code base are documented in the review branch. One or more developers can make the changes to the review branch, then merge it into master when finished.
+
+One or more developers make changes to the checklists or review process guidelines that are documented as a review issue, and commit the updated materials to publish them.
