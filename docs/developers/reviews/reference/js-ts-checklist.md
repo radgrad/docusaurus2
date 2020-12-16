@@ -7,31 +7,49 @@ Javascript and Typescript best practices.
 
 ## Javascript
 
-**JS-01:** Do variables/functions/modules conform to our naming standards? (Consistent casing, etc.)
+**JS-01: Name constructs appropriately.**
 
-**JS-02:** Do variables/functions/modules have descriptive names?
+Do variables/functions/modules conform to our naming standards? (Consistent casing, descriptive names, etc.)
 
-**JS-03:** Can you use the spread operator?
+**JS-03: Use the spread operator when appropriate.**
 
-**JS-04:** Can you use object deconstruction?
+Can you use the spread operator?
 
-**JS-05:** Can you use arrow functions?
+**JS-04: Use object deconstruction when appropriate.**
 
-**JS-06:** Can you use a built-in function rather than the lodash version?
+Can you use object deconstruction?
 
-**JS-07:** Are there any unecessary console.logs?
+**JS-05: Use arrow functions when appropriate.**
+
+Can you use arrow functions? Note that arrow functions are normally better, except in Mocha tests.
+
+**JS-06: Avoid lodash map, filter, etc.**
+
+ES6 includes many of the lodash functions. Use the built-in function rather than the lodash version when possible.
+
+**JS-07: Avoid console.logs**
+
+Get rid of console.log.
 
 
 ## Typescript
 
-**TS-01:** Can we change the type `any` to something more specific?
+**TS-01: Avoid any.**
 
-**TS-O2:** Are you using the React.FC type parameterized with the props to express the type of a React component?
+Can we change the type `any` to something more specific?
+
+**TS-O2: Use React.FC().**
+
+Use the React.FC type parameterized with the props to express the type of a React component?
 
 ## ESLint
 
-**ESLINT-01:** Are there ESLint errors or warnings that should be removed?
+**ESLINT-01: No errors.**
 
-**ESLINT-02:** Should we be modifying the set of ESLint rules?
+Are there ESLint errors or warnings that should be removed?
+
+**ESLINT-02: Consider modifying our standards.**
+
+Should we be modifying the set of ESLint rules?
 
 
