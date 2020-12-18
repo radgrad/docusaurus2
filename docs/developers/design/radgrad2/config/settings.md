@@ -1,8 +1,6 @@
 ---
-title: settings.json
+title: Settings files
 ---
-
-## Overview
 
 Meteor supports the use of a settings file to store configuration setting. Meteor Chef provides a nice tutorial called [Making use of settings.json](https://blog.meteor.com/the-meteor-chef-making-use-of-settings-json-3ed5be2d0bad). If you are not familiar with settings files, this is a good place to start.
 

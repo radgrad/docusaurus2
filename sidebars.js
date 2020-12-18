@@ -40,43 +40,67 @@ module.exports = {
       {
         type: 'category',
         label: 'Design',
-        items: [ 'developers/design/overview',
+        items: [
+          'developers/design/radgrad2/overview',
           {
             type: 'category',
-            label: 'radgrad2',
+            label: 'app/',
             items: [
-              'developers/design/radgrad2/overview',
+              'developers/design/radgrad2/app/overview',
               {
                 type: 'category',
-                label: 'app/',
+                label: 'imports/',
                 items: [
-                  'developers/design/radgrad2/app/overview',
+                  'developers/design/radgrad2/app/imports/overview',
                   {
                     type: 'category',
-                    label: 'imports/',
+                    label: 'api/',
                     items: [
-                      'developers/design/radgrad2/app/imports/overview',
-                      {
-                        type: 'category',
-                        label: 'api/',
-                        items: [
-                          'developers/design/radgrad2/app/imports/api/overview',
-                          'developers/design/radgrad2/app/imports/api/data-model',
-                          'developers/design/radgrad2/app/imports/api/class-hierarchy',
-                          'developers/design/radgrad2/app/imports/api/entity-relationship-model',
-                          'developers/design/radgrad2/app/imports/api/pub-sub',
-                          'developers/design/radgrad2/app/imports/api/data-integrity',
-                          'developers/design/radgrad2/app/imports/api/dump-restore',
-                          'developers/design/radgrad2/app/imports/api/manage-users',
-                        ]
-                      },
+                      'developers/design/radgrad2/app/imports/api/overview',
+                      'developers/design/radgrad2/app/imports/api/data-model',
+                      'developers/design/radgrad2/app/imports/api/class-hierarchy',
+                      'developers/design/radgrad2/app/imports/api/entity-relationship-model',
+                      'developers/design/radgrad2/app/imports/api/pub-sub',
+                      'developers/design/radgrad2/app/imports/api/data-integrity',
+                      'developers/design/radgrad2/app/imports/api/dump-restore',
+                      'developers/design/radgrad2/app/imports/api/manage-users',
+                    ]
+                  },
+                  {
+                    type: 'category',
+                    label: 'redux/',
+                    items: [
+                      'developers/design/radgrad2/app/imports/redux/overview',
+                      'developers/design/radgrad2/app/imports/redux/manage-ui-state',
+                    ]
+                  },
+                  {
+                    type: 'category',
+                    label: 'ui/',
+                    items: [
+                      'developers/design/radgrad2/app/imports/ui/overview',
                     ]
                   },
                 ]
               },
             ]
           },
-        ],
+          {
+            type: 'category',
+            label: 'config/',
+            items: [
+              'developers/design/radgrad2/config/overview',
+              'developers/design/radgrad2/config/settings',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'scripts/',
+            items: [
+              'developers/design/radgrad2/scripts/overview',
+            ]
+          },
+        ]
       },
       {
         type: 'category',
@@ -188,7 +212,6 @@ module.exports = {
         items: [
             'developers/reference/overview',
           { type: 'link', label: 'JSDocs', href: 'https://radgrad.github.io/radgrad2/' },
-            'developers/reference/settings',
         ],
       },
     ],

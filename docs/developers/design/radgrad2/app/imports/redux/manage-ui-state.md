@@ -1,7 +1,8 @@
 ---
-title: How to manage UI state with Redux
-sidebar_label: Manage UI state with Redux
+title: Manage UI state with Redux
+sidebar_label: Manage UI state
 ---
+
 ## State
 
 In React, temporary state is managed using simple [state management tools](https://reactjs.org/docs/state-and-lifecycle.html) that provide excellent functionality. However, there comes a point where application state can get complex enough that these tools are no longer sufficient for managing it. This is where Redux comes in. 

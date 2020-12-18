@@ -9,4 +9,4 @@ The `redux/` directory is the primary location for redux definition files.
 
 <img src="/img/design/radgrad2/redux.png" />
 
-The next section goes into the way Redux is used in RadGrad2.
+The next section provides details on how we use Redux to manage application state in RadGrad2.
