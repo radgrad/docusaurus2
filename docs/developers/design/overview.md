@@ -1,6 +1,6 @@
 ---
-title: Overview of RadGrad Design
+title: Overview of RadGrad's Design
 sidebar_label: Overview
 ---
 
-This section provides documentation about the design and implementation of RadGrad2.
+This chapter provides a guided walkthough of the design of RadGrad.  In general, we will walk through the directory structure of the primary repositories associated with the system.

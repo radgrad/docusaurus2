@@ -1,6 +1,5 @@
 ---
-title: Run RadGrad
-sidebar_label: Run RadGrad
+title: Run Scripts
 ---
 
 We use a variety NPM scripts for development. They are defined in the RadGrad2 [package.json](https://github.com/radgrad/radgrad2/blob/master/app/package.json) file.

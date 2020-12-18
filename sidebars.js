@@ -43,27 +43,37 @@ module.exports = {
         items: [ 'developers/design/overview',
           {
             type: 'category',
-            label: 'Concepts',
+            label: 'radgrad2',
             items: [
-              'developers/design/concepts/ui-architecture-review',
-              'developers/design/concepts/academic-plans',
-              'developers/design/concepts/class-hierarchy',
-              'developers/design/concepts/data-model',
-              'developers/design/concepts/design-patterns',
-              'developers/design/concepts/design-antipatterns',
-              'developers/design/concepts/entity-relationship-model',
-              'developers/design/concepts/pub-sub-caching',
-            ]
-          },
-          {
-            type: 'category',
-            label: 'How to...',
-            items: [
-              'developers/design/howto/maintain-data-integrity',
-              'developers/design/howto/manage-ui-state-with-redux',
-              'developers/design/howto/manage-users',
-              'developers/design/howto/update-the-data-model-ui',
-              'developers/design/howto/implement-dump-restore',
+              'developers/design/radgrad2/overview',
+              {
+                type: 'category',
+                label: 'app/',
+                items: [
+                  'developers/design/radgrad2/app/overview',
+                  {
+                    type: 'category',
+                    label: 'imports/',
+                    items: [
+                      'developers/design/radgrad2/app/imports/overview',
+                      {
+                        type: 'category',
+                        label: 'api/',
+                        items: [
+                          'developers/design/radgrad2/app/imports/api/overview',
+                          'developers/design/radgrad2/app/imports/api/data-model',
+                          'developers/design/radgrad2/app/imports/api/class-hierarchy',
+                          'developers/design/radgrad2/app/imports/api/entity-relationship-model',
+                          'developers/design/radgrad2/app/imports/api/pub-sub',
+                          'developers/design/radgrad2/app/imports/api/data-integrity',
+                          'developers/design/radgrad2/app/imports/api/dump-restore',
+                          'developers/design/radgrad2/app/imports/api/manage-users',
+                        ]
+                      },
+                    ]
+                  },
+                ]
+              },
             ]
           },
         ],

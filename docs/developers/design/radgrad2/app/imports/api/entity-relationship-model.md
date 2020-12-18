@@ -1,6 +1,5 @@
 ---
 title: Entity-Relationship Model
-sidebar_label: Entity-Relationship Model
 ---
 
 The prior section illustrated the relationships between the data model entities in terms of class inheritance. That perspective reveals how code is shared.
@@ -61,20 +60,6 @@ This diagram indicates that:
 
 This representation enables RadGrad to associate entities based on Interests: the system can find Users with similar Interests, recommend Courses to Users based upon matching Interests, and so forth. 
 
-## Academic Plans 
-
-### This will change dramatically in Fall 2020
-
-To understand RadGrad's Academic Plans, it's important to understand how degree programs work.  In general, departments establish degree programs such as "B.S. in Computer Science", "B.A. in Information and Computer Science", or "B.S. in Computer Science with a Security Science Specialization".  Each degree program has a set of requirements associated with it, such as the courses that must be taken, and/or the grades that must be achieved, and/or the total number of credit hours.  
-
-In addition, degree programs evolve over time.  So, let's say a B.S. in CS is established in 2015 with a set of requirements.  Then, in 2017, the faculty votes to change those requirements to improve the quality or timeliness of the degree program. Students who have already declared their major as the B.S. in CS now have a choice: they can continue with the degree requirements in place at the time they started (i.e. the 2015 requirements) or they can switch to the new requirements (the 2017 requirements). 
-
-RadGrad's Academic Plans provide a way to represent the evolving nature of degree programs:
-
-<img src="/img/radgrad2/datamodel/AcademicPlans.png" width="100%"/>
-
-A "DesiredDegree" is an entity representing a degree plan such as "B.S. in Computer Science".  A set of "PlanChoices" represent the requirements for that desired degree.  The Academic Term indicates the time at which an Academic Plan comes into being.  The Slug just assigns the AcademicPlan a unique string identifier, such as "BS-Computer-Science-2017".
-
 ## Slugs 
 
 "Slug" is a term commonly used in web application development to denote a unique string that can be used as part of a URL to identify a domain entity.  To facilitate their use in URLs, slugs are generally lower case, and consist only of letters, numbers, and hyphens or underscores. For example, in RadGrad, the slug for the "Software Engineering" Interest might be "software-engineering".
@@ -112,9 +97,7 @@ There are a variety of other entities that are more peripheral in the data model
   * Feed.  Feeds are a representation for recent events within RadGrad. It enables the user interface to display to all users the activities in the system: when courses and opportunities are defined, when new users join, when a user achieves a higher level, and so forth. 
   
   * Help.  Help entities provide the text associated with the help dialog on each page.
-  
-  * MentorQuestion, MentorAnswer.  These entities manage the questions and answers on the MentorSpace page. **Note:** We are removing the MentorSpace page and Mentors during Fall 2020.
-  
+
   * PublicStats.  Provides the publically available data shown on the landing page. 
   
   * Review.  The review entities manage reviews of courses and opportunities.

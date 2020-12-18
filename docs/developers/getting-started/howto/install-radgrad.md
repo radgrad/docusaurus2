@@ -2,9 +2,21 @@
 title: Install RadGrad
 ---
 
-First, download and install [Meteor](https://www.meteor.com/). 
+## Obtain repo permissions
 
-Second, download the RadGrad source code from [https://github.com/radgrad/radgrad2](https://github.com/radgrad/radgrad2).
+To do RadGrad development, you must obtain write access to the RadGrad repository.
+
+Note that our software process (IDPM) does not involve forking and pull requests.  Instead, you will clone this repository and make branches to carry out development tasks.
+
+## Install Meteor
+
+Next, download and install [Meteor](https://www.meteor.com/).
+
+## Download RadGrad
+
+Next, download the RadGrad source code from [https://github.com/radgrad/radgrad2](https://github.com/radgrad/radgrad2).
+
+## Install RadGrad
 
 Next, cd to the `radgrad2/app/` directory and invoke `meteor npm install`:
 
@@ -15,18 +27,14 @@ radgrad2/app $ meteor npm install
 This will download and install the third-party libraries required to run this system. If you are not in the `app` directory and you run `meteor npm install`. You will see something like:
 ```shell script
 radgrad2 $ meteor npm install
-npm WARN saveError ENOENT: no such file or directory, open 'radgrad2\package.json'
-npm WARN enoent ENOENT: no such file or directory, open 'radgrad2\package.json'
-npm WARN radgrad2 No description
-npm WARN radgrad2 No repository field.
-npm WARN radgrad2 No README data
-npm WARN radgrad2 No license field.
 
 up to date in 0.426s
 found 0 vulnerabilities
 
 radgrad2 $
 ```
+
+## Initialize database
 
 To make sure the database starts from an empty state, run:
 
@@ -35,6 +43,8 @@ radgrad2/app$ meteor reset
 Project reset.
 radgrad2/app $
 ```
+
+## Run system locally
 
 To run the system, invoke this command:
 

@@ -4,6 +4,8 @@ title: Tech Stack
 
 Here are the major components of the RadGrad tech stack, with reference materials and activities to help you come up to speed if necessary.
 
+Becoming fluent with the RadGrad Tech Stack is **Job Number One** as a new RadGrad developer.  For some new developers, it might require several weeks of working through the materials below before they are ready to actually start working on the RadGrad code base.  That's totally OK: the time invested here will always pay off in higher efficiency and quality of work later on.
+
 ## IntelliJ IDEA editor
 
 We require all developers in the RadGrad Project to use the IntelliJ IDEA editor.  Although you might prefer another editor, IntelliJ IDEA has a unique combination of features for Javascript, Typescript, and Meteor that make it better suited than any other editor for this project.

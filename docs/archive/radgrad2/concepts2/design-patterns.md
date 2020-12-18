@@ -73,6 +73,7 @@ function inspectorReducer(state: any = initialState, action) {
 We are using the exported types instead of strings to ensure there are no typo errors.
 
 ## Publications and Subscriptions
+
 The ```BaseCollection``` defines default ```publish``` and ```subscribe``` methods.
 ```ts
   /**
@@ -96,7 +97,8 @@ The ```BaseCollection``` defines default ```publish``` and ```subscribe``` metho
     return null;
   }
 ```
-We publish and subscribe to the entire collection. In the ```subscribe``` method we return the handle to the subscription, so the client can wait till the subscription is ready. We use the optional ```userID``` parameter to support filtered collections such as the ```CourseInstanceCollection```: 
+We publish and subscribe to the entire collection. In the ```subscribe``` method we return the handle to the subscription, so the client can wait till the subscription is ready. We use the optional ```userID``` parameter to support filtered collections such as the ```CourseInstanceCollection```:
+
 ```ts
   /**
    * Depending on the logged in user publish only their CourseInstances. If

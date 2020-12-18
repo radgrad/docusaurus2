@@ -1,19 +1,15 @@
 ---
 title: Branching and merging in RadGrad
-sidebar_label: Branch and merge RadGrad
+sidebar_label: Branch and merge in RadGrad
 ---
 
 For RadGrad, we use Issue Driven Project Management, as discussed in the [Tech Stack](../tech-stack#issue-driven-project-management) chapter.
 
 Here is a bit more detail on how the steps to use to branch and merge when doing RadGrad.
 
-## Work on tasks specified by issues in branches
-
-Work is organized into tasks, and each task is described in a GitHub issue. Work corresponding to a task/issue is done in a branch off master. The branch is named after its corresponding issue number. So, if you are working on a task described in [Issue 324](https://github.com/radgrad/radgrad2/issues/324), then that work is performed in a branch off of master called "issue-324".  For uniformity, please do not name the branch "324", or "ISSUE-324".  Please name it as the branch number, prefixed with "issue-".
-
 ## How to merge into master
 
-Given that you are doing work in a branch off of master, the question then is how to successfully merge your results back into master when you finish the task. Here is the basic sequence of steps:
+Given that work on the code base is typically done in a branch off of master, one question is how to successfully merge your results back into master when you finish the task. Here is the basic sequence of steps:
 
   1. Stop any running Meteor process (control-c)
   2. Merge current master branch into your branch.

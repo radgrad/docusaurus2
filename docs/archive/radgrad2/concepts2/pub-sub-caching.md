@@ -5,6 +5,8 @@ sidebar_label: Pub-Sub Caching
 
 The client and server in traditional web applications communicate using a "request-response" design pattern. RadGrad is implemented using Meteor, which uses a different communication design pattern called "publish-subscribe" (often abbreviated to "pub-sub").  The basic difference between the two patterns is that with request-response, the client must always make an explicit request to "pull" data from the server, while publish-subscribe enables the server to "push" data to the client. For details on the way Meteor implements pub-sub, please see the [Meteor Guide chapter on Publications and data loading](https://guide.meteor.com/data-loading.html).
 
+
+
 The point of this section is to note that the default approach to pub-sub in Meteor is on a page-by-page loading basis. In other words, each time a client visits a page, as part of the page loading process, the client creates one or more subscriptions representing all of the data needed for that page, which the server then sends to the client.  Each time the client leaves a page, all current subscriptions are terminated and the associated data is discarded from the client.
 
 The advantage of the default approach is simplicity and minimization of the data held by the client at any given time. The disadvantage is that if two pages involve the exact same set of subscriptions, and the client navigates from one of these pages to the other, then the default approach results in data being sent to the client for first page, then discarded when the client leaves that page, only to have the server resend the exact same data to the client when the second page is loaded.
@@ -19,7 +21,7 @@ Our implementation of subscription caching is accomplished by three global templ
   
   * with-advisor-subscriptions ([html](https://github.com/radgrad/radgrad/blob/master/app/imports/ui/layouts/shared/with-advisor-subscriptions.html), [js](https://github.com/radgrad/radgrad/blob/master/app/imports/ui/layouts/shared/with-advisor-subscriptions.js)) creates cached subscriptions for data used only by the advisor (i.e. plan choices).
 
-### Update Summer 2019
+### Instances now are based on route
 
 To improve performance for the Students, Faculty, Mentors, and Advisors, we are going to change the `with-instance-subscriptions`. We want to only get the instances for the user as defined by the route. The following is an example of doing it the right way.
 
