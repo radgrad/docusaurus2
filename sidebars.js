@@ -41,44 +41,44 @@ module.exports = {
         type: 'category',
         label: 'Design',
         items: [
-          'developers/design/radgrad2/overview',
+          'developers/design/overview',
           {
             type: 'category',
             label: 'app/',
             items: [
-              'developers/design/radgrad2/app/overview',
+              'developers/design/app/overview',
               {
                 type: 'category',
                 label: 'imports/',
                 items: [
-                  'developers/design/radgrad2/app/imports/overview',
+                  'developers/design/app/imports/overview',
                   {
                     type: 'category',
                     label: 'api/',
                     items: [
-                      'developers/design/radgrad2/app/imports/api/overview',
-                      'developers/design/radgrad2/app/imports/api/data-model',
-                      'developers/design/radgrad2/app/imports/api/class-hierarchy',
-                      'developers/design/radgrad2/app/imports/api/entity-relationship-model',
-                      'developers/design/radgrad2/app/imports/api/pub-sub',
-                      'developers/design/radgrad2/app/imports/api/data-integrity',
-                      'developers/design/radgrad2/app/imports/api/dump-restore',
-                      'developers/design/radgrad2/app/imports/api/manage-users',
+                      'developers/design/app/imports/api/overview',
+                      'developers/design/app/imports/api/data-model',
+                      'developers/design/app/imports/api/class-hierarchy',
+                      'developers/design/app/imports/api/entity-relationship-model',
+                      'developers/design/app/imports/api/pub-sub',
+                      'developers/design/app/imports/api/data-integrity',
+                      'developers/design/app/imports/api/dump-restore',
+                      'developers/design/app/imports/api/manage-users',
                     ]
                   },
                   {
                     type: 'category',
                     label: 'redux/',
                     items: [
-                      'developers/design/radgrad2/app/imports/redux/overview',
-                      'developers/design/radgrad2/app/imports/redux/manage-ui-state',
+                      'developers/design/app/imports/redux/overview',
+                      'developers/design/app/imports/redux/manage-ui-state',
                     ]
                   },
                   {
                     type: 'category',
                     label: 'ui/',
                     items: [
-                      'developers/design/radgrad2/app/imports/ui/overview',
+                      'developers/design/app/imports/ui/overview',
                     ]
                   },
                 ]
@@ -89,15 +89,15 @@ module.exports = {
             type: 'category',
             label: 'config/',
             items: [
-              'developers/design/radgrad2/config/overview',
-              'developers/design/radgrad2/config/settings',
+              'developers/design/config/overview',
+              'developers/design/config/settings',
             ]
           },
           {
             type: 'category',
             label: 'scripts/',
             items: [
-              'developers/design/radgrad2/scripts/overview',
+              'developers/design/scripts/overview',
             ]
           },
         ]
