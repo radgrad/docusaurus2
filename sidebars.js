@@ -23,25 +23,15 @@ module.exports = {
       {
         type: 'category',
         label: 'Getting started',
-        items: [ 'developers/getting-started/overview',
-          {
-            type: 'category',
-            label: 'Concepts',
-            items: [
-              'developers/getting-started/concepts/development-goals',
-              'developers/getting-started/concepts/engineering-standards',
-              'developers/getting-started/concepts/source-code-organization',
-            ]
-          },
+        items: [
+            'developers/getting-started/overview',
+            'developers/getting-started/tech-stack',
           {
             type: 'category',
             label: 'How to...',
             items: [
-              'developers/getting-started/howto/setup-the-ide',
               'developers/getting-started/howto/install-radgrad',
               'developers/getting-started/howto/run-scripts',
-              'developers/getting-started/howto/maintain-coding-standards',
-              'developers/getting-started/howto/remote-pair-program',
               'developers/getting-started/howto/branch-and-merge',
             ]
           },

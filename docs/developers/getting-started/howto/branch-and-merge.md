@@ -1,9 +1,11 @@
 ---
-title: Branch and merge-based development process
-sidebar_label: Branch and merge
+title: Branching and merging in RadGrad
+sidebar_label: Branch and merge RadGrad
 ---
 
-For RadGrad, we use the following approach to development:
+For RadGrad, we use Issue Driven Project Management, as discussed in the [Tech Stack](../tech-stack#issue-driven-project-management) chapter.
+
+Here is a bit more detail on how the steps to use to branch and merge when doing RadGrad.
 
 ## Work on tasks specified by issues in branches
 
