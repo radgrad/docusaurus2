@@ -16,9 +16,8 @@ Students:
   * Andre Ruiz (2020 - present)
   * Jennifer Hsu  (2020 - present)
   * Jesse McDonald (2020 - present)
-  * Quinne Uchida (2019 - present)
   * Rashmi Ramanatha (2020 - present)
-  * Tina Loos (2020 - present)
+
 
 Advisory Board:
 
@@ -50,7 +49,9 @@ Advisory Board:
   * Micah Tashima (Spring, 2016)
   * Michael Spencer (Spring, 2016)
   * Michele Shimoda (Spring, 2016)
+  * Quinne Uchida (2019 - 2020)
   * Sorapong Khongnawang (Spring, 2016)
   * Sy Morikawa (Spring, 2016)
+  * Tina Loos (2020 - 2020)
 
 

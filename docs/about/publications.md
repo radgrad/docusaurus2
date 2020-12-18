@@ -4,6 +4,8 @@ title: Pubs, Grants, Talks
 
 ## Publications
 
+Seungoh Paek, Peter Leong, Philip M. Johnson, Carleton A. Moore, Is GPA enough? A platform for promoting computer science undergraduates' pursuit of career related extracurricular activities, In International Journal of Technology in Education and Science, Volume 5, Number 1, January 2021. ([pdf](http://csdl.ics.hawaii.edu/techreports/2020/20-09/20-09.pdf))
+
 Seungoh Paek, Peter Leong, Philip M. Johnson, Carleton A. Moore, **Beyond course work: expanding what's valued in computer science degree programs**, In Journal of Applied Research in Higher Education, Volume 12, Number 4, September 2020, ([pdf](http://csdl.ics.hawaii.edu/techreports/2020/20-08/20-08.pdf))
 
 Philip M. Johnson, Carleton A. Moore, Peter Leong, Seungoh Paek, **RadGrad: Removing the 'Extra' from Extracurricular to Improve Student Engagement, Retention, and Diversity**, In Proceedings of the 51st ACM Technical Symposium on Computer Science Education (SIGCSE 2020), March 2020, ([pdf](http://csdl.ics.hawaii.edu/techreports/2019/19-04/19-04.pdf))
