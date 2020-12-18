@@ -11,7 +11,7 @@ The `imports/` directory is the primary location for the RadGrad2 Meteor applica
 
 The imports/ directory contains the following subdirectories:
 
-`.api/`: Holds code that defines the "data model" in the form of a set of MongoDB collections. Note that most of this code is "isomorphic": it is designed to be loaded and run on both the client and server sides of the system. In other words, we use the same code to access data on the server side (stored in documents in a MongoDB database server process) as well as to access data on the client-side (stored in documents in the "MiniMongo" database running inside the client browser process.)
+`api/`: Holds code that defines the "data model" in the form of a set of MongoDB collections. Note that most of this code is "isomorphic": it is designed to be loaded and run on both the client and server sides of the system. In other words, we use the same code to access data on the server side (stored in documents in a MongoDB database server process) as well as to access data on the client-side (stored in documents in the "MiniMongo" database running inside the client browser process.)
 
 `redux/`: Holds the React Redux actions and reducers.
 
