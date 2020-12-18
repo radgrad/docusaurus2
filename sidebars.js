@@ -111,18 +111,18 @@ module.exports = {
             label: 'How to...',
             items: ['developers/reviews/howto/conduct-a-review']
           },
-          {
-            type: 'category',
-            label: 'Checklists',
-            items: [
-              'developers/reviews/reference/architecture-checklist',
-              'developers/reviews/reference/design-checklist',
-              'developers/reviews/reference/js-ts-checklist',
-              'developers/reviews/reference/react-checklist',
-            ],
-          },
-
         ]
+      },
+      {
+        type: 'category',
+        label: 'Checklists',
+        items: [
+          'developers/checklists/overview',
+          'developers/checklists/architecture-checklist',
+          'developers/checklists/design-checklist',
+          'developers/checklists/js-ts-checklist',
+          'developers/checklists/react-checklist',
+        ],
       },
       {
         type: 'category',

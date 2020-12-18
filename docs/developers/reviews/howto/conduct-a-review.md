@@ -14,7 +14,7 @@ The developer then creates a new issue to describe the review task. The issue is
 The body of the issue contains the following:
 
   * The files and/or user interface pages to be reviewed.
-  * The checklists to be used.
+  * The [checklists](../../checklists/overview) to be used.
   * The date and time of the review meeting.
   * Any high-level goals for the review. Perhaps the developer is concerned about some specific issue with the code.
 
@@ -24,7 +24,7 @@ Once the issue and branch are set up, then the issue can be moved to "In progres
 
 ## 2. Preparation Phase
 
-During the preparation phase, developers go through the code and/or user interface pages and look for issues according to the checklists and/or developer provided instructions.
+During the preparation phase, developers go through the code and/or user interface pages and look for issues according to the [checklists](../../checklists/overview) and/or developer provided instructions.
 
 Developers record their issues in a private text document that is not shared with others.  This enables everyone to review the code without preconceived notions from seeing other developer's issues.
 
