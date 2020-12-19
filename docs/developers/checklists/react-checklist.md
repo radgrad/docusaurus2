@@ -74,3 +74,30 @@ const AdvisorPageMenuWidget: React.FC = () => {
 
 ```numMod``` and ```numRequests``` are not reactive.
 
+### REACT-09: Imported component names and file names should match
+
+Many React components are exported "by default", which gives the importing client the ability to rename them in the file that they are used in.
+
+The convention in RadGrad is to import a component with a name that matches the file name used to define the component. Let's look at a simple example:
+
+```ts
+// File: AdminAnalyticsNewsletterWidget.ts
+
+const AdminAnalyticsNewsletterWidget: React.FC<IAdminAnalyticsNewsletterWidgetProps> = () => {
+  :
+  :
+}
+
+const AdminAnalyticsNewsletterWidgetContainer = connect(mapStateToProps, mapDispatchToProps)(AdminAnalyticsNewsletterWidget);
+export default AdminAnalyticsNewsletterWidgetContainer;
+```
+
+In this case, we have a component (AdminAnalyticsNewsletterWidget), defined in a file called "AdminAnalyticsNewsletterWidget.ts", but the actual exported object is a wrapped version of the widget called AdminAnalyticsNewsletterWidgetContainer.
+
+Our convention is to import this component in the following way:
+
+```ts
+import AdminAnalyticsNewsletterWidget from '../../components/admin/analytics/newsletter/AdminAnalyticsNewsletterWidget';
+```
+
+In other words, we name the imported component using the name associated with the file, and not the "containerized" name.
