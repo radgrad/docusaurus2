@@ -23,7 +23,7 @@ The RadGrad2 repository contains the source code for the RadGrad2 Meteor applica
 
 It is available at [https://github.com/radgrad/radgrad2](https://github.com/radgrad/radgrad2).
 
-You will need to ask a RadGrad administrator for write permissions to this repository in order to start development.
+You will need to ask a RadGrad administrator for write permissions to this repository in order to start development. Note: we do not use the "fork and pull-request" model of development. Instead, all RadGrad developers commit directly to the radgrad2 repo. We use a "branch and merge" model of development called "Issue Driven Project Management".  For details, please see the [Tech Stack](../getting-started/tech-stack#issue-driven-project-management) chapter.
 
 ### Directory overview
 
