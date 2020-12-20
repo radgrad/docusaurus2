@@ -3,7 +3,7 @@ title: Overview of scripts/
 sidebar_label: Overview
 ---
 
-The `scripts/` directory contains supplemental programs for interfacing data to RadGrad.
+The `scripts/` directory contains supplemental programs for interfacing data to RadGrad. This chapter explains how to install and run these scripts.
 
 ## Directory overview
 
@@ -64,9 +64,16 @@ $
 
 ## Running scripts
 
-To invoke a script, invoke node, passing the appropriate script from the dist directory.  For example:
+To invoke a script, invoke node, passing the appropriate script from the dist directory and perhaps any required arguments.  For example:
 
+```sh
+$ node dist/analyze-data-dump.js RadGrad1-clean.json
+Student, Session Count, Session Lengths, Shortest, Longest, Total Time, Average
 
+$
+```
+
+The above script does not do produce results for this sample data file because the data file does not contain student data. However, this example does show that the script can be invoked and return some results without error.
 
 
 
