@@ -63,7 +63,7 @@ Now run `npm run tsc` to compile the Typescript files into Javascript and place 
 ```sh
 $ npm run tsc
 
-> radgrad2-scrips@1.0.0 tsc /Users/philipjohnson/github/radgrad/radgrad2/scripts
+> radgrad2-scripts@1.0.0 tsc /Users/philipjohnson/github/radgrad/radgrad2/scripts
 > tsc
 
 $
