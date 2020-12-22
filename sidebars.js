@@ -98,6 +98,7 @@ module.exports = {
             label: 'scripts/',
             items: [
               'developers/design/scripts/overview',
+              'developers/design/scripts/reference',
             ]
           },
         ]
