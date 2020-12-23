@@ -98,14 +98,15 @@ module.exports = {
             label: 'scripts/',
             items: [
               'developers/design/scripts/overview',
-              'developers/design/scripts/reference',
               {
                 type: 'category',
                 label: 'How to...',
                 items: [
                   'developers/design/scripts/howto/update-student-star-data',
+                  'developers/design/scripts/howto/convert-data',
                 ]
               },
+              'developers/design/scripts/reference',
             ]
           },
         ]

@@ -1,5 +1,6 @@
 ---
-title: Install RadGrad
+title: How to install RadGrad
+sidebar_label: Install RadGrad
 ---
 
 ## Obtain repo permissions

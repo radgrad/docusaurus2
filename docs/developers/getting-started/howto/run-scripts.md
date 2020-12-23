@@ -1,5 +1,6 @@
 ---
-title: Run Scripts
+title: How to run the npm start scripts
+sidebar_label: Run start scripts
 ---
 
 We use a variety NPM scripts for development. They are defined in the RadGrad2 [package.json](https://github.com/radgrad/radgrad2/blob/master/app/package.json) file.

@@ -1,5 +1,5 @@
 ---
-title: Branching and merging in RadGrad
+title: How to branch and merge in RadGrad
 sidebar_label: Branch and merge in RadGrad
 ---
 
