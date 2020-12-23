@@ -99,6 +99,13 @@ module.exports = {
             items: [
               'developers/design/scripts/overview',
               'developers/design/scripts/reference',
+              {
+                type: 'category',
+                label: 'How to...',
+                items: [
+                  'developers/design/scripts/howto/update-student-star-data',
+                ]
+              },
             ]
           },
         ]
