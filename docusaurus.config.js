@@ -8,6 +8,12 @@ module.exports = {
   projectName: 'docusaurus2', // Usually your repo name.
   onBrokenLinks:'log',
   themeConfig: {
+    algolia: {
+      apiKey: '012c57e0c263840b94aedde05ba9b733',
+      indexName: 'radgrad',
+      contextualSearch: false,
+      searchParameters: {},
+    },
     navbar: {
       title: 'RadGrad',
       logo: {
