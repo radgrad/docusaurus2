@@ -6,6 +6,12 @@ Here are the major components of the RadGrad tech stack, with reference material
 
 Becoming fluent with the RadGrad Tech Stack is **Job Number One** as a new RadGrad developer.  For some new developers, it might require several weeks of working through the materials below before they are ready to actually start working on the RadGrad code base.  That's totally OK: the time invested here will always pay off in higher efficiency and quality of work later on.
 
+## Discord
+
+We use Discord as a primary communication mechanism. (During COVID, it has become our *exclusive* communication method!)
+
+If you are not already a member of the RadGrad Discord server, please request an invite.
+
 ## IntelliJ IDEA editor
 
 We require all developers in the RadGrad Project to use the IntelliJ IDEA editor.  Although you might prefer another editor, IntelliJ IDEA has a unique combination of features for Javascript, Typescript, and Meteor that make it better suited than any other editor for this project.
@@ -56,6 +62,8 @@ We use git and GitHub to manage the codebase.  If you are not familiar, please r
 Even if you consider yourself experienced with git, please use [GitHub Desktop](https://desktop.github.com/) for this project. GitHub Desktop will prevent you from doing embarrassing things.  It will be even more embarrassing if you do something embarrassing, and then we find out you ignored this instruction to use GitHub Desktop.
 
 In the RadGrad project, we do not perform rebasing, or use submodules, or any git trickery.
+
+You will be committing directly to the radgrad/radgrad2 repository. If you do not yet have write privileges, please ask Philip or Cam to grant you these permissions.
 
 To assess your knowledge, please use GitHub Desktop to clone the radgrad/radgrad2 repo to your local computer.
 
