@@ -131,6 +131,7 @@ module.exports = {
           'developers/checklists/design-checklist',
           'developers/checklists/js-ts-checklist',
           'developers/checklists/react-checklist',
+          'developers/checklists/testing-checklist',
         ],
       },
       {
