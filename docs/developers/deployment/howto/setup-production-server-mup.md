@@ -5,11 +5,9 @@ sidebar_label: Setup production server
 
 This page documents the process of setting up a production server for RadGrad based upon [Meteor Up](http://meteor-up.com).
 
-## Setup developer account
+## Setup "radgrad" account
 
-To start, you will need to create the ability for multiple developers to manage a single RadGrad installation on this server.  You can do this either via multiple logins, each with sudo access, and a shared directory, or else via a single account whose password is shared amongst developers involved in production.
-
-In this page, we will assume you (or a sysadmin) has created an admin account called "radgrad" that is used by all developers to manage this installation.
+To start, you will need to create the ability for multiple developers to manage a single RadGrad installation on this server.  We recommend setting up an account called "radgrad" whose password is shared among developers with deploy permissions.
 
 ## Open ports
 
@@ -44,7 +42,7 @@ npm install -g mup
 
 ## Setup mup.js and settings.json
 
-In the app/.deploy directory, there are two template files: mup.sample.js and settings.sample.json.
+The app/.deploy directory, there are two template files: mup.sample.js and settings.sample.json.
 
 Copy mup.sample.js to mup.js and settings.sample.js to settings.js:
 
