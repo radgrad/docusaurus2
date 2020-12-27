@@ -9,7 +9,7 @@ Once RadGrad is running on a production server, you can follow these steps to up
 
 First, check to make sure that settings.json and mup.js have the correct values for this release.
 
-If you are planning to load a new snapshot of the database, then you will need to first [reset the production DB](reset-db).
+If you are planning to load a new snapshot of the database, then you will need to follow the instructions to [reset the production DB](reset-db).
 
 ## Perform quality assurance
 
@@ -24,3 +24,8 @@ cd .deploy/
 mup deploy
 ```
 
+You should check the logs after deploying:
+
+```shell
+mup logs
+```

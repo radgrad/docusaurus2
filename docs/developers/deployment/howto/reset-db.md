@@ -51,18 +51,25 @@ Third, edit the app/.deploy/settings.json file to specify the new database.
 
 This usually involves changing the value of the field "databaseRestoreFileName".
 
-## Restart with updated settings
+## Deploy with updated settings
 
-Finally, invoke mup reconfig to reload the updated settings specifying the new database, and then restart RadGrad:
+Next, invoke mup deploy to rebuild and redeploy RadGrad.
 
 ```shell
-mup reconfig
+mup deploy
 ```
 
 Sample invocation and results:
 
 ```shell
-app/.deploy $ mup reconfig
+app/.deploy $ $ mup deploy
+Building App Bundle Locally
+
+Started TaskList: Pushing Meteor App
+[radgrad2.ics.hawaii.edu] - Pushing Meteor App Bundle to the Server
+[radgrad2.ics.hawaii.edu] - Pushing Meteor App Bundle to the Server: SUCCESS
+[radgrad2.ics.hawaii.edu] - Prepare Bundle
+[radgrad2.ics.hawaii.edu] - Prepare Bundle: SUCCESS
 
 Started TaskList: Configuring App
 [radgrad2.ics.hawaii.edu] - Pushing the Startup Script
@@ -78,6 +85,29 @@ Started TaskList: Start Meteor
 
 app/.deploy $
 ```
+
+## Check status of deployment through logs
+
+To ensure that what you wanted to have happen actually happened, check the logs with mup logs:
+
+```shell
+mup logs
+```
+
+Sample invocation and results:
+
+```shell
+mup logs
+[radgrad2.ics.hawaii.edu]=> Starting meteor app on port:3000
+[radgrad2.ics.hawaii.edu]Monti APM: completed instrumenting the app
+[radgrad2.ics.hawaii.edu]Beginning startup.
+[radgrad2.ics.hawaii.edu]Invoking defineAdminUser
+[radgrad2.ics.hawaii.edu]Defining admin radgrad@hawaii.edu with password JZiOl550tBtMuHz0UzNGZEC
+[radgrad2.ics.hawaii.edu]Invoking loadDatabase
+[radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
+```
+
+Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
 
 
 

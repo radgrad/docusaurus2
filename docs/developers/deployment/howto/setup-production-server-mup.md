@@ -141,6 +141,29 @@ Started TaskList: Start Meteor
 
 After deployment finishes, the app should be live at [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).
 
+## Check tstaus of deployment through logs
+
+To ensure that what you wanted to have happen actually happened, check the logs with mup logs:
+
+```shell
+mup logs
+```
+
+Sample invocation and results:
+
+```shell
+mup logs
+[radgrad2.ics.hawaii.edu]=> Starting meteor app on port:3000
+[radgrad2.ics.hawaii.edu]Monti APM: completed instrumenting the app
+[radgrad2.ics.hawaii.edu]Beginning startup.
+[radgrad2.ics.hawaii.edu]Invoking defineAdminUser
+[radgrad2.ics.hawaii.edu]Defining admin radgrad@hawaii.edu with password JZiOl550tBtMuHz0UzNGZEC
+[radgrad2.ics.hawaii.edu]Invoking loadDatabase
+[radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
+```
+
+Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
+
 
 ## Setup Robo3T
 
