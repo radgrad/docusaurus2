@@ -179,7 +179,10 @@ module.exports = {
             label: 'How to...',
             items: [
               'developers/deployment/howto/setup-production-server-mup',
-              'developers/deployment/howto/build-a-release-mup',
+              'developers/deployment/howto/setup-digital-ocean-server-mup',
+              'developers/deployment/howto/setup-robo3t',
+              'developers/deployment/howto/setup-montiapm',
+              'developers/deployment/howto/publish-a-release-mup',
               'developers/deployment/howto/reset-db'
             ]
           },

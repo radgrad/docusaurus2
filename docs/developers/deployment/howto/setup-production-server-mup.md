@@ -141,7 +141,7 @@ Started TaskList: Start Meteor
 
 After deployment finishes, the app should be live at [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).
 
-## Check tstaus of deployment through logs
+## Check status of deployment through logs
 
 To ensure that what you wanted to have happen actually happened, check the logs with mup logs:
 
@@ -163,50 +163,3 @@ mup logs
 ```
 
 Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
-
-
-## Setup Robo3T
-
-A convenient way to inspect the contents of the production database is to use [Robo3T](https://robomongo.org/).
-
-You have the choice of downloading Studio 3T or Robo 3T.  These instructions are for Robo 3T, which is simpler (and free).
-
-After downloading and installing Robo3T, you must create a connection that includes port forwarding to the production MongoDB service.
-
-First, create a new connection and name it appropriately:
-
-![](/img/deployment/robo3t-account-config.png)
-
-Next, set up SSH access to the server running the MongoDB container by clicking on the 'SSH' tab. For example, here is the dialog window for defining ssh access to radgrad2.ics.hawaii.edu:
-
-![](/img/deployment/robo3t-ssh-config.png)
-
-If you have configured things correctly, then after pressing "Save" you'll get this window:
-
-![](/img/deployment/robo3t-connect.png)
-
-And after connecting, you can inspect any collection and document:
-
-![](/img/deployment/robo3t-dashboard.png)
-
-
-## Setup APM
-
-We use [Monti APM](https://montiapm.com/) for application monitoring.
-
-To setup Monti APM, you will need to provide credentials in the settings.json file in the "monti" section.
-
-Monti APM provides useful metrics for performance optimization, as well as logging client and server side run-time errors.
-
-Here is a screenshot of one of the Monti APM screens:
-
-![](/img/deployment/monti-apm-dashboard.png)
-
-
-
-
-
-
-
-
-
