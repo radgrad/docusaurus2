@@ -182,6 +182,7 @@ module.exports = {
               'developers/deployment/howto/setup-digital-ocean-server-mup',
               'developers/deployment/howto/setup-robo3t',
               'developers/deployment/howto/setup-montiapm',
+              'developers/deployment/howto/setup-cas',
               'developers/deployment/howto/publish-a-release-mup',
               'developers/deployment/howto/reset-db'
             ]
