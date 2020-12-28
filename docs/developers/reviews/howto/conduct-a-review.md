@@ -38,12 +38,14 @@ The meeting begins with each developer adding a comment to the issue, which is a
 
 The group then decides on one person to be the "scribe". The scribe checks out the review branch from GitHub, opens up the RadGrad code in IntelliJ, and starts a Code With Me session. For details on Code With Me, please see the [IntelliJ Code With Me Documentation](https://www.jetbrains.com/help/idea/code-with-me.html). All participants join the Code With Me session so that everyone can be seeing the code in the same way, and help the scribe to update the code with comments as the review proceeds.
 
-The review meeting involves going through each of the comments and deciding how to resolve them. When the resolution involves a change to the code base, the scribe will create a comment starting with "// TODO:" followed by a description of what needs to change in the code base.  When the resolution involves a change to the review documentation and/or checklists, then these changes are documented as an additional comment in the Issue.
+The review meeting involves going through each of the comments and deciding how to resolve them. There are two basic kinds of resolution:
 
-At the conclusion of the meeting, the scribe commits the review branch to GitHub. One or more developers are tasked with performing "Resolution" activities, which involves changes to the code base and/or changes to the review documentation and/or checklists.
+  1. Create or update a "Technical Debt" comment at the top of the file.  This comment provides a description of what is wrong with the code in the file so that future developers do not use this code as a model for their own development. However, the problems are not urgent enough to warrant immediate action.
+
+  2. Create one or more new Issues specifying things to be fixed in the near future. In the case of problems that should be addressed in the near future, new Issue(s) are created specifying the work to be done.
 
 ## 4. Resolution Phase
 
-All of the desired changes to the code base are documented in the review branch. One or more developers can make the changes to the review branch, then merge it into master when finished.
+The immediate changes are scheduled for implementation as Issues.
 
 One or more developers make changes to the checklists or review process guidelines that are documented as a review issue, and commit the updated materials to publish them.
