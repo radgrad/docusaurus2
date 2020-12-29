@@ -70,10 +70,29 @@ This also lists the names of the containers: radgrad, mongodb, mup-nginx-proxy-l
 
 ## Logs
 
-To see logs, use ssh in conjunction with the [docker logs](https://docs.docker.com/engine/reference/commandline/logs/) command:
+To see the Meteor log, just invoke mup logs:
 
 ```shell
-ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
+app/.deploy $ mup logs
+```
+
+Sample invocation and results:
+
+```shell
+app/.deploy $ mup logs
+[radgrad2.ics.hawaii.edu]=> Starting meteor app on port:3000
+[radgrad2.ics.hawaii.edu]Monti APM: completed instrumenting the app
+[radgrad2.ics.hawaii.edu]Beginning startup at December 28th 2020, 7:58:39 pm
+[radgrad2.ics.hawaii.edu]Starting loadDatabase: total Docs:  26775 loadFileName:  database/custom/2020-12-21-17-49-13.json
+[radgrad2.ics.hawaii.edu]Invoking startupPublicStats
+[radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
+[radgrad2.ics.hawaii.edu]Finished startup at December 28th 2020, 8:01:50 pm
+```
+
+To see the logs associated with other containers (such as MongoDB), use ssh in conjunction with the [docker logs](https://docs.docker.com/engine/reference/commandline/logs/) command:
+
+```shell
+$ ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
 ```
 
 ```shell
@@ -84,9 +103,9 @@ $ ssh radgrad@radgrad2.ics.hawaii.edu 'docker logs --tail 5  mongodb'
 2020-10-02T20:08:20.479+0000 I NETWORK  [thread1] connection accepted from 172.17.0.5:41812 #99 (6 connections now open)
 2020-10-02T20:08:20.481+0000 I NETWORK  [conn99] received client metadata from 172.17.0.5:41812 conn99: { driver: { name: "nodejs", version: "3.6.2" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-118-generic" }, platform: "'Node.js v12.16.1, LE (legacy)" }
 ```
-## Update settings
+## Restart with changed settings
 
-If you want to restart RadGrad with a changed settings.json or mup.js file, invoke mup reconfig:
+If you just want to change the settings associated with the current deployment, then invoke mup reconfig:
 
 ```shell
 mup reconfig
@@ -110,6 +129,15 @@ Started TaskList: Start Meteor
 [radgrad2.ics.hawaii.edu] - Verifying Deployment: SUCCESS
 
 app/.deploy $
+```
+
+## Redeploy RadGrad
+
+To redeploy RadGrad, you must first stop the current RadGrad container, then run deploy again:
+
+```shell
+app/.deploy $ mup stop
+app/.deploy $ mup deploy
 ```
 
 ## List collections

@@ -1,5 +1,5 @@
 ---
-title: settings.production.json
+title: settings.json
 ---
 
-This page documents the fields in a settings.production.json file.
+This page will document the fields associated with the settings.json file. 
