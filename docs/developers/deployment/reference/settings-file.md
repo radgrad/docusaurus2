@@ -2,4 +2,4 @@
 title: settings.json
 ---
 
-This page will document the fields associated with the settings.json file. 
+This page will document the fields associated with the settings.json file.
