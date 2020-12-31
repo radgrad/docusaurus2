@@ -7,9 +7,25 @@ Javascript, Typescript, and ESLint best practices.
 
 ## Javascript
 
-### JS-01: Name constructs appropriately.
+### JS-01: Name classes, components, files, and directories appropriately.
 
-Do variables/functions/modules conform to our naming standards? (Consistent casing, descriptive names, etc.)
+Classes should be pascalcase starting with a capital letter.
+  * Example: CourseInstance
+
+React components should be pascalcase starting with a capital letter.
+  * Example: AcademicView
+
+Functions and arrow functions should be camelcase starting with a lowercase letter.
+  * Example: findUser
+
+Filenames for classes and React components should follow the rules for the classes or components.
+  * Example: AcademicView.tsx
+
+Filenames for helpers should be lowercase with dashes between words. These files should be in a utilities directory.
+  * Example: ui/pages/utilities/explorer-helpers.ts
+
+Directory names are lowercase with dashes between words.
+  * Example: ui/components/students/item-view
 
 ### JS-03: Use the spread operator when appropriate.
 

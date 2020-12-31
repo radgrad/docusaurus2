@@ -28,6 +28,20 @@ It is problem-free to install and run Meteor on Unix or Mac OS.  It is a signifi
 
 If you must use Windows, one option is to use Windows 10 and then install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), then run Meteor within it. For more information on WSL and Meteor, see [Get up and running with Meteor in WSL2](https://dev.to/rickyeckhardt/get-up-and-running-with-meteor-in-wsl2-4cjc). For info on running IntelliJ within WSL, see [Install IntelliJ on WSL](https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#install-intellij-idea).
 
+## GitHub and GitHub Desktop
+
+We use git and GitHub to manage the codebase.  If you are not familiar, please review:
+
+  *  [Configuration Management](http://courses.ics.hawaii.edu/ics314f20/modules/configuration-management/)
+
+Even if you consider yourself experienced with git, please use [GitHub Desktop](https://desktop.github.com/) for this project. GitHub Desktop will prevent you from doing embarrassing things.  It will be even more embarrassing if you do something embarrassing, and then we find out you ignored this instruction to use GitHub Desktop.
+
+In the RadGrad project, we do not perform rebasing, or use submodules, or any git trickery.
+
+You will be committing directly to the radgrad/radgrad2 repository. If you do not yet have write privileges, please ask Philip or Cam to grant you these permissions.
+
+To assess your knowledge, please use GitHub Desktop to clone the radgrad/radgrad2 repo to your local computer.
+
 
 ## Javascript
 
@@ -53,21 +67,8 @@ RadGrad is actually written in the Typescript superset of Javascript. To come up
 
 To assess your knowledge, just jump into RadGrad.
 
-## GitHub and GitHub Desktop
 
-We use git and GitHub to manage the codebase.  If you are not familiar, please review:
-
-  *  [Configuration Management](http://courses.ics.hawaii.edu/ics314f20/modules/configuration-management/)
-
-Even if you consider yourself experienced with git, please use [GitHub Desktop](https://desktop.github.com/) for this project. GitHub Desktop will prevent you from doing embarrassing things.  It will be even more embarrassing if you do something embarrassing, and then we find out you ignored this instruction to use GitHub Desktop.
-
-In the RadGrad project, we do not perform rebasing, or use submodules, or any git trickery.
-
-You will be committing directly to the radgrad/radgrad2 repository. If you do not yet have write privileges, please ask Philip or Cam to grant you these permissions.
-
-To assess your knowledge, please use GitHub Desktop to clone the radgrad/radgrad2 repo to your local computer.
-
-## Semantic UI
+## React and Semantic UI
 
 RadGrad uses the Semantic UI CSS framework in combination with React.  If you are not familiar, please review:
 
@@ -78,18 +79,11 @@ To assess your knowledge, please complete an exercise such as:
 
   * [Island Snow in React](http://courses.ics.hawaii.edu/ics314f20/morea/react/experience-islandsnow-react.html)
 
-## Issue Driven Project Management
+## Uniforms
 
-We coordinate development using a process called Issue Driven Project Management (IDPM). To learn about it, please review:
+For form display, validation, and processing, we use [Uniforms](https://uniforms.tools/).
 
-  *  [Agile Project Management](http://courses.ics.hawaii.edu/ics314f20/modules/project-management/)
-
-Note that IDPM constrains: (a) the way issues are defined, created, and managed; (b) the way branches are defined, named, and managed, and (c) the way group members partition work.
-
-To assess your knowledge, please review the:
-
-  * [Active RadGrad Project Boards](https://github.com/radgrad/radgrad2/projects)
-
+To assess your knowledge, complete the Digits application as indicated in the next section.
 
 ## Meteor
 
@@ -117,6 +111,18 @@ To assess your knowledge, you should build the Digits system:
 
   * [Digits System (Six Experiences)](http://courses.ics.hawaii.edu/ics314f20/modules/meteor-3/)
 
+
+## Issue Driven Project Management
+
+We coordinate development using a process called Issue Driven Project Management (IDPM). To learn about it, please review:
+
+  *  [Agile Project Management](http://courses.ics.hawaii.edu/ics314f20/modules/project-management/)
+
+Note that IDPM constrains: (a) the way issues are defined, created, and managed; (b) the way branches are defined, named, and managed, and (c) the way group members partition work.
+
+To assess your knowledge, please review the:
+
+  * [Active RadGrad Project Boards](https://github.com/radgrad/radgrad2/projects)
 
 
 
