@@ -229,7 +229,7 @@ module.exports = {
         ],
       },
     ],
-    'About us': ['about/team', 'about/publications', 'about/opportunities'],
+    'About us': ['about/team', 'about/publications', 'about/opportunities', 'about/spring-2021'],
     Archive: [
       {
         type: 'category',
