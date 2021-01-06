@@ -101,3 +101,12 @@ import AdminAnalyticsNewsletterWidget from '../../components/admin/analytics/new
 ```
 
 In other words, we name the imported component using the name associated with the file, and not the "containerized" name.
+
+
+### REACT-10: Avoid "Widget" and "Card" in component names
+
+Many React components are named with "Widget". In most (all?) cases, adding "Widget" just increases the length of the name without adding value.
+
+Check the 'ui/components' subdirectories for many components that should be renamed.
+
+In addition, many component names contain the word "Card". Only use "Card" in a class name when it literally returns a single Semantic UI Card object. 
