@@ -109,4 +109,4 @@ Many React components are named with "Widget". In most (all?) cases, adding "Wid
 
 Check the 'ui/components' subdirectories for many components that should be renamed.
 
-In addition, many component names contain the word "Card". Only use "Card" in a class name when it literally returns a single Semantic UI Card object. 
+In addition, many component names contain the word "Card". Only use "Card" in a class name when it literally returns a single Semantic UI Card object.
