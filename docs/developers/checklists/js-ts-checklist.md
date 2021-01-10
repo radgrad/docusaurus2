@@ -43,13 +43,13 @@ Can you use arrow functions? Note that arrow functions are normally better, exce
 
 ES6 includes many of the lodash functions. Use the built-in function rather than the lodash version when possible.
 
-### JS-07: Avoid console.logs
+### JS-07: Avoid console.logs.
+
+Console.log is useful for certain situations in development. All console.log statements should be commented out in master.
 
 ### JS-08: Use JSDoc (TSDoc) comments appropriately.
 
 When a comment starts with '/**', it will be processed by JSDoc (or TSDoc). Please ensure those comments are appropriate for inclusion.
-
-Get rid of console.log.
 
 ## Typescript
 
