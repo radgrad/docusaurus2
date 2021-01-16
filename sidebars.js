@@ -129,6 +129,7 @@ module.exports = {
           'developers/checklists/overview',
           'developers/checklists/architecture-checklist',
           'developers/checklists/design-checklist',
+          'developers/checklists/ui-checklist',
           'developers/checklists/js-ts-checklist',
           'developers/checklists/react-checklist',
           'developers/checklists/testing-checklist',
