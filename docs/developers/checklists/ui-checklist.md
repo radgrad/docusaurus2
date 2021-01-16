@@ -28,3 +28,11 @@ Form controllers should be annotated or documented with appropriate sample value
 ### UI-05: Requests for information or access should make the "why" available.
 
 When asking for information, consider if some explanation of why the information is being requested should be provided.
+
+### UI-06: The page loads acceptably quickly.
+
+Pages for "normal users" should load in less than 3 seconds. It is acceptable for admin users to wait longer under certain circumstances.
+
+### UI-07: The console does not generate errors.
+
+When loading and/or interacting with the page with Chrome Developer Tools open, no errors should be generated.
