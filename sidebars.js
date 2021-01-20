@@ -230,6 +230,7 @@ module.exports = {
         ],
       },
     ],
+    'Computer Engineering': ['compeng/overview', 'compeng/design'],
     'About us': ['about/team', 'about/publications', 'about/opportunities', 'about/spring-2021'],
     Archive: [
       {
