@@ -37,3 +37,5 @@ You should check the logs after deploying:
 ```shell
 mup logs
 ```
+
+Note that the `mup deploy` command changes several files to record the version number. Please commit those changes to GitHub. If you indicate the release number in the commit message, it will be a little easier to figure out the code corresponding to the release later.
