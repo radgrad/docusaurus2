@@ -3,29 +3,57 @@ module.exports = {
     Overview: ['overview/motivation', 'overview/goals', 'overview/basic-constructs'],
     'User Guide': [
       'users/overview',
-        'users/tutorials/why-radgrad',
-        'users/tutorials/interests',
-        'users/tutorials/career-goals',
-        'users/tutorials/opportunities',
-        'users/tutorials/ice-and-levels',
-        'users/tutorials/verification-requests',
-        'users/tutorials/degree-plans',
-        'users/tutorials/reviews',
-        'users/tutorials/getting-started',
       {
-        type: 'link',
-        label: '1 Page Cheat Sheet (PDF)',
-        href: 'http://go.hawaii.edu/JuG'
-      }
+        type: 'category',
+        label: 'Students',
+        items: [
+          'users/students/overview',
+          'users/students/why-radgrad',
+          'users/students/interests',
+          'users/students/career-goals',
+          'users/students/opportunities',
+          'users/students/ice-and-levels',
+          'users/students/verification-requests',
+          'users/students/degree-plans',
+          'users/students/reviews',
+          'users/students/getting-started',
+          {
+            type: 'link',
+            label: '1 Page Cheat Sheet (PDF)',
+            href: 'http://go.hawaii.edu/JuG'
+          }
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Advisors',
+        items: [
+          'users/advisors/overview',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Faculty',
+        items: [
+          'users/faculty/overview',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Administrators',
+        items: [
+          'users/admins/overview',
+        ],
+      },
     ],
     'Developer Guide': [
-        'developers/overview',
+      'developers/overview',
       {
         type: 'category',
         label: 'Getting started',
         items: [
-            'developers/getting-started/overview',
-            'developers/getting-started/tech-stack',
+          'developers/getting-started/overview',
+          'developers/getting-started/tech-stack',
           {
             type: 'category',
             label: 'How to...',
@@ -114,7 +142,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Reviews',
-        items: [ 'developers/reviews/overview',
+        items: ['developers/reviews/overview',
           {
             type: 'category',
             label: 'How to...',
@@ -138,7 +166,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Testing',
-        items: [ 'developers/testing/overview',
+        items: ['developers/testing/overview',
           {
             type: 'category',
             label: 'Concepts',
@@ -160,7 +188,7 @@ module.exports = {
           {
             type: 'category',
             label: 'Reference',
-            items: [ 'developers/testing/reference/testing-scripts',
+            items: ['developers/testing/reference/testing-scripts',
             ],
           },
         ],
@@ -168,12 +196,11 @@ module.exports = {
       {
         type: 'category',
         label: 'Deployment',
-        items: [ 'developers/deployment/overview',
+        items: ['developers/deployment/overview',
           {
             type: 'category',
             label: 'Concepts',
-            items: [
-            ]
+            items: []
           },
           {
             type: 'category',
@@ -225,7 +252,7 @@ module.exports = {
         type: 'category',
         label: 'Reference',
         items: [
-            'developers/reference/overview',
+          'developers/reference/overview',
           { type: 'link', label: 'JSDocs', href: 'https://radgrad.github.io/radgrad2/' },
         ],
       },
