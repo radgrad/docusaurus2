@@ -99,8 +99,8 @@ Concentrations are type of interest they provide the user an idea of what classe
 
 | Concentration |  Description |
 | -------------| ------------ |
-Computer Hardware | Study electronic circuits of computers and other electronic processing systems.  
-Cyber-Physical Systems and the Internet of Things | Study engineering systems that can be controlled in real-time.
-Cyber Security | Learn how to secure Computers, Data, and other Electronics.
-Data Science and Machine Learning | Learn how to store, analyze, present, and predict data to make better decisions.
-Software Engineering | Learn how to analyze, design, and test Software.
+Computer Hardware | Study electronic circuits of computers and other electronic processing systems.  Teaser: https://www.youtube.com/watch?v=HB4I2CgkcCo
+Cyber-Physical Systems and the Internet of Things | Study engineering systems that can be controlled in real-time. Teaser: https://www.youtube.com/watch?v=6mBO2vqLv38
+Cyber Security | Learn how to secure Computers, Data, and other Electronics. Teaser: https://www.youtube.com/watch?v=inWWhr5tnEA
+Data Science and Machine Learning | Learn how to store, analyze, present, and predict data to make better decisions. Teaser: https://www.youtube.com/watch?v=X3paOmcrTjQ https://www.youtube.com/watch?v=ukzFI9rgwfU
+Software Engineering | Learn how to analyze, design, and test Software. Teaser: https://www.youtube.com/watch?v=O753uuutqH8 
