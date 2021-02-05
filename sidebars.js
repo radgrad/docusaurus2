@@ -257,7 +257,7 @@ module.exports = {
         ],
       },
     ],
-    'Computer Engineering': ['compeng/overview', 'compeng/design'],
+    'Computer Engineering': ['compeng/overview', 'compeng/design', 'compeng/interests', 'compeng/career_goals', 'compeng/opportunities'],
     'About us': ['about/team', 'about/publications', 'about/opportunities', 'about/spring-2021'],
     Archive: [
       {
