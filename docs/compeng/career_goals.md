@@ -14,7 +14,7 @@ DevOps Engineer | Staying | Staying same as in RadGrad CS
 Full Stack Developer | Staying | Staying same as in RadGrad CS
 Game Developer | Staying | Staying same as in RadGrad CS
 Graduate School | Staying | Staying same as in RadGrad CS
-Information System Manager| Going | Staying same as in RadGrad CS
+Information System Manager| Going | N/A
 AI/Machine Learning Engineer | Staying | Staying same as in RadGrad CS
 Mobile App Developer | Staying | Staying same as in RadGrad CS
 Network Engineer| Staying | Staying same as in RadGrad CS
