@@ -60,7 +60,7 @@ module.exports = {
             items: [
               'developers/getting-started/howto/install-radgrad',
               'developers/getting-started/howto/run-scripts',
-              'developers/getting-started/howto/branch-and-merge',
+              'developers/getting-started/howto/work-on-issues',
             ]
           },
         ],
