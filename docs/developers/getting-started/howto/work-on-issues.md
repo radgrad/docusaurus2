@@ -73,7 +73,9 @@ npx: installed 200 in 6.625s
 ─────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
-When you find files that are no longer used, please create a subdirectory in the radgrad2/archive/ directory, and copy them over there before deleting from the app/ area. To avoid IntelliJ errors in the archive/ directory, you can control-a (to select all the code in a file, then control-/ to comment them out.)
+When you find files that are no longer used, please create a subdirectory in the radgrad2/archive/ directory, and copy them over there before deleting from the app/ area.
+
+To avoid IntelliJ errors in the archive/ directory, you mark the archive/ directory as "excluded" (select the archive/ directory in the Project Pane, then right click, select "Mark directory as", then select "Excluded").
 
 ### Merge into master, wait for CI results
 
