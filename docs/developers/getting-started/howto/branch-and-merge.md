@@ -1,15 +1,33 @@
 ---
-title: How to branch and merge in RadGrad
-sidebar_label: Branch and merge in RadGrad
+title: How to work on issues in RadGrad
+sidebar_label: Work on issues
 ---
 
-For RadGrad, we use Issue Driven Project Management, as discussed in the [Tech Stack](../tech-stack#issue-driven-project-management) chapter.
+For RadGrad, we use Issue Driven Project Management (IDPM), as discussed in the [Tech Stack](../tech-stack#issue-driven-project-management) chapter.
 
-Here is a bit more detail on how the steps to use to branch and merge when doing RadGrad.
+Here is a bit more detail on the standard process for completing tasks.
 
-## How to merge into master
+## Create a branch off master to hold your work
 
-Given that work on the code base is typically done in a branch off of master, one question is how to successfully merge your results back into master when you finish the task. Here is the basic sequence of steps:
+Following the standard IDPM process, you should create a branch off master to hold your code. This branch should be named "isssue-xxx", where "xxx" is replaced by the issue number.
+
+## Keep your branch up to date with master
+
+As you work on your task, you may see messages in the #radgrad2-chat channel with the title "Master Merge Alert". This is a signal from another developer that the master branch has been updated.
+
+When this happens, you should immediately update your branch from master. Here is the sequence of steps to take:
+
+  1. Stop any running Meteor process (control-c).
+  2. Create a "checkpoint" of your current state of development by committing your current changes to your branch. Push these changes to github as a safety mechanism (this creates a backup of your changes, and also makes your checkpoint easily available to other developers if joint debugging is later necessary). If the next step (merging from master) fails spectacularly for some reason, you can simply back up to your checkpointed commit and continue from there.
+  3. Update your branch from the master branch.
+  4. `meteor reset`
+  5. `meteor npm run start` to do a manual "safety check" (as above)
+  6. Run tests as indicated by the nature of the change to master. You can invoke `meteor npm run test-all` for complete security, or some subset of tests depending upon the nature of the change.
+  7. Continue on with development
+
+## Close your issue when you are finished
+
+Once you have finished your task, you need to merge your changes into master, make sure that your merge does not break the build, and communicate to the rest of the team that you have merged into master. Here's the steps in detail:
 
   1. Stop any running Meteor process (control-c)
   2. Merge current master branch into your branch.
@@ -21,15 +39,5 @@ Given that work on the code base is typically done in a branch off of master, on
   8. Wait 10-15 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
   9. Once the CI Build has passed successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
 
-## Updating your branch when master changed
 
-Once someone has posted a message to #radgrad2-chat indicating that master has changed, what do you do?  Your first inclination might be to ignore the message, or put off dealing with it for a long time, but that's almost always a bad idea. Instead, the best approach is the following:
-
-  1. Stop any running Meteor process (control-c).
-  2. Create a "checkpoint" of your current state of development by committing your current changes to your branch. Push these changes to github as a safety mechanism (this creates a backup of your changes, and also makes your checkpoint easily available to other developers if joint debugging is later necessary). If the next step (merging from master) fails spectacularly for some reason, you can simply back up to your checkpointed commit and continue from there.
-  3. Update your branch from the master branch.
-  4. `meteor reset`
-  5. `meteor npm run start` to do a manual "safety check" (as above)
-  6. Run tests as indicated by the nature of the change to master. You can invoke `meteor npm run test-all` for complete security, or some subset of tests depending upon the nature of the change.
-  7. Continue on with development
 
