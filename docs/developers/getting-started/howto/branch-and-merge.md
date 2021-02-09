@@ -43,12 +43,14 @@ Once you have finished your task, you need to merge your changes into master, ma
 
 ### Merge into master, wait for CI results
 
-  7. Merge your branch into master.
-  8. Wait around 10 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
+  7. Commit and push your branch one last time (if any changes.)
+  8. Switch to the master branch, then merge your branch into it.
+  9. Push the updated master branch to GitHub.
+  10. Wait around 10 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
 
 ### Send message to Discord
 
-  9. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
+  11. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
 
 
 
