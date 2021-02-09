@@ -41,6 +41,40 @@ Once you have finished your task, you need to merge your changes into master, ma
   5. Stop the running Meteor process (control-c)
   6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
 
+## Check for vestigial code, move it to archive/ directory
+
+Sometimes as a result of development, there are files that are no longer used.  An easy way to check for this is to run `meteor npm run unimported`. Here is an example run illustrating how it can find "vestigial" files:
+
+```
+$ meteor npm run unimported
+
+> radgrad2@2.0.10 unimported /Users/philipjohnson/github/radgrad/radgrad2/app
+> npx unimported
+
+npx: installed 200 in 6.625s
+
+       summary               unimported v1.5.0
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       entry file 1        : client/main.ts
+       entry file 2        : server/main.ts
+
+       unresolved imports  : 0
+       unused dependencies : 0
+       unimported files    : 4
+
+
+─────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     │ 4 unimported files
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ imports/ui/components/shared/community-radgrad-videos/CommunityRadGradVideosWidget.tsx
+   2 │ imports/ui/components/shared/community-users/CommunityFeedItem.tsx
+   3 │ imports/ui/components/shared/community-users/CommunityFeedWidget.tsx
+   4 │ imports/ui/components/shared/community-users/CommunityUsersWidget.tsx
+─────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+```
+
+When you find files that are no longer used, please create a subdirectory in the radgrad2/archive/ directory, and copy them over there before deleting from the app/ area. To avoid IntelliJ errors in the archive/ directory, you can control-a (to select all the code in a file, then control-/ to comment them out.)
+
 ### Merge into master, wait for CI results
 
   7. Commit and push your branch one last time (if any changes.)
