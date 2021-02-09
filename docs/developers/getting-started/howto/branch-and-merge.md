@@ -29,15 +29,26 @@ When this happens, you should immediately update your branch from master. Here i
 
 Once you have finished your task, you need to merge your changes into master, make sure that your merge does not break the build, and communicate to the rest of the team that you have merged into master. Here's the steps in detail:
 
+### Merge master into your branch (if necessary)
+
   1. Stop any running Meteor process (control-c)
-  2. Merge current master branch into your branch.
+  2. Merge current master branch into your branch (if any changes)
   3. `meteor reset`
   4. `meteor npm run start` to do a manual "sanity check" and see if the system comes up normally after the merge. If not, fix any errors and/or ask for help.
+
+### Run all tests
+
   5. Stop the running Meteor process (control-c)
   6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
+
+### Merge into master, wait for CI results
+
   7. Merge your branch into master.
-  8. Wait 10-15 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
-  9. Once the CI Build has passed successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
+  8. Wait around 10 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
+
+### Send message to Discord
+
+  9. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
 
 
 
