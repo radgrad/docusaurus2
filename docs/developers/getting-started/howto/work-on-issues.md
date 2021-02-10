@@ -36,11 +36,6 @@ Once you have finished your task, you need to merge your changes into master, ma
   3. `meteor reset`
   4. `meteor npm run start` to do a manual "sanity check" and see if the system comes up normally after the merge. If not, fix any errors and/or ask for help.
 
-### Run all tests
-
-  5. Stop the running Meteor process (control-c)
-  6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
-
 ### Check for vestigial code, move it to archive/ directory
 
 Sometimes as a result of development, there are files that are no longer used.  An easy way to check for this is to run `meteor npm run unimported`. Here is an example run illustrating how it can find "vestigial" files:
@@ -76,6 +71,12 @@ npx: installed 200 in 6.625s
 When you find files that are no longer used, please create a subdirectory in the radgrad2/archive/ directory, and copy them over there before deleting from the app/ area.
 
 To avoid IntelliJ errors in the archive/ directory, you mark the archive/ directory as "excluded" (select the archive/ directory in the Project Pane, then right click, select "Mark directory as", then select "Excluded").
+
+### Run all tests
+
+  5. Stop the running Meteor process (control-c)
+  6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
+
 
 ### Merge into master, wait for CI results
 
