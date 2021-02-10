@@ -8,10 +8,10 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>For ICS Students</>,
+    title: <>For Students</>,
     description: (
         <ul>
-          <li><a href='https://radgrad.ics.hawaii.edu'>Go To ICS RadGrad</a></li>
+          <li><a href='https://radgrad.ics.hawaii.edu'>Go To UHM/ICS RadGrad</a></li>
           <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
           <li><a href='/docs/users/overview'>User Guide</a></li>
         </ul>
@@ -63,7 +63,7 @@ const ProjectTitle = props => (
       <img style={{ paddingRight: "10px" }} width='55px' src={useBaseUrl('img/radgrad_logo.png')}/>
       <span style={{ fontFamily: 'Nunito', fontWeight: 700, fontSize: '460%' }} className="projectTitle">RAD</span>
       <span style={{ fontFamily: 'Nunito', fontWeight: 400, fontSize: '460%' }} className="projectTitle">GRAD</span>
-      <h1 style={{marginBottom: "1em", fontWeight: 800}}>Developing awesome computer scientists, one graduate at a time</h1>
+      <h1 style={{marginBottom: "1em", fontWeight: 800}}>Developing awesome STEM professionals, one graduate at a time</h1>
       <h4 style={{margin: "0.25em"}}>The goal of the RadGrad Project is to improve the undergraduate STEM degree experience.</h4>
       <p>Target outcomes include increased engagement and retention, particularly for women and underrepresented minorities, and improved post-graduation career opportunities for all participating students. We currently focus on computer science and computer engineering degree programs.</p>
     </div>
@@ -75,7 +75,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Developing awesome computer scientists, one graduate at a time">
+      description="Developing awesome STEM professionals, one graduate at a time">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <ProjectTitle/>
