@@ -41,7 +41,7 @@ Once you have finished your task, you need to merge your changes into master, ma
   5. Stop the running Meteor process (control-c)
   6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
 
-## Check for vestigial code, move it to archive/ directory
+### Check for vestigial code, move it to archive/ directory
 
 Sometimes as a result of development, there are files that are no longer used.  An easy way to check for this is to run `meteor npm run unimported`. Here is an example run illustrating how it can find "vestigial" files:
 
