@@ -107,7 +107,9 @@ mup logs
 [radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
 ```
 
-Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
+## Run mup logs, record new admin password!
+
+Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.  The log is only available until the next deploy of the system, so be sure to invoke `mup logs`, find the log message with the new admin password, and record it someplace safe.
 
 
 
