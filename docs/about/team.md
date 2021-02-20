@@ -11,12 +11,15 @@ Faculty:
   * Philip Johnson (2015 - present)
   * Seungoh Paek (2018 - present)
 
-Students:
+Students/Staff:
 
   * Andre Ruiz (2020 - present)
   * Jennifer Hsu  (2020 - present)
-  * Jesse McDonald (2020 - present)
+  * Pauline Wu (2021 - present)
+  * Justin Wong (2021 - present)
   * Rashmi Ramanatha (2020 - present)
+  * Jatin Pandya (2021 - present)
+  * Hanna Park (Summer, 2020; Spring, 2021)
 
 
 Advisory Board:
@@ -39,7 +42,7 @@ Advisory Board:
   * Gian Calica (2019-2020)
   * Gilbert Yim (Spring, 2016)
   * Glen Barcelo (Summer, 2019)
-  * Hanna Park (Summer, 2020)
+  * Jesse McDonald (2020 - present)
   * Kelli Tamashiro (Summer, 2020)
   * Kelsie Yamakawa (Spring, 2016)
   * Kenny Luong (Spring, 2016)
