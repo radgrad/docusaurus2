@@ -1,9 +1,11 @@
 ---
-title: Setup a production server using Meteor Up
-sidebar_label: Setup production server
+title: Setup an in-house server using Meteor Up
+sidebar_label: Setup in-house server
 ---
 
-This page documents the process of setting up a production server for RadGrad based upon [Meteor Up](http://meteor-up.com).
+This page documents the process of setting up an in-house server for RadGrad based upon [Meteor Up](http://meteor-up.com).
+
+These instructions assume you have a physical machine running a recent release of Unix.
 
 ## Setup "radgrad" account
 
@@ -162,4 +164,19 @@ mup logs
 [radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
 ```
 
-Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
+**Extremely Important Note:**  Each time you start up RadGrad and initialize it with a new database, a new admin password will be generated and the log file will be the only place it is made available.  You must check the logs and save that password someplace safe, because it will be overwritten the next time you deploy an update.
+
+## Finish initial setup
+
+See the next sections for additional setup instructions, including:
+
+  * [Setup CAS authentication](./setup-cas)
+  * [Setup Robo3T](./setup-robo3t)
+  * [Setup MontiAPM](./setup-montiapm)
+
+
+## Publishing a new release
+
+Once you have successfully set up your RadGrad server, subsequent updates to the system are much more simple.
+
+See [Publishing a new release](./publish-a-release-mup) for details.

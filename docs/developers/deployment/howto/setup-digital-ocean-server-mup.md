@@ -3,32 +3,43 @@ title: Setup a Digital Ocean server using Meteor Up
 sidebar_label: Setup Digital Ocean server
 ---
 
-This page documents the process of setting up a digital ocean server for RadGrad based upon [Meteor Up](http://meteor-up.com).
+This page documents the process of setting up a cloud-based server for RadGrad using [Digital Ocean](https://digitalocean.com) and [Meteor Up](http://meteor-up.com).
 
-## Sign up with Digital Ocean
+## Buy a custom domain name for your RadGrad server
 
-First, go to [Digital Ocean](https://www.digitalocean.com/?refcode=puttingAnythingHereSeemsToMakeTheButtonForThe$100CreditAppear). Using this link might get you a "Free Credit Active" link that will get you some free minutes.
+Use a service such as [NameCheap](https://namecheap.com) to buy a domain name for your RadGrad server. This is necessary in order to enable HTTPS for secure communication with your RadGrad server.
 
-## Create an Ubuntu server (i.e. Droplet)
+Once you have purchased the domain name, you will need to enable Digital Ocean to provide the DNS services for this domain.
 
-Click on the "Create" button and select a Droplet (Ubuntu server). Create a root password and save it someplace safe.
+For instructions on how to do this, see [How to set up a custom domain name](http://courses.ics.hawaii.edu/ics314f20/morea/deployment/reading-digital-ocean-domain-name.html).
+
+Note that you will typically need to wait about 24 hours after buying the domain name and enabling Digital Ocean name servers before you can proceed.
+
+
+## Create an Digital Ocean Ubuntu server (i.e. Droplet)
+
+Login to [Digital Ocean](https://digitalocean.com), then click on the "Create" button and select a Droplet (Ubuntu server). Create a root password and save it someplace safe.
 
 ## Configure app/.deploy/mup.js
 
-Copy the sample.mup.js file to mup.js.  It will look something like this:
+Copy app/.deploy/sample.mup.js file to mup.js.  It will look something like this:
 
 ```
 module.exports = {
   servers: {
     one: {
-      host: '111.222.333.444',
+      host: 'changeme.edu',
       username: 'root',
       password: 'changeme'
     }
   },
-
+  hooks: {
+    'pre.deploy': {
+      localCommand: 'npm run update-build-version'
+    }
+  },
   app: {
-    name: 'meteor-application-template-react',
+    name: 'radgrad',
     path: '../',
 
     servers: {
@@ -37,10 +48,11 @@ module.exports = {
 
     buildOptions: {
       serverOnly: true,
+      debug: true,
     },
 
     env: {
-      ROOT_URL: 'http://111.222.333.444',
+      ROOT_URL: 'https://changeme.edu',
       MONGO_URL: 'mongodb://mongodb/meteor',
       MONGO_OPLOG_URL: 'mongodb://mongodb/local',
     },
@@ -49,7 +61,8 @@ module.exports = {
       image: 'abernix/meteord:node-12-base',
     },
 
-    enableUploadProgressBar: true
+    enableUploadProgressBar: true,
+    deployCheckWaitTime: 900
   },
 
   mongo: {
@@ -58,19 +71,24 @@ module.exports = {
       one: {}
     }
   },
+
+  proxy: {
+    domains: 'changme.edu',
+    ssl: {
+      letsEncryptEmail: 'changeme@hawaii.edu',
+      forceSSL: true
+    }
+  }
 };
+
 ```
-There is one occurrence of the string “changeme”, and two occurrences of the string “111.222.333.444”.
+Note that there are several occurrences of the string “changeme”. You need to update these to indicate your custom domain and your root password.
 
-Change the string “changeme” (i.e. the server root password) to the Droplet root password you specified above.
-
-Change the string “111.222.333.444” to the IP address associated with this Droplet. (In the screenshots above, the Droplet’s IP address is 167.172.222.158.) Be sure to use the “ipv4” address, not the “Private IP” address!
-
-Note that the “host” value is just the IP address, but the ROOT_URL is “http://” followed by the IP address.
+Note that the “host” value is just the domain name, but the ROOT_URL is “https://” followed by the domain name.
 
 ## Configure app/.deploy/settings.js
 
-Copy sample.settings.js to settings.js.  Edit this file to include appropriate credentials and other information specific to your deployment.
+Copy app/.deploy/sample.settings.js to settings.js.  Edit this file to include appropriate credentials and other information specific to your deployment.
 
 ## Run mup setup
 
@@ -104,6 +122,75 @@ $
 ```
 
 For more details on the setup command, see [http://meteor-up.com/docs.html#setting-up-a-server](http://meteor-up.com/docs.html#setting-up-a-server).
+
+Note that if you get an error involving "Error response from daemon: endpoint mup-nginx-proxy not found", that's OK. It will get fixed in the following steps.server
+
+## Run mup reconfig
+
+Now invoke `mup reconfig`:
+
+```
+$ mup reconfig
+
+Started TaskList: Configuring App
+[meteor-application-template-react.xyz] - Pushing the Startup Script
+[meteor-application-template-react.xyz] - Pushing the Startup Script: SUCCESS
+[meteor-application-template-react.xyz] - Sending Environment Variables
+[meteor-application-template-react.xyz] - Sending Environment Variables: SUCCESS
+
+Started TaskList: Start Meteor
+[meteor-application-template-react.xyz] - Start Meteor
+[meteor-application-template-react.xyz] - Start Meteor: SUCCESS
+[meteor-application-template-react.xyz] - Verifying Deployment
+[meteor-application-template-react.xyz] - Verifying Deployment: SUCCESS
+$
+```
+
+If `mup setup` resulted in an error above, now run it again (and the problem should go away):
+
+```
+$ mup setup
+
+Started TaskList: Setup Docker
+[meteor-application-template-react.xyz] - Setup Docker
+[meteor-application-template-react.xyz] - Setup Docker: SUCCESS
+
+Started TaskList: Setup Meteor
+[meteor-application-template-react.xyz] - Setup Environment
+[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
+
+Started TaskList: Setup Mongo
+[meteor-application-template-react.xyz] - Setup Environment
+[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
+[meteor-application-template-react.xyz] - Copying Mongo Config
+[meteor-application-template-react.xyz] - Copying Mongo Config: SUCCESS
+
+Started TaskList: Start Mongo
+[meteor-application-template-react.xyz] - Start Mongo
+[meteor-application-template-react.xyz] - Start Mongo: SUCCESS
+
+Started TaskList: Setup proxy
+[meteor-application-template-react.xyz] - Setup Environment
+[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
+[meteor-application-template-react.xyz] - Pushing the Startup Script
+[meteor-application-template-react.xyz] - Pushing the Startup Script: SUCCESS
+[meteor-application-template-react.xyz] - Pushing Nginx Config Template
+[meteor-application-template-react.xyz] - Pushing Nginx Config Template: SUCCESS
+[meteor-application-template-react.xyz] - Pushing Nginx Config
+[meteor-application-template-react.xyz] - Pushing Nginx Config: SUCCESS
+[meteor-application-template-react.xyz] - Cleaning Up SSL Certificates
+[meteor-application-template-react.xyz] - Cleaning Up SSL Certificates: SUCCESS
+[meteor-application-template-react.xyz] - Configure Nginx Upstream
+[meteor-application-template-react.xyz] - Configure Nginx Upstream: SUCCESS
+
+Started TaskList: Start proxy
+[meteor-application-template-react.xyz] - Start proxy
+[meteor-application-template-react.xyz] - Start proxy: SUCCESS
+
+Next, you should run:
+    mup deploy
+$
+```
 
 ## Run mup deploy
 
@@ -159,8 +246,18 @@ mup logs
 [radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
 ```
 
-Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.
+**Extremely Important Note:**  Each time you start up RadGrad and initialize it with a new database, a new admin password will be generated and the log file will be the only place it is made available.  You must check the logs and save that password someplace safe, because it will be overwritten the next time you deploy an update.
 
-## Setup SSL and HTTPS
+## Finish initial setup
 
-You will probably want to buy a custom domain name and then setup SSL so that you can access the RadGrad instance using https. For instructions, please see [How to setup HTTPS](http://courses.ics.hawaii.edu/ics314f20/morea/deployment/reading-digital-ocean-https.html).
+See the next sections for additional setup instructions, including:
+
+  * [Setup CAS authentication](./setup-cas)
+  * [Setup Robo3T](./setup-robo3t)
+  * [Setup MontiAPM](./setup-montiapm)
+
+## Publishing a new release
+
+Once you have successfully set up your RadGrad server, subsequent updates to the system are much more simple.
+
+See [Publishing a new release](./publish-a-release-mup) for details.

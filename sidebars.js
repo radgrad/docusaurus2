@@ -206,7 +206,7 @@ module.exports = {
             type: 'category',
             label: 'How to...',
             items: [
-              'developers/deployment/howto/setup-production-server-mup',
+              'developers/deployment/howto/setup-in-house-server-mup',
               'developers/deployment/howto/setup-digital-ocean-server-mup',
               'developers/deployment/howto/setup-robo3t',
               'developers/deployment/howto/setup-montiapm',
