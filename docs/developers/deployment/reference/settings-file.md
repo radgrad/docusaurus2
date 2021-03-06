@@ -131,5 +131,5 @@ This attribute is used to indicate the instance name on the landing page.
 
 ### userGuideURL
 
-This attribute provides a URL to the User Guide for this instance of RadGrad. At present, there is only one User Guide that is shared across all instances. 
+This attribute provides a URL to the User Guide for this instance of RadGrad. At present, there is only one User Guide that is shared across all instances.
 
