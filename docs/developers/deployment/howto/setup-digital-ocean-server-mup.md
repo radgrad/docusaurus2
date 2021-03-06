@@ -9,16 +9,27 @@ This page documents the process of setting up a cloud-based server for RadGrad u
 
 Use a service such as [NameCheap](https://namecheap.com) to buy a domain name for your RadGrad server. This is necessary in order to enable HTTPS for secure communication with your RadGrad server.
 
-Once you have purchased the domain name, you will need to enable Digital Ocean to provide the DNS services for this domain.
-
-For instructions on how to do this, see [How to set up a custom domain name](http://courses.ics.hawaii.edu/ics314f20/morea/deployment/reading-digital-ocean-domain-name.html).
-
-Note that you will typically need to wait about 24 hours after buying the domain name and enabling Digital Ocean name servers before you can proceed.
-
-
 ## Create an Digital Ocean Ubuntu server (i.e. Droplet)
 
 Login to [Digital Ocean](https://digitalocean.com), then click on the "Create" button and select a Droplet (Ubuntu server). Create a root password and save it someplace safe.
+
+## Configure NameCheap and Digital Ocean services to support the custom domain
+
+You will need to tell NameCheap that Digital Ocean will be providing the name servers, and you will need to tell Digital Ocean to connect the custom domain to your droplet.
+
+For detailed instructions, see [How to set up a custom domain name](http://courses.ics.hawaii.edu/ics314f20/morea/deployment/reading-digital-ocean-domain-name.html).
+
+When you are finished, you should be able to run nslookup and have it resolve your custom domain name correctly. For example:
+
+```
+$ nslookup radgrad-comp-eng.design
+Server:		10.0.1.1
+Address:	10.0.1.1#53
+
+Non-authoritative answer:
+Name:	radgrad-comp-eng.design
+Address: 159.65.65.229
+```
 
 ## Configure app/.deploy/mup.js
 
@@ -26,65 +37,34 @@ Copy app/.deploy/sample.mup.js file to mup.js.  It will look something like this
 
 ```
 module.exports = {
-  servers: {
-    one: {
-      host: 'changeme.edu',
-      username: 'root',
-      password: 'changeme'
-    }
-  },
-  hooks: {
-    'pre.deploy': {
-      localCommand: 'npm run update-build-version'
-    }
-  },
+  servers: { one: { host: 'CHANGEME.EDU', username: 'root', password: 'CHANGEME' }},
+  hooks: { 'pre.deploy': { localCommand: 'npm run update-build-version' }},
   app: {
     name: 'radgrad',
     path: '../',
-
-    servers: {
-      one: {},
-    },
-
-    buildOptions: {
-      serverOnly: true,
-      debug: true,
-    },
-
+    servers: { one: {}},
+    buildOptions: { serverOnly: true, debug: true },
     env: {
-      ROOT_URL: 'https://changeme.edu',
+      ROOT_URL: 'https://CHANGME.EDU',
       MONGO_URL: 'mongodb://mongodb/meteor',
       MONGO_OPLOG_URL: 'mongodb://mongodb/local',
     },
-
-    docker: {
-      image: 'abernix/meteord:node-12-base',
-    },
-
+    docker: { image: 'abernix/meteord:node-12-base' },
     enableUploadProgressBar: true,
     deployCheckWaitTime: 900
   },
-
-  mongo: {
-    version: '3.4.1',
-    servers: {
-      one: {}
-    }
-  },
-
+  mongo: { version: '3.4.1', servers: { one: {} } },
   proxy: {
-    domains: 'changme.edu',
-    ssl: {
-      letsEncryptEmail: 'changeme@hawaii.edu',
-      forceSSL: true
-    }
+    domains: 'CHANGEME.EDU',
+    ssl: { letsEncryptEmail: 'CHANGEME@HAWAII.EDU', forceSSL: true }
   }
 };
-
 ```
-Note that there are several occurrences of the string “changeme”. You need to update these to indicate your custom domain and your root password.
+Note that there are several occurrences of the string “CHANGEME”. This indicates the parts of the mup.js file that need to be configured for your application. You can edit these strings to be lower case, they are upper case only to make them stand out in the file.
 
-Note that the “host” value is just the domain name, but the ROOT_URL is “https://” followed by the domain name.
+Note: that the “host” and "domains" values are just the domain name. For example, if your domain name is "radgrad-comp-eng.design", then the value of "host" and "domains" should be "radgrad-comp-eng.design". Do not include "https://" in these fields.
+
+However, the ROOT_URL includes the protocol. For example, if your domain name is "radgrad-comp-eng.design", then the value of ROOT_URL should be “https://radgrad-comp-eng.design”.
 
 ## Configure app/.deploy/settings.js
 
@@ -246,7 +226,13 @@ mup logs
 [radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
 ```
 
-**Extremely Important Note:**  Each time you start up RadGrad and initialize it with a new database, a new admin password will be generated and the log file will be the only place it is made available.  You must check the logs and save that password someplace safe, because it will be overwritten the next time you deploy an update.
+## Find and save the admin password
+
+**Extremely Important Note:**  Each time you start up RadGrad and initialize it with a new database, a new admin password will be generated and the log file will be the only place it is made available.  You must print the logs by running `mup logs`, find the line that indicates the admin password within the logs, and save that password someplace safe.
+
+Note that the logs are cleared each time you deploy an update, so it is important to find and save that admin password.
+
+If you forget to save the admin password, you will need to clear the database and reinitialize the system from scratch in order to regenerate it. There is no way to recover it after it is deleted from the logs.
 
 ## Finish initial setup
 
