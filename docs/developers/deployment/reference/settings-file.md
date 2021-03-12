@@ -84,8 +84,8 @@ These settings are available on both the client and server sides of the system.
 
 This field contains settings to support CAS popup in the client browser. As before, there are two relevant settings (for UH CAS authentication):
 
-  * "https://cas-test.its.hawaii.edu/cas/login"
-  * "https://authn.hawaii.edu/cas/login"
+  * "https://cas-test.its.hawaii.edu/cas/login" (during development)
+  * "https://authn.hawaii.edu/cas/login" (for production)
 
 ### development
 
