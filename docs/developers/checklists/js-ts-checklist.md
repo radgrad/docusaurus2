@@ -1,9 +1,9 @@
 ---
-title: Javascript, Typescript, and ESLint Checklist
-sidebar_label: JS, TS, ESLint
+title: Javascript, Typescript, CSS, and ESLint Checklist
+sidebar_label: JS, TS, CSS, and ESLint
 ---
 
-Javascript, Typescript, and ESLint best practices.
+Javascript, Typescript, CSS, and ESLint best practices.
 
 ## Javascript
 
@@ -60,6 +60,22 @@ Can we change the type `any` to something more specific?
 ### TS-O2: Use React.FC().
 
 Use the React.FC type parameterized with the props to express the type of a React component?
+
+## CSS
+
+### CSS-01: Use local style.css files when appropriate.
+
+Meteor automatically loads the style.css file found in the app/client directory on startup.  This means you do not need to explicitly import this file into your react components.
+
+Please use the app/client/style.css file only for "global" definitions, i.e. CSS selectors that apply across the entire UI.
+
+If you want to define CSS that applies to just one page or component, consider creating a "local" style.css file in that page or component's directory. You can import that file explicitly with:
+
+```
+import './style.css';
+```
+
+Note that the file must be named "style.css" to avoid errors!
 
 ## ESLint
 
