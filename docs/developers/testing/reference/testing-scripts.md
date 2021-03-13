@@ -4,6 +4,21 @@ title: Testing scripts
 
 This page documents all the NPM scripts associated with testing.
 
+:::caution
+RadGrad testing is not fully supported on the Windows platform. In particular, test-all will fail because the "unimported" command is not supported on Windows.
+
+In addition, running test-acceptance may fail due to a timeout problem.
+
+For Windows users, your best strategy is to run the following testing commands individually:
+
+  * meteor npm run lint
+  * meteor npm run test-unit
+  * meteor npm run test-integration
+  * meteor npm run test-acceptance-development
+
+If all of those pass, then you ask a fellow developer on a Unix platform to run the unimported command on your branch. Or, if you're feeling lucky, just merge your changes into master and monitor the CI build on GitHub.
+:::
+
 ## meteor npm run lint
 
 This command checks the code according to our RadGrad ESLint guidelines.
@@ -17,6 +32,22 @@ $ meteor npm run lint
 > eslint --fix --quiet --ext .tsx --ext .ts ./imports
 
 $
+```
+
+## meteor npm run unimported
+
+This command checks to see if there is any unused components:
+
+Example invocation and output:
+
+```
+$ meteor npm run unimported
+
+> radgrad2@2.0.20 unimported /Users/philipjohnson/github/radgrad/radgrad2/app
+> npx unimported
+
+npx: installed 182 in 14.796s
+✓ There don't seem to be any unimported files.
 ```
 
 ## meteor npm run test-unit
@@ -222,5 +253,9 @@ $ meteor npm run test-acceptance
 This command sequentially invokes lint, then test-unit, then test-integration, and finally test-acceptance.
 
 As its name implies, it does all the testing.
+
+:::caution
+This commmand does not work on Windows, since it invokes npx unimported.
+:::
 
 
