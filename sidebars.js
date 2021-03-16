@@ -141,6 +141,14 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'UI Theme',
+        items: [
+          'developers/theme/overview',
+          'developers/theme/implementation',
+        ]
+      },
+      {
+        type: 'category',
         label: 'Reviews',
         items: ['developers/reviews/overview',
           {
