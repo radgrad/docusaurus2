@@ -56,7 +56,7 @@ Per the Meteor implementation, all fields not inside the "public" field are avai
 
 The University of Hawaii RadGrad instances must support CAS authentication in order for users to login using their UH credentials (which also authenticates them as UH personnel.)
 
-The server-side "cas" field provides the url to the CAS server. There are two possible values (at UH):
+The server-side "cas" field provides the url to the CAS server. There are two possible values (at UH) for the baseUrl field:
   * "https://cas-test.its.hawaii.edu/cas/" (during development)
   * "https://authn.hawaii.edu/cas/" (for production).
 
@@ -92,7 +92,7 @@ These settings are available on both the client and server sides of the system.
 
 ### cas
 
-This field contains settings to support CAS popup in the client browser. As before, there are two relevant settings (for UH CAS authentication):
+This field contains settings to support CAS popup in the client browser. As before, there are two relevant settings (for UH CAS authentication) for the loginUrl field:
 
   * "https://cas-test.its.hawaii.edu/cas/login" (during development)
   * "https://authn.hawaii.edu/cas/login" (for production)
