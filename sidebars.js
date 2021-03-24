@@ -141,10 +141,12 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'UI Theme',
+        label: 'Patterns and practices',
         items: [
-          'developers/theme/overview',
-          'developers/theme/implementation',
+          'developers/patterns/overview',
+          'developers/patterns/refactoring',
+          'developers/patterns/ui-theme',
+          'developers/patterns/components-methods',
         ]
       },
       {
