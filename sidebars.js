@@ -43,6 +43,7 @@ module.exports = {
         label: 'Administrators',
         items: [
           'users/admins/overview',
+          'users/admins/data-model',
         ],
       },
     ],
