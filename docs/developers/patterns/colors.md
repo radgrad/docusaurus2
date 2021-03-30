@@ -91,11 +91,42 @@ export const enum COLORS {
 }
 ```
 
+## The Palette
+
+export const Highlight = ({children, color}) => ( <div style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+      margin: '0.2rem',
+    }}> {children} ({color})</div> );
+
+
+<Highlight color="#53A78E">Blue</Highlight>
+<Highlight color="#6FBE44">Green</Highlight>
+<Highlight color="#38840F">Green Darken</Highlight>
+<Highlight color="#86CAB5">Green2</Highlight>
+<Highlight color="#53A78E">Green2 Darken</Highlight>
+<Highlight color="#1B7F61">Green2 Darken 1</Highlight>
+<Highlight color="#696969">Grey</Highlight>
+<Highlight color="#F7F7F7">Grey2</Highlight>
+<Highlight color="#38840F">Olive</Highlight>
+<Highlight color="#DA7F4E">Orange</Highlight>
+<Highlight color="#DDA1C3">Pink</Highlight>
+<Highlight color="#952263">Purple</Highlight>
+<Highlight color="#CA4864">Red</Highlight>
+<Highlight color="#CEB23F">Yellow</Highlight>
+
+
 ## Managing the RadGrad color palette
 
-The net of it is that if you want to define a new color for use in RadGrad, please update both the Semantic UI theme and the Colors.ts file.
+The net of it is that if you want to define a new color for use in RadGrad, you usually need to update three files:
 
-Also, please avoid "one-off" colors.  Use the Theme, Luke.
+  1. The Semantic UI site.variables file.
+  2. The Colors.ts file.
+  3. This file!
+
+Finally, please avoid "one-off" colors, and please avoid using hex strings directly in the code.   Use the Theme, Luke.
 
 
 
