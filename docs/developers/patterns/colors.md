@@ -96,7 +96,8 @@ export const enum COLORS {
 export const Highlight = ({children, color}) => ( <div style={{
       backgroundColor: color,
       borderRadius: '2px',
-      color: '#fff',
+      color: 'white',
+      fontWeight: '700',
       padding: '0.2rem',
       margin: '0.2rem',
     }}> {children} ({color})</div> );
