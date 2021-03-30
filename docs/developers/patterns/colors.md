@@ -23,19 +23,26 @@ In the [semantic/src/site/globals/site.variables](https://github.com/radgrad/fom
 
 ```
 /* Color Palette */
+@radgrad-black             : #000000;
 @radgrad-blue              : #53A78E;
+@radgrad-blue-2            : #26407C;
+@radgrad-brown             : #AB6634;
 @radgrad-green             : #6FBE44;
 @radgrad-green-darken      : #38840F;
 @radgrad-green-2           : #86CAB5;
 @radgrad-green-2-darken    : #53A78E;
 @radgrad-green-2-darken-1  : #1B7F61;
+@radgrad-green-3           : #80AD27;
 @radgrad-grey              : #696969;
 @radgrad-grey-2            : #F7F7F7;
+@radgrad-grey-3            : #EEEEEE;
 @radgrad-olive             : #38840F;
 @radgrad-orange            : #DA7F4E;
 @radgrad-pink              : #DDA1C3;
 @radgrad-purple            : #952263;
 @radgrad-red               : #CA4864;
+@radgrad-teal              : #00CCCB;
+@radgrad-violet            : #62487C;
 @radgrad-white             : #FFFFFF;
 @radgrad-yellow            : #CEB23F;
 ```
@@ -44,7 +51,9 @@ We then override the standard Semantic UI colors like this:
 
 ```
 /* Inject the palette into the Semantic UI theme. */
+@black            : @radgrad-black;
 @blue             : @radgrad-blue;
+@brown            : @radgrad-brown;
 @green            : @radgrad-green;
 @grey             : @radgrad-grey;
 @lightblue        : @radgrad-green-2;
@@ -54,6 +63,8 @@ We then override the standard Semantic UI colors like this:
 @pink             : @radgrad-pink;
 @purple           : @radgrad-purple;
 @red              : @radgrad-red;
+@teal             : @radgrad-teal;
+@violet           : @radgrad-violet;
 @white            : @radgrad-white;
 @yellow           : @radgrad-yellow;
 ```
@@ -73,19 +84,26 @@ To allow access to these colors within React Components, we make a duplicate of 
  * https://github.com/radgrad/fomantic-ui/blob/main/semantic/src/site/globals/site.variables
  */
 export const enum COLORS {
+  BLACK =         '#000000',
   BLUE =          '#53A78E',
+  BLUE2 =         '#26407C',
+  BROWN =         '#AB6634',
   GREEN =         '#6FBE44',
   GREENDARKEN =   '#38840F',
   GREEN2 =        '#86CAB5',
   GREEN2DARKEN =  '#53A78E',
   GREEN2DARKEN1 = '#1B7F61',
+  GREEN3 =        '#80AD27',
   GREY =          '#696969',
   GREY2 =         '#F7F7F7',
+  GREY3 =         '#EEEEEE',
   OLIVE =         '#38840F',
   ORANGE =        '#DA7F4E',
   PINK =          '#DDA1C3',
   PURPLE =        '#952263',
   RED =           '#CA4864',
+  TEAL =          '#00CCCB',
+  VIOLET =        '#62487C',
   WHITE =         '#FFFFFF',
   YELLOW =        '#CEB23F',
 }
@@ -103,19 +121,26 @@ export const Highlight = ({children, color}) => ( <div style={{
     }}> {children} ({color})</div> );
 
 
+<Highlight color="#000000">Black</Highlight>
 <Highlight color="#53A78E">Blue</Highlight>
+<Highlight color="#26407C">Blue2</Highlight>
+<Highlight color="#AB6634">Brown</Highlight>
 <Highlight color="#6FBE44">Green</Highlight>
 <Highlight color="#38840F">Green Darken</Highlight>
 <Highlight color="#86CAB5">Green2</Highlight>
 <Highlight color="#53A78E">Green2 Darken</Highlight>
 <Highlight color="#1B7F61">Green2 Darken 1</Highlight>
+<Highlight color="#80AD27">Green3</Highlight>
 <Highlight color="#696969">Grey</Highlight>
 <Highlight color="#F7F7F7">Grey2</Highlight>
+<Highlight color="#EEEEEE">Grey3</Highlight>
 <Highlight color="#38840F">Olive</Highlight>
 <Highlight color="#DA7F4E">Orange</Highlight>
 <Highlight color="#DDA1C3">Pink</Highlight>
 <Highlight color="#952263">Purple</Highlight>
 <Highlight color="#CA4864">Red</Highlight>
+<Highlight color="#00CCCB">Teal</Highlight>
+<Highlight color="#62487C">Violet</Highlight>
 <Highlight color="#CEB23F">Yellow</Highlight>
 
 
