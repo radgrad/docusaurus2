@@ -64,9 +64,9 @@ And these invocations result in the following four UserLabels:
 
 ### size parameter
 
-The default size parameter value is 'large', which results in a label with our standard 16pt font.
+The default size parameter value is 'large', which results in a label with our standard 16pt font. Please use the default size in most cases.
 
-You can override this by providing a size parameter with any of the standard Semantic UI sizes.
+You can override the default size by providing a size parameter with any of the standard Semantic UI sizes.
 
 ### username parameter
 
