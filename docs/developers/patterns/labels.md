@@ -49,7 +49,7 @@ Some key design properties of these components:
 
 A UserLabel is even more simple than the above labels: they take a required username (i.e. email address) and an optional size parameter.
 
-For example, the following four invocations for four hypothetical users:
+For example, here are four invocations for four hypothetical users:
 
 ```
 <UserLabel username={profile.username}/>
