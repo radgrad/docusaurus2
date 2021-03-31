@@ -58,7 +58,7 @@ For example, here are four invocations for four hypothetical users:
 <UserLabel username='glau@hawaii.edu' size='tiny'/>
 ```
 
-Result in the following four UserLabels:
+And these invocations result in the following four UserLabels:
 
 <img src="/img/patterns/user-label-examples.png" />
 
