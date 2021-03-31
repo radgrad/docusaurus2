@@ -78,31 +78,31 @@ Since all users agree to share their email address and their name as part of the
 
 Students have the option of sharing, in addition to their name and email address, one or more of their: Level, ICE Points, website, picture, interests, career goals, opportunities, and courses.  If a student elects to share their picture and/or Level, then it will be displayed in their UserLabel.
 
-In the above example, Abigail and Betty are both electing to share their picture and Level, so these are displayed in their Label, and the Label is shaded with the color of the Level. However, Charley is not electing to share either, so his label is plain white and just displays his name.
+In the above example, Abigail and Betty are both electing to share their picture and Level, so these are displayed in their UserLabel, and their UserLabel is shaded with the color of the Level. However, Charley is not electing to share either, so his UserLabel is plain white and just displays his name.
 
-Faculty, Advisors, and Admins all "auto share" any information they make available.  So, their website, picture, interests, and career goals will be displayed if available.  These users do not have a Level, or ICE Points, or Opportunities, or Courses, so these are relevant for sharing.
+Faculty, Advisors, and Admins all "auto share" any information they make available.  So, their website, picture, interests, and career goals will be displayed if available.  These users do not have a Level, or ICE Points, or Opportunities, or Courses, so these are not relevant for sharing.
 
-## Solution: User Profile
+## Solution: UserProfile
 
-All UserLabels are clickable. When clicked, they pop up a modal dialog containing additional information about that user. How much additional information is displayed depends upon what information is shared by that user.
+All UserLabels are clickable. When clicked, they pop up a modal dialog containing additional information about that user. How much additional information is displayed depends upon what information is shared by that user. We call this modal dialog the "UserProfile".
 
-For example, Charley Sherry is a (hypothetical) student who has not chosen to share any information.  After clicking on his UserLabel, the following modal dialog appears:
+For example, Charley Sherry is a (hypothetical) student who has not chosen to share any information.  After clicking on his UserLabel, the following UserProfile appears:
 
 <img src="/img/patterns/user-profile-example-1.png" />
 
-The above modal shows the minimal information for a user when they have chosen to not share any additional information.
+The above UserProfile illustrates the minimal information for a user when they have chosen to not share any additional information.
 
-In contrast, the hypothetical student Abigail Kealoha has chosen to provide a website and profile picture, and share all possible information. Clicking on her UserLabel results in the following modal:
+In contrast, the hypothetical student Abigail Kealoha has chosen to provide a website and profile picture, and share all possible information. Clicking on her UserLabel results in the following UserProfile:
 
 <img src="/img/patterns/user-profile-example-2.png" />
 
 Note that clicking the tabs will reveal additional entities, and that clicking an entity will take you to the page with details about it.
 
-Finally, advisors and faculty "auto-share" whatever information they have filled out in their profile. So, clicking on the Gerald Lau link reveals his interests and career goal areas of expertise as well as his photo:
+Finally, advisors and faculty "auto-share" whatever information they have provided in their profile. So, clicking on the Gerald Lau UserLabel reveals his interests and career goal areas of expertise as well as his photo:
 
 <img src="/img/patterns/user-profile-example-3.png" />
 
-Since Gerald has not provided a website link, it is not displayed.
+Since Gerald has not provided a website link, it is not displayed in his UserProfile.
 
 
 
