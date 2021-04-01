@@ -18,9 +18,13 @@ We require all developers in the RadGrad Project to use the IntelliJ IDEA editor
 
 We understand that you might not like IntelliJ, but this is non-negotiable for participating in the RadGrad Project.  We have prior experience with students using other editors "on the sly", only to have them run into problems and difficulties that resulted directly from them not using IntelliJ.
 
-For information on configuring IntelliJ for Meteor development, see:
+For general information on configuring IntelliJ, see the most recent version of the ICS 314 module on development environments.
 
-  * [ICS 314: Install IntelliJ IDEA](http://courses.ics.hawaii.edu/ics314f19/morea/development-environments/experience-install-intellij-idea.html)
+We maintain our own IntelliJ coding style file:
+
+  * [ics-se-code-style.xml](/docs/ics-se-code-style.xml)
+
+Right click on the above link to download the file to your computer. Then go to IntelliJ and click on Preferences | Editor | Coding Style. Click on the gear icon, then select "Import Scheme" to import this file as a new scheme (or update your previous version of this scheme.
 
 ## Unix or Mac OS
 
