@@ -94,34 +94,36 @@ The final part of the design is to render the markdown section of the page with 
 
 ## Fetching structured data
 
-The Terms and Conditions page illustrates how to retrieve a simple string from the server. In most cases, however, your page will want to retrieve structured data in the form of an object or array.  Implementing this is only slightly more complicated, and is illustrated in the implementation of Profile Cards.
+The Terms and Conditions page illustrates how to retrieve a simple string from the server. In most cases, however, your page will want to retrieve structured data in the form of an object or array.  Implementing this is only slightly more complicated, and is illustrated in the implementation of User Profiles.
 
-Here is an early implementation of the ProfileCard component:
+Here is an implementation of the UserProfileCard component, with some irrelevant code omitted for clarity:
 
 ```javascript
-const StudentProfileCardMethod: React.FC<StudentProfileCardMethodProps> = ({studentProfile}) => {
-  const {username, firstName, lastName} = studentProfile;
-  const name = `${firstName} ${lastName}`;
-  const [data, setData] = useState<StudentPublicData>({});
+const UserProfileCard: React.FC<UserProfileCardProps> = ({ username, fluid = true }) => {
+  :
+  const [data, setData] = useState<PublicProfileData>({});
+  const [fetched, setFetched] = useState(false);
   useEffect(() => {
     function fetchData() {
-      getStudentPublicData.callPromise({})
+      getPublicProfileData.callPromise({ username })
         .then(result => setData(result))
-        .catch(error => {console.error(error); setData({});});
+        .catch(error => { console.error(error); setData({});});
     }
-    // Only fetch data if its hasn't been fetched before.
-    _.isEmpty(data) || fetchData();
+    // Only fetch data if it hasn't been fetched before.
+    if (!fetched) {
+      fetchData();
+      setFetched(true);
+    }
   });
-
   return (
-    <ProfileCard email={username} name={name} careerGoals={data.careerGoals} interests={data.interests} courses={data.courses} ice={data.ice} image={data.picture} level={data.level} opportunities={data.opportunities} website={data.website} key={username}/>
+    <ProfileCard ... />
   );
 };
 ```
 
 The key changes are:
-  * We implement a Meteor Method called getStudentPublicData which accesses the server-side database to retrieve data of interest.
-  * useState() sets and retrieves an object, not a string. Note the use of a Typescript generic to provide the type of the object.
-  * The check for empty data is to see if the object is empty.
+  * We implement a Meteor Method called getPublicProfileData which accesses the server-side database to retrieve data of interest.
+  * The first occurrence of useState() holds the object returned from the Meteor Method call. Note the use of a Typescript generic to provide the type of the object.
+  * The second occurrence of useState() provides a variable that enables us to call fetchData() exactly once, even though useEffect() will be called more than once.
   * We elect to not display a "retrieval" message in the Profile Card.
-  * Errors are printed to the console, not displayed to the client.
+  * Errors are printed to the console.
