@@ -13,7 +13,7 @@ This works most, but not all of the time.  For example, the "Terms and Condition
 
 Meteor provides an elegant alternative to the Pub/Sub model of data transfer called [Meteor Methods](https://guide.meteor.com/methods.html). Meteor methods are essentially a remote procedure call system, which enable a client to request data from the server without the need to use MiniMongo.
 
-The design problem is how to integrate Meteor Methods with React Functional Components. Since a Meteor Method is an asynchronous function call, we need a way to combine together the React rendering process with the asynchronous nature of Meteor Method calls. This page explains a simple and effective way to do it using the Terms and Conditions page as an example.
+The design pattern discussed here involves the integration of Meteor Methods with React Functional Components. Since a Meteor Method is an asynchronous function call, we need a way to combine together the React rendering process with the asynchronous nature of Meteor Method calls. This page explains how to do it, using the Terms and Conditions page as an example:
 
 First, let's see an example of the Terms and Conditions page:
 
@@ -25,26 +25,21 @@ Here is the implementation of that page:
 
 ```javascript
 const StudentTermsAndConditionsPage: React.FC = () => {
-  const awaitingTerms = 'Waiting to receive terms and conditions from server...';
   const [terms, setTerms] = useState('');
-  useEffect(() => {
-    function fetchTerms() {
-      getTermsAndConditions.callPromise({})
-        .then(result => setTerms(result))
-        .catch(error => setTerms(`Server Error: ${error}`));
-    }
-    // Only fetch terms if they haven't been fetched before.
-    terms || fetchTerms();
-  });
+  const fetchTerms = () => {
+    // console.log('check for infinite loop');
+    getTermsAndConditions.callPromise({})
+      .then(result => setTerms(result))
+      .catch(error => setTerms(`Server Error: ${error}`));
+  };
+  useEffect(() => { fetchTerms(); }, [terms]);
 
   return (
     <PageLayout id="student-terms-and-conditions-page" headerPaneTitle={headerPaneTitle} headerPaneBody={headerPaneBody}>
-      <ReactMarkdownWithHtml linkTarget="_blank" allowDangerousHtml source={terms || awaitingTerms}/>
+      <ReactMarkdownWithHtml linkTarget="_blank" allowDangerousHtml source={terms}/>
     </PageLayout>
   );
 };
-
-export default StudentTermsAndConditionsPage;
 ```
 
 At a high level, this code does the following:
@@ -56,8 +51,7 @@ At a high level, this code does the following:
 Implementing this requires the use of Meteor Methods along with the React useState() and useEffect() functions.
 
 First, there is a Meteor Method called getTermsAndConditions. NOTE: Meteor methods run on both the client and server side.
-When this method runs on the client side, we have it immediately returns the empty string. (This particular value is important.)
-When this method runs on the server side, we have it try to load the T&C text and return it.
+When this method runs on the client side, we have it immediately returns the empty string. When this method runs on the server side, we have it try to load the T&C text and return it.
 
 Here's how getTermsAndConditions implements these behaviors:
 
@@ -86,35 +80,36 @@ Next, we use React's useState and useEffect hooks to invoke the Meteor Method an
 We use useState to create a state variable called 'terms', with initial value of the empty string. Note that whenever
 the 'terms' variable changes value, the page will be re-rendered.
 
-The useEffect construct accepts a function that is run each time the page is rendered.  This function checks the 'terms' variable, and returns immediately if the 'terms' variable is not the empty string. In the case that the terms variable is the empty string, then it invokes fetchTerms(), which invokes our Meteor Method. This Meteor Method will run immediately on the client side, but in this case it sets the 'terms' variable to the empty string, so that doesn't change the state and so no rendering is triggered.
+The useEffect construct accepts a function that is (by default) run each time the page is rendered, along with the specification of a "dependent" variable (terms).  Providing a dependent variable to useEffect() means that the function will only be run when the dependent variable has changed its value since the last invocation of useEffect().  This avoids the creation of an infinite loop. For more details, see [How to fix an infinite loop inside useEffect()](https://medium.com/@andrewmyint/infinite-loop-inside-useeffect-react-hooks-6748de62871).
 
-Eventually, though, the promise will return, invoking either the then() or catch() chained function calls. Hopefully it's always the then() chain that gets executed, which sets the 'terms' variable to the contents of the file on the server side. Now the 'terms' variable is not the empty string, so when useEffect is called again after the page re-renders, it doesn't do call fetchTerms again.
+Eventually the promise will return, invoking either the then() or catch() chained function calls. Hopefully it's always the then() chain that gets executed, which sets the 'terms' variable to the contents of the file on the server side. Since the value of terms has changed, the page will be rendered again.
 
-The final part of the design is to render the markdown section of the page with either the 'terms' variable value (if it's not the empty string), or the value of the awaitingTerms variable.  We do this so that if it takes a while to get the result back from the server, the page will display "Waiting to receive terms and conditions...." while waiting.
+## Fetching structured data and using a gate variable
 
-## Fetching structured data
-
-The Terms and Conditions page illustrates how to retrieve a simple string from the server. In most cases, however, your page will want to retrieve structured data in the form of an object or array.  Implementing this is only slightly more complicated, and is illustrated in the implementation of User Profiles.
+The Terms and Conditions page illustrates how to retrieve a simple string from the server along with a dependent variable to control when useEffect() is invoked. In most cases, however, your page will want to retrieve structured data in the form of an object or array.  Implementing this is only slightly more complicated, and is illustrated in the implementation of User Profiles.
 
 Here is an implementation of the UserProfileCard component, with some irrelevant code omitted for clarity:
 
 ```javascript
 const UserProfileCard: React.FC<UserProfileCardProps> = ({ username, fluid = true }) => {
   :
-  const [data, setData] = useState<PublicProfileData>({});
-  const [fetched, setFetched] = useState(false);
-  useEffect(() => {
-    function fetchData() {
-      getPublicProfileData.callPromise({ username })
-        .then(result => setData(result))
-        .catch(error => { console.error(error); setData({});});
-    }
-    // Only fetch data if it hasn't been fetched before.
-    if (!fetched) {
-      fetchData();
-      setFetched(true);
-    }
-  });
+   const [data, setData] = useState<PublicProfileData>({});
+   const [fetched, setFetched] = useState(false);
+
+   useEffect(() => {
+     // console.log('check for infinite loop');
+     const fetchData = () => {
+       getPublicProfileData.callPromise({ username })
+         .then(result => setData(result))
+         .catch(error => { console.error(error); setData({});});
+     };
+     // Only fetch data if it hasn't been fetched before.
+     if (!fetched) {
+       fetchData();
+       setFetched(true);
+     }
+   }, [fetched, username]);
+
   return (
     <ProfileCard ... />
   );
@@ -123,7 +118,17 @@ const UserProfileCard: React.FC<UserProfileCardProps> = ({ username, fluid = tru
 
 The key changes are:
   * We implement a Meteor Method called getPublicProfileData which accesses the server-side database to retrieve data of interest.
-  * The first occurrence of useState() holds the object returned from the Meteor Method call. Note the use of a Typescript generic to provide the type of the object.
-  * The second occurrence of useState() provides a variable that enables us to call fetchData() exactly once, even though useEffect() will be called more than once.
+  * The data state variable holds the object returned from the Meteor Method call. Note the use of a Typescript generic to provide the type of the object.
   * We elect to not display a "retrieval" message in the Profile Card.
   * Errors are printed to the console.
+  * We use a second state variable called "fetched" to determine whether to invoke fetchData along with dependent variables. Sometimes getting the dependent variable specification to be correct is tricky, and using this "gate variable" provides an additional level of control.
+
+## Checking for infinite loops
+
+One issue with useEffect() is that it can often lead to infinite loops in your code. For more explanation, please see see [How to fix an infinite loop inside useEffect()](https://medium.com/@andrewmyint/infinite-loop-inside-useeffect-react-hooks-6748de62871).  In the examples above, you can see a commented out line `// console.log('check for infinite loop');`.  This is useful during development to assess whether the code results in an infinite loop, which might not be immediately noticeable during display of the page.
+
+When this line of code is uncommented, and there is an infinite loop, then the line will be printed repeatedly and the console will show that. Here is a snapshot during execution when an infinite loop is present:
+
+<img src="/img/patterns/useEffect-infinite-loop.png" />
+
+As you can see, that line has been printed 900 times so far!
