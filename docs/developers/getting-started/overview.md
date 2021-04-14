@@ -33,7 +33,7 @@ Please document your outcomes from this task as part of [Issue 467](https://gith
 
 The final onboarding task is to build a simple page. This task will get you familiar with the basics of the RadGrad system, its user interface, and internal processing.
 
-For detailed instructions, please see [Issue 468](https://github.com/radgrad/radgrad2/issues/468).
+For detailed instructions and how to document your outcomes, please see [Issue 468](https://github.com/radgrad/radgrad2/issues/468).
 
 
 
