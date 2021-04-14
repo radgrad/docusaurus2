@@ -15,7 +15,7 @@ Please document your outcomes from this task as part of [Issue 465](https://gith
 
 Next, please review the system from the perspective of a user.  If you don't have an account, as Cam or Philip to create one.
 
-Then, use the site and write an essay discussing your findings as detailed in [Issue 464](https://github.com/radgrad/radgrad2/issues/466).  Your essay has the potential to guide development priorities for the next several months, so please take care and do a good job!
+Then, use the site and write an essay discussing your findings as detailed in [Issue 464](https://github.com/radgrad/radgrad2/issues/464).  Your essay has the potential to guide development priorities for the next several months, so please take care and do a good job!
 
 ## 3. Set up and review the RadGrad tech stack
 
