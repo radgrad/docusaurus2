@@ -24,6 +24,7 @@ const features = [
         <li><a href='/docs/developers/overview'>Developer Guide</a></li>
         <li><a href='https://radgrad.github.io/radgrad2/'>JSDocs</a></li>
         <li><a href='https://github.com/radgrad/radgrad2/actions'><img src="https://github.com/radgrad/radgrad2/workflows/ci-radgrad/badge.svg"/></a></li>
+        <li><a href="https://codeclimate.com/github/radgrad/radgrad2/maintainability"><img src="https://api.codeclimate.com/v1/badges/a7ae120360f347a2e391/maintainability" /></a></li>
       </ul>
     ),
   },
