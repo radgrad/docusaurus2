@@ -150,6 +150,7 @@ module.exports = {
           'developers/patterns/components-methods',
           'developers/patterns/labels',
           'developers/patterns/colors',
+          'developers/patterns/sandbox',
         ]
       },
       {
