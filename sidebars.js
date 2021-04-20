@@ -147,6 +147,7 @@ module.exports = {
           'developers/patterns/overview',
           'developers/patterns/refactoring',
           'developers/patterns/ui-theme',
+          'developers/patterns/methods',
           'developers/patterns/components-methods',
           'developers/patterns/labels',
           'developers/patterns/colors',
