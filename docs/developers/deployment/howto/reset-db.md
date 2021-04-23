@@ -35,6 +35,12 @@ Second, drop the database by invoking this command:
 ssh radgrad@radgrad2.ics.hawaii.edu 'docker exec mongodb mongo radgrad --eval "db.dropDatabase();"'
 ```
 
+If you are not deploying the ICS instance of RadGrad, then you need to substitute a different user for `radgrad@radgrad2.ics.hawaii.edu` in the above command.
+
+For example, in the case of the Computer Engineering instance, the user is `root@radgrad-comp-eng.design`.
+
+In either case, you will be prompted for the associated password in order to complete the ssh login process and execute the drop database command.
+
 Sample invocation and results:
 
 ```shell
