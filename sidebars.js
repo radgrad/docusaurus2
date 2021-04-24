@@ -152,6 +152,7 @@ module.exports = {
           'developers/patterns/labels',
           'developers/patterns/colors',
           'developers/patterns/sandbox',
+          'developers/patterns/sticky-state',
         ]
       },
       {
