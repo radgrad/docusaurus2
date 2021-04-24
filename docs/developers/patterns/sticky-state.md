@@ -6,11 +6,11 @@ title: Sticky State
 
 We want certain state variables to be available across components and to not lose their value when the user navigates back and forth between pages in the application.
 
-Currently, we implement this behavior using redux.  Using redux is pretty complicated.
+Currently, we implement this behavior using Redux.  Using Redux is pretty complicated.
 
 ## Solution
 
-We now have an abstraction called "Sticky State".  It is used in the same manner as useState(), which declares a state variable whose value is not "sticky".
+We now have an alternative to Redux called "Sticky State", based upon [Simpler State](https://simpler-state.js.org/].  useStickyState() is a React Hook and is used in exactly the same manner as useState().
 
 For example, to create a non-sticky state variable, you use the useState() hook:
 
