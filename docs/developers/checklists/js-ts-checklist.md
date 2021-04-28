@@ -41,15 +41,71 @@ Can you use arrow functions? Note that arrow functions are normally better, exce
 
 ### JS-06: Avoid lodash map, filter, etc.
 
-ES6 includes many of the lodash functions. Use the built-in function rather than the lodash version when possible.
+ES6 includes many of the lodash functions (i.e. map, forEach, filter). Use the built-in function rather than the lodash version when available.
 
 ### JS-07: Avoid console.logs.
 
-Console.log is useful for certain situations in development. All console.log statements should be commented out in master.
+Console.log is useful for certain situations in development. All debugging console.log statements should be commented out in master.
 
 ### JS-08: Use JSDoc (TSDoc) comments appropriately.
 
 When a comment starts with '/**', it will be processed by JSDoc (or TSDoc). Please ensure those comments are appropriate for inclusion.
+
+### JS-09: When objects do not have many fields, use one line layout, not one line per field
+
+Consider code like this:
+
+```
+  "level": {
+      "six": {
+        "plannedICE":
+          {
+            "i": 100,
+            "c": 100,
+            "e": 100
+            },
+        "earnedICE":
+          {
+            "i": 100,
+            "c": 100,
+            "e": 100
+          },
+          "reviews": 6
+       },
+      "five": {
+        "plannedICE":
+          {
+          "i": 100,
+          "c": 100,
+          "e": 100
+          },
+          "earnedICE":
+          {
+            "i": 80,
+            "c": 80,
+            "e": 80
+          },
+          "reviews": 1
+        },
+      :
+      :
+      :
+```
+
+It is MUCH easier to read and understand when laid out like this:
+
+```
+  "level": {
+      "six": { "plannedICE": { "i": 100, "c": 100, "e": 100 }, "earnedICE": {"i": 100, "c": 100, "e": 100}, "reviews": 6 },
+      "five": { "plannedICE": { "i": 100, "c": 100, "e": 100 }, "earnedICE": { "i": 80, "c": 80, "e": 80 }, "reviews": 1 },
+      "four": { "plannedICE": {"i": 100, "c": 100, "e": 100}, "earnedICE": {"i": 30, "c": 36, "e": 30}, "reviews": 0},
+      "three": {"plannedICE": {"i": 0, "c": 0, "e": 0}, "earnedICE": {"i": 1, "c": 24, "e": 1}, "reviews": 0 },
+      "two": {"plannedICE": {"i": 0, "c": 0, "e": 0}, "earnedICE": {"i": 0, "c": 12, "e": 0}, "reviews": 0 }
+    },
+```
+
+We want to layout the code on the page in a way that makes it easiest to comprehend. Too many newlines results in too little code being shown in any one window of text, requiring lots of scrolling to get the "big picture".
+
 
 ## Typescript
 
