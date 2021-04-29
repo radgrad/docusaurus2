@@ -93,6 +93,7 @@ module.exports = {
                       'developers/design/app/imports/api/data-integrity',
                       'developers/design/app/imports/api/dump-restore',
                       'developers/design/app/imports/api/manage-users',
+                      'developers/design/app/imports/api/user-interactions',
                     ]
                   },
                   {

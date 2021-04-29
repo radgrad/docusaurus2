@@ -90,13 +90,9 @@ Here is an ERD that illustrates which entities use Slugs:
 
 ## Other entities 
 
-There are a variety of other entities that are more peripheral in the data model or have a sufficiently simple structure to not warrant their own section.  Here are the remaining entities:
+There are a variety of other entities that are more peripheral in the data model or have a sufficiently simple structure to not warrant their own section.  Here are several of the remaining entities:
 
   * CareerGoal. Career goals enable RadGrad to identify appropriate combinations of curricular and extracurricular activities to prepare a student for their professional life after graduation. 
-  
-  * Feed.  Feeds are a representation for recent events within RadGrad. It enables the user interface to display to all users the activities in the system: when courses and opportunities are defined, when new users join, when a user achieves a higher level, and so forth. 
-  
-  * Help.  Help entities provide the text associated with the help dialog on each page.
 
   * PublicStats.  Provides the publically available data shown on the landing page. 
   
