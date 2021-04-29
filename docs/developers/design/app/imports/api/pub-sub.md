@@ -85,7 +85,7 @@ The point of this section is to note that the default approach to pub-sub in Met
 
 The advantage of the default approach is simplicity and minimization of the data held by the client at any given time. The disadvantage is that if two pages involve the exact same set of subscriptions, and the client navigates from one of these pages to the other, then the default approach results in data being sent to the client for first page, then discarded when the client leaves that page, only to have the server resend the exact same data to the client when the second page is loaded.
 
-Upon deploying RadGrad for the first time, we discovered that page were loading slowly and that much of this latency was due to the overhead of subscribing and unsubscribing each time the client visited a new page.  To solve this problem, RadGrad leverages the [MeteorHacks SubsManager](https://github.com/kadirahq/subs-manager) package, which provides the ability to cache subscription data on the client side. 
+Upon deploying RadGrad for the first time, we discovered that pages were loading slowly and that much of this latency was due to the overhead of subscribing and unsubscribing each time the client visited a new page.  To solve this problem, RadGrad leverages the [MeteorHacks SubsManager](https://github.com/kadirahq/subs-manager) package, which provides the ability to cache subscription data on the client side. 
 
 Our implementation of subscription caching is accomplished by three global templates:
 
