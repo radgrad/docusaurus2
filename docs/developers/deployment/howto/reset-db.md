@@ -9,7 +9,7 @@ It is often useful to restart RadGrad with a new database. This involves:
   3. Edit the settings.json file to point to the new database to load on startup.
   4. Update the settings in mup and restart the RadGrad service.
 
-## Stop RadGrad
+## 1. Stop RadGrad
 
 First, stop the RadGrad service:
 
@@ -27,9 +27,23 @@ Started TaskList: Stop Meteor
 [radgrad2.ics.hawaii.edu] - Stop Meteor: SUCCESS
 ```
 
-## Drop database
+## 2. Make backup of current database
 
-Second, drop the database by invoking this command:
+:::warning
+The following command, although taken straight from the meteor up documentation (http://meteor-up.com/docs.html#backup-and-restore), did not work for me:
+
+```shell
+ssh root@host "docker exec mongodb mongodump -d meteor --archive --gzip" > dump.gz
+```
+
+Where "root@host" is replaced by the one appropriate for your instance, such as "radgrad@radgrad2.ics.hawaii.edu" or "root@radgrad-comp-eng.design".
+:::
+
+So, to make a backup, you should login as an administration and use the "dump database" option.
+
+## 3. Drop database
+
+Next, drop the database by invoking this command:
 
 ```shell
 ssh radgrad@radgrad2.ics.hawaii.edu 'docker exec mongodb mongo radgrad --eval "db.dropDatabase();"'
@@ -51,13 +65,15 @@ MongoDB server version: 3.4.1
 { "dropped" : "radgrad", "ok" : 1 }
 ```
 
-## Edit settings
+## 4. Edit settings
 
-Third, edit the app/.deploy/settings.json file to specify the new database.
+Presumably you are dropping the current database in order to load a new snapshot of the database.
+
+To do this, edit the app/.deploy/settings.json file to specify the new database.
 
 This usually involves changing the value of the field "databaseRestoreFileName".
 
-## Deploy with updated settings
+## 5. Deploy with updated settings
 
 Next, invoke mup deploy to rebuild and redeploy RadGrad.
 
@@ -92,7 +108,7 @@ Started TaskList: Start Meteor
 app/.deploy $
 ```
 
-## Check status of deployment through logs
+## 6. Check status of deployment through logs
 
 To ensure that what you wanted to have happen actually happened, check the logs with mup logs:
 
@@ -113,9 +129,11 @@ mup logs
 [radgrad2.ics.hawaii.edu]Monti APM: Successfully connected
 ```
 
-## Run mup logs, record new admin password!
+## 7. Run mup logs, record new admin password!
 
+:::important Record new admin password!
 Note that when you start up the system with a new database, a new admin password will be generated and the log file will be the only place it is made available.  The log is only available until the next deploy of the system, so be sure to invoke `mup logs`, find the log message with the new admin password, and record it someplace safe.
+:::
 
 
 
