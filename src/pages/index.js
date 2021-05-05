@@ -11,7 +11,8 @@ const features = [
     title: <>For Students</>,
     description: (
         <ul>
-          <li><a href='https://radgrad.ics.hawaii.edu'>Go To UHM/ICS RadGrad</a></li>
+          <li><a href='https://radgrad2.ics.hawaii.edu'>Go To UHM/ICS RadGrad (V2, in pre-release)</a></li>
+          <li><a href='https://radgrad-comp-eng.design'>Go To UHM/CENG RadGrad (V2, in pre-release)</a></li>
           <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
           <li><a href='/docs/users/overview'>User Guide</a></li>
         </ul>
