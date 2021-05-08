@@ -20,7 +20,7 @@ Please document your outcomes from this task as part of [Issue 465](https://gith
 
 Next, please review the system from the perspective of a user.
 
-Please login to [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).  You should all have accounts. (Shinya might be using [https://radgrad-comp-eng.design](https://radgrad-comp-eng.design)).
+Please login to [https://radgrad2.ics.hawaii.edu](https://radgrad2.ics.hawaii.edu).  You should all have accounts.
 
 Please try to address all high and medium priority To Do list items on your home page. As you do so, please make notes on what you found difficult to understand or accomplish.
 
@@ -38,7 +38,13 @@ The third thing to do is to download and install RadGrad locally, as documented 
 
 Please document your outcomes from this task as part of [Issue 467](https://github.com/radgrad/radgrad2/issues/467).
 
-## 5. Build your personal sandbox
+## 5. Review the research
+
+Now that you've had some practical exposure to RadGrad as a software system, it's important to understand RadGrad as a research project.  You'll read two papers and then write an essay discussing the results.
+
+For more details, see [Issue 501](https://github.com/radgrad/radgrad2/issues/501).
+
+## 6. Build your personal sandbox
 
 The final onboarding task is to gain experience building React components the "RadGrad Way". This task will get you familiar with the basics of the RadGrad system, its user interface, and internal processing.
 
