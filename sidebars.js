@@ -54,6 +54,7 @@ module.exports = {
         label: 'Getting started',
         items: [
           'developers/getting-started/overview',
+          'developers/getting-started/onboarding-summer-2021',
           'developers/getting-started/tech-stack',
           {
             type: 'category',
