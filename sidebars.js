@@ -271,6 +271,7 @@ module.exports = {
         label: 'Reference',
         items: [
           'developers/reference/overview',
+          'developers/reference/degree-experience-planner',
           { type: 'link', label: 'JSDocs', href: 'https://radgrad.github.io/radgrad2/' },
         ],
       },
