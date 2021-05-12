@@ -99,14 +99,6 @@ module.exports = {
                   },
                   {
                     type: 'category',
-                    label: 'redux/',
-                    items: [
-                      'developers/design/app/imports/redux/overview',
-                      'developers/design/app/imports/redux/manage-ui-state',
-                    ]
-                  },
-                  {
-                    type: 'category',
                     label: 'ui/',
                     items: [
                       'developers/design/app/imports/ui/overview',

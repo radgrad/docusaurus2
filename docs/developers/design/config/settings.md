@@ -37,6 +37,7 @@ Here is a recent version of settings.development.json:
       "two": {"plannedICE": {"i": 0, "c": 0, "e": 0}, "earnedICE": {"i": 0, "c": 12, "e": 0}, "reviews": 0 }
     },
     "quarterSystem": false,
+    "repeatableCourseNums": ["ICS 499"],
     "adminProfile": { "username": "radgrad@hawaii.edu", "firstName": "RadGrad", "lastName": "Admin" },
     "emailDomain": "hawaii.edu",
     "newsletterFrom": "RadGrad Administrator <donotreply@mail.gun.radgrad.org>",
@@ -114,6 +115,10 @@ This field contains settings used to determine the thresholds for students to ac
 ### quarterSystem
 
 RadGrad supports both a semester system and a quarter system. Set quarterSystem to "false" to enable semester-based academic years.
+
+### repeatableCourseNums"
+
+The degree planner needs to know which courses can appear more than once in the plan.  This field is an array of course names which can be repeated.
 
 ### admin Profile
 

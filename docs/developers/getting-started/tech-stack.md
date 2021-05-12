@@ -66,8 +66,10 @@ To assess your knowledge, you should be able to easily complete exercises such a
 
 RadGrad is actually written in the Typescript superset of Javascript. To come up to speed in Typescript, we recommend:
 
+  * [Getting Started with Typescript](https://stackoverflow.blog/2021/05/05/getting-started-with-typescript/)
   * [Typescript for Javascript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
   * [The Typescript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+  * [Typescript Function Syntax](https://kentcdodds.com/blog/typescript-function-syntaxes)
 
 To assess your knowledge, just jump into RadGrad.
 
