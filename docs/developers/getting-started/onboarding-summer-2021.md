@@ -2,7 +2,7 @@
 title: Onboarding (Summer, 2021)
 ---
 
-Greetings Caliana, Shinya, Timothy, and Trey,
+Greetings Summer 2021 interns!
 
 We're happy that you're joining us on the RadGrad team for Summer, 2021. We think this will be an exciting and fun summer for all of us.
 
