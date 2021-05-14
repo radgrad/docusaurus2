@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Learn</>,
+    title: <>For Everyone</>,
     description: (
         <ul>
           <li><a href='/docs/overview/motivation'>Motivation</a></li>
