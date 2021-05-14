@@ -8,43 +8,51 @@ The RadGrad framework is designed around seven basic constructs: Interests, Care
 
 Interests represent a set of discipline-specific topics relevant to the degree experience.  In computer science, examples of Interests might include "blockchain", "big data", and "Java".
 
-The [Interests Explorer](https://radgrad.ics.hawaii.edu/explorer/interests/) provides access to around 80 Interests in the current RadGrad release.  Here's an example page for the interest "algorithms":
+The Interests Explorer provides access to around 80 Interests in the current UHM/ICS RadGrad instance.  Here's an example page for a hypothetical student regarding the interest "algorithms":
 
 ![Interests](/img/overview/interests-explorer-algorithms.png)
 
-As you will see, Interests are the construct in RadGrad that ties together all of the other constructs.  This page illustrates one aspect of that, by listing the Courses and Opportunities associated with the "algorithms" interest.
+Interests are a central construct in RadGrad that tie together all of the other constructs.  This page illustrates one aspect of their role, in that it shows the Career Goals, Courses, and Opportunities associated with that Interest.
+
+Students who login to RadGrad can see more information, such as other students with similar Interests (who have opted-in to providing their Interests to other students in the system).
+
 
 ## Career Goals
 
 Career Goals represent professional outcomes that a student can pursue through the degree experience. In computer science, example Career Goals include "Data Scientist", "Augmented Reality Engineer", and "Security Analyst".
 
-The [Career Goals Explorer](https://radgrad.ics.hawaii.edu/explorer/career-goals/) provides access to around 20 Career Goals in the current RadGrad release.  Here's an example page for the career goal "data scientist":
+The Career Goals Explorer provides access to around 20 Career Goals in the UHM/ICS RadGrad instance.  Here's an example page for a hypothetical student for the career goal "data scientist":
 
 ![Career Goals](/img/overview/career-goals-explorer-data-scientist.png)
 
-Each Career Goal is associated with one or more interests. These are listed as green tiles underneath the Career Goal name on this page.  The Data Scientist career goal is associated with the Algorithms, Data Science, Databases, Machine Learning, and Research interests.
+Each Career Goal is associated with one or more Interests, and should be associated with at least one Course or  Opportunity (the system will notify Advisors and Faculty if there are Interests present which students have no ability to investigate further.)
+
+Students who login to RadGrad can see more information, such as other students with similar Career Goals (who have opted-in to providing their Career Goals to other students in the system).
+
 
 ## Courses
 
-Courses represent the curricular activities associated with the undergraduate academic unit. For the University of Hawaii computer science department, approximately 40 courses are represented.
+Courses represent the curricular activities associated with the undergraduate academic unit. For the UHM/ICS RadGrad instance, approximately 40 courses are represented.
 
-The [Courses Explorer](https://radgrad.ics.hawaii.edu/explorer/courses/) provides access to around 40 Courses in the current RadGrad release.  Here's an example page for the course "ICS 331":
+Here's an example page for a hypothetic student for the course ICS 331:
 
-![Courses Explorer](/img/overview/courses-explorer-321.png)
+![Courses Explorer](/img/overview/courses-explorer-331.png)
 
-Each Course is also associated with Interests. In the case of ICS 331, they are Computer Architecture, Hardware, and Application Development.
+Each Course is associated with Interests, Career Goals, and prerequisite Courses.
 
-If you are a registered user of RadGrad and can login, then you can see reviews of the course written by students who have taken it previously.
+Students who login to RadGrad can see more information, such as reviews of the course written by students who have taken it previously.
 
 ## Opportunities
 
 Opportunities represent extra-curricular activities that help a student progress toward one or more Career Goals and/or learn more about a specific Interest. The set of Opportunities are "curated" by faculty members to ensure quality and relevance. Example opportunities include: a local Hackathon, a summer internship at a local high tech company, and participation in a faculty member's research project.  Opportunities can also include online courses available through platforms like Coursera or edX, if the faculty have reviewed the offering and found it be useful and appropriate for their students.
 
-The [Opportunities Explorer](https://radgrad.ics.hawaii.edu/explorer/opportunities/) provides access to around 80 Opportunities in the current RadGrad release.  Here's an example page for the Opportunity "Hawaii Annual Code Challenge":
+The Opportunities Explorer provides access to around 80 Opportunities in the UHM/ICS RadGrad instance.  Here's an example page for the Opportunity "Hawaii Annual Code Challenge":
 
 ![Opportunities Explorer](/img/overview/opportunities-explorer-hacc.png)
 
-Once again, Opportunities are associated with Interests. In the case of HACC, the Interests are: Application Development, Civic Engagement, Data Mining, Data Science, Data Visualization, Social Computing, Sustainability, and Web Development.
+Opportunities are associated with Interests, Career Goals, Courses, and other Opportunities.
+
+Students who login to RadGrad can see additional information, such as other students participating in this Opportunity (who have opted-in to sharing this information), as well as reviews of the Opportunity written by students who have previously participated.
 
 ## Degree Plans
 
@@ -54,10 +62,11 @@ Each student has a Degree Plan, which is the set of Courses and Opportunities th
 
   2. A more **cohesive** disciplinary experience (because RadGrad can use interests and career goals to guide students to compatible extra-curricular activities.
 
-Here is an example degree plan page for a hypothetical student:
+Here is an example degree plan page:
 
 ![Degree Plan](/img/overview/degree-plan-example-page.png)
 
+RadGrad provides a mechanism to upload data on completed courses that can be extracted from institutional databases by qualified faculty and advisors.  This means that students do not have to manage the status of their previous courses: RadGrad can be updated each semester with this information to maintain accuracy. Only courses directly related to the degree program are tracked in RadGrad.
 
 ## ICE
 
@@ -73,16 +82,31 @@ ICE points can be either "planned" or "verified".  You obtain "planned" points s
 
 ## Levels
 
-Levels respond to the need we identified during our pilot studies for RadGrad participation to have a physical manifestation. Students want to know who else is using the system, and what progress they have made so far. After several rounds of design, we decided on the use of laptop stickers with a custom RadGrad design, with a color scheme representing a six stage progression from zero ICE points to 300 points across all three categories.
+Levels are a RadGrad "game mechanic" that help students track progress through their degree program. Students start at Level 1 (Grey), and as they complete Courses and Opportunities and perform other actions in the system, they can potentially move all the way to Level 6 (Black).
 
-Here are the icons representing the six levels:
+Achievement of Levels depends on "verified", not self-reported activities.
 
-<img width="100px" src="/img/radgrad-level-1-icon.png"/>
-<img width="100px" src="/img/radgrad-level-2-icon.png"/>
-<img width="100px" src="/img/radgrad-level-3-icon.png"/>
-<img width="100px" src="/img/radgrad-level-4-icon.png"/>
-<img width="100px" src="/img/radgrad-level-5-icon.png"/>
-<img width="100px" src="/img/radgrad-level-6-icon.png"/>
+We provide PDF files so that a department can print and provide the Advisor with small (2") laptop stickers. The Advisor can distribute them to a student each time he or she achieves a new RadGrad Level.
 
-Each student's level is also displayed in their navbar to the left of their ICE points once they login to RadGrad. The hypothetical student shown above (Abigail Kealoha) is at Level 5.
+In addition to the physical laptop sticker, students within the system can opt-in to sharing their Level status with other students. In this case, the icon for their Level appears next to their name.
+
+Students can check their Level and what is required to advance within the system. Here is the page for a hypothetical student:
+
+![Level](/img/overview/level-page-example.png)
+
+## The To Do List
+
+Understanding how to best make use RadGrad's features is not obvious.  To help students learn to use the system, RadGrad provides a home page with a personalized "To Do" list containing high, medium, and low priority items based upon the state of the system and the student's previous use.
+
+Here's an example To Do page for a hypothetical student:
+
+![Level](/img/overview/to-do-page.png)
+
+The To Do page is intended to provide "just in time" documentation and notifications for students that help them to focus on the best way to use the system at any point in time. While we provide supplemental video and written user documentation, we hope that the To Do list minimizes the need for students to use documentation in order to make effective use of the system.
+
+The To Do page is not only available to students. We also implement a To Do page for Faculty, Advisors, and Admins to notify them of tasks at various priorities.
+
+
+
+
 

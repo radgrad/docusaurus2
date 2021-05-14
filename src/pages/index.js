@@ -8,11 +8,22 @@ import styles from './styles.module.css';
 
 const features = [
   {
+    title: <>Learn</>,
+    description: (
+        <ul>
+          <li><a href='/docs/overview/motivation'>Motivation</a></li>
+          <li><a href='/docs/overview/goals'>Goals</a></li>
+          <li><a href='/docs/overview/basic-constructs'>Basic constructs</a></li>
+
+        </ul>
+    ),
+  },
+  {
     title: <>For Students</>,
     description: (
         <ul>
-          <li><a href='https://radgrad2.ics.hawaii.edu'>Go To UHM/ICS RadGrad (V2, in pre-release)</a></li>
-          <li><a href='https://radgrad-comp-eng.design'>Go To UHM/CENG RadGrad (V2, in pre-release)</a></li>
+          <li><a href='https://radgrad2.ics.hawaii.edu'>UHM/ICS RadGrad (pre-release)</a></li>
+          <li><a href='https://radgrad-comp-eng.design'>UHM/CENG RadGrad (pre-release)</a></li>
           <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
           <li><a href='/docs/users/overview'>User Guide</a></li>
         </ul>
@@ -34,7 +45,7 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--6', styles.feature)}>
+    <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />

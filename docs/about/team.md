@@ -14,13 +14,10 @@ Faculty:
 Students/Staff:
 
   * Andre Ruiz (2020 - present)
-  * Jennifer Hsu  (2020 - present)
-  * Pauline Wu (2021 - present)
-  * Justin Wong (2021 - present)
-  * Rashmi Ramanatha (2020 - present)
-  * Jatin Pandya (2021 - present)
-  * Hanna Park (Summer, 2020; Spring, 2021)
-
+  * Caliana Fortin (Summer, 2021)
+  * Shinya Saito (Summer, 2021)
+  * Timothy Huo (Summer, 2021)
+  * Trey Sumida (Summer, 2021)
 
 Advisory Board:
 
@@ -30,6 +27,8 @@ Advisory Board:
 
 ## Ohana
 
+  * Jatin Pandya (Spring, 2021)
+  * Hanna Park (Summer, 2020; Spring, 2021)
   * Aljon Preza (Spring, 2016)
   * Amy Takayesu (2017-2018)
   * Angeli Amascual (Summer, 2020)
@@ -42,7 +41,9 @@ Advisory Board:
   * Gian Calica (2019-2020)
   * Gilbert Yim (Spring, 2016)
   * Glen Barcelo (Summer, 2019)
+  * Jennifer Hsu  (2020 - 2021)
   * Jesse McDonald (2020 - present)
+  * Justin Wong (Spring, 2021)
   * Kelli Tamashiro (Summer, 2020)
   * Kelsie Yamakawa (Spring, 2016)
   * Kenny Luong (Spring, 2016)
@@ -52,7 +53,9 @@ Advisory Board:
   * Micah Tashima (Spring, 2016)
   * Michael Spencer (Spring, 2016)
   * Michele Shimoda (Spring, 2016)
+  * Pauline Wu (Spring, 2021)
   * Quinne Uchida (2019 - 2020)
+  * Rashmi Ramanatha (2020 - 2021)
   * Sorapong Khongnawang (Spring, 2016)
   * Sy Morikawa (Spring, 2016)
   * Tina Loos (2020 - 2020)

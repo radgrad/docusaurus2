@@ -30,7 +30,7 @@ module.exports = {
         {to: 'blog', label: 'News', position: 'right'},
         {to: 'docs/about/opportunities', label: 'Join Us', position: 'right'},
         {href: 'https://github.com/radgrad', label: 'GitHub', position: 'right'},
-        {href: 'https://github.com/radgrad/radgrad2/projects/8', label: 'Project Board', position: 'right'},
+        {href: 'https://github.com/radgrad/radgrad2/projects/9', label: 'Project Board', position: 'right'},
       ],
     },
     footer: {
