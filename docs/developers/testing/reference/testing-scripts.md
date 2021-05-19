@@ -5,18 +5,16 @@ title: Testing scripts
 This page documents all the NPM scripts associated with testing.
 
 :::caution
-RadGrad testing is not fully supported on the Windows platform. In particular, test-all will fail because the "unimported" command is not supported on Windows.
+RadGrad testing might not be fully supported on the Windows platform. In particular, the test-all script might fail on Windows, either because the unimported script fails or because the test-acceptance script triggers a timeout.
 
-In addition, running test-acceptance may fail due to a timeout problem.
-
-For Windows users, your best strategy is to run the following testing commands individually:
+If you are experiencing either of these issues on Windows, then one workaround is to run the testing commands individually:
 
   * meteor npm run lint
   * meteor npm run test-unit
   * meteor npm run test-integration
   * meteor npm run test-acceptance-development
 
-If all of those pass, then you ask a fellow developer on a Unix platform to run the unimported command on your branch. Or, if you're feeling lucky, just merge your changes into master and monitor the CI build on GitHub.
+If all of those pass, then you can ask a fellow developer on a Unix platform to run the unimported command on your branch (if unimported does not succeed for you). Or, if you're feeling lucky, just merge your changes into master and monitor the CI build on GitHub.
 :::
 
 ## meteor npm run lint
