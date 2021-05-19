@@ -41,7 +41,7 @@ To assess this goal, we will survey faculty before and after RadGrad to determin
 
 ## Improve student diversity
 
-We hypothesize that by providing access to the diversity of applications of computer science, we can increase the diversity of students engaged with computer science.
+We hypothesize that by providing access to the diversity of computer science applications, we can increase the diversity of students engaged with computer science.
 
 We can measure progress toward this goal using percentage of women graduates,  ethnic demographics, and/or an increase in the diversity of disciplines that our students combine with a computer science degree.
 

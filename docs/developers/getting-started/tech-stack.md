@@ -20,7 +20,7 @@ We understand that you might not like IntelliJ, but this is non-negotiable for p
 
 For general information on configuring IntelliJ, see the most recent version of the ICS 314 module on development environments.
 
-We maintain our own IntelliJ coding style file:
+We maintain our own IntelliJ Code Style file:
 
   * [ics-se-code-style.xml](/docs/ics-se-code-style.xml)
 

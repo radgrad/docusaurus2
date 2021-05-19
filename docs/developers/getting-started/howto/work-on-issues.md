@@ -75,7 +75,7 @@ To avoid IntelliJ errors in the archive/ directory, you mark the archive/ direct
 ### Run all tests
 
   5. Stop the running Meteor process (control-c)
-  6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help.
+  6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help. (For important caveats regarding Windows, see [Testing Scripts](../../testing/reference/testing-scripts).)
 
 
 ### Merge into master, wait for CI results

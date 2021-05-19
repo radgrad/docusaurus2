@@ -17,11 +17,11 @@ To establish the first class status of extracurricular activities, the Degree Ex
 
 ![ICE](/img/overview/ice-example.png)
 
-Research on improving diversity in STEM indicates that a "barrier to entry" is an overly narrow view of STEM application areas and people. To combat this, RadGrad provides students with a faculty-curated knowledge base of discipline-specific "Interests" and "Career Goals", and which curricular and extra-curricular activities will help students learn more about them.
+Research on improving diversity in STEM indicates that a "barrier to entry" is an overly narrow view of STEM application areas and people. To combat this, RadGrad provides students with a faculty-curated knowledge base of discipline-specific "Interests" and "Career Goals", as well as which curricular and extra-curricular activities will help students learn more about them.
 
 ![ICE](/img/overview/career-goals-explorer-data-scientist.png)
 
-The design of RadGrad is influenced by research on diversity and retention and two educational research theories:  Individualized Learning Plans (ILP) and Communities of Practice (CoP).  ILPs help students connect their current studies to their future career goals. CoP identifies the importance of practitioner networks for both formal and informal learning.
+The design of RadGrad is influenced by research on diversity, retention and two educational research theories:  Individualized Learning Plans (ILP) and Communities of Practice (CoP).  ILPs help students connect their current studies to their future career goals. CoP identifies the importance of practitioner networks for both formal and informal learning.
 
 
 

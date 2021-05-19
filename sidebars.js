@@ -9,14 +9,14 @@ module.exports = {
         items: [
           'users/students/overview',
           'users/students/why-radgrad',
+          'users/students/getting-started',
           'users/students/interests',
           'users/students/career-goals',
           'users/students/opportunities',
-          'users/students/ice-and-levels',
           'users/students/verification-requests',
           'users/students/degree-plans',
+          'users/students/ice-and-levels',
           'users/students/reviews',
-          'users/students/getting-started',
           {
             type: 'link',
             label: '1 Page Cheat Sheet (PDF)',

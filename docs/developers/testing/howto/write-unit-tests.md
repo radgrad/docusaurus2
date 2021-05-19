@@ -12,7 +12,7 @@ Each collection class contains its tests in a "sibling" file. For example, unit 
 
 The test file names are important: Meteor wants unit tests to be in files with the suffix `test.js`.
 
-Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](docs/developers/testing/concepts/database-fixtures) chapter for more details.
+Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](../concepts/database-fixtures) chapter for more details.
 
 ## Running all unit tests
 

@@ -5,11 +5,11 @@ sidebar_label: Write integration tests
 
 Integration tests are initiated from the client side, and test to ensure that client-server interactions work as intended. Currently, integration tests only check that Meteor method implementations function correctly.
 
-Each collection class contains its tests in a "sibling" file. Integration tests for the CourseCollection class are located in [CourseCollection.app-test.js](https://github.com/radgrad/radgrad/blob/master/app/imports/api/course/CourseInstanceCollection.methods.app-test.js).
+Each collection class contains its tests in a "sibling" file. Integration tests for the CourseCollection class are located in [CourseCollection.app-test.js](https://github.com/radgrad/radgrad2/blob/master/app/imports/api/course/CourseCollection.methods.app-test.ts).
 
 The test file names are important: Meteor wants integration tests to be in files with the suffix `app-test.js`.
 
-Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](docs/developers/testing/concepts/database-fixtures) chapter for more details.
+Many tests require the database to be initialized with test values.  RadGrad provides "database fixture" files for this purpose. See the [DB fixture](../concepts/database-fixtures) chapter for more details.
 
 ## Running all integration tests
 

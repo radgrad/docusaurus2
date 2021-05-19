@@ -54,5 +54,5 @@ AMD | New | CENG/EE internship
 Cirrus Logic | New | CENG/EE internship
 Fast Enterprises | New | CENG/EE internship
 Qualcomm | New | CENG/EE internship
-Research Assistantship in Data Sciences and Health Informatics with the Social Science Research Institute | New | Implement systems in a health care setting http://ee.hawaii.edu/student/index.php?stc=2&stp=176
+Research Assistantship in Data Sciences and Health Informatics with the Social Science Research Institute | New | Implement systems in a health care setting
 

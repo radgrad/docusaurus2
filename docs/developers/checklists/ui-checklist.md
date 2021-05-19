@@ -17,7 +17,7 @@ The organization of information on the page utilizes the "screen real estate" in
 
 To check mobile size, there is [device mode](https://developers.google.com/web/tools/chrome-devtools/device-mode) in Chrome Developer Tools to simulate various screen sizes.
 
-### UI=03: Links, buttons, and other controllers are obvious.
+### UI-03: Links, buttons, and other controllers are obvious.
 
 There should be no "easter eggs", i.e. things you have to hover over to see that they are interactive.
 
