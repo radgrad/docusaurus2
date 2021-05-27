@@ -7,9 +7,15 @@ For RadGrad, we use Issue Driven Project Management (IDPM), as discussed in the 
 
 Here is a bit more detail on the standard process for completing tasks.
 
+In the following, "experienced" developers are Cam and Philip. "New" developers are summer interns.
+
+## Consult with an experienced developer about the task to work on next.
+
+Before beginning work, have a brief conversation about what task to work on with an experienced developer. This conversation could involve what task is most important to work on next.  Even if you can select whatever task appeals to you, you should still discuss what will be involved with an experienced developer before starting work. This can avoid misconceptions and problems later on.
+
 ## Create a branch off master to hold your work
 
-Following the standard IDPM process, you should create a branch off master to hold your code. This branch should be named "isssue-xxx", where "xxx" is replaced by the issue number.
+Following the standard IDPM process, you should create a branch off master to hold your code. This branch should be named "issue-xxx", where "xxx" is replaced by the issue number.
 
 ## Keep your branch up to date with master
 
@@ -27,7 +33,7 @@ When this happens, you should immediately update your branch from master. Here i
 
 ## Close your issue when you are finished
 
-Once you have finished your task, you need to merge your changes into master, make sure that your merge does not break the build, and communicate to the rest of the team that you have merged into master. Here's the steps in detail:
+Once you have finished your task, you need to get your changes merged into master.  Here are the steps:
 
 ### Merge master into your branch (if necessary)
 
@@ -78,16 +84,24 @@ To avoid IntelliJ errors in the archive/ directory, you mark the archive/ direct
   6. `meteor npm run test-all`. Note that this normally takes about 10-15 minutes to run.  Ensure that all tests pass. If not, fix any errors and/or ask for help. (For important caveats regarding Windows, see [Testing Scripts](../../testing/reference/testing-scripts).)
 
 
+### Create a pull request, wait for review by experienced developer
+
+Once your branch is up to date with master and passes all tests, create a pull request, and then post a message to the #radgrad2-chat channel requesting review by an experienced developer.
+
+For more information about pull requests, see [Proposing changes to your work with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests).
+
+Creating a pull request is important, because an experienced developer can detect technical debt in your code that you cannot see as a new developer.
+
+If problems are found, you can update your pull request with the fixes. See [About pull request reviews](https://docs.github.com/en/github/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews) for more details.
+
 ### Merge into master, wait for CI results
 
-  7. Commit and push your branch one last time (if any changes.)
-  8. Switch to the master branch, then merge your branch into it.
-  9. Push the updated master branch to GitHub.
-  10. Wait around 10 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
+  7. Once the pull request has been reviewed and accepted, the pull request should be merged into master. (The experienced developer might tell you to do it, or do it for you.)
+  8. Wait around 10 minutes, see if the [CI build](https://github.com/radgrad/radgrad2/actions) passes. If it does not, fix the errors and/or ask for help.
 
 ### Send message to Discord
 
-  11. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
+  9. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
 
 
 
