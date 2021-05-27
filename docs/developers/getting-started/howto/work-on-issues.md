@@ -103,5 +103,9 @@ If problems are found, you can update your pull request with the fixes. See [Abo
 
   9. Once the CI Build passes successfully, send a message to the #radgrad2-chat channel on Discord starting with the text "Master Merge Alert" and followed by a brief message indicating what has changed.
 
+### Close issue
+
+Once CI Build passes successfully, you can close the issue.
+
 
 
