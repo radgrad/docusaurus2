@@ -171,6 +171,7 @@ module.exports = {
           'developers/checklists/js-ts-checklist',
           'developers/checklists/react-checklist',
           'developers/checklists/testing-checklist',
+          'developers/checklists/combined',
         ],
       },
       {

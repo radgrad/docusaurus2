@@ -3,23 +3,37 @@ title: React Checklist
 sidebar_label: React
 ---
 
-### REACT-01: Components should be simple.
+### RE-01: Components should be simple.
 
 Components should do one thing.  If they are doing many things, then consider breaking them up into subcomponents.
 
-### REACT-03: No state updates in loops.
+### RE-03: No state updates in loops.
 
 Are there state updates in loops?
 
-### REACT-04: Do not rename default exports.
+### RE-04: Do not rename default exports.
 
 When importing a component that is exported "by default", do not rename the component.  The code is more understandable if every component is always referenced by its original name.
 
-### REACT-05: Destructure props in component parameter.
+In the case of React components that are wrapped with withTracker(), use the following approach to default export:
 
-Consider [destructuring props](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0). This makes the code clearer by identifying exactly which properties are of interest in the function signature.
+```
+const Foo: ReactFC = () => {
+  :
+}
 
-### REACT-06: Define typed constants in withTracker().
+export default withTracker(() => {
+  :
+})(Foo);
+```
+
+In other words, do not declare a separate variable to hold the component returned by withTracker. Instead, just export the React component returned by the call to withTracker() directly.
+
+### RE-05: Destructure props in component parameter.
+
+Consider [destructuring props](https://medium.com/@lcriswell/destructuring-props-in-RE-b1c295005ce0). This makes the code clearer by identifying exactly which properties are of interest in the function signature.
+
+### RE-06: Define typed constants in withTracker().
 
 When using withTracker, define a (typed) const to compute each property, then put the properties in the return using object shorthand notation. For example:
 
@@ -44,7 +58,7 @@ const StudentHomeIcePageContainer = withTracker(() => {
 })(StudentIcePage);
 ```
 
-### REACT-07: Use React.CSSProperties to type style objects.
+### RE-07: Use React.CSSProperties to type style objects.
 
 When passing an object as a style property, type it as "React.CSSProperties". That will detect misspellings of properties or unknown properties. For example:
 
@@ -52,7 +66,7 @@ When passing an object as a style property, type it as "React.CSSProperties". Th
 const whiteBG: React.CSSProperties = { backgroundColor: '#ffffff', width: '100%' };
 ```
 
-### REACT-08: Don't retrieve collection data inside render()
+### RE-08: Don't retrieve collection data inside render()
 
 Some of our components get data from collections in the render method. This is not reactive. For example:
 
@@ -74,7 +88,7 @@ const AdvisorPageMenuWidget: React.FC = () => {
 
 ```numMod``` and ```numRequests``` are not reactive.
 
-### REACT-09: Imported component names and file names should match
+### RE-09: Imported component names and file names should match
 
 Many React components are exported "by default", which gives the importing client the ability to rename them in the file that they are used in.
 
@@ -103,7 +117,7 @@ import AdminAnalyticsNewsletterWidget from '../../components/admin/analytics/new
 In other words, we name the imported component using the name associated with the file, and not the "containerized" name.
 
 
-### REACT-10: Avoid "Widget" and "Card" in component names
+### RE-10: Avoid "Widget" and "Card" in component names
 
 Many React components are named with "Widget". In most (all?) cases, adding "Widget" just increases the length of the name without adding value.
 

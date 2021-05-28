@@ -119,7 +119,7 @@ Use the React.FC type parameterized with the props to express the type of a Reac
 
 ## CSS
 
-### CSS-01: Use local style.css files when appropriate.
+### CS-01: Use local style.css files when appropriate.
 
 Meteor automatically loads the style.css file found in the app/client directory on startup.  This means you do not need to explicitly import this file into your react components.
 
@@ -135,11 +135,11 @@ Note that the file must be named "style.css" to avoid errors!
 
 ## ESLint
 
-### ESLINT-01: No errors, avoid warnings.
+### ES-01: No errors, avoid warnings.
 
 Are there ESLint errors or warnings that should be removed?
 
-### ESLINT-02: Consider modifying our standards.
+### ES-02: Consider modifying our standards.
 
 Based upon your review of code, should we be modifying the set of ESLint rules?
 
