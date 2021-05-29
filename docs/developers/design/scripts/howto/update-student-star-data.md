@@ -7,9 +7,9 @@ sidebar_label: Update STAR data
 
 ### Get the current list of student emails
 
-Login to RadGrad as administrator. Go to the Dump Database Page:
+Login to RadGrad as administrator. Go to the Manage Database Page:
 
-![Dump Database Page](/img/design/radgrad2/DumpDatabasePage.png)
+![Manage Database Page](/img/design/radgrad2/ManageDatabasePage.png)
 
 Click the `Get Student Emails` button. RadGrad will create a zip file of the student emails and download it. The name of the file is `radgrad-studentsYYYY-MM-DD-HH-mm-ss.zip`. Inside the zip file is a single file named `Students.txt`. It will contain all the student emails, one per line.
 

@@ -127,6 +127,7 @@ module.exports = {
                 items: [
                   'developers/design/scripts/howto/update-student-star-data',
                   'developers/design/scripts/howto/convert-data',
+                  'developers/design/scripts/howto/generate-demo-fixture',
                 ]
               },
               'developers/design/scripts/reference',
