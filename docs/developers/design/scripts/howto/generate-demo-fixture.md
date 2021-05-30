@@ -17,6 +17,15 @@ Edit the `"create-demo-fixture": "npm run tsc && node js/fixture-generator/demo-
 
 ### Edit the `userConfig1.json` file (optional)
 
+The `userConfig1.json` file defines five students:
+
+  * `abi@hawaii.edu` Abi is a sophomore who has planned her Junior year.
+  * `alfred@hawaii.edu` Alfred is a senior with one academic term left.
+  * `betty@hawaii.edu` Betty is a junior with about a full year left.
+  * `charley@hawaii.edu` Charley is a blank student with no interests or career goals.
+  * `ella@hawaii.edu` Ella is an alumni.
+
+
 You can edit the `data/userConfig1.json` file if you want to change the students or their plans.
 
 The `userConfig1.json` file has two parts `studentProfiles` and `studentPlans`.
@@ -36,12 +45,8 @@ The `userConfig1.json` file has two parts `studentProfiles` and `studentPlans`.
   ]
 }
 ```
-The `StudentProfileCollection` defines five students:
- * `abi@hawaii.edu`
- * `alfred@hawaii.edu`
- * `betty@hawaii.edu`
- * `charley@hawaii.edu` Charley is a blank student with no interests or career goals.
- * `ella@hawaii.edu` Ella is an alumni.
+The 
+The `StudentProfileCollection` defines five student profiles. Setting up their interests, career goals, and their sharing preferences.
 
 The `studentPlans` is an array of plans for each student. The plan has four components
 
