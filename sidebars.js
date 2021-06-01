@@ -210,7 +210,7 @@ module.exports = {
         label: 'InternAloha',
         items: [
           'developers/internaloha/overview',
-          'developers/internaloha/design-thoughts',
+          'developers/internaloha/design-issues',
         ],
       },
       {
