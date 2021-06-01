@@ -207,6 +207,14 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'InternAloha',
+        items: [
+          'developers/internaloha/overview',
+          'developers/internaloha/design-thoughts',
+        ],
+      },
+      {
+        type: 'category',
         label: 'Deployment',
         items: ['developers/deployment/overview',
           {
