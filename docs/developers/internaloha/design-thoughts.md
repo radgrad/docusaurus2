@@ -48,7 +48,7 @@ We will eventually retire the Opportunities referring to Internships, and manual
 
 For now, we will continue to run the scrapers using InternAloha code and publish the resulting datafiles to GitHub.  As noted above, this is a supervised process.  We have affectionately dubbed the person who supervises the running of the scraper system the "Master of Scraping".
 
-What will change in this integration is that the Master of Scraping will no longer be required to bring up the static InternAloha site. Instead, they will tell the RadGrad Admin that new Internship data is available for upload, and the RadGrad Admin can then go to a "Manage Internships" page with an "Upload Data" button to perform the upload.
+What will change in this integration is that the Master of Scraping will no longer be required to bring up the static InternAloha site (although they might still do it as a part of their QA activities). Instead (or in addition), they will tell the RadGrad Admin that new Internship data is available for upload, and the RadGrad Admin can then go to a "Manage Internships" page with an "Upload Data" button to perform the upload.
 
 The Upload data button will:
 
@@ -88,7 +88,7 @@ The Student UI for Internships will be a page that lists only the "matching" Int
 
 Student can add Internships to their profile, and then add them to their Degree Plan, just like they do for Courses and Opportunities.
 
-Internships must be verified, just like Opportunities, in order for the student to earn the points. 
+Internships must be verified, just like Opportunities, in order for the student to earn the points.
 
 An open design question is how to specify the ICE points for an Internship. We should have some sort of default ICE point specification (perhaps 25 Innovation and 25 Experience?  This is much higher than what we do now, but maybe we want to value Internships more highly?).
 
