@@ -88,7 +88,7 @@ The InternAloha system currently parses the internship title and description and
 
 For this integration with RadGrad, this parsing process will become the responsibility of the RadGrad upload system. The goal of the parsing is to identify matching Interests and Career Goals and assign these slugs to the listing.
 
-Note that the InternAloha system's parsing code provides useful implementation approaches which can be adapted to our needs.  
+Note that the InternAloha system's parsing code provides useful implementation approaches which can be adapted to our needs.
 
 **4. Detect "expired" and "retired" Internship listings.**
 
