@@ -57,8 +57,8 @@ A "?" following the field name indicates that it is an optional field.
 | description | string | Markdown format description |
 | lastUploaded? | Date | Timestamp of the last time this internship was found through scraping. If the internship was added manually, then this field is absent or set to a falsy value. |
 | missedUploads | Integer | A number used to indicate if the listing should be viewed as "expired" or "retired".  A value of 0-3 indicates the listing is "active". A value of 4-7 indicates it should be viewed as "expired".  A value of 8 or more indicates that it should be viewed as "retired".
-| interests | string[] | A list of Interest slugs matching this description. |
-| careerGoals | string[] | A list of Career Goal slugs matching this description |
+| interests | string[] | A list of Interest slugIDs matching this description. |
+| careerGoals | string[] | A list of Career Goal slugIDs matching this description |
 | company? | string | The company |
 | location? | object | An object containing location information. Format: { city?: string, state?: string, zip?: string } |
 | contact? | string | Name, email, URL or other info of a contact person |
@@ -82,7 +82,15 @@ Each json file contains an array of listings detected by a single scraper for a 
 
 The Internship sites we are scraping are themselves scraping each other, so there will definitely be a significant number of duplicate listings in the upload. RadGrad will handle this by "consolidating" listings. This means that RadGrad will provide only a single entry for all of the duplicates, but the "urls" field will contain a list of all the site pages where this internship is listed.
 
-**3. Detect "expired" and "retired" Internship listings.**
+**3. Assign Interests and Career Goals (if any). **
+
+The InternAloha system currently parses the internship title and description and attempts to extract "skill" keywords that can be used by users to filter and search the set of listings.
+
+For this integration with RadGrad, this parsing process will become the responsibility of the RadGrad upload system. The goal of the parsing is to identify matching Interests and Career Goals and assign these slugs to the listing.
+
+Note that the InternAloha system's parsing code provides useful implementation approaches which can be adapted to our needs.  
+
+**4. Detect "expired" and "retired" Internship listings.**
 
 We must detect and manage "expired" Internships. These are Internships that were present at one or more Internship sites for a period of time, and but are no longer listed (typically because the Internship positions were filled and/or because the internship is now in progress). One way we can do this is by maintaining an optional field called "lastUploaded" with a timestamp, along with an integer field called "missedUploads".
 
@@ -97,7 +105,7 @@ For manually managed listings, we can manually set missedUploads to 4 to indicat
 For API consistency, the Internships.findNonRetired() method will return all non-expired and non-retired listings.
 
 
-**4. Filter out non-useful Internship listings.**
+**5. Filter out non-useful Internship listings.**
 
 The upload process should make the follow checks on listings to ensure they are useful:
 
@@ -105,7 +113,7 @@ The upload process should make the follow checks on listings to ensure they are 
 
 * Ensure that the listing includes at least one Interest and/or Career Goal. If the listing does not match at least one of the defined Interests and Career Goals, then it is not useful to RadGrad. In this case, we can set missedUploads to 8 to mark it as retired.
 
-**5. Report on the results of the upload.**
+**6. Report on the results of the upload.**
 
 This involves both a report on the number of listings uploaded and any problems encountered, as well as an updated version of the "trends" chart created for InternAloha that allows developers to see whether a scraper is suddenly producing a significantly different number of listings (or fields within a listing).  Such sudden changes can indicate that the scraper is "partially broken", i.e. it works well enough to generate listings, but is no longer parsing a single listing accurately.
 
