@@ -52,7 +52,7 @@ A "?" following the field name indicates that it is an optional field.
 
 | Field | Type | Description |
 | ----- | ---- | ----------- |
-| url | string[] | A list of URLs to the pages in the sites with a full description of this internship |
+| urls | string[] | A list of URLs to the pages in the sites with a full description of this internship |
 | position | string | The position name |
 | description | string | Markdown format description |
 | lastUploaded? | Date | Timestamp of the last time this internship was found through scraping. If the internship was added manually, then this field is absent or set to a falsy value. |
@@ -64,6 +64,7 @@ A "?" following the field name indicates that it is an optional field.
 | contact? | string | Name, email, URL or other info of a contact person |
 | posted? | string | The date this internship was posted. Should be YYYY-MM-DD format. Helps students determine how old it is. |
 | due? | string | The deadline for applying for this internship. Should be YYYY-MM-DD format. Enables RadGrad to provide reminders. |
+| guid | string | The globally unique ID. Useful for dump/restore, and for referencing an Internship document in other collections (such as the ProfileInternshipCollection. |
 
 ### Internship data import system
 
@@ -79,7 +80,7 @@ Each json file contains an array of listings detected by a single scraper for a 
 
 **2. Detect and consolidate duplicates.**
 
-The Internship sites we are scraping are themselves scraping each other, so there will definitely be a significant number of duplicate listings in the upload. RadGrad will handle this by "consolidating" listings. This means that RadGrad will provide only a single entry for all of the duplicates, but the URL field will contain a list of all the site pages where this internship is listed.
+The Internship sites we are scraping are themselves scraping each other, so there will definitely be a significant number of duplicate listings in the upload. RadGrad will handle this by "consolidating" listings. This means that RadGrad will provide only a single entry for all of the duplicates, but the "urls" field will contain a list of all the site pages where this internship is listed.
 
 **3. Detect "expired" and "retired" Internship listings.**
 
@@ -91,25 +92,37 @@ We can't know for sure that an expired listing is truly gone, but this approach 
 
 Once missedUploads exceeds a second threshold (say, 8) this indicates that the listing is "retired". and it will no longer appear in the UI listings regardless of the setting of the toggle.
 
-As another check, the server could attempt to retrieve all of the URLs each time we do an upload. If any URL returns a non-200 code, then we should remove it from the list of URLs.  If, after removing all the non-200 URLs, the URL list is empty, then we should set missedUploads to (say) 10, indicating that the listing is retired.
-
 For manually managed listings, we can manually set missedUploads to 4 to indicate that the listing should be marked as expired, and to 8 to set it to retired.
 
 For API consistency, the Internships.findNonRetired() method will return all non-expired and non-retired listings.
 
-**4. Report on the results of the upload.**
+
+**4. Filter out non-useful Internship listings.**
+
+The upload process should make the follow checks on listings to ensure they are useful:
+
+* Ensure the urls field strings can be used to retrieve a page. We know from our pilot study of InternAloha that the scrapers sometimes list non-working URLs. Each time we do an upload, we should check all of the urls field strings to see that a GET on the URL string returns the 200 "OK success" status response code.  If it doesn't, we remove that URL from the urls field. If there are no remaining strings in the urls field after checking them, then we can set the missedUploads field to 8 in order to mark it as retired.
+
+* Ensure that the listing includes at least one Interest and/or Career Goal. If the listing does not match at least one of the defined Interests and Career Goals, then it is not useful to RadGrad. In this case, we can set missedUploads to 8 to mark it as retired.
+
+**5. Report on the results of the upload.**
 
 This involves both a report on the number of listings uploaded and any problems encountered, as well as an updated version of the "trends" chart created for InternAloha that allows developers to see whether a scraper is suddenly producing a significantly different number of listings (or fields within a listing).  Such sudden changes can indicate that the scraper is "partially broken", i.e. it works well enough to generate listings, but is no longer parsing a single listing accurately.
 
-### Internship listings will need an automatically generated slug
+### Internship listings will need an automatically generated GUID ("global unique ID").
 
-To support dump/restore, Internships will require a slug.  But this slug must be both unique, and automatically generated.
+To support dump/restore, and for cross-document referencing, many RadGrad collections require each document to have a GUID (globally unique ID). Typically, we implement this using the "Slug" mechanism.  Unfortunately, there are the following issues with using Slugs for Internships:
 
-One potential slug naming pattern to guarantee uniqueness is `internship-<slugified internship title>-<YYYY-MM-DD-HH-MM-SS-MSS>`, where:
+  * Slugs are usually manually defined by a user.  This won't work for Internships, where there are too many documents for manual slug definition.
 
-* All internship slugs start with the string "slug"
-* The "slugified internship title" is the title field with spaces replaced by hyphens and all non-alphabetic, non-integer characters removed. We cannot count on the slugified internship title to be unique.
-* YYYY-MM-DD-HH-MM-SS-MSS is the moment in time that this new Internship document was defined. Since we expect Internship definition to take longer than a single millisecond, we believe that the combination of the slugified internship title, along with timestamp, will guarantee that this slug is a unique string. In the unlikely event that it isn't, the Slug collection will throw an error and we'll deal with the consequences.
+  * There will be thousands of Internships. If each Internship defines a Slug, the size of the Slug collection will grow enormously, impacting on load time.
+
+One solution is to not use Slugs as the GUID for Internships, but instead to implement a special-purpose, automatically generated, unique ID naming system. For example, `internship-<internship title>-<YYYY-MM-DD-HH-MM-SS-MSS>`, where:
+
+* The "internship title" is the title field with spaces replaced by hyphens and all non-alphabetic, non-integer characters removed. We cannot count on the internship title to be unique.
+* YYYY-MM-DD-HH-MM-SS-MSS is the moment in time that this new Internship document was defined. Since we expect Internship definition to take longer than a single millisecond, we believe that the combination of the internship title, along with timestamp, will guarantee that this ID is a unique string.
+
+We will call this field "guid" (for globally unique ID).
 
 ### Manual Internship definition
 
@@ -117,21 +130,45 @@ Not all Internships that we will want to provide to RadGrad users will be known 
 
 To support the integration of those internships into RadGrad, we will need to provide the ability to manually define new Internships just like we currently manually define new Opportunities.
 
-The slug will be automatically generated at time of creation.
+The GUID will be automatically generated at time of creation.
 
-The lastUpdated field is empty or missing, which indicates that this is a manually managed Internship.  Manually managed Internships can still be marked as expired by setting the missedUploads field to a number that exceeds the threshold.
+The lastUpdated field is empty or missing, which indicates that this is a manually managed Internship.  Manually managed Internships can still be marked as expired or retired by setting the missedUploads field to an appropriate number.
 
 ### Manual Internship Editing
 
 As part of the Admin Data Model menu, it will be possible for an Admin to edit Internship specifications. However, care must be taken since editing fields (like the title or description) could result in a duplicate listing not being identified.
 
-### The "Internships" page for students
+### The "Internships" Explorer for students
 
-The Student UI for Internships will be a page that lists only the "matching" Internships for a student, where matching is based on their Interests and Career Goals.
+The Student UI will include an Explorer for Internships. This Explorer will have a similar UI to the other explorers, in that it will have a summary (browser view) as well as a details page where you can see all of the information about the Internship and add it to your profile.
 
-Student can add Internships to their profile, and then add them to their Degree Plan, just like they do for Courses and Opportunities.
+It differs from the current Explorers for Courses, Opportunities, Career Goals, and Interests, because the number of these entities range from a few dozen to a few hundred, while we expect there be at least a few thousand Internships.
 
-Internships must be verified, just like Opportunities, in order for the student to earn the points.
+So, the Internships Explorer Browser View will only list "matching" Internships for a student, where matching is based on their Interests and Career Goals.
+
+Student can add "matching" Internships to their profile, and then plan to do them by adding them to their Degree Plan, just like they do for Courses and Opportunities.
+
+Internships must be verified, just like Opportunities, in order for the student to earn the points associated with them.
+
+### "Related Internships" page component
+
+It might be nice for the details page for other entities to have a Related Internships component (similar to Related Courses and Related Opportunities).
+
+A design problem with this component is that there is the potential for several hundred "related" Internships for a popular Interest (i.e. data science).  We can't simply display every single one the way we do for other entities.
+
+One possibility is to cap the number of Internships to display in this component at 10, and if there are more than 10 matches, have the component title be "(Selected) Related Internships".
+
+### Client-server communication issues
+
+It is currently an open question about how the server will communicate with the client about Internship documents. On the one hand, we expect there to be between 2000 and 5000 active internships in the Internship collection. So, there is the potential for a significant one-time performance penalty if students simply subscribe to the entire collection (which is a reasonable strategy for other entities, which generally contain only a few dozen to a few hundred documents).
+
+There are at least the following alternatives:
+
+  * Use standard pub/sub anyway.  As noted above, this will probably cause a several second wait for every student upon login, regardless of whether they are interested in Internships. The benefit is that once the Internship collection is available locally, all subsequent UI display can happen quickly.
+
+  * Use Meteor Methods. An alternative is to not have an Internship collection on the client side, and instead use Meteor Methods to retrieve Internship data as needed. This avoids the login overhead, at the cost of the Meteor Method overhead each time the student retrieves a page that wishes to display Internship data. These pages include: the Internship Browser View, Details View, the Degree Planner, Visibility, and any page that implements a "Related Internships" component,
+
+  * Hybrd approach. It might be possible to subscribe to a smaller number of Internships, for example, the Internships matching the student's Career Goals and Interests. If this number is small, then we can avoid Meteor Methods for the Browser View, Details View, and Degree Planner. We would still need to use a Meteor Method to retrieve Internships associated with a Related Internships component.
 
 An open design question is how to specify the ICE points for an Internship. We should have some sort of default ICE point specification (perhaps 25 Innovation and 25 Experience?  This is much higher than what we do now, but maybe we want to value Internships more highly?).
 
