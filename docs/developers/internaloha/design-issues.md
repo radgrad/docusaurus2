@@ -180,6 +180,32 @@ There are at least the following alternatives:
 
 An open design question is how to specify the ICE points for an Internship. We should have some sort of default ICE point specification (perhaps 25 Innovation and 25 Experience?  This is much higher than what we do now, but maybe we want to value Internships more highly?).
 
-## Internships in RadGrad 3.0
+## Implementation Plan
+
+Here is a rough plan for implementation:
+
+1. Implement improvements to scraping system (debug current scrapers, implement new ones).
+
+2. Implement Internship collection. This involves creation of the Collection, and associated unit tests.
+
+3. Implement data import system.
+
+4. Implement Internship Explorer.
+
+5. Implement ability to add Internships to profile. Includes ability to make Internships in profile visible or not visible to others.
+
+6. Implement ability to add Internships to Degree Plan. Includes update to ICE points.
+
+7. Implement Internship verification. Includes update to ICE points.
+
+8. Implement manual internship management (addition, editing, Admin-level data model editor).
+
+9. Implement Internship reviews.
+
+10. Implement related internships component.
+
+
+
+## RadGrad 3.0: Internships as plugin
 
 RadGrad 3.0 will provide (among other things) a plugin system so that sites can enable or disable certain features. Internships will be a test case for this feature.
