@@ -1,5 +1,6 @@
 ---
-title: Design Issues
+title: Design Issues for InternAloha Integration
+sidebar_label: Design Issues
 ---
 
 We can significantly improve the utility of RadGrad to ICS students by integrating the InternAloha system.  Here are some of the design and implementation issues:
