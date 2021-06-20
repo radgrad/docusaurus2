@@ -7,28 +7,52 @@ This page documents the process of setting up a cloud-based server for RadGrad u
 
 ## Buy a custom domain name for your RadGrad server
 
-Use a service such as [NameCheap](https://namecheap.com) to buy a domain name for your RadGrad server. This is necessary in order to enable HTTPS for secure communication with your RadGrad server.
+Use a domain registrar service such as [NameCheap](https://namecheap.com) to buy a domain name for your RadGrad server. This is necessary in order to enable HTTPS for secure communication with your RadGrad server.
+
+## Use Digital Ocean DNS for your domain name
+
+You need to tell your registrar that you will use Digital Ocean's name servers. For instructions, see [How to point to Digital Ocean Nameservers from Common Doman Registrars](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars).
+
+Propogating this change takes up to 24 hours, so be patient.  To check to see if it's finished, you can use [Digital Ocean's DNS Lookup Page](https://www.digitalocean.com/community/tools/dns).
+
+For example, for the (newly created) radgrad.dev domain, once the transition is complete, this page displays the following:
+
+![](/img/deployment/dns-lookup-radgrad-dev.png)
 
 ## Create an Digital Ocean Ubuntu server (i.e. Droplet)
 
 Login to [Digital Ocean](https://digitalocean.com), then click on the "Create" button and select a Droplet (Ubuntu server). Create a root password and save it someplace safe.
 
-## Configure NameCheap and Digital Ocean services to support the custom domain
+It's helpful to change the default name of your droplet to the intended custom domain name to simplify management. For example, here's the newly created droplet for "radgrad.dev":
 
-You will need to tell NameCheap that Digital Ocean will be providing the name servers, and you will need to tell Digital Ocean to connect the custom domain to your droplet.
+![](/img/deployment/do-droplet.png)
 
-For detailed instructions, see [How to set up a custom domain name](http://courses.ics.hawaii.edu/ics314f20/morea/deployment/reading-digital-ocean-domain-name.html).
+## Connect your domain to your droplet
 
-When you are finished, you should be able to run nslookup and have it resolve your custom domain name correctly. For example:
+In Digital Ocean, go to your Networking tab on the left menu, then click "Domains". You should see a pane like the following:
+
+![](/img/deployment/do-domain-page.png)
+
+You can enter your new domain, then click "Add domain". Once the nameserver transfer has finished, you'll see "3 NS" below the domain name.
+
+Next, click on the domain, put "@" for the hostname, and select your droplet:
+
+![](/img/deployment/do-domain-setup-1.png)
+
+After clicking Add Domain, it will look like this:
+
+![](/img/deployment/do-domain-setup-2.png)
+
+Once you've completed this, within a short time you should see that your domain routes to your droplet:
 
 ```
-$ nslookup radgrad-comp-eng.design
+$ nslookup radgrad.dev
 Server:		10.0.1.1
 Address:	10.0.1.1#53
 
 Non-authoritative answer:
-Name:	radgrad-comp-eng.design
-Address: 159.65.65.229
+Name:	radgrad.dev
+Address: 157.245.253.34
 ```
 
 ## Configure app/.deploy/mup.js
@@ -60,11 +84,11 @@ module.exports = {
   }
 };
 ```
-Note that there are several occurrences of the string “CHANGEME”. This indicates the parts of the mup.js file that need to be configured for your application. You can edit these strings to be lower case, they are upper case only to make them stand out in the file.
+Note that there are several occurences of the string “CHANGEME”. This indicates the parts of the mup.js file that need to be configured for your application. You can edit these strings to be lower case, they are upper case only to make them stand out in the file.
 
-Note: that the “host” and "domains" values are just the domain name. For example, if your domain name is "radgrad-comp-eng.design", then the value of "host" and "domains" should be "radgrad-comp-eng.design". Do not include "https://" in these fields.
+Note: that the “host” and "domains" values are just the domain name. For example, if your domain name is "radgrad.dev", then the value of "host" and "domains" should be just "radgrad.dev". Do not include "https://" in these fields.
 
-However, the ROOT_URL includes the protocol. For example, if your domain name is "radgrad-comp-eng.design", then the value of ROOT_URL should be “https://radgrad-comp-eng.design”.
+However, the ROOT_URL includes the protocol. For example, if your domain name is "radgrad.dev", then the value of ROOT_URL should be “https://radgrad.dev”.
 
 ## Configure app/.deploy/settings.js
 
@@ -78,99 +102,47 @@ Inside the app/.deploy directory, invoke “mup setup” (or “mup.cmd setup”
 $ mup setup
 
 Started TaskList: Setup Docker
-[167.172.222.158] - Setup Docker
-[167.172.222.158] - Setup Docker: SUCCESS
+[radgrad.dev] - Setup Docker
+[radgrad.dev] - Setup Docker: SUCCESS
 
 Started TaskList: Setup Meteor
-[167.172.222.158] - Setup Environment
-[167.172.222.158] - Setup Environment: SUCCESS
+[radgrad.dev] - Setup Environment
+[radgrad.dev] - Setup Environment: SUCCESS
 
 Started TaskList: Setup Mongo
-[167.172.222.158] - Setup Environment
-[167.172.222.158] - Setup Environment: SUCCESS
-[167.172.222.158] - Copying Mongo Config
-[167.172.222.158] - Copying Mongo Config: SUCCESS
+[radgrad.dev] - Setup Environment
+[radgrad.dev] - Setup Environment: SUCCESS
+[radgrad.dev] - Copying Mongo Config
+[radgrad.dev] - Copying Mongo Config: SUCCESS
 
 Started TaskList: Start Mongo
-[167.172.222.158] - Start Mongo
-[167.172.222.158] - Start Mongo: SUCCESS
+[radgrad.dev] - Start Mongo
+[radgrad.dev] - Start Mongo: SUCCESS
+
+Started TaskList: Setup proxy
+[radgrad.dev] - Setup Environment
+[radgrad.dev] - Setup Environment: SUCCESS
+[radgrad.dev] - Pushing the Startup Script
+[radgrad.dev] - Pushing the Startup Script: SUCCESS
+[radgrad.dev] - Pushing Nginx Config Template
+[radgrad.dev] - Pushing Nginx Config Template: SUCCESS
+[radgrad.dev] - Pushing Nginx Config
+[radgrad.dev] - Pushing Nginx Config: SUCCESS
+[radgrad.dev] - Cleaning Up SSL Certificates
+[radgrad.dev] - Cleaning Up SSL Certificates: SUCCESS
+[radgrad.dev] - Configure Nginx Upstream
+[radgrad.dev] - Configure Nginx Upstream: SUCCESS
+
+Started TaskList: Start proxy
+[radgrad.dev] - Start proxy
+[radgrad.dev] - Start proxy: SUCCESS
 
 Next, you should run:
     mup deploy
-
 $
 ```
 
 For more details on the setup command, see [http://meteor-up.com/docs.html#setting-up-a-server](http://meteor-up.com/docs.html#setting-up-a-server).
-
-Note that if you get an error involving "Error response from daemon: endpoint mup-nginx-proxy not found", that's OK. It will get fixed in the following steps.server
-
-## Run mup reconfig
-
-Now invoke `mup reconfig`:
-
-```
-$ mup reconfig
-
-Started TaskList: Configuring App
-[meteor-application-template-react.xyz] - Pushing the Startup Script
-[meteor-application-template-react.xyz] - Pushing the Startup Script: SUCCESS
-[meteor-application-template-react.xyz] - Sending Environment Variables
-[meteor-application-template-react.xyz] - Sending Environment Variables: SUCCESS
-
-Started TaskList: Start Meteor
-[meteor-application-template-react.xyz] - Start Meteor
-[meteor-application-template-react.xyz] - Start Meteor: SUCCESS
-[meteor-application-template-react.xyz] - Verifying Deployment
-[meteor-application-template-react.xyz] - Verifying Deployment: SUCCESS
-$
-```
-
-If `mup setup` resulted in an error above, now run it again (and the problem should go away):
-
-```
-$ mup setup
-
-Started TaskList: Setup Docker
-[meteor-application-template-react.xyz] - Setup Docker
-[meteor-application-template-react.xyz] - Setup Docker: SUCCESS
-
-Started TaskList: Setup Meteor
-[meteor-application-template-react.xyz] - Setup Environment
-[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
-
-Started TaskList: Setup Mongo
-[meteor-application-template-react.xyz] - Setup Environment
-[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
-[meteor-application-template-react.xyz] - Copying Mongo Config
-[meteor-application-template-react.xyz] - Copying Mongo Config: SUCCESS
-
-Started TaskList: Start Mongo
-[meteor-application-template-react.xyz] - Start Mongo
-[meteor-application-template-react.xyz] - Start Mongo: SUCCESS
-
-Started TaskList: Setup proxy
-[meteor-application-template-react.xyz] - Setup Environment
-[meteor-application-template-react.xyz] - Setup Environment: SUCCESS
-[meteor-application-template-react.xyz] - Pushing the Startup Script
-[meteor-application-template-react.xyz] - Pushing the Startup Script: SUCCESS
-[meteor-application-template-react.xyz] - Pushing Nginx Config Template
-[meteor-application-template-react.xyz] - Pushing Nginx Config Template: SUCCESS
-[meteor-application-template-react.xyz] - Pushing Nginx Config
-[meteor-application-template-react.xyz] - Pushing Nginx Config: SUCCESS
-[meteor-application-template-react.xyz] - Cleaning Up SSL Certificates
-[meteor-application-template-react.xyz] - Cleaning Up SSL Certificates: SUCCESS
-[meteor-application-template-react.xyz] - Configure Nginx Upstream
-[meteor-application-template-react.xyz] - Configure Nginx Upstream: SUCCESS
-
-Started TaskList: Start proxy
-[meteor-application-template-react.xyz] - Start proxy
-[meteor-application-template-react.xyz] - Start proxy: SUCCESS
-
-Next, you should run:
-    mup deploy
-$
-```
 
 ## Run mup deploy
 
