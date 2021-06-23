@@ -46,6 +46,17 @@ module.exports = {
           'users/admins/data-model',
         ],
       },
+      {
+        type: 'category',
+        label: 'Demo',
+        items: [
+          'users/demo/overview',
+          'users/demo/login',
+          'users/demo/home',
+          'users/demo/interests',
+          'users/demo/users',
+        ],
+      },
     ],
     'Developer Guide': [
       'developers/overview',
