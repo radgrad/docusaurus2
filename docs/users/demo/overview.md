@@ -27,5 +27,7 @@ However, it is very important to note the the six student definitions in UHM/DEM
 
 :::tip Demo Dive
 This chapter is best used "interactively": please obtain the password for the UHM/DEMO instance, and then login to https://radgrad.dev and explore the system as you read through the accompanying pages. The screenshots are just examples and there are additional features you can discover by interacting with the system.
+
+The next 10 pages take you through the major features of RadGrad from the student perspective. The last half dozen pages will show you the additional features available to Faculty and Advisors. To understand those capabilities, it's best that you first be familiar with the system from the student's point of view.
 :::
 

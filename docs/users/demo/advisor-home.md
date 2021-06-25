@@ -15,6 +15,9 @@ As usual, the Home Page for advisors is a smart "To Do" list that is custom to t
 
 :::tip Demo Dive
 Once again, it can be useful to look through this page for Advisor-specific checklist items.
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 

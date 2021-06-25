@@ -13,6 +13,9 @@ Here's what the Community page looks like for Dora. Currently, the Community pag
 We are sure there are additional interesting "widgets" that we could implement to provide helpful information about the community.
 
 What are your thoughts and suggestions?
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 We've now gone through all the pages associated with the Student role.  Let's now look briefly at some of the other roles in RadGrad.

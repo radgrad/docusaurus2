@@ -18,7 +18,7 @@ Here's what the verification page looks like for Dora:
 ![](/img/user-guide/demo/verification.png)
 
 :::tip Demo Dive
-While you could "Request Verification" for the unverified Opportunity, it wouldn't have any immediate affect.  To experience the full workflow, you would need to:
+While you could "Request Verification" for the unverified Opportunity, it wouldn't have any immediate effect.  To experience the full workflow, you would need to:
 
 1. Request verification as Dora.
 2. Logout of the system.
@@ -29,6 +29,9 @@ While you could "Request Verification" for the unverified Opportunity, it wouldn
 7. Log back in as Dora. You should now see an update ICE score (if you accepted the verification request.)
 
 Undoing this state change for the next demo user is not trivial, so only do this if you really want to check it out.
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 

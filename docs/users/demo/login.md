@@ -16,7 +16,10 @@ A good way to start understanding the system is to login as a hypothetical stude
 To login as Dora, click on the "LOGIN" button at the top left of the landing page, select "... as a student", and then enter `dora@hawaii.edu` as the user name and the password we have supplied you for all users. Once you've logged in, you should see Dora's home page, which we discuss on the next page.
 
 :::tip Demo Dive
-Later, it will be useful to login as other students. But it's helpful to start by seeing what a "good" RadGrad student's account looks like.
+At the conclusion of this guided tour, you might want to try logging in as one of the other students. But it's easiest to start learning about RadGrad by seeing what a "good" RadGrad student's account looks like.
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 

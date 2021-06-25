@@ -25,9 +25,12 @@ The points earned for curricular and extracurricular activities should be calibr
 First, click through the Competency and Experience tabs to see how many points Dora has earned (or planned to earn) in those other categories.
 
 Second, to better understand ICE points, go back to the Opportunity Explorer and use the "Sort by" filter to sort by "Experience" (or "Innovation").  Check out the Details page for some of the initial Opportunities, which are currently configured to provide the highest number of Experience (or Innovation) points. Do you agree with these point assignments?  Why or why not?
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
-It takes many semesters to earn 100 points in each of these three areas.  RadGrad breaks this journey up into six intermediate milestones, discussed next.
+It takes many semesters to earn 100 points in each of these three areas.  RadGrad breaks this journey up into six intermediate milestones through the "Levels" game mechanic. Let's look at that next.
 
 
 

@@ -66,6 +66,7 @@ module.exports = {
           'users/demo/faculty-management',
           'users/demo/advisor-home',
           'users/demo/advisor-manage-students',
+          'users/demo/summary',
         ],
       },
     ],

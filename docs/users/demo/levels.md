@@ -15,6 +15,9 @@ The page also provides information about the other Levels.
 Click through all six tabs in the "About the Levels" pane to get a better sense for what is required to achieve each Level.
 
 Take a critical perspective: do you agree with the requirements to achieve each Level? How would you change them to make the Levels more helpful to students trying to achieve the best possible degree experience?
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 In some of these pages, you will have come across "tiles" with a student, faculty, or advisor name. Some of these tiles include a Level icon and picture, others do not.  Let's learn how RadGrad represents users to each other on the Visibility page, discussed next.

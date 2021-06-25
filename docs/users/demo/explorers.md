@@ -78,6 +78,9 @@ We don't expect you to read every page, but to better understand this aspect of 
 * Can you discover something new and interesting about computer science and/or local opportunities that you didn't know before?
 * Are there missing Interests, Career Goals, or Opportunities?
 * Are there ways to improve the content associated with one or more Details pages?
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 

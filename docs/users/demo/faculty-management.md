@@ -15,6 +15,9 @@ The "Management" menu item provides access to these activities for Faculty:
 
 :::tip Demo Dive
 Check out each of these pages to see the kinds of management that a faculty member can participate in.
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 

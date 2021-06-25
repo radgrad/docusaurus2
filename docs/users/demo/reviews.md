@@ -17,6 +17,9 @@ Here's what the Reviews page looks like for Dora:
 
 :::tip Demo Dive
 Like the Verification Page, submitting a Review invokes a moderation workflow, so we don't particularly advise you adding one unless you really want to explore the workflow.
+
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
 
