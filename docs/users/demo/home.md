@@ -23,6 +23,10 @@ One goal of the Home Page To Do List is to "teach" new users how to use RadGrad 
 
 Another goal is to help users notice new changes to the system. For example, if new career goals or opportunities that are related to their interests appear, then this page can notify them to go look for them.
 
+:::tip Demo Dive
+It's worth spending some time on this page, reading through the To Do list items, and following some of the links. This should teach you as much or more about RadGrad than this tutorial!
+:::
+
 Let's now look at the various "Explorers" provided by RadGrad.
 
 

@@ -25,5 +25,7 @@ The advisor and faculty user definitions loosely reflect actual faculty at the U
 
 However, it is very important to note the the six student definitions in UHM/DEMO are totally hypothetical. They are defined in such a way as to illustrate students at various points in their academic program.
 
-This chapter is best used "interactively": please obtain the password for the UHM/DEMO instance, and then login to the system and explore the system as you read through the accompanying pages. The screenshots are just examples and there are additional features you can discover by interacting with the system.
+:::tip Demo Dive
+This chapter is best used "interactively": please obtain the password for the UHM/DEMO instance, and then login to https://radgrad.dev and explore the system as you read through the accompanying pages. The screenshots are just examples and there are additional features you can discover by interacting with the system.
+:::
 

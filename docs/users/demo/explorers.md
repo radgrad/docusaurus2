@@ -70,6 +70,16 @@ You can see that in addition to the related Interests, Career Goals, and Courses
 
 It also indicates the "ICE" points associated with this Opportunity, which we will discuss in a few pages from now.
 
+:::tip Demo Dive
+These four Explorers, along with all of the associated Details pages, together provide over a hundred pages of information about the discipline of computer science and local, experiential opportunities related to it.
+
+We don't expect you to read every page, but to better understand this aspect of RadGrad's design, please spend a few minutes "exploring" with a critical mindset:
+
+* Can you discover something new and interesting about computer science and/or local opportunities that you didn't know before?
+* Are there missing Interests, Career Goals, or Opportunities?
+* Are there ways to improve the content associated with one or more Details pages?
+:::
+
 
 
 

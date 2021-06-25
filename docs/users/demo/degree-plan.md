@@ -7,9 +7,9 @@ One function of the Explorers presented in the last page was to learn about the 
 
 Another function of the Explorers is to enable a student to indicate which of these entities appeal to them by putting them in their profile.
 
-Once that's done, the next step is to organize things into a coherent Degree Plan, or "Degree Experience", which includes a combination of Courses and Opportunities (and, in future, Internships) related to one's chosen Interests and Career Goals.
+Once that's done, the next step is to organize your curricular and extracurricular activities into a coherent Degree Plan, or "Degree Experience". The Degree Plan indicates the sequence in which you will experience Courses and Opportunities (and, in future, Internships) related to your Interests and Career Goals.
 
-Here's what the Degree Planner page looks like:
+Here's what the Degree Planner page for Dora looks like:
 
 ![](/img/user-guide/demo/degree-planner.png)
 
@@ -19,4 +19,10 @@ Once you've indicated a specific future semester (or quarter, if RadGrad is conf
 
 RadGrad requires the ability to query an institutional database for courses a student has completed in the past. That way, the student does not have to enter finished courses into their Degree Plan, and the system can award the ICE Points associated with a completed course automatically.
 
-We've been referencing ICE Points in the past couple of pages, so let's look at that page next.
+:::tip Demo Dive
+To understand the Degree Planner better, try expanding one of the Opportunities listed in the right pane.  This reveals a "tile" that you can drag into a semester to indicate when you want to experience it.
+
+Dora does not have any Courses in her profile because she is a graduating student.  But, if you like, you could go to the Course Explorer, find a course of interest, go to its Details page, and add it to her profile. Then, that course will appear in the Course tab in the Degree Planner, and you could drag it into a current or future semester. (If you do this, please "restore the state" of Dora for the next user by deleting the course from the Degree Plan (click the "x"), then remove it from her Profile by going back to the Course Explorer.)
+:::
+
+We've been referencing ICE Points in the past couple of sections, so let's look at that page next.
