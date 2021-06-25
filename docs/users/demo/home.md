@@ -19,9 +19,11 @@ And clicking on the "Completed" tab shows other possible activities that are fin
 
 ![](/img/user-guide/demo/home-3.png)
 
-The goal of the Home Page To Do List is to essentially "teach" users how to use RadGrad simply by taking care of To Do list items.
+One goal of the Home Page To Do List is to "teach" new users how to use RadGrad simply by taking care of To Do list items.
 
-Let's now look at some of the other pages in the system available through the navigation bar.
+Another goal is to help users notice new changes to the system. For example, if new career goals or opportunities that are related to their interests appear, then this page can notify them to go look for them.
+
+Let's now look at the various "Explorers" provided by RadGrad.
 
 
 
