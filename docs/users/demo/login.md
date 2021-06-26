@@ -7,7 +7,7 @@ To login to the UHM/DEMO instance, please navigate in your browser to [https://r
 
 ![](/img/user-guide/demo/landing.png)
 
-The most important part is that the upper right corner says "RADGRAD (UHM/DEMO)".
+The most important part is that the upper left corner says "RADGRAD (UHM/DEMO)".
 
 In the UHM/DEMO instance, you can login as any user with the same password.  To avoid the potential for shenanigans, we're not stating the password in this document. Instead, please contact a member of the RadGrad team to find out what the "generic" UHM/DEMO password is.
 

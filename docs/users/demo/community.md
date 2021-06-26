@@ -3,14 +3,14 @@ title: Learning about the community
 sidebar_label: Community
 ---
 
-The Community page provides a grab-bag of widgets that provide information about the RadGrad community.
+The Community page provides a grab-bag of components that provide information about the RadGrad community.
 
 Here's what the Community page looks like for Dora. Currently, the Community page is the same for all users.
 
 ![](/img/user-guide/demo/community.png)
 
 :::tip Demo Dive
-We are sure there are additional interesting "widgets" that we could implement to provide helpful information about the community.
+We are sure there are additional interesting components that we could implement to provide helpful information about the community.
 
 What are your thoughts and suggestions?
 
