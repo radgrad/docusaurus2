@@ -24,7 +24,7 @@ To understand the Degree Planner better, try expanding one of the Opportunities 
 
 Dora does not have any Courses in her profile because she is a graduating student.  But, if you like, you could go to the Course Explorer, find a course of interest, go to its Details page, and add it to her profile. Then, that course will appear in the Course tab in the Degree Planner, and you could drag it into a current or future semester. (If you do this, please "restore the state" of Dora for the next user by deleting the course from the Degree Plan (click the "x"), then remove it from her Profile by going back to the Course Explorer.)
 
-You might come across the "Internships" tab on this page. We're working hard on this feature right now, and hope to have it ready for release by Fall 2021.
+You might notice the "Internships" tab on this page. Look forward to a functional implementation in Fall, 2021.
 
 <hr/>
 (Problems with this page? Email radgrad@hawaii.edu to let us know.)

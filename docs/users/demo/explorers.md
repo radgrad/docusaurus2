@@ -29,7 +29,7 @@ There is quite a bit of information on this page:
   * A short text defining what an algorithm is.
   * A short YouTube video describing algorithms.
   * Career Goals, Courses, and Opportunities related to algorithms. Each of those tiles are clickable and will take you to a page describing them. If the tile is colored green, then that Career Goal, Course, or Opportunity is in this student's profile. Otherwise it is colored grey to indicate it is not.
-  * (Visible) Students. To maintain FERPA-compliance, students must opt-in to sharing information about their Interests within the system. In this case, three students (including Dora) have opted-in.
+  * (Visible) Students. To maintain FERPA-compliance, students must opt-in to sharing information about their Interests within the system. In this case, a number of students (including all the Doras) have opted-in.
   * (Related) Faculty.  Faculty that have listed algorithms as a specialty area are indicated here.
 
 ## Exploring Career Goals
@@ -78,6 +78,8 @@ We don't expect you to read every page, but to better understand this aspect of 
 * Can you discover something new and interesting about computer science and/or local opportunities that you didn't know before?
 * Are there missing Interests, Career Goals, or Opportunities?
 * Are there ways to improve the content associated with one or more Details pages?
+
+Also, you'll probably notice that there is a fifth Explorer, "Internships".  This page is under development and we hope to have a functional version by Fall, 2021.
 
 <hr/>
 (Problems with this page? Email radgrad@hawaii.edu to let us know.)
