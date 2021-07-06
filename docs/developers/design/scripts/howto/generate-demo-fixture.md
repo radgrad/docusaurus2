@@ -13,22 +13,23 @@ Login to RadGrad as administrator. Go to the Manage Database Page:
 
 Click the `Dump Database` button. RadGrad will create a zip file containing all the collections and download it. Unzip the file and copy/move the JSON file to the `scripts/radgrad-db/` directory. This directory is .gitignored so the student data will not be shared.
 
-Edit the `"create-demo-fixture": "npm run tsc && node js/fixture-generator/demo-fixture-generator.js radgrad-db/2021-05-18-10-14-34.json data/userConfig1.json"` script in `scripts/package.json` to use the downloaded database.
+Edit the `"create-demo-fixture": "npm run tsc && node js/fixture-generator/demo-fixture-generator.js radgrad-db/2021-05-18-10-14-34.json data/demo-fixture-generator-config.json"` script in `scripts/package.json` to use the downloaded database.
 
-### Edit the `userConfig1.json` file (optional)
+### Edit the `demo-fixture-generator-config.json` file (optional)
 
-The `userConfig1.json` file defines five students:
+The `demo-fixture-generator-config.json` file defines five students:
 
   * `abi@hawaii.edu` Abi is a sophomore who has planned her Junior year.
   * `alfred@hawaii.edu` Alfred is a senior with one academic term left.
   * `betty@hawaii.edu` Betty is a junior with about a full year left.
   * `charley@hawaii.edu` Charley is a blank student with no interests or career goals.
+  * `dora@hawaii.edu` Dora is a Level 5 student.
   * `ella@hawaii.edu` Ella is an alumni.
 
 
-You can edit the `data/userConfig1.json` file if you want to change the students or their plans.
+You can edit the `data/demo-fixture-generator-config.json` file if you want to change the students or their plans.
 
-The `userConfig1.json` file has two parts `studentProfiles` and `studentPlans`.
+The `demo-fixture-generator-config.json` file has two parts `studentProfiles` and `studentPlans`.
 ```json
 {
   "studentProfiles": {
@@ -87,13 +88,13 @@ Cd into the `scripts` directory and run the script.
 ⋊> ~/R/r/scripts on issue-509 ⨯ npm run create-demo-fixture
 
 > radgrad2-scripts@1.0.0 create-demo-fixture
-> npm run tsc && node js/fixture-generator/demo-fixture-generator.js radgrad-db/2021-05-18-10-14-34.json data/userConfig1.json
+> npm run tsc && node js/fixture-generator/demo-fixture-generator.js radgrad-db/2021-05-18-10-14-34.json data/demo-fixture-generator-config.json
 
 
 > radgrad2-scripts@1.0.0 tsc
 > tsc
 
-generateDemoFixture radgrad-db/2021-05-18-10-14-34.json data/userConfig1.json
+generateDemoFixture radgrad-db/2021-05-18-10-14-34.json data/demo-fixture-generator-config.json
 data/2021-05-29-10-10-26.json
 ⋊> ~/R/r/scripts on issue-509 ⨯
 ```
