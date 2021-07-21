@@ -6,11 +6,11 @@ title: Sticky State
 
 We want certain state variables to be available across components and to not lose their value when the user navigates back and forth between pages in the application.
 
-Currently, we implement this behavior using Redux.  Using Redux is pretty complicated.
+Previously, we implemented this behavior using Redux.  But we discovered that Redux is a pretty complicated solution if all you want to do is provide more "global" access to state variables.
 
 ## Solution
 
-We now have an alternative to Redux called "Sticky State", based upon [Simpler State](https://simpler-state.js.org/).  useStickyState() is a React Hook and is used in exactly the same manner as useState().
+RadGrad now implements a utility component called "Sticky State", based upon [Simpler State](https://simpler-state.js.org/).  The StickyState component provides a hook called useStickyState() and is used in exactly the same manner as useState().
 
 For example, to create a non-sticky state variable, you use the useState() hook:
 
@@ -22,7 +22,7 @@ const checkStateValue = checkState ? 'Checked' : 'Not Checked';
   :
 ```
 
-To create a "sticky" state variable, you just use useStickyState():
+To create a "sticky" state variable, you just use useStickyState() rather than useState():
 
 ```
   :
