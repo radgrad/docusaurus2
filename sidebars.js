@@ -69,6 +69,16 @@ module.exports = {
           'users/demo/summary',
         ],
       },
+      {
+        type: 'category',
+        label: 'Fall 21 New Students',
+        items: [
+          'users/f21/overview',
+          'users/f21/home',
+          'users/f21/interests',
+          'users/f21/careerGoals',
+        ],
+      },
     ],
     'Developer Guide': [
       'developers/overview',
