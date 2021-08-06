@@ -14,12 +14,12 @@ You can sort them alphabetically, recommended based upon your interests, or by t
 
 Lastly, you can search the names of the career goals by typing in the Search field.
 
-Each career goal has a name and a brief description. If you want to learn more and add the career goal to your profile click the `See Details / Add to Profile` button.
+Each career goal has a name, a brief description, and a list of associated interests. Interests that are in your profile are shown in green. If you want to learn more and add the career goal to your profile click the `See Details / Add to Profile` button.
 
-For example, here is the Data Scientist details page.
+For example, here is the Database Administrator details page.
 
-![](/img/user-guide/f21/data-scientist-details-page.png)
-![](/img/user-guide/f21/data-scientist-details-page2.png)
+![](/img/user-guide/f21/database-admin-details-page.png)
+![](/img/user-guide/f21/database-admin-details-page2.png)
 
 In the left-hand column we show the related:
 
@@ -36,6 +36,12 @@ In the right-hand column we show more information about the Career Goal:
 * The related faculty who share this career goal.
 * The related advisors who share this career goal.
 
+If you choose to add the Career Goal to your profile RadGrad will ask you if you want to add the career goal's interests to your profile.
+
+![](/img/user-guide/f21/career-goal-add-interests.png)
+
+You can choose which interests, if any, to add to your profile.
+
 :::tip RadGrad walk-through
 It's worth spending some time on the Career Goal Explorer. Read through the different Career Goals. If it is interesting to you click the Add to Profile button. If you add a career goal to your profile RadGrad will ask you if you want to add the career goal's interests to you profile also.
 
@@ -44,4 +50,8 @@ Choose three initial career goals. You can always change them later.
 (Problems with this page? Email radgrad@hawaii.edu to let us know.)
 :::
 
+Now that we have some career goals in our profile, lets go back to the Home Page and take care of the next checklist item `Courses`.
 
+![](/img/user-guide/f21/courses-checklist.png)
+
+Click the `Courses Explorer` button.
