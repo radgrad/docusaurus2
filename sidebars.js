@@ -77,6 +77,7 @@ module.exports = {
           'users/f21/home',
           'users/f21/interests',
           'users/f21/careerGoals',
+          'users/f21/courses',
         ],
       },
     ],
