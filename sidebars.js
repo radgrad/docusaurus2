@@ -80,6 +80,7 @@ module.exports = {
           'users/f21/courses',
           'users/f21/opportunities',
           'users/f21/planner',
+          'users/f21/visibility',
         ],
       },
     ],

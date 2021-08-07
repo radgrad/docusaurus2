@@ -42,7 +42,7 @@ Advisory Board:
   * Gilbert Yim (Spring, 2016)
   * Glen Barcelo (Summer, 2019)
   * Jennifer Hsu  (2020 - 2021)
-  * Jesse McDonald (2020 - present)
+  * Jesse McDonald (Summer, 2020)
   * Justin Wong (Spring, 2021)
   * Kelli Tamashiro (Summer, 2020)
   * Kelsie Yamakawa (Spring, 2016)
