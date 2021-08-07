@@ -68,9 +68,9 @@ Here is an example degree plan page:
 
 RadGrad provides a mechanism to upload data on completed courses that can be extracted from institutional databases by qualified faculty and advisors.  This means that students do not have to manage the status of their previous courses: RadGrad can be updated each semester with this information to maintain accuracy. Only courses directly related to the degree program are tracked in RadGrad.
 
-## ICE
+## myICE
 
-ICE is a three component measure to track both progress and success within the degree program.  ICE is an acronym for its constituent measures, which are named Innovation, Competency, and Experience.  To be a well-prepared computer science graduate according to RadGrad, students must earn 100 I, C, and E points by the end of their degree program.
+myICE is a three component measure to track both progress and success within the degree program.  myICE is an acronym for its constituent measures, which are named Innovation, Competency, and Experience.  To be a well-prepared computer science graduate according to RadGrad, students must earn 100 I, C, and E points by the end of their degree program.
 
 Typically, a student earns Competency points for completing Courses, and Innovation and Experience points for completing Opportunities. RadGrad admins are responsible for assigning the number of points earned for a given Course or Opportunity. For example, a student might earn 10 points for completing a course with a passing grade.  For Opportunities, a student might earn 15 Innovation points for a weekend hackathon, and 25 points for a summer-long internship.
 

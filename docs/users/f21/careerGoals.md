@@ -3,7 +3,9 @@ title: Career Goals Explorer
 sidebar_label: Career Goals
 ---
 
-Currently, RadGrad has 20 different career goals related to Computer Science. The Career Goals Explorer looks very similar to the Interests Explorer.
+Currently, RadGrad has 20 different career goals related to Computer Science. Career Goals represent professional outcomes that a student can pursue through the degree experience.
+
+The Career Goals Explorer looks very similar to the Interests Explorer.
 
 ![](/img/user-guide/f21/career-goals-explorer.png)
 

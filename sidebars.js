@@ -78,6 +78,8 @@ module.exports = {
           'users/f21/interests',
           'users/f21/careerGoals',
           'users/f21/courses',
+          'users/f21/opportunities',
+          'users/f21/planner',
         ],
       },
     ],
