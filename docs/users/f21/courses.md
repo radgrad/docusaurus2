@@ -3,7 +3,9 @@ title: Courses Explorer
 sidebar_label: Courses
 ---
 
-Currently, RadGrad has 106 courses related to Computer Science. All RadGrad Explorers have a common look and feel.
+Currently, RadGrad has 106 courses related to Computer Science. Courses represent the curricular activities associated with the undergraduate academic unit.
+
+All RadGrad Explorers have a common look and feel.
 
 ![](/img/user-guide/f21/courses-explorer.png)
 
@@ -26,3 +28,11 @@ The left-hand column shows related
 * Opportunities
 
 The right-hand column shows more details about the course, the student participation by semester, and student reviews of the course.
+
+:::tip RadGrad walk-through
+It's worth spending some time on the Course Explorer. Read through the different Courses. If it is interesting to you click the Add to Profile button. 
+
+Add the core ICS courses to your profile.
+<hr/>
+(Problems with this page? Email radgrad@hawaii.edu to let us know.)
+:::

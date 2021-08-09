@@ -3,7 +3,7 @@ title: Interests Explorer
 sidebar_label: Interests
 ---
 
-Currently, RadGrad has 78 different interests related to Computer Science.
+Currently, RadGrad has 78 different interests related to Computer Science. Interests represent a set of discipline-specific topics relevant to the degree experience. Adding interests to your profile helps RadGrad make better recommendations.
 
 ![](/img/user-guide/f21/interests-explorer-page.png)
 
