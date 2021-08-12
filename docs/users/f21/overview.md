@@ -1,5 +1,5 @@
 ---
-title: Guided Tour for new students
+title: Guided Tour for New Students
 sidebar_label: Overview
 ---
 
@@ -16,6 +16,6 @@ This chapter is best used "interactively": please login to https://radgrad2.ics.
 
 Explore the system as you read through the accompanying pages. The screenshots are just examples and there are additional features you can discover by interacting with the system.
 
-The next 10 pages take you through the major features of RadGrad from the student perspective.
+The next 7 pages take you through the major features of RadGrad from the student perspective.
 :::
 
