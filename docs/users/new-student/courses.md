@@ -7,7 +7,7 @@ Currently, RadGrad has 106 courses related to Computer Science. Courses represen
 
 All RadGrad Explorers have a common look and feel.
 
-![](/img/user-guide/f21/courses-explorer.png)
+![](/img/user-guide/new-student/courses-explorer.png)
 
 You can filter, sort, and search courses.
 
@@ -15,11 +15,11 @@ The ICS department has 6 core courses that every student must take, ICS 111, ICS
 
 Then we can sort by recommended. Here's a screen-shot of George's recommended courses:
 
-![](/img/user-guide/f21/recommended-courses.png)
+![](/img/user-guide/new-student/recommended-courses.png)
 
 The course details page shows additional information about the course.
 
-![](/img/user-guide/f21/course-details-page.png)
+![](/img/user-guide/new-student/course-details-page.png)
 
 The left-hand column shows related
 

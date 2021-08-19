@@ -7,7 +7,7 @@ Currently, RadGrad has 20 different career goals related to Computer Science. Ca
 
 The Career Goals Explorer looks very similar to the Interests Explorer.
 
-![](/img/user-guide/f21/career-goals-explorer.png)
+![](/img/user-guide/new-student/career-goals-explorer.png)
 
 
 You can filter the career goals showing all of them, the ones in your profile, or the ones not in your profile.
@@ -20,8 +20,8 @@ Each career goal has a name, a brief description, and a list of associated inter
 
 For example, here is the Database Administrator details page.
 
-![](/img/user-guide/f21/database-admin-details-page.png)
-![](/img/user-guide/f21/database-admin-details-page2.png)
+![](/img/user-guide/new-student/database-admin-details-page.png)
+![](/img/user-guide/new-student/database-admin-details-page2.png)
 
 In the left-hand column we show the related:
 
@@ -40,7 +40,7 @@ In the right-hand column we show more information about the Career Goal:
 
 If you choose to add the Career Goal to your profile RadGrad will ask you if you want to add the career goal's interests to your profile.
 
-![](/img/user-guide/f21/career-goal-add-interests.png)
+![](/img/user-guide/new-student/career-goal-add-interests.png)
 
 You can choose which interests, if any, to add to your profile.
 
@@ -54,6 +54,6 @@ Choose three initial career goals. You can always change them later.
 
 Now that we have some career goals in our profile, lets go back to the Home Page and take care of the next checklist item `Courses`.
 
-![](/img/user-guide/f21/courses-checklist.png)
+![](/img/user-guide/new-student/courses-checklist.png)
 
 Click the `Courses Explorer` button.

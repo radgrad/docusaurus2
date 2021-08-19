@@ -5,27 +5,6 @@ module.exports = {
       'users/overview',
       {
         type: 'category',
-        label: 'Students',
-        items: [
-          'users/students/overview',
-          'users/students/why-radgrad',
-          'users/students/getting-started',
-          'users/students/interests',
-          'users/students/career-goals',
-          'users/students/opportunities',
-          'users/students/verification-requests',
-          'users/students/degree-plans',
-          'users/students/ice-and-levels',
-          'users/students/reviews',
-          {
-            type: 'link',
-            label: '1 Page Cheat Sheet (PDF)',
-            href: 'http://go.hawaii.edu/JuG'
-          }
-        ],
-      },
-      {
-        type: 'category',
         label: 'Advisors',
         items: [
           'users/advisors/overview',
@@ -71,16 +50,18 @@ module.exports = {
       },
       {
         type: 'category',
-        label: 'Fall 21 New Students',
+        label: 'New Student Tutorial',
         items: [
-          'users/f21/overview',
-          'users/f21/home',
-          'users/f21/interests',
-          'users/f21/careerGoals',
-          'users/f21/courses',
-          'users/f21/opportunities',
-          'users/f21/planner',
-          'users/f21/visibility',
+          'users/new-student/overview',
+          'users/new-student/login',
+          'users/new-student/home',
+          'users/new-student/terms-and-conditions',
+          'users/new-student/interests',
+          'users/new-student/careerGoals',
+          'users/new-student/courses',
+          'users/new-student/opportunities',
+          'users/new-student/planner',
+          'users/new-student/visibility',
         ],
       },
     ],

@@ -14,6 +14,7 @@ const features = [
           <li><a href='/docs/overview/motivation'>Motivation</a></li>
           <li><a href='/docs/overview/goals'>Goals</a></li>
           <li><a href='/docs/overview/basic-constructs'>Basic constructs</a></li>
+          <li><a href='https://www.youtube.com/watch?v=71WV4nYaIoI'>Why use RadGrad (in 60 seconds)?</a></li>
 
         </ul>
     ),
@@ -25,8 +26,7 @@ const features = [
           <li><a href='https://radgrad2.ics.hawaii.edu'>RadGrad (UHM/ICS)</a></li>
           <li><a href='https://radgrad-comp-eng.design'>RadGrad (UHM/CENG)</a></li>
           <li><a href='https://radgrad.dev'>RadGrad (UHM/DEMO)</a></li>
-          <li><a href='http://go.hawaii.edu/JuG'>1 Page Cheat Sheet (PDF)</a></li>
-          <li><a href='/docs/users/overview'>User Guide</a></li>
+          <li><a href='/docs/users/new-student/overview'>New Student Guide</a></li>
         </ul>
     ),
   },

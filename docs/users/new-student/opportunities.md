@@ -4,7 +4,7 @@ sidebar_label: Opportunities
 ---
 Currently, RadGrad has over 50 opportunities. Opportunities represent extra-curricular activities that help a student progress toward one or more Career Goals and/or learn more about a specific Interest. The set of Opportunities are "curated" by faculty members to ensure quality and relevance.
 
-![](/img/user-guide/f21/opportunities-explorer.png)
+![](/img/user-guide/new-student/opportunities-explorer.png)
 
 You can filter, sort, and search opportunities.
 
@@ -12,12 +12,12 @@ The most useful sort is by recommended. RadGrad will sort all the opportunities 
 
 Here's George's recommended opportunities.
 
-![](/img/user-guide/f21/recommended-opportunities.png)
+![](/img/user-guide/new-student/recommended-opportunities.png)
 
 The opportunity details page shows additional information about the opportunity.
 
-![](/img/user-guide/f21/opportunity-details-page.png)
-![](/img/user-guide/f21/opportunity-details-page2.png)
+![](/img/user-guide/new-student/opportunity-details-page.png)
+![](/img/user-guide/new-student/opportunity-details-page2.png)
 
 The left-hand column shows related
 
