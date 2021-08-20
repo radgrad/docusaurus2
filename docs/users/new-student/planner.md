@@ -1,41 +1,98 @@
 ---
-title: Degree Experience Planner
+title: Plan your degree experience
 sidebar_label: Planner
 ---
 
-The degree experience planner allows you to plan your four-year **RadGrad Degree Experience** experience. Your goal should be a plan that gets you to a **myICE** score of 100 Innovation, 100 Competency, and 100 Experience points. You can earn Innovation and Experience points from Opportunities and Competency points from Courses.
+At this point, you've added some Interests and Career Goals to your profile, and then used that to add a bunch of related Courses and Opportunities to your profile as well.
 
-Here's George's planner:
+Now it's time to figure out a plan: when are you actually going to do all of these things, and just as importantly, are these things enough for you to achieve a well-rounded degree experience?
 
-![DEP](/img/user-guide/new-student/degree-experience-planner1.png)
- If, like George, you don't have four years, click the `Add Year` button to add academic years to your plan.
-![DEP](/img/user-guide/new-student/degree-experience-planner2.png)
+To figure this out, you'll use the RadGrad Degree Planner. Click on the "Planner" link in the navbar to go to this page.
 
-This is your canvas for creating an exciting plan to get you to 100, 100, 100.
+### The Degree Planner
 
-The right-hand box has three tabs, opportunities (light bulb), courses (book), and Internships (coming soon). These tabs show the opportunities and courses in your profile.
+Here is what the Degree Planner page might look like if you are in your first semester and haven't completed any coursework yet:
 
-Let's start with Opportunities. Click on an opportunity to open it up.
-![DEP](/img/user-guide/new-student/acm-manoa-open.png)
-You can drag the green pill ![Pill](/img/user-guide/new-student/opportunity-pill.png)
+![](/img/user-guide/new-student/degree-planner.png)
 
-Add you add opportunities to your plan your **myICE** points update. You can see your **myICE** points in the header.
-![myICE](/img/user-guide/new-student/myICE-points.png)
+There are a couple of things to note about this page. First, it shows only a single academic year:
 
-The number in the center is earned value the circle on the outside shows how many points you've planned.
+![](/img/user-guide/new-student/degree-planner-ay.png)
 
-Here's a view of George's plan after he's dragged several opportunities into his plan.
-![DEP](/img/user-guide/new-student/degree-experience-planner3.png)
-Now let's work on courses. Click on the Courses (book) tab.
-![DEP](/img/user-guide/new-student/degree-experience-planner4.png)
-Drag the blue course pill into the semester you plan on taking the course. You should probably only plan on taking 2 or 3 ICS courses per semester. When you drop the course in a semester it is removed from the choices on the right.
-![DEP](/img/user-guide/new-student/degree-experience-planner5.png)
-If you run out of courses in your profile, you can go back to the Courses Explorer and add more courses to your profile.
+Second, the upper right part of your window displays your "myICE dashboard".  Right now the myICE dashboard displays three zeros, all surrounded by completely gray circles:
 
-:::tip RadGrad walk-through
-It's worth spending some time planning your **RadGrad Degree Experience**. The goal is to get to 100 Innovation, 100 Competency, and 100 Experience.
-<hr/>
-(Problems with this page? Email radgrad@hawaii.edu to let us know.)
+![](/img/user-guide/new-student/degree-planner-ice.png)
+
+We'll go into myICE in more detail later in this tutorial, but it's helpful to see what the myICE dashboard looks like prior to adding any Courses or Opportunities to your Degree Plan.
+
+### Set up your academic years
+
+One of the first things you'll want to do is to press the "Add Year" button to add as many years as you think you'll need to complete your degree plan.  In this case, let's press it three times, so that a total of four academic years are available for planning:
+
+![](/img/user-guide/new-student/degree-planner-ay-2.png)
+
+### Add Courses to your plan
+
+Let's now add some courses to your plan.  In the right hand sidebar, click on the book icon to display a list of all courses you have added to your profile:
+
+![](/img/user-guide/new-student/degree-planner-courses.png)
+
+Click on the triangle next to a course to display details about it:
+
+![](/img/user-guide/new-student/degree-planner-courses-1.png)
+
+You can use your mouse to click over the blue tile and drag it to the semester in which you plan to take the course. For example, here's how the degree planner looks after dragging the ICS 111 course to the Fall 2021 semester:
+
+![](/img/user-guide/new-student/degree-planner-courses-2.png)
+
+It's helpful to see that once you've added a course to your plan, the myICE dashboard looks a little different. Specifically, the middle circle now has a touch of blue in addition to the gray:
+
+![](/img/user-guide/new-student/degree-planner-ice-2.png)
+
+Let's now add all of the remaining courses to your plan. You can consult department materials or other online resources to figure out a reasonable approach.  Your RadGrad course plan doesn't need to be perfect, but it is important to get all of the courses in your profile into your plan if possible.
+
+Here's a plan that includes all of the courses in the profile:
+
+![](/img/user-guide/new-student/degree-planner-courses-3.png)
+
+Note that you can drag courses from one semester to another, or click the X to take them off your degree plan.
+
+### Add Opportunities to your plan
+
+Let's do the same thing for Opportunities.  Click on the lightbulb icon to reveal the Opportunities in your profile:
+
+![](/img/user-guide/new-student/degree-planner-opportunities.png)
+
+Just like Courses, you can click on the triangle to show a draggable tile:
+
+![](/img/user-guide/new-student/degree-planner-opportunities-1.png)
+
+Go ahead and drag all of your Opportunities in your profile into your plan. Try to distribute them in a reasonable way so that you aren't overwhelmed in any given semester.
+
+Note that you can do the same Opportunity in multiple semesters!
+
+Here's what a plan might look like after all of the Opportunities have been added. Note that some Opportunities, like participating in the ACM Manoa student club, are part of almost every semester.
+
+![](/img/user-guide/new-student/degree-planner-opportunities-2.png)
+
+### So, you have a plan!  But is it a good one?
+
+Now that you've added your Courses and Opportunities to the plan, you might be thinking, "So what? How do I know if this plan is any good?"
+
+RadGrad provides a simple heuristic for answering that question. To see the answer for this plan, let's see what the myICE dashboard looks like now:
+
+![](/img/user-guide/new-student/degree-planner-ice-3.png)
+
+The numbers are still zero, and that's fine, but what's changed is the color of the circles. You can see that the first circle is completely green with no gray. The second circle is almost, but not quite, blue. The third circle is about two thirds red, and has the most gray of any of the three circles.
+
+In RadGrad, a "good" degree plan is one in which all three circles are completely colored with no gray. So, this student has not yet finished planning their degree experience.  The next page in this tutorial explains how to fix this problem.
+
+:::tip Goal for this tutorial page
+Before going to the next page in this tutorial, please make sure that all of your Courses and all of your Opportunities are added to your Degree Plan.
+
+If you still have some gray in the circles in your myICE dashboard, don't worry.  You'll learn how to fix that next.
 :::
 
-Next, let's share some information with other students. Click on the `Visibility` menu item.
+
+
+

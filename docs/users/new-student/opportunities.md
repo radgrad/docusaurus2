@@ -1,39 +1,32 @@
 ---
-title: Opportunities Explorer
+title: Choose your Opportunities
 sidebar_label: Opportunities
 ---
-Currently, RadGrad has over 50 opportunities. Opportunities represent extra-curricular activities that help a student progress toward one or more Career Goals and/or learn more about a specific Interest. The set of Opportunities are "curated" by faculty members to ensure quality and relevance.
 
-![](/img/user-guide/new-student/opportunities-explorer.png)
+The last High Priority checklist item involves Opportunities:
 
-You can filter, sort, and search opportunities.
+![](/img/user-guide/new-student/home-opportunities.png)
 
-The most useful sort is by recommended. RadGrad will sort all the opportunities based your profile interests.
+Opportunities represent extra-curricular activities that help you progress toward one or more Career Goals and/or learn more about a specific Interest. The set of Opportunities are curated by faculty members to ensure quality and relevance.
 
-Here's George's recommended opportunities.
+### The Opportunities Explorer page
+
+The Opportunities Explorer is one place where the time you spent selecting Interests and Career Goals starts to pay off. While the page, by default, sorts Opportunities alphabetically, click the "Recommended" radio button to sort them based on matching Interests. For example:
 
 ![](/img/user-guide/new-student/recommended-opportunities.png)
 
-The opportunity details page shows additional information about the opportunity.
+### The Opportunities Details page
+
+When you've found a potentially interesting Opportunity, click on the "See Details/Add to Profile" to learn more about it:
 
 ![](/img/user-guide/new-student/opportunity-details-page.png)
-![](/img/user-guide/new-student/opportunity-details-page2.png)
 
-The left-hand column shows related
+Similar to Courses, you can potentially read reviews of this Opportunity if students already participated in it previously.
 
-* Interests
-* Career Goals
-* Courses
+Now spend some time with the Opportunity Explorer and add 6-10 Opportunities to your profile.
 
-The right-hand column shows more details about the opportunity, the student participation by semester, and student reviews of the opportunity.
+:::tip Goal for this tutorial page
+Before going to the next page in this tutorial, please add at least 6-10 Opportunities to your profile.
 
-:::tip RadGrad walk-through
-It's worth spending some time on the Opportunity Explorer. Read through the different Opportunities. If it is interesting to you click the Add to Profile button.
-
-Add a few opportunities to your profile.
-<hr/>
-(Problems with this page? Email radgrad@hawaii.edu to let us know.)
+As with Courses, just adding them to your profile won't eliminate this High Priority checklist item. Let's fix that next!
 :::
-
-Now that we've filled out our profile, at least for now. Let's take a look at the Degree Experience Planner. Click on the `Planner` menu item.
-

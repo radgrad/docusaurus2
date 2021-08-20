@@ -19,7 +19,7 @@ This will bring up a standard authentication dialog box. Fill it out correctly a
 :::warning The system accepted my username and password, but it didn't take me to my home page. What do I do?
 
 
-RadGrad is an "invitation only" system. To use RadGrad, a RadGrad Administrator must have previously registered you with the system.
+RadGrad is an "invitation only" technology. To use any RadGrad instance, a RadGrad Administrator must have previously registered you with that specific system.
 
 If you cannot get to your RadGrad Home page even though your username and password was accepted, then it's because you're not registered. Contact your instructor or advisor and let them know that this happened, and we'll get you sorted.
 :::
