@@ -26,9 +26,9 @@ So, the first reason to use RadGrad is to help you find your *communities of pra
 
 ### Second reason to use RadGrad: Prepare to get that first job after graduation!
 
-Just having a computer science degree is no guarantee that you'll land a decent computer science job after graduation.  These days, you need more.  But classwork takes up a lot of your time already, and maybe you have a part-time job on top of it.  No one has much extra time.
+Just having a computer science or computer engineering degree is no guarantee that you'll land a decent job after graduation.  These days, you need more.  But classwork takes up a lot of your time already, and maybe you have a part-time job on top of it.  No one has much extra time.
 
-The second reason to use RadGrad is to help you make *efficient* use of your extra time.  RadGrad helps you find activities that build up your skill in areas of specific interest to you. But beyond that, RadGrad helps you plan out your degree experience to include activities that build your Innovation, Competency, and Experience. It helps make sure you don't have "gaps" in your undergraduate experience when you go after that first job.
+So, the second reason to use RadGrad is to help you make *efficient* use of your extra time.  RadGrad helps you find activities that build up your skill in areas of specific interest to you. But beyond that, RadGrad helps you plan out your degree experience to include activities that build your Innovation, Competency, and Experience. It helps make sure you don't have "gaps" in your undergraduate experience when you go after that first job.
 
 ### Let's get started!
 
