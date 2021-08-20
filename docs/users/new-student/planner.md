@@ -15,6 +15,10 @@ Here is what the Degree Planner page might look like if you are in your first se
 
 ![](/img/user-guide/new-student/degree-planner.png)
 
+:::info Pro Tip
+If you're not in your first semester, your Degree Plan might show courses in your major that you've already completed.
+:::
+
 There are a couple of things to note about this page. First, it shows only a single academic year:
 
 ![](/img/user-guide/new-student/degree-planner-ay.png)
@@ -24,6 +28,10 @@ Second, the upper right part of your window displays your "myICE dashboard".  Ri
 ![](/img/user-guide/new-student/degree-planner-ice.png)
 
 We'll go into myICE in more detail later in this tutorial, but it's helpful to see what the myICE dashboard looks like prior to adding any Courses or Opportunities to your Degree Plan.
+
+:::info Pro Tip
+If you've already completed some courses in your major, then the myICE dashboard will show that you've already earned some Competency points (the middle number will not be zero).
+:::
 
 ### Set up your academic years
 
