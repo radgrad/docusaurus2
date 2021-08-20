@@ -1,9 +1,9 @@
 ---
-title: Guided Tour for New Students
+title: Welcome to the New Student Tutorial
 sidebar_label: Overview
 ---
 
-Welcome to RadGrad!  Want to learn why you should use RadGrad in just 60 seconds?  Watch this:
+Welcome to RadGrad!  Want to learn why you should use RadGrad in just 60 seconds?  Try watch this:
 
 import YouTube from 'react-youtube-embed'
 
@@ -32,5 +32,5 @@ So, the second reason to use RadGrad is to help you make *efficient* use of your
 
 ### Let's get started!
 
-Now that you know *why* it's good to use RadGrad, let's learn *how* to use RadGrad. Click the link below to move to the next page of this New User Guide.
+Now that you know *why* it's good to use RadGrad, let's learn *how* to use RadGrad. Click the link below to move to the next page of this New Student Tutorial.
 
