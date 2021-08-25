@@ -89,6 +89,16 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'Needs Assessment',
+        items: [
+          'developers/needs-assessment/overview',
+          'developers/needs-assessment/domain-model',
+          'developers/needs-assessment/pilot-instance',
+          'developers/needs-assessment/pilot-study',
+        ],
+      },
+      {
+        type: 'category',
         label: 'Design',
         items: [
           'developers/design/overview',
