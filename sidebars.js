@@ -63,6 +63,7 @@ module.exports = {
           'users/new-student/planner',
           'users/new-student/ice',
           'users/new-student/visibility',
+          'users/new-student/levels',
           'users/new-student/whats-next',
         ],
       },

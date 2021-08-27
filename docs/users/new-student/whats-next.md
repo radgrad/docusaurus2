@@ -4,11 +4,9 @@ title: What's next
 
 Well, even through we've covered a lot of ground in this new user tutorial, there's more to learn about RadGrad. For example:
 
-* As you use RadGrad, you can achieve new Levels, and progress from Grasshopper to Ninja. You can even get a free laptop sticker each time you get to a new Level.
-
 * We've talked about "planned" points, but not about "earned" ones, which actually change the number appearing in your myICE dashboard (and which is required for you to achieve new Levels). For courses, we'll take care of this automatically. For opportunities, you'll need to request verification.
 
-* You've seen examples of Reviews, but once you start completing Courses and Opportunities, we hope you'll start contributing your own (hint: you can't become a RadGrad Ninja if you don't provide any reviews!)
+* You've seen examples of Reviews, but once you start completing Courses and Opportunities, we hope you'll start contributing your own (hint: you can't get to Ninja level if you don't provide any reviews!)
 
 * We will be integrating support for InternAloha soon, which will recommend Internships based on your Interests and Career Goals.
 
