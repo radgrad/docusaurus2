@@ -79,6 +79,8 @@ There should be no server or client failures listed. Indeed, there will also be 
 
 To run a subset of the tests you can set the environment variable `MOCHA_GREP`. If `MOCHA_GREP` matches the name of the test as defined in the `describe` statement those tests will run.
 
+### MacOS and Linux
+
 For example:
 
 ```
@@ -112,6 +114,40 @@ I20170829-15:08:36.151(-10)? SERVER FAILURES: 0
 I20170829-15:08:36.151(-10)? CLIENT FAILURES: 0
 I20170829-15:08:36.152(-10)? --------------------------------
 ```
+
+### Windows
+```
+$ $Env:MOCHA_GREP="CourseCollection"
+$ meteor npm run test-unit
+
+> radgrad@ test-unit /Users/philipjohnson/github/radgrad/radgrad/app
+> TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package dispatch:mocha --no-release-check --port 3100
+
+[[[[[ Tests ]]]]]
+
+=> Started proxy.
+=> Started MongoDB.
+I20170829-15:08:14.714(-10)?
+I20170829-15:08:14.796(-10)? --------------------------------
+I20170829-15:08:14.800(-10)? ----- RUNNING SERVER TESTS -----
+I20170829-15:08:14.801(-10)? --------------------------------
+I20170829-15:08:14.804(-10)?
+I20170829-15:08:15.521(-10)?   CourseCollection
+I20170829-15:08:15.734(-10)?     ✓ #define, #isDefined, #removeIt, #dumpOne, #restoreOne (199ms)
+I20170829-15:08:15.810(-10)?     ✓ course shortname (74ms)
+I20170829-15:08:33.342(-10)?   2 passing (19s)
+I20170829-15:08:33.344(-10)? --------------------------------
+I20170829-15:08:33.344(-10)? ----- RUNNING CLIENT TESTS -----
+I20170829-15:08:33.345(-10)? --------------------------------
+I20170829-15:08:36.031(-10)?   0 passing (1ms)
+I20170829-15:08:36.048(-10)? [ERROR] There is no route for the path: /
+I20170829-15:08:36.149(-10)? All tests finished!
+I20170829-15:08:36.150(-10)? --------------------------------
+I20170829-15:08:36.151(-10)? SERVER FAILURES: 0
+I20170829-15:08:36.151(-10)? CLIENT FAILURES: 0
+I20170829-15:08:36.152(-10)? --------------------------------
+```
+
 
 ## Default structure of a unit test
 
