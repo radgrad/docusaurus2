@@ -71,6 +71,8 @@ As you can see, in contrast to unit tests, no server-only tests were invoked.
 
 To run a subset of the tests you can set the environment variable `MOCHA_GREP`. If `MOCHA_GREP` matches the name of the test as defined in the `describe` statement those tests will run.
 
+### MacOS and Linux
+
 For example:
 
 ```
@@ -131,4 +133,62 @@ $
 
 ```
 
+### Windows
+```
+$ $Env:MOCHA_GREP="CourseCollection"
+$ meteor npm run test-integration
+
+> radgrad2@ test-integration /Users/philipjohnson/github/radgrad/radgrad2/app
+> cross-env TEST_BROWSER_DRIVER=puppeteer meteor test --no-release-check --exclude-archs web.browser.legacy,web.cordova --full-app --once --driver-package meteortesting:mocha --port 3300
+
+[[[[[ Tests ]]]]]
+
+=> Started proxy.
+=> Started MongoDB.
+I20201028-14:38:56.775(-10)?
+I20201028-14:38:56.814(-10)? --------------------------------
+I20201028-14:38:56.815(-10)? --- RUNNING APP SERVER TESTS ---
+I20201028-14:38:56.815(-10)? --------------------------------
+I20201028-14:38:56.815(-10)?
+I20201028-14:38:56.815(-10)?
+I20201028-14:38:56.815(-10)?
+I20201028-14:38:56.816(-10)?   0 passing (0ms)
+I20201028-14:38:56.816(-10)?
+I20201028-14:38:56.816(-10)?
+I20201028-14:38:56.816(-10)? --------------------------------
+I20201028-14:38:56.816(-10)? --- RUNNING APP CLIENT TESTS ---
+I20201028-14:38:56.816(-10)? --------------------------------
+I20201028-14:38:57.102(-10)? Monti APM: completed instrumenting the app
+I20201028-14:38:57.103(-10)? Test mode. Database initialization disabled, current database cleared, rate limiting disabled.
+I20201028-14:38:57.293(-10)? Defining admin radgrad@hawaii.edu with password foo
+=> Started your app.
+
+=> App running at: http://localhost:3300/
+I20201028-14:38:57.431(-10)? HeadlessChrome/86.0.4240.0
+W20201028-14:38:58.841(-10)? (STDERR)
+I20201028-14:38:59.354(-10)? Download the React DevTools for a better development experience: https://fb.me/react-devtools
+W20201028-14:39:01.133(-10)? (STDERR) Warning: "Responsive" component from Semantic UI React is deprecated and will be removed in the next major release. Please follow our upgrade guide: https://github.com/Semantic-Org/Semantic-UI-React/pull/4008
+I20201028-14:39:01.196(-10)?
+I20201028-14:39:01.196(-10)?   CourseCollection Meteor Methods
+I20201028-14:39:01.253(-10)?     Loaded database/modular/minimal.fixture.json: Sample definitions for basic entities.
+W20201028-14:39:01.546(-10)? (STDERR) waitFor is deprecated and will be removed in a future release. See https://github.com/puppeteer/puppeteer/issues/6214 for details and how to migrate your code.
+I20201028-14:39:01.805(-10)?     Loaded database/modular/abi.student.fixture.json: Defines student Abi Kealoha. Requires minimal.fixture.
+I20201028-14:39:02.512(-10)?     ✓ Define Method (539ms)
+I20201028-14:39:02.550(-10)?     ✓ Update Method
+I20201028-14:39:02.875(-10)?     ✓ getFutureEnrollment Methods (324ms)
+I20201028-14:39:02.908(-10)?     ✓ Remove Method
+I20201028-14:39:02.909(-10)?   FavoriteCourseCollection
+I20201028-14:39:02.938(-10)?     Loaded database/modular/minimal.fixture.json: Sample definitions for basic entities.
+I20201028-14:39:03.211(-10)?     Loaded database/modular/abi.student.fixture.json: Defines student Abi Kealoha. Requires minimal.fixture.
+I20201028-14:39:03.713(-10)?     ✓ #define, #update, #removeIt Methods (461ms)
+I20201028-14:39:03.715(-10)?   5 passing (3s)
+I20201028-14:39:03.809(-10)? All tests finished!
+I20201028-14:39:03.809(-10)?
+I20201028-14:39:03.809(-10)? --------------------------------
+I20201028-14:39:03.810(-10)? APP SERVER FAILURES: 0
+I20201028-14:39:03.810(-10)? APP CLIENT FAILURES: 0
+I20201028-14:39:03.810(-10)? --------------------------------
+$
+
+```
 
