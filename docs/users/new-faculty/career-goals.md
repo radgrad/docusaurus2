@@ -23,11 +23,13 @@ You can click on "In Profile" to see which Career Goals are in your profile. Thi
 
 As with Interests, the Career Goals details page shows related entities and people.
 
-If you choose to add the Career Goal to your profile RadGrad will ask you if you want to add the career goal's interests to your profile.
+If you feel comfortable advising a student about a particular Career Goal, then click the "Add to Profile" button to add it to your profile. Your User Label will then appear in the "Related Faculty Members" section when students go to the Details Page for that Career Goal.
+
+Note: If you choose to add a Career Goal to your profile, RadGrad will ask you if you want to add the Career Goal's Interests to your profile:
 
 ![](/img/user-guide/new-student/career-goal-add-interests.png)
 
-You can choose which interests, if any, to add to your profile.
+You can choose which interests, if any, to add.
 
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please review your Career Goals and ensure you have at least three. Then check to make sure that checklist item has moved to the "Completed" section on your home page.
