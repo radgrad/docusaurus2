@@ -8,7 +8,7 @@ After logging in you will be taken to your Home Page, which should look similar 
 
 ### It's a To Do list
 
-In RadGrad, the Home Page is a smart "To Do" list.  Each time you visit the Home Page, RadGrad analyzes the state of the system and your profile to figure out whether there are useful activities for you to carry out in order to make the most of RadGrad.
+In RadGrad, the Home Page is a (somewhat) smart "To Do" list.  Each time you visit the Home Page, RadGrad analyzes the state of the system and your profile to figure out whether there are useful activities for you to carry out in order to make the most of RadGrad.
 
 The Home Page is divided into three sections:
 
