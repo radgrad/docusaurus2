@@ -16,7 +16,7 @@ For many faculty, this might be sufficient involvement with RadGrad. Since the I
 
 That said, we encourage you to consider additional ways to participate in RadGrad as a faculty member:
 
-**Add Courses and Opportunities to your profile.** If you want, you can add use the Course and Opportunity Explorers to add Courses and Opportunities to your profile.  This lets students know that you are a resource regarding them when they go to the corresponding details page.  Be sure to make them visible using the Visibility page, otherwise students won't see you.
+**Add Courses and Opportunities to your profile.** If you want, you can add use the Course and Opportunity Explorers to add Courses and Opportunities to your profile.  This lets students know that you are a resource regarding them when they go to the corresponding details page.  Be sure to make them visible using the Visibility page, otherwise students won't see your User Label when they visit the corresponding entity's Details page.
 
 **Learn how to manage verification requests and reviews.** RadGrad implements a moderation process to help verify that students have participated in Opportunities, and that any reviews they submit are appropriate for display in the system. If you would like to help out with that (and potentially get rid of those pesky High Priority checklist items), please contact a RadGrad administrator and they can quickly explain how the moderation process works for your institution.
 
