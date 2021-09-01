@@ -3,7 +3,7 @@ title: Fall 2021 User Feedback
 sidebar_label: F21 Feedback
 ---
 
-This page contains anonymous user feedback from the deployment of RadGrad during Fall 2021.
+This page contains feedback from approximately 20 students who completed the New Student Tutorial.  More feedback will be forthcoming and added to this page as the semester proceeds.
 
 The vast majority of comments were positive.  To highlight the more critical comments, I have put them in *italics*.
 
