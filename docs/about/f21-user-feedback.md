@@ -3,6 +3,9 @@ title: Fall 2021 User Feedback
 sidebar_label: F21 Feedback
 ---
 
+This page contains anonymous user feedback from the deployment of RadGrad during Fall 2021.
+
+The vast majority of comments were positive.  To highlight the more critical comments, I have put them in *italics*.
 
 ---
 
@@ -32,13 +35,13 @@ RadGrad seems to be a really nice resource to have as an undergraduate. You have
 
 RadGrad is an interesting tool. I'm glad we get a great resource for free. I think as I progress in school it will really come in handy for networking and building my resume. I also like being able to see all of the courses that come with computer science, so I can plan where I want to take my degree a little better. 
 
-But as I'm just starting my degree, it's a little overwhelming at first. Planning out my entire degree in this moment when I haven't taken much classes seems a little extra. Because who knows where I'll be taking my degree as I delve more into the topic of computer science. But this is a small downside. I think the opportunities that RadGrad will offer me in the future will be super great. 
+*But as I'm just starting my degree, it's a little overwhelming at first. Planning out my entire degree in this moment when I haven't taken much classes seems a little extra. Because who knows where I'll be taking my degree as I delve more into the topic of computer science. But this is a small downside.* I think the opportunities that RadGrad will offer me in the future will be super great.
 
 ---
 
 My experience with RadGrad was surprisingly quite positive overall. I really enjoyed the snappy and stateful structure of the app, and the layout was pleasing and simple enough for easy navigation. I could update my interests or career goals, and it was immediately updated across the app. Overall, the user experience didn't have any kinks. As far as content, I found it extremely useful to see which career goals fit my selected interests, and I found it exciting to see possible CS opportunities for me moving forward. The ability to "level up" is personally enticing, as well.
 
-For UI improvements, I would get rid of the '...' after 'Explore' in the nav-bar. With a dropdown, the ellipsis is redundant. For UX improvements, I would do a couple things. First, I would explicitly and obviously denote the amount of ICE points each opportunity or course is worth. Feels like a necessary proponent to the function of the site. Second, I would rethink the approach to laying out courses and opportunities within the Planner. Specifically, I think it's important to communicate to the student user the delineation between the purposes of course planning within RadGrad and within STAR. Also, I felt like there wasn't enough info given to me to plan out an ideal date for each course or opportunity. Using RadGrad, I want to feel so well equipped and informed about every decision moving forward.
+*For UI improvements, I would get rid of the '...' after 'Explore' in the nav-bar. With a dropdown, the ellipsis is redundant. For UX improvements, I would do a couple things. First, I would explicitly and obviously denote the amount of ICE points each opportunity or course is worth. Feels like a necessary proponent to the function of the site. Second, I would rethink the approach to laying out courses and opportunities within the Planner. Specifically, I think it's important to communicate to the student user the delineation between the purposes of course planning within RadGrad and within STAR. Also, I felt like there wasn't enough info given to me to plan out an ideal date for each course or opportunity. Using RadGrad, I want to feel so well equipped and informed about every decision moving forward.*
 
 ---
 
@@ -46,7 +49,7 @@ I think that RadGrad is a great tool for most undergraduate students that arenâ€
 
 ---
 
-I believe that RadGrad is a great tool to help college students like myself plan out their college experience. It has many career options you can choose from and lists out the courses related to that specific career, which was very helpful to me. At first, however, it was very complicated to get through the degree planner section. I lined up my schedule on RadGrad that meets the graduation requirements on my STAR GPS but it said it was not completed. Once I got over that hurdle it was smooth sailing from there.
+I believe that RadGrad is a great tool to help college students like myself plan out their college experience. It has many career options you can choose from and lists out the courses related to that specific career, which was very helpful to me. *At first, however, it was very complicated to get through the degree planner section.* I lined up my schedule on RadGrad that meets the graduation requirements on my STAR GPS but it said it was not completed. Once I got over that hurdle it was smooth sailing from there.
 
 I also enjoyed looking through the many opportunities I can participate in while going to college. Opportunities such as ITMA, CCDC, and National Cyber League all interested me and RadGrad gave me the base to be able to participate in those activities.
 
@@ -56,7 +59,7 @@ I think the idea of creating RadGrad was really good. It helps us (students) to 
 
 ---
 
-The first time I encountered RadGrad, I felt very overwhelmed. There are a lot of tasks under the High Priority tab. I need to check my program sheet to be able to do the degree plan and its corresponding courses. There were a lot of options for interests and career goals which I find very helpful to a novice in the field of computer science.
+*The first time I encountered RadGrad, I felt very overwhelmed.* There are a lot of tasks under the High Priority tab. I need to check my program sheet to be able to do the degree plan and its corresponding courses. There were a lot of options for interests and career goals which I find very helpful to a novice in the field of computer science.
 
 Overall, I find RadGrad a helpful tool for any Computer Science major student as it prepares them in their chosen career path. It helps them to make connections through different organizations related to the field as well as different opportunities that are available while they are in the program.
 
@@ -64,7 +67,7 @@ Overall, I find RadGrad a helpful tool for any Computer Science major student as
 
 ---
 
-I need more time to fully go through it, but I do like RadGrad.  I will start with my gripes first.  When adding things to my profile, I would like to have a button or option to just straight up add the interest instead of having to click "See Details/Add to Profile" > click "Add to Profile" > wait for the green checkmark animation to finish > go back to the courses/opportunities/whatever.  There are some classes that are either required or I know I want to take, so removing all these extra steps will greatly improve the user experience.  When I was adding opportunities to my profile, there was nothing telling me what I needed to do to remove it from being high priority besides reading through the user manual or checking the square in the top right.  Adding something that tells the user "you need more x points, click here for suggestions" will help.  All the other steps were clearly defined and told me what to do to remove it from high priority.  The one oddball was adding opportunities to my profile.  Adding when opportunities and classes are available (is it Fall only?  Spring?  Both?  Offered in Summer?) is also something that will be very helpful.
+I need more time to fully go through it, but I do like RadGrad.  *I will start with my gripes first.  When adding things to my profile, I would like to have a button or option to just straight up add the interest instead of having to click "See Details/Add to Profile" > click "Add to Profile" > wait for the green checkmark animation to finish > go back to the courses/opportunities/whatever.  There are some classes that are either required or I know I want to take, so removing all these extra steps will greatly improve the user experience.  When I was adding opportunities to my profile, there was nothing telling me what I needed to do to remove it from being high priority besides reading through the user manual or checking the square in the top right.  Adding something that tells the user "you need more x points, click here for suggestions" will help.  All the other steps were clearly defined and told me what to do to remove it from high priority.  The one oddball was adding opportunities to my profile.  Adding when opportunities and classes are available (is it Fall only?  Spring?  Both?  Offered in Summer?) is also something that will be very helpful.*
 
 Outside of that, I love everything about this.  Seeing detailed descriptions of courses and opportunities, setting your interests, COURSE REVIEWS (SUPER COOL LOVE THIS), and a planner that is 50000000x better than STAR is super awesome.  I have to spend more time with this, but I really like this.  If it can be expanded to include all departments, that would be insanely cool.  Having everything in one site that is easily searchable...amazing.
 
@@ -74,7 +77,7 @@ Outside of that, I love everything about this.  Seeing detailed descriptions of 
 
 I was first impressed with RADGRAD's design and the layout was well done. One of the most important things about a website is the layout, design, and interface of the entirety of it. I felt like it was easy to use, but the tabs were a little much. The color scheme was very good and it was professionally done much like a website with important information on it.
 
-Based on what I've learned with HTML, a responsive website is difficult to achieve and I do think the creators of this website did a good job, but with the navigation bar, I think it would look more seamless if it converted into a bar that had three lines on it and you clicked to view each tab. This has been an eye-opening experience and I definitely did enjoy looking through all the various activities and opportunities available. This is a great resource for ICS students. 
+Based on what I've learned with HTML, a responsive website is difficult to achieve and I do think the creators of this website did a good job, but with the navigation bar, *I think it would look more seamless if it converted into a bar that had three lines on it and you clicked to view each tab.* This has been an eye-opening experience and I definitely did enjoy looking through all the various activities and opportunities available. This is a great resource for ICS students.
 
 ---
 
@@ -96,7 +99,7 @@ I think RadGrad is great because it give me opportunities and a path to finish m
 
 RadGrad appears to offer lots of info on various topics related to computer science. I appreciate how it recommends courses, opportunities, and experiences based on stated goals and interests, as well as the ability to plan out a degree path in advance. The potential for networking within the profession also seems very important.
 
-The only issue I have with it is that it does not seem to differentiate at all between ICS majors and other students. Since I am only planning on completing a minor, I am unable to complete the myICE section unless I were to add courses, opportunities, and experiences that I have no intention of actually completing just for the sake of filling up the circles. I would greatly appreciate the ability to identify myself as a non-major so that RadGrad would accurately reflect the reality of my situation.
+*The only issue I have with it is that it does not seem to differentiate at all between ICS majors and other students.* Since I am only planning on completing a minor, I am unable to complete the myICE section unless I were to add courses, opportunities, and experiences that I have no intention of actually completing just for the sake of filling up the circles. I would greatly appreciate the ability to identify myself as a non-major so that RadGrad would accurately reflect the reality of my situation.
 
 ---
 
@@ -106,27 +109,21 @@ After using the tutorial I felt RadGrad helps me a lot, during the RadGrad inter
 
 I think RadGrad is a good help platform for ICS students. RadGrad's goal is to improve the undergraduate degree experience. RadGrad should provide consultants with better ways to help students plan STEM degree programs. This means not only helping students determine which courses to take, but also helping them to better assess how STEM undergraduate courses fit their future career and personal goals. RadGrad should help guide students to an appropriate undergraduate degree experience based on their specific interests and career goals. RadGrad has a lot of content and many tasks. As long as students complete it, it will be of great help.
 
-There are two additional photos in the screenshot. These two photos are about the first extra credit screenshot on August 31st. I forgot to attach the screenshot to the text box. Today is August 31stï¼Œ I hope to submit my homework in advance today to fix my mistakes last time.
-
 ---
 
 My RadGrad experience was a very eventful one that acted as a good eye opener for me. The planning portion was very helpful in terms of what classes are available at UH, as well as spacing out my classes. Prior to RadGrad, I had only thought of taking ICS 111 and 211 and did not know much about what courses to take after. However, the course listing allowed me to view what classes were available to take and now I know that I will be leaning towards the software engineering side of ICS. I also know the rough times/semesters I will aim to take these higher level ICS courses.
 
 Apart of the academic courses that are open to me, there were also options of planning out extra-curriculars such as clubs, jobs, and events that are available to me on my journey into the real world of working ICS. I plan on joining the ACM club, doing internships, and try to get a job that will allow me to gain experience of working computer science during my time as a college student. There are also lots of learning workshops that caught my interest through RadGrad; Cloud Honolulu, Google Summer of Code, and Career Fair were the ones to stick out to me. I also plan on doing internships throughout my College career before graduating and gaining the working experience before graduating. I plan on using RadGrad regularly throughout my pursuit into the Software Engineer field.
 
-
-
 ---
 
 My experience with RadGrad was pretty good. While I got confused on two tasks (opportunity and classes), It allowed me to get exposure on the different types of work and extracurricular activities associated with computer science. I was actually able to find some things I was interested in, and I thought that it was cool that they suggested some careers and extra-curriculars based on your interests and career goals. It also had detailed explanations of each item in the website which helped me figure out what I was interested in, as I have not heard of half the things on the website. The different opportunities on the website were also very nice to have. As a freshman this year, we didn't have as much opportunities to find out about the opportunities on campus, but through this, I found some cool clubs I was intrigued with.
 
-When I first got on RadGrad, I was a bit confused because I didn't know where to log in, as well as how to use the website. I feel that the video on radgrad, as well as the walkthrough helped me figure out the gist of how to navigate the website and use it to my advantage. A con I found was that I didn't plan on taking so much classes (maybe one or two more after this class) in ICS but it made me add a bunch of classes to complete the task even though I was hesitant on adding so many courses. I feel that if I was a computer science major, I would benefit from this website a lot. Even though I may not be one, I will most likely use this website in the future to find some opportunities I am interested in.
-
-
+*When I first got on RadGrad, I was a bit confused because I didn't know where to log in, as well as how to use the website.* I feel that the video on radgrad, as well as the walkthrough helped me figure out the gist of how to navigate the website and use it to my advantage. *A con I found was that I didn't plan on taking so much classes (maybe one or two more after this class) in ICS but it made me add a bunch of classes to complete the task even though I was hesitant on adding so many courses.* I feel that if I was a computer science major, I would benefit from this website a lot. Even though I may not be one, I will most likely use this website in the future to find some opportunities I am interested in.
 
 ---
 
-About RadGrad, the new student walkthrough was smooth and user friendly. The only problem I had was that I needed to clear the high-priority things. I had to add a lot of things I didn't exactly thought about before in order to clear the high-priority checklist.
+About RadGrad, the new student walkthrough was smooth and user friendly. *The only problem I had was that I needed to clear the high-priority things. I had to add a lot of things I didn't exactly thought about before in order to clear the high-priority checklist.*
 
 Any feedback I would recommend in improving RadGrad would be not requiring to finish the degree plan because things may not always go the way it should be. But other than that, Radgrad is a good resource to use when thinking about future plans. Very good for planning.
 
