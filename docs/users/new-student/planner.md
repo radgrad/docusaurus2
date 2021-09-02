@@ -87,13 +87,13 @@ Here's what a plan might look like after all of the Opportunities have been adde
 
 Now that you've added your Courses and Opportunities to the plan, you might be thinking, "So what? How do I know if this plan is any good?"
 
-RadGrad provides a simple heuristic for answering that question. To see the answer for this plan, let's see what the myICE dashboard looks like now:
+RadGrad provides a simple way to answer that question: just check the color of the myICE circles!  To see the answer for this plan, let's see what the myICE dashboard looks like now:
 
 ![](/img/user-guide/new-student/degree-planner-ice-3.png)
 
-The numbers are still zero, and that's fine, but what's changed is the color of the circles. You can see that the first circle is completely green with no gray. The second circle is almost, but not quite, blue. The third circle is about two thirds red, and has the most gray of any of the three circles.
+The numbers are still zero, and that's fine, but what's changed is the color of the circles. You can see that the first circle is completely green with no gray. The second circle is almost, but not quite, completely blue. The third circle is about two thirds red and on third gray.
 
-In RadGrad, a "good" degree plan is one in which all three circles are completely colored with no gray. So, this student has not yet finished planning their degree experience.  The next page in this tutorial explains how to fix this problem.
+In RadGrad, a "good" degree plan is "complete". In other words, it's one in which all three circles are completely colored in with no gray. So, this student has not yet completed planning their degree experience.  The next page in this tutorial explains how to fix this problem.
 
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please make sure that all of your Courses and all of your Opportunities are added to your Degree Plan.
