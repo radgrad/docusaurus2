@@ -31,8 +31,8 @@ For example, here's the details page for ICS 321, Databases 1:
 
 One thing that's cool about the Course Details page is that you might find reviews of the course written by students who took it previously.
 
-Now spend a few minutes to find courses and add them to your profile. You'll need to add more than three--shoot for around ten.
+Now spend a few minutes to find courses and add them to your profile. You'll need to add a total of 17 courses. You can add all of them now, or come back and add them later.
 
 :::tip Goal for this tutorial page
-Before going to the next page in this tutorial, please add at least 6-10 Courses to your profile. This will **not** remove the Courses checklist item from the High Priority area of your Home Page. We'll fix that later in this tutorial.
+Before going to the next page in this tutorial, please add at least 15-17 Courses to your profile. This will **not** remove the Courses checklist item from the High Priority area of your Home Page. We'll fix that later in this tutorial.
 :::
