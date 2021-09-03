@@ -5,7 +5,7 @@ sidebar_label: Terms and Conditions
 
 When getting started with RadGrad, you should first review and accept the Terms and Conditions, as noted in a High Priority checklist item:
 
-![](/img/user-guide/new-faculty/home-faculty-terms-highlight.png)
+![](/img/user-guide/new-advisor/home-advisor-terms-highlight.png)
 
 Click on the link to go to the Terms and Conditions page, which will look similar to this:
 
@@ -13,7 +13,7 @@ Click on the link to go to the Terms and Conditions page, which will look simila
 
 To use RadGrad, you must agree to adhere to a Code of Conduct.
 
-In addition, to use RadGrad you must also "opt in" to making your name and email address visible to everyone who has been registered to use this RadGrad instance. Allowing your name and email to be visible to others within the system is crucial to enabling RadGrad to achieve one of its fundamental goals: helping connect together students and faculty to create communities of practice.
+In addition, to use RadGrad you must also "opt in" to making your name and email address visible to everyone who has been registered to use this RadGrad instance. Allowing your name and email to be visible to others within the system is crucial to enabling RadGrad to achieve one of its fundamental goals: helping connect faculty, advisors, and students to create communities of practice.
 
 To agree to the terms and conditions, please click the `I consent to the Terms and Conditions` button. That will move the checklist item to the "Completed" area of your Home Page.
 

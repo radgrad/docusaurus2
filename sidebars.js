@@ -40,6 +40,23 @@ module.exports = {
       },
       {
         type: 'category',
+        label: 'New Advisor Tutorial',
+        items: [
+          'users/new-advisor/overview',
+          'users/new-advisor/student-role',
+          'users/new-advisor/login',
+          'users/new-advisor/home',
+          'users/new-advisor/terms-and-conditions',
+          'users/new-advisor/interests',
+          'users/new-advisor/career-goals',
+          'users/new-advisor/visibility',
+          'users/new-advisor/manage-opportunities',
+          'users/new-advisor/manage-students',
+          'users/new-advisor/whats-next',
+        ],
+      },
+      {
+        type: 'category',
         label: 'Demo Tutorial',
         items: [
           'users/demo/overview',
