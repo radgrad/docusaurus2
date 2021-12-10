@@ -10,7 +10,7 @@ Here is the poster they created to summarize their experience:
 
 <img src="/img/fall-2021/internaloha-fall-2021.png" />
 
-Each student also wrote a technical report on their summer research:
+Each student also wrote a technical report on their research:
 
  * [Pulling The Trigger With Internaloha: The New Opportunities For Internship, Shinya Saito](https://csdl.ics.hawaii.edu/techreports/2021/21-02/21-02.pdf).
  * [InternAloha: Revamping Scrapers, Jatin Pandya](https://csdl.ics.hawaii.edu/techreports/2021/21-03/21-03.pdf).
