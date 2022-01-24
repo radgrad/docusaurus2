@@ -1,11 +1,12 @@
 ---
 title: Fall 2021 User Feedback
 sidebar_label: F21 Feedback
+hide_table_of_contents: true
 ---
 
 ## Overview
 
-This page contains feedback from approximately 55 students who completed the New Student Tutorial.  More feedback will be forthcoming and added to this page as the semester proceeds.
+This page contains feedback from approximately 55 students who completed the New Student Tutorial in ICS 11, Fall 2021.  More feedback will be forthcoming and added to this page as the semester proceeds.
 
 All responses are at least generally positive about RadGrad, and some are extremely positive.  The responses provide evidence that RadGrad can achieve several important goals:
 
