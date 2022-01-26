@@ -1,6 +1,7 @@
 ---
 title: Plan your degree experience
 sidebar_label: Planner
+hide_table_of_contents: true
 ---
 
 At this point, you've added some Interests and Career Goals to your profile, and then used that to add a bunch of related Courses and Opportunities to your profile as well.
@@ -100,7 +101,3 @@ Before going to the next page in this tutorial, please make sure that all of you
 
 If you still have some gray in the circles in your myICE dashboard, don't worry.  You'll learn how to fix that next.
 :::
-
-
-
-

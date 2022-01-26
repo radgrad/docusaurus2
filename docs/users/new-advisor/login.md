@@ -1,5 +1,6 @@
 ---
 title: Login
+hide_table_of_contents: true
 ---
 
 The next step is to login to the actual RadGrad instance associated with your department. To find the instance, go to [https://radgrad.org](https://radgrad.org) and look in the "For Users" column:
@@ -26,8 +27,3 @@ If you cannot get to your RadGrad Home page even though your username and passwo
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please login successfully to RadGrad!
 :::
-
-
-
-
-

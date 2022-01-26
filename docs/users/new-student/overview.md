@@ -1,7 +1,20 @@
 ---
 title: Welcome to the New Student Tutorial
 sidebar_label: Overview
+hide_table_of_contents: true
 ---
+
+:::note Wait a minute! I've done this tutorial before!
+
+Some of you may have gone through this tutorial in a prior semester, but are now being asked to go through this tutorial again in one of your classes this semester.  What's up with that?  Here's why we're asking non-New Users to go through the New User Tutorial again:
+
+1. If you've already onboarded with RadGrad, stepping through the tutorial will only take a few minutes.
+
+2. It's easy to forget some of RadGrad's features. Going through the tutorial might remind you about certain useful features.
+
+3. We update this tutorial as new features are introduced in the system. Going through this tutorial might help you discover a new feature, or that a previous feature has been improved. 
+
+:::
 
 Welcome to RadGrad!  Want to learn why you should use RadGrad in just 60 seconds?  Try watch this:
 
@@ -33,4 +46,3 @@ So, the second reason to use RadGrad is to help you make *efficient* use of your
 ### Let's get started!
 
 Now that you know *why* it's good to use RadGrad, let's learn *how* to use RadGrad. Click the link below to move to the next page of this New Student Tutorial.
-

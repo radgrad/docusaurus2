@@ -1,6 +1,7 @@
 ---
 title: Choose your Opportunities
 sidebar_label: Opportunities
+hide_table_of_contents: true
 ---
 
 The last High Priority checklist item involves Opportunities:

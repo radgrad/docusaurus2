@@ -1,6 +1,7 @@
 ---
 title: Help build community
 sidebar_label: Visibility
+hide_table_of_contents: true
 ---
 
 One of the most important goals of RadGrad is to help build "communities of practice": students, faculty, advisors, and community groups who share a common interest and want to help each other develop proficiency with it.
@@ -23,5 +24,3 @@ While it is voluntary, we hope that you will share as much information about you
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please visit the Visibility page and consider sharing information about yourself with others in the community.
 :::
-
-

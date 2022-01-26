@@ -1,5 +1,6 @@
 ---
 title: What's next
+hide_table_of_contents: true
 ---
 
 If you've been able to successfully follow the tutorial, your "Completed" tab in your Home Page should now look similar to this:
@@ -23,7 +24,3 @@ Hopefully, this is enough to get you started with RadGrad. That said, there are 
 **Add students to RadGrad.** If a student comes to an advising session and is not in RadGrad, you can use the Manage Students page to add that student to the system.  You'll need to contact a RadGrad Administrator to get that student's STAR data (i.e. completed coursework) added to the system.
 
 **Help curate the RadGrad domain model.** The "domain model" is the set of Interests, Career Goals, Courses, and Opportunities, as well as their definitions and interrelationships.  Perhaps you know of emergent Interests or Career Goals not yet in the system, or are aware of local events or groups that would be a good fit with RadGrad. Or perhaps you feel the current description of an entity could be improved.  If you would like to participate in the management of RadGrad content, please contact a RadGrad administrator.
-
-
-
-

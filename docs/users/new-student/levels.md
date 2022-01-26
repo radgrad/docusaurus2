@@ -1,6 +1,7 @@
 ---
 title: "Leveling Up: From Grasshopper to Ninja"
 sidebar_label: Levels
+hide_table_of_contents: true
 ---
 
 RadGrad provides six "Levels" as a way to help you gauge your progress toward a successful degree experience.  If you're motivated, you can achieve a new Level approximately once a semester, and thus get to Level 6 (the "Ninja" Level) in about six semesters.
@@ -16,7 +17,3 @@ Finally, each Level comes with its own IRL perk: a custom laptop sticker.  Each 
 :::info Pro Tip
 RadGrad generally checks and updates student Levels once a day, around midnight.  If you think you've completed all of the tasks to get to a new Level, but don't want to wait until midnight to see if you've leveled up, just click the "Check Level" button on the Levels page. It will recompute your current level and level you up if you've earned it.
 :::
-
-
-
-

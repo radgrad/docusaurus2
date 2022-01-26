@@ -1,5 +1,6 @@
 ---
 title: What's next
+hide_table_of_contents: true
 ---
 
 Well, even through we've covered a lot of ground in this new user tutorial, there's more to learn about RadGrad. For example:
@@ -17,8 +18,3 @@ Thanks for reading this far, and good luck with your studies!
 :::tip Goal for this tutorial page
 Absolutely nothing. You're done!
 :::
-
-
-
-
-

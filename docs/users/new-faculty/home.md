@@ -1,5 +1,6 @@
 ---
 title: Home Page
+hide_table_of_contents: true
 ---
 
 After logging in you will be taken to your Home Page, which should look similar to this:
@@ -33,4 +34,3 @@ Let's take care of the Terms and Conditions next.
 :::tip Goal for this tutorial page
 Before moving on to the next page in this tutorial, be sure you can see your home page.
 :::
-

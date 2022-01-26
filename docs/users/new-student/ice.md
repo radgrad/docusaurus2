@@ -1,6 +1,7 @@
 ---
 title: Improve your degree experience with myICE
 sidebar_label: myICE
+hide_table_of_contents: true
 ---
 
 RadGrad provides a mechanism called myICE to help you develop a well-rounded degree experience.  In RadGrad, a "well rounded" degree experience is one in which you engage in activities that give you the chance to perform Innovative thinking (I), to develop Competency (C) of various types, and to have real-world workforce Experiences (E). RadGrad is designed so that if you earn 100 I, C, and E points by the time you graduate, you should be well-rounded.
@@ -45,4 +46,3 @@ For example, here's a completed Degree Plan
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please add Courses and Opportunities to your profile, and then to your Degree Plan, so that your myICE dashboard shows 100 planned Innovation, Competency, and Experience points.
 :::
-

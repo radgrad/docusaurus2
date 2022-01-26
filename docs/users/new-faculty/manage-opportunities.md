@@ -1,6 +1,7 @@
 ---
 title: Manage your Opportunities
 sidebar_label: Manage Opportunities
+hide_table_of_contents: true
 ---
 
 The last Medium Priority checklist item, which may or may not appear for you, is "Manage Opportunities":

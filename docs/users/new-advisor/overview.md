@@ -1,6 +1,7 @@
 ---
 title: Welcome to the New Advisor Tutorial
 sidebar_label: Overview
+hide_table_of_contents: true
 ---
 
 If you're on this page, we assume that you are an advisor in a department that is introducing RadGrad, and want to know more about how you can help make RadGrad most useful to the students you are advising.
@@ -16,7 +17,3 @@ There are three basic goals for this tutorial:
   3. To know how to integrate RadGrad into your advising process and (hopefully) make it more efficient and effective.
 
 To start, please click the "Next" link below to go to the first task in this tutorial.
-
-
-
-

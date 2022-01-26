@@ -1,5 +1,6 @@
 ---
 title: Home Page
+hide_table_of_contents: true
 ---
 
 After logging in you will be taken to your Home Page, which should look similar to this:
@@ -28,4 +29,3 @@ One of the most important initial checklist items is to review and accept the Te
 :::tip Goal for this tutorial page
 Before moving on to the next page in this tutorial, be sure you can see your home page.
 :::
-

@@ -1,6 +1,7 @@
 ---
 title: Review your Interests
 sidebar_label: Interests
+hide_table_of_contents: true
 ---
 
 Let's now take care of the Interests checklist item:

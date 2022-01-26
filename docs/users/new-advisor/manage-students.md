@@ -1,6 +1,7 @@
 ---
 title: Advising Students with RadGrad
 sidebar_label: Advising Students
+hide_table_of_contents: true
 ---
 
 So far in this tutorial, we've mostly focused on your profile within RadGrad.  That's important for enabling the system to refer students to you when they have matching Interests and Career Goals.

@@ -1,6 +1,7 @@
 ---
 title: Review your Career Goals
 sidebar_label: Career Goals
+hide_table_of_contents: true
 ---
 
 Next, let's review your Career Goals:
@@ -34,4 +35,3 @@ You can choose which interests, if any, to add.
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please review your Career Goals and ensure you have at least three. Then check to make sure that checklist item has moved to the "Completed" section on your home page.
 :::
-

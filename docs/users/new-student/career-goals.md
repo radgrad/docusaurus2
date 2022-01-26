@@ -1,6 +1,7 @@
 ---
 title: Choose your Career Goals
 sidebar_label: Career Goals
+hide_table_of_contents: true
 ---
 
 The next High Priority checklist item to take care of involves Career Goals:
@@ -44,4 +45,3 @@ Now go ahead and spend some time looking at Career Goals and adding at least thr
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please add at least three Career Goals to your profile so that the Career Goals checklist item is no longer High Priority on your Home Page.
 :::
-

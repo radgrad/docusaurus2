@@ -1,6 +1,7 @@
 ---
 title: Help build community
 sidebar_label: Visibility
+hide_table_of_contents: true
 ---
 
 One of the most important goals of RadGrad is to help you find "your people": others both inside and outside of your department who share your interests and career aspirations.
@@ -26,5 +27,3 @@ While it is voluntary, we hope that you will share as much information about you
 :::tip Goal for this tutorial page
 Before going to the next page in this tutorial, please visit the Visibility page and consider sharing information about yourself with others in the community.
 :::
-
-

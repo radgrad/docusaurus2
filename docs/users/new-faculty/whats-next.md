@@ -1,5 +1,6 @@
 ---
 title: What's next
+hide_table_of_contents: true
 ---
 
 If you've been able to successfully follow the tutorial, your "Completed" tab in your Home Page should now look similar to this:
@@ -25,7 +26,3 @@ That said, we encourage you to consider additional ways to participate in RadGra
 **Talk about RadGrad with your students.** If you believe that RadGrad can improve the undergraduate degree experience, please let your students know.  We know from prior comments from students that they are influenced by faculty opinions about RadGrad.
 
 **Help curate the RadGrad domain model.** The "domain model" is the set of Interests, Career Goals, Courses, and Opportunities, as well as their definitions and interrelationships.  Perhaps you know of emergent Interests or Career Goals not yet in the system, or are aware of local events or groups that would be a good fit with RadGrad. Or perhaps you feel the current description of an entity could be improved.  If you would like to participate in the management of RadGrad content, please contact a RadGrad administrator.
-
-
-
-

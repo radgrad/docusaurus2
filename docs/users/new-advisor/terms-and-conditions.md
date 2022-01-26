@@ -1,6 +1,7 @@
 ---
 title: Accept or reject the terms and conditions
 sidebar_label: Terms and Conditions
+hide_table_of_contents: true
 ---
 
 When getting started with RadGrad, you should first review and accept the Terms and Conditions, as noted in a High Priority checklist item:

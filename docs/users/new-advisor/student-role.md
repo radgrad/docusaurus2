@@ -1,6 +1,7 @@
 ---
 title: Get familiar with the student view
 sidebar_label: Review the student role
+hide_table_of_contents: true
 ---
 
 As an advisor who is new to RadGrad, the first step is to familiarize yourself with how students use RadGrad.  To do that, please go through the [Guided Tour of the RadGrad Demo Instance](../demo/overview). This will take 10-15 minutes.
@@ -15,7 +16,3 @@ Before going to the next page in this tutorial, please make sure you have a sens
 3. What is myICE?  How do students earn Innovation, Competency, and Experience points?
 4. How does the RadGrad Degree Plan differ from your department's degree program checklist?
 :::
-
-
-
-

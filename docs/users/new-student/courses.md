@@ -1,6 +1,7 @@
 ---
 title: Choose your courses
 sidebar_label: Courses
+hide_table_of_contents: true
 ---
 
 The next High Priority checklist item to take care of involves Courses:
