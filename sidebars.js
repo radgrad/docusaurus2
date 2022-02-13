@@ -274,7 +274,8 @@ module.exports = {
               'developers/deployment/howto/setup-montiapm',
               'developers/deployment/howto/setup-cas',
               'developers/deployment/howto/publish-a-release-mup',
-              'developers/deployment/howto/reset-db'
+              'developers/deployment/howto/reset-db',
+              'developers/deployment/howto/update-mongo-mup'
             ]
           },
           {
