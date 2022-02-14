@@ -19,20 +19,29 @@ Make sure you are running the latest release of mup:
 
 ```
 $ npm install mup -g
+$ mup --version
 ```
+
+It should be at least 1.5.7.
 
 ## Shut down the production system
 
-Invoke the following to shutdown the application and MongoDB:
+Invoke the following to shutdown both the Meteor application and MongoDB:
 
 ```
 $ mup stop
 $ mup mongo stop
 ```
 
+If you want, you can also completely remove the Meteor application with:
+
+```
+$ mup meteor destroy
+```
+
 ## Delete the MongoDB installation
 
-In the current case, we had to update MongoDB from 3.2 to 5.0.  This was too much of a jump, so the only path was to completely delete the MongoDB installation:
+In the current case, we had to update MongoDB from 3.2 to 5.0.  This was too much of a jump, so the most efficient approach was to completely delete the MongoDB installation and then reload the database from scratch.  Here's how to delete MongoDB from the server:
 
 ```
 $ ssh <user@radgrad-server>
@@ -40,7 +49,7 @@ $ rm -rf /opt/mongodb
 $ rm -rf /var/lib/mongodb
 ```
 
-## Redeploy
+## Redeploy and reload the database
 
 Edit your settings.json file's "databaseRestoreFileName" field to point to your backup copy of the database.
 
