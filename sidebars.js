@@ -253,6 +253,7 @@ module.exports = {
         items: [
           'developers/internaloha/overview',
           'developers/internaloha/design-issues',
+          'developers/internaloha/import-process',
         ],
       },
       {
