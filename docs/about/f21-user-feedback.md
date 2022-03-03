@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Overview
 
-This page contains feedback from approximately 55 students who completed the New Student Tutorial in ICS 111, Fall 2021.  More feedback will be forthcoming and added to this page as the semester proceeds.
+This page contains feedback from approximately 55 students who completed the New Student Tutorial in ICS 111, Fall 2021. There were 204 students in ICS 111, so this represents a response rate of 27%.   
 
 All responses are at least generally positive about RadGrad, and some are extremely positive.  The responses provide evidence that RadGrad can achieve several important goals:
 
@@ -335,5 +335,3 @@ With this exercise what I found it lacked was kids who knew exactly what they wa
 This website also allows me to meet people who have the same hobbies as me. I can also get more information from those people about their courses and careers. I can also search for internships related to me, although I haven't found one yet.
 
 ---
-
-
