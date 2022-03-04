@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Overview
 
-This page contains feedback from approximately 13 out of 18 (Section 1) and 10 out of 19 (Section 2) students who completed the New Student Tutorial in ICS 314, Fall 2022.  This is a combined 23 out of 37, or 62% response rate. 
+This page contains feedback from approximately 14 out of 18 (Section 1) and 10 out of 19 (Section 2) students who completed the New Student Tutorial in ICS 314, Fall 2022.  This is a combined 24 out of 37, or 65% response rate. 
 
 ## Summary of Observations
 
@@ -144,3 +144,243 @@ Worth It?
 I believe RadGrad can be worth it to some individuals. Those who do not know what they want to do, those who do not have any guidance, etc. RadGrad is a great platform for those individuals to start on their path and plan out their degree and future. It is a platform that can help us see the vast pool of opportunities and careers waiting for us. For me personally, although RadGrad showed me more opportunities that I did not know about, it did not really benefit me in terms of improving my academic development since I already had my courses planned out and some internships and competitions that I wanted to join. However, I may continue to use the platform just to keep track of what I still have left to do to complete my degree.
 
 RadGrad is beneficial in planning out and helping with maximizing your degree experience. I believe the point tracker is helpful since it helps visualize what different opportunities will guide you to like innovation, competency, and experience. This allows students to choose opportunities, courses, and goals that will help their degree experience. One aspect that would be nice to add to this platform is connections or resources that connect you to companies that pertain to your interests and goals.
+
+### (11)
+
+First Impression
+ICS 314 is the first class that I heard about RadGrad in and the name at least sounded a little funny. I assumed it would be some generic website where I select a few interests and it gives some careers to look at that match my current interests. I was mostly wrong because the website is much more in depth than I imagined it would be. It already knew what ICS classes I had taken in the past and also had a full list of all the ICS classes anyone could possibly take. I thought it was pretty amazing that all the ICS classes were listed in a single spot, but that’s not the only thing RadGrad does, there are also almost 60 opportunities that ICS students can take part in. I didn’t realize there were that many things to do outside of class which really woke me up and made me want to do more than just the bare minimum of taking the required courses to graduate.
+
+How Many ICS Classes Can There Be?
+One of the high priority tasks that were on the homepage as soon as I logged in for the first time was to select future classes. I didn’t really get what that meant, but I followed along and went to the courses explorer, I saw over 100 courses that were offered at the University. I thought I already took a good amount of ICS classes so far, but it turns out I’ve only taken 7 before this semester and there are actually almost 100 more that I could take in future semesters. I only need to take a little over 10 more to graduate, but it’s interesting to see how many different options for classes there are just in the ICS area. I have a lot of 400 level ICS elective classes left which seem to make up the most classes on the list so there’s a good chance I will find something that I’m really interested in over these next few semesters.
+
+Opportunities Everywhere
+Another High priority task on the homepage was to look at opportunities which I thought would just be a list of a few clubs and activities that ICS students could join. When I looked at the Opportunity Explorer, I was amazed when there were 57 opportunities that were offered. These opportunities were also very diverse and had many different categories like clubs, competitions, and hackathons to name a few. I knew these events and groups were around, but I’ve never seen them all in one place like how RadGrad displays them. I’ve thought about doing more extracirricular activities, but never really knew where to get started. RadGrad makes it easy by giving a list of many possible groups to join as well as events to attend to show how many opportunities are actually available to me.
+
+RadGrad is Pretty Rad
+After spending about an hour going through RadGrad, I learned a lot more about courses, opportunities, and possible career interests. These are all things I hear older people talking about, but I never spend a lot fo time thinking about them myself. I just let Laulima tell me what classes to take, say I’ll think about opportunities later, and tell people I don’t know what I want to do in the future. RadGrad forced me to actually think about the classes I’m going to be taking. RadGrad also showed me opportunities available to me and made me choose some. RadGrad also made me choose computer science related jobs and see what common interests they share. Overall, in the hour or two I spent working on my RadGrad profile, I learned a lot about future classes, opportunities I can take advantage of, and several possible career choices.
+
+### (12)
+
+A New Perspective
+When I used to think about computer science, I would have a mental image of thousands of lines of code for some tech company to use in their newest product, for example a router, but I never realized how computer science could be used in so many non-technical fields. As someone who has always been extremely interested in social issues, I was really interested to hear about some of the applications and opportunities people are working on. For example, in the introduction video it was mentioned that someone was working on an app that can inform you of your rights in any location. In a world where the law can be unjust, especially towards minority groups, it can be so valuable to have some kind of information on what your rights are as a person in the United States in an emergency, especially because many of us are unaware of these rights as we have not studied law. It may not solve the problem, but it is definitely a helpful resource. I believe that if we continue to build on resources like this, we can hopefully create a world where our devices can greatly reduce the risk of danger.
+
+Discovering New Horizons
+I know that I have always wanted to go into some kind of management. I believe that although I lack some of the technical skills that my peers may have, I make up for that with my planning and organization skills (although it is important to continue to improve on all aspects). Although somewhat introverted, I have always considered myself a “people-person” and can generally empathize with others and understand their points as well as get my points across effectively. I believe these are all important aspects of management. This is why I was especially interested in the Information Technology Management Association (ITMA) opportunity on RadGrad, as it seemed like something that was right up my alley: creating a bridge between technology and business management. I was also happy to see the Society of Women Engineers at UH Manoa, as this industry is quite male-dominated and organizations like these are making the IT industry much less intimidating for women and encouraging them to partake. Looking through the RadGrad opportunities made me realize that whenever I have an idea (for example, an idea for an app), I should make note of it and continue to build on it because there will most likely be a group of people who would be interested in working on something similar. I was surprised to see how many opportunities there were, and am looking forward to exploring them further and broadening my horizons.
+
+Don’t Miss Out On Any Opportunites!
+Overall, RadGrad seems to be a great resource to know what’s out there, whether it’s an opportunity, a career goal, or a class. It is very helpful to have all of that information in one place. In the past, I feel as if I have missed out on many opportunities (such as joining a club) only because I did not know about them! With RadGrad, I am able to filter through different kinds of opportunities and stay updated on whatever is being offered lately. I also think it’s very helpful to be able to see all of the classes in one area as well as seeing their descriptions. This helps me make educated decisions on what classes I would like to take in the future as well as being able to make connections between certain opportunities and classes with my tentative career goal, making me a more well-rounded student. Although I would like to see some more variations of less technical career-goals that are more business/management oriented, I think that it was very helpful and eye-opening to see how many different paths are available to us!
+
+### (13)
+
+My First Impressions
+Honestly, my intial thoughts on RadGrad were that it was going to be another simple college pathway planner that wouldn’t be too interesting. However, while working through the tutorial I realized that it actually has a lot to offer in terms of detailed descriptions of the oppurtunities for computer science students. I really like the fact that there are brief descriptions for each extracurricular along with links that allow you to learn even more if you so wish. There are definitely a lot more opportunities out there than I was previously aware of and I appreciate that they are very specialized; allowing you to focus on things you’re actually interested in. RadGrad also opened my eyes to the immense range of computer science in that there are so many different and unique jobs within it. Overall, I was skeptical at first glance but quickly realized RadGrad can be very beneficial for me.
+
+
+
+New Opportunities and Experiences
+Prior to signing up for RadGrad, I had not heard of a majority of the opportunities listed. There are a lot of global, as well as local, opportunities that look very interesting to me and fit well with my goals. This applies a lot to the game design opportunites like “Learn Unity” as gaming has always peaked my interest and has played a fairly significant role in my life. I also noticed some programs are run by professors I have had in the past like Professor Peter Sadowski which was cool to see. Aside from the actual opportunities themselves, I really admire the ability to connect that RadGrad provides. I find it awesome that it allows you to view which of your peers are interested in similar topics or programs and I believe it could lead to genuine connections in the future. One more thing I found very intriguing is the innovation, competency, and experience levels. The fact that RadGrad is pushing students to push themselves in all aspects of computer science is very awesome to me.
+
+Outlook for the Future
+Although I was a little overwhelemed with the amount of different opportunites that are pressent, I will definitely be looking to take advantage of as many as possible in the near future. I have been reading up on some game development and career opportunites since signing up for RadGrad and am excited to see more of what they have to offer. I’m not entirely sure how much of an impact RadGrad will have on my actual path to a degree as I don’t picture many of my classes changing. But, it will definitely have an impact on the amount of experience I have by the time I recieve my degree; given the amount of information it has on knowledge outlets. In the upcoming summer and semesters, I’m planning to participate in at least a few computer science programs, listed on RadGrad, to gain that extra experience and set myself up for success post-college.
+
+### (14)
+
+A struggling start
+My first experience with RadGrad was in my ICS 211 class. My professor introduced RadGrad to the entire class, going through the reason behind it and showing us the how to explore the website and find things we may be interested in. At the time I was interested and explored the website and even planned a semester in advance along with finding an upcoming internship I found while looking through the different opportunies that where available at the time. This would’ve been a great first into college and I say would’ve because I didn’t really follow up with what I planned. At the time I was so focued on taking one semester at a time and didn’t give much thought into the future, so I forgot about RadGrad and just tried to keep going forward without a plan.
+
+A tool not utilized
+About two years has passed since I was introduced to RadGrad and now that I’ve revisited the website thanks to my ICS 314 professor I realized that I could’ve done so much more if only I used everything I was given. RadGrad is ment for ungraduates to start thinking about college as a whole and plan how they want to go about college and even find opportunities in any interest they may have. Being able to build a profile with add certain field of interest like gaming, computer learning, database, etc… to that profile and find others that share those interest is amazing. Ontop of that, being able to find real world opportunities on the same website is astounding. So much functionality in this site, it could’ve made planning for classes much easier.
+
+Now that I’m nearing the end of my third year in college I’ve been looking for different opportunities to help me get some experience in the world and I haven’t used everything to my advantage. Although I advisors and google to help me search for experience I could’ve just used a website designed to help student like me find internships and different opportunities.
+
+For the future
+From my introduction to RadGrad to now revisiting it and using it again I realized that now I have another source to help myself plan for the future. It may be a little late, I still have some time before graduation to use RadGrad and get learn about the different opportunities available to me.
+
+
+### (15)
+
+Pave The Way!
+graduationI’m plagued by the same question that most students experience at some point during their education. What is my final destination? While this question creates a wall of uncertainty, a tool exists to give my journey direction. It’s called RadGrad. This simple web-app is one of the best tools for ICS students graduating from Manoa. Here are some reasons why.
+
+There’s a Huge Community at Manoa
+I wasn’t aware of all the different societies and events related to ICS. The one thing I knew when I chose to become an ICS major was that I was going to need to be involved in teams of like minded individuals. Welp, RadGrad showed me that there existed a massive community for people interested in involving themselves with these organized events, meetups, and online discussions related to ICS. All this information was explored in the opportunities tab!
+
+Plan Ahead
+After picking different subjects that I was interested in, RadGrad conveniently gave me a list of classes I could take that satisfied these interests. Not only was this very convenient, but it also informed me about what the class taught and what career pathway these classes would assist me in. Some classes in particular were Machine Learning, AI for Games, and Intro to Web Programming. I also became aware of different societies that I may be interested in such as ACM Manoa and Cloud Honolulu.
+
+It’s Better Than I Thought
+My degree experience was being built off Advisors advising me and STAR registration. Aside from that I would use google to do the rest. RadGrad is awesome! It’s a tool built specifically for ICS students at Manoa so it’s perfect for getting your feet walking in the right direction for someone like me. I intend to continue using RadGrad long after ICS 314 is finished, it is so far the most relevant and useful career assistant I’ve experienced.
+
+### (16)
+
+RadGrad?
+The purpose of RadGrad is to allow undergraduate computer science and computer engineering students to improve their STEM degree experience through a well-balanced, organized path. Many students use their GPA to indicate how they are doing in their school work, meaning the better the GPA, the better they are doing, and therefore a better job. However, as technology advances, engineers are bound to face a competitive job market. Now instead of just your GPA, recruiters are looking for a well-rounded student that has the ability to lifelong learn and apply it to their projects. This balanced lifestyle is encapsulated into RadGrad, which is built around seven constructs: “Interests, Career Goals, Courses, Opportunities, Degree Plans, ICE (Innovation, Competency, and Experience), and Levels.”. Instead of just a GPA, students can now plan out projects, internships, experiences, and meetups to learn fundamental values such as leadership, social innovation, communication, and networking with others. These skills will then help you be less likely to fall behind in the face of automation and the changing job landscape. In addition, you will learn how a company operates daily, how to quickly adapt on the fly in any situation, how to become an open thinker, and communicate with others.
+
+Benefits
+After using RadGrad, I have found many computer engineering communities and meetups specifically in the realm of machine learning and artificial intelligence: Hawaii Machine Learning Meetup. Additionally, like most students, I based my academic and professional success on my GPA, and, RadGrad has allowed me to see the lack of projects in my field of studies. In this case, RadGrad indicated that I had a lack of “Innovation” the “I” in ICE. It then provided me with upcoming opportunities that would allow me to gain innovation points such as “research projects, hackathons, or other activities producing new insights or technologies.” In addition to communities and projects, RadGad has introduced me to internship opportunities such as Google Summer of coding, NSA internships, AMD, etc. One thing that was beneficial to me was saving these internships and putting them into a four-year program through a planner. This helped me visualize my goals and see where I needed to be each part of the way.
+
+Overall
+Overall, RadGrad provides computer science majors a great way to plan for their future and have an organized way to do so. However, RadGrad can still be developed more for computer engineers as there are few EE courses listed and minimal opportunities to apply to our planners. As for computer science majors, using RadGrad will significantly benefit you. It ensures that you experience a well-balanced education with projects, a way to network with others, internships and careers, and lastly, similar courses to those you are interested in.
+
+### (17)
+
+A Little Background
+While in college every student has one thing in the back of their mind, getting a good paying job after they graduate, but not everyone is fortunate to land one after graduation. Now, thanks to Radgrad we are given the upper-hand when it comes to getting high paying jobs after graduation. Radgrad is a website that STEM undergraduates are able to use to improve their undergraduate experience. This website allows STEM majors (specifically computer science and computer engineer programs) access to various resources they can use to help them plan their future.
+
+Being the “New” Kid
+When I first transferred to Manoa from the community college it was during the pandemic. Practically Spring of 2022 is my first time stepping foot on campus. My first time I had to come to class I felt so lost and unsure of where I was going. I also do not know any of the clubs that are offered or the various opportunities that are available to us. Radgrad has helped me to get a better understanding of the different opportunities. It takes my interests and goals into consideration and is able to give me a list of opportunities tailored to me. Radgrad has also helped me to plan my remaining semesters while adding in the different opportunities I can take advantage of.
+
+It is Rad
+Radgrad has helped me out a lot because I am able to clearly map out my future. It gives me a sense of direction and reassures me that what I am doing is best suited for me rather than doing what everyone else is doing. Being a Computer Science major and a female I am already stressing out with making sure I am learning my material and proving that I am able to hold my own. However, with Radgrad I am able to feel a weight lifted off my shoulders knowing I have the resources I need to potentially succeed after graduation.
+
+### (18)
+
+RadGrad
+
+
+RadGrad is an online platform that provides guidance for UHM computer science and computer engineering students in preparation for a career after college. Interests, careers, courses, and opportunities are presented on the website to deliver various types of information that can essentially help students identify what they would like to do in the future. Information related to your major are oftentimes overwhelming and difficult to find, and RadGrad delivers these information in an organized manner.
+
+My experience as a transfer student at UH Manoa has been nothing but disorienting. I wasn’t quite familiar with the new environment yet, so I was clueless with the type of opportunities available to me. I’ve been trying to expand my network to people with similar interests, and it’s fortunate that RadGrad presents various types of clubs and organizations that I could join.
+
+Lots of Opportunities
+Another great feature that I discovered through RadGrad was the number of internship and research opportunities that is available for CS majors. The number of businesses and organizations based in Hawaii was quite surprising. I didn’t realize how expansive the tech industry in Hawaii is. Cloud Honolulu, Mind Hawaii, and Campus Analytics Challenge were few of the opportunities that I’ve found interest in. I was previously just using network platforms like LinkedIn to find internship opportunities nationwide, and RadGrad is an additional platform that I can use to discover opportunities that are specifically based in Hawaii.
+
+Growth in RadGrad
+Although RadGrad is currently catered to computer science and computer engineering students, I can see a potential growth with the platform where it can cater to all majors. It is a great platform that provides a clear pathway that students can follow, and help them discover opportunities to build the skills needed for their future career.
+
+### 19
+
+What is RadGrad?
+What was the main stuff we looking for as college students? Knowledge? Bright future? A high pay job? Or to look smart? There are a lot more reasons. But, one of the most critical reasons we are looking for is a high pay job after graduating. But, it is hard to find a satisfying career with high pay. Lucky we had the RadGrad! This feature is significant and helpful. We could explore subjects we are interested in and exciting careers, courses, and opportunities, which is fantastic! We also could develop a planner for all that. This feature is handy. Many ICS college students wander around with its future and are unsure what to do, but RadGrad takes advantage of that.
+
+Leveling up!
+
+
+There are six levels in RadGrad. They all stand for different things. It isn’t easy to level up. I am currently level two and looking forward to a higher level. Level one is for those beginners of ICS majors who have not yet completed any courses or opportunities. Level two is those who have finished a single semester of coursework. Level three is those who spent two semesters of coursework. Yes, level four completed three semesters of coursework, but the additional requirement of least 100 Innovation, 100 Competency, and 100 Experience. Levels five and six are really to enter workplaces and mean it had made significant progress toward 100 verified points in each of the three my ICE categories. My goal is to be at level six, although I am still level two, as I am still in ICS, I will work my way through.
+
+Overall
+Overall, I think RadGrad is an excellent tool to map out our future. The feature of the planner is incredible. And the fact we could review each different ICS course is time-saving. We can view the past ICS course that we had passed and write reviews about them. This feature is excellent, and I wish I had known RadGrad much earlier. So I could look at reviews of the course in general. RadGrad provides us a guideline to guild you, though it is helpful. Significantly for those who had no elder to help out its graduate plan. Honestly, many students first decided their major. Most of them felt lost and unsure what to do next. With the help of RadGrad, our ICS students had the advantage to discover they’re interested in ICS in RadGrad.
+
+### 20
+
+As I discovered the RadGrad, I found it helpful to understand the course path more clearly. Most incoming college students are most likely to be blacked out on what will happen and what classes to take. They tend to follow the star plan pathways giving. However, although that’s not wrong, that’s not the most efficient way. I found that RadGrad helped me understand and give clear information on the course. The courses tab gives me the required class for me to take and could recommend me if I don’t know what to take next. Many student reviews and details about the type make it easier to pick courses. It would boost a lot of degree experience if I could find out about this site entering college.
+
+One of the most exciting things about RadGrad is the levels feature. It attracts attention to the site with leveling up. Unlike other sites, it’s just lots of pieces of information to read about. One of the most helpful features of RadGrad, in my opinion, would be the career goal. It gives you information about the job and what class to take for the career goal you want to achieve. I think this is the most helpful and convenient feature because almost every student has thought about, for example, “what I will be doing in the future,” “what kind of career option do I have,” “what should I take to accomplish and be able to handle the job.” This site will answer all the questions with detailed information and courses.
+
+The new thing I discovered on RadGrad is the Opportunity tab. There are so many different professors’ opportunities that would be hard to obtain by ourselves. Opportunity is significant in current societies to outstand among other peers. As far as I discover Radgrad, I would consider it the more efficient tool for Uh Manoa students than the star pathway.
+
+### 21
+
+RadGrad is a web application that aims to improve engagement, retention, and diversity in STEM disciplines such as computer science.
+
+RadGrad home page.
+
+RadGrad home page.
+
+I used it briefly. In short, I agree with the problem, but I didn’t find the RadGrad solution very fun to use.
+
+It was hard to navigate around the site, the features were not very intuitive, and overall I just didn’t find myself getting much value from the application.
+
+With that being said, I do agree strongly with the underlying problem statement. STEM disciplines are known for having high drop-out rates and low diversity. I also think students struggle with engagement due to having an ‘interesting’ balance of intrinsic and extrinsic motivation.
+
+RadGrad project motivation.
+
+Motivation for the RadGrad Project.
+
+STEM fields are known to have relatively high paying jobs and I’ve seen a lot of people enter the field seemingly solely due to the expected paycheck upon graduation.
+
+I feel that having only extrinsic motivation as a driving force is dangerous. It creates this ‘dissonance’ that builds up, this friction that you encounter whenever you’re routinely performing a task you are solely extrinsically motivated to perform. The ‘9-to-5 zombie’ mindset.
+
+And I don’t think any amount of money can cure this. Can you tell me the difference between the following two scenarios?
+
+You are making $40,000 a year at a fast food restaurant and hate flipping burgers. It pays the bills but doesn’t excite you.
+You are making $200,000 a year writing code and hate developing software. It pays the bills but doesn’t excite you.
+I see no difference. Sure, there’s a income floor below which you will struggle to provide for basic needs. For an average American couple, I think it’s somewhere around $70,000 yearly.
+
+But once you’ve passed that threshold, you’re living quite a comfortable life. You can afford shelter, food, transportation, financial security, and even some leisure spending.
+
+Maslow's Hierarchy of Needs
+
+Maslow’s Hierarchy of Needs
+
+In short, you’ve achieved physiological and safety needs.
+
+There’s burnout from a failure to manage stress and to take care of personal relationships, and there’s also an existential type of burnout from the constant dissonance associated with doing something every day that doesn’t make you happy. Doing something that doesn’t fulfill you.
+
+Money is not a strong enough motivator to convince the human brain to keep doing something it doesn’t enjoy doing. This is a commonly known ‘fact’ in entrepreneurship culture. “A financial motivation is not enough to keep you up at 4AM fixing that bug. You’re gonna need something more.”
+
+Although I don’t agree with their proposed solution, I do support RadGrad’s problem statement. I would love it if society as a whole encouraged the following of one’s passions with strength and determination rather than the pursuing of cookie-cutter high salaried jobs. “Lawyer, doctor, or software engineer”.
+
+Is societal change something the team behind RadGrad can implement? Maybe not.
+
+However, on a university-level there could be initiatives to really try and educate people about this. To encourage them to do what they enjoy doing and maybe even get into the psychology underlying motivation and drive. Get people to understand that in terms of probability and expected value, you have a higher EV pursuing a career you love rather than going down the ‘tech rabbit hole’ just because tech jobs ‘pay alot’.
+
+If students were to understand the following quote, I’m confident that STEM engagement and drop-out rates will undergo a dramatic change dramatically for the better.
+
+“Do what you love and you’ll never have to work a day in your life.”
+
+### 22
+
+Why RadGrad?
+Many college students attend college with the hope of being able to obtain a high-paying job to get out of poverty. However, as many of us are aware nowadays, it can take a lot more than a college degree to get a job, especially in a competitive market such as jobs in STEM. Students who don’t have guidance from family, friends, or mentors can end up lost and struggling to compete with other candidates who were fortunate enough to be able to follow a path that ended up with a high-paying job. Luckily, RadGrad seeks to solve some of these problems to help you better organize your coursework as well as plan your career development in order to meet your goals after college.
+
+RadGrad Review
+RadGrad offers tons of career options that I did not know I could go into after completing my Computer Science degree. I also appreciated the descriptions and video explanations of what these jobs do on a day-to-day basis, which helped me better understand the differences between these different fields. I think the vast selection of options has made me take a step back and think about what field of computer science I want to go into after I finish my degree. For now, I think I will stick to the job title that has become rather famous over the years and one that many students who graduate with their CS degree end up getting: Software Developer. Although, I do hope that as I continue through, I will have taken more courses and be able to narrow down my selection of jobs that I am interested in.
+
+Another feature that RadGrad offers is showing a list of opportunities that are available that pertain to your interests. This way, students who want to get involved with outside projects or internships can have a list of opportunities to look at. Different opportunities also have different rankings in terms of how much they will help you with your degree experience.
+
+Got RadGrad?
+Personally, I don’t think that RadGrad will drastically improve my degree experience. I think the best part about RadGrad is its ability to lay out plans in order to see if you are on track to get the most out of your degree. I have a sense of what I need to do, and I also have mentors and friends who have walked the CS path to guide me and help me lay out a plan for me to follow. I think that the website will help those who don’t have anyone to guide them or just need help creating a plan, and for those individuals, they will get the most bang for their buck. I think that the website would be helpful to more students if the opportunities tab offered a list of companies that you could apply for an internship opportunity.
+
+I do enjoy the leveling system and the point tracker. It allows people who are competitive to compete for a higher rank, and the point tracker allows students to get a numeric value as to where they are in their CS journey. The point tracker is also visible within different opportunities, which allows students to take up opportunities that will really help in their degree experience.
+
+### 23
+
+“What do you want to do with your life?”
+
+                                                            I don’t know.
+“Does it make money?”
+
+                                                          I think it will.
+“How are you going to get there?”
+
+                                                             I don’t know.
+“What do you mean you don’t know? You should already have an idea by now.”
+
+                 I kind of do, but I’m lost. I don’t know how to get there.
+“This is your future, why aren’t you taking it seriously?”
+
+                                                                I am. I am.
+Anxiety. Anxiety. Anxiety.
+How many times have you heard one of these questions, in some form? How many times were you able to answer it with certainty? I’d bet my lucky coin to say a good sum of you probably didn’t know how to answer these questions at 15. Maybe you had some idea formed at the time, but I’d bet another one of my lucky coins to say that maybe, for some of you, that idea changed and you ended up going another route that was completely different from what you originally intended.
+
+There’s a lot of pressure to have everything figured out, and it can be so daunting at a young age. Especially when there’s all this outward pressure from your family, your peers, your teachers, and your counselors. I can tell you, that in my head, my career path changed a billion times. I dreamed of being a doctor, an architect, an interior designer, graphic designer, culinary chef, Chinese linguist, a diplomat in International Foreign Relations, systems engineer…etc. The world is so vast, and the options, many, it definitely took a couple of tries before I landed on Computer Science. For me, I was so scared of finality. Of limitations.
+
+Where do I start?
+Even after switching majors and deciding to pursue Computer Science, I’m still exploring what exactly I would like to do in the technical field. So far I’ve had internships in Cybersecurity and Network Engineering, and that helps me to get a feel for real-world experience, but the questions don’t stop there. What more is there? Where do I look? I know this field can be competitive, how do I gain experience, how do I prepare?
+
+Try RadGrad
+
+
+Recently, I’ve tried RadGrad to help enrich my undergraduate experience, and was honestly so impressed how it centralized all the resources we needed in one place. It had personalized suggestions based on your interests in the computer science field. Based on those interests, I was able to find organized courses that aligned with my interests to build my academic plan, and even found detailed resources to opportunities that I didn’t even know existed within the University of Hawaii, or the community. It was a great information outlet for these students, who might not have known where to look or what to search.
+
+I think what was interesting about exploring the opportunities section is all of the programs listed detailed information on it, how to join, and how it aligns with what you are looking to improve, which definitely helps you tailor what you want to build your skill set and experience in. Especially since it has a feature where you can sort it by recommendation and the ones that align to your interests can be filtered towards the top. Some interesting ones I saw were ‘Cracking the Coding Interview,’ ‘AllNet,’ ‘Google Summer of Code,’ and etc. I think it just kind of opened a new world for me that I had an inkling existed, but finally confirmed and revealed. I felt like a toddler at a candy store, the world was at my fingertips. There were so many options. It kind of made my worries look smaller. It was reassuring to think, the world isn’t as limited as you think it is, so long as you’re searching. Now I know where to look if I want to find more about Data Science, or if I want to learn more about Databases, Algorithms, Application Development…etc. Maybe I already know what I’m interested in building a career out of, and I want to know how to build my resume and experience for that, well now there’s a centralized platform to find opportunities that are tagged in that specific interest.
+
+
+
+Finding Security
+Having planned through RadGrad, and explored all the opportunities, the careers, and the courses, it helps to give a sense of security. I definitely do think that RadGrad can give undergraduates a better degree experience because it presents all the tools you need to succeed and how. I think what really scares us is lack of knowledge. Of not knowing. Oftentimes we get so overwhelmed, our initial reaction is to avoid it, put it on a back burner, think about it later. Or well…at least that’s what I do, if you’re the type to face a problem head on to get it over with, then I truly commend you. Thinking back, my anxiety could have easily been solved, if I had just confronted it and done more research. I guess one of the harder parts though, is knowing where to start. For those pursuing computer science, well, RadGrad might just be the place to start.
+
+### 24
+
+Rad Grad for everybody
+After spending some time with Rad Grad, I was able to discover many opportunities that I was never aware of. Coming into the Computer Science degree a little after my first year of college, I had no clear goals in mind throughout my journey at UH. However, having something like Rad Grad lay out all of your options and challenges to level up your skill set before going out to the work field felt very reassuring. Rad Grad is a definitely a powerful tool that should be available to not just ICS students, but for anyone trying to gain something special that stands out from the others, something other than GPA.
+
+What is my Rad Grad?
+As a third year Computer Science student, I currently have no plans on going into a job relating to software development neither computers pretty much. Looking back at my high school years and my first year at UH, I probably had no idea what I was doing. I chose my previous major without having any real thought behind it thinking it would somehow work out. I ended up changing majors at the end of the first year because I knew that it’s better to be early with this kind of decision. Speaking as of now I’m glad I made the decision I made and despite I had an knew that the skills I develop as I proceed my new studies as a Comp Sci student might not directly be useful for my future job, It definitely will become a speciality when going into the work force.
+
+
+One feature of Rad Grad that I thought was compelling was the statistical representation of the student experience in three categories Innovation, Competency, and Experience. In the course plan, we added some opportunities found in the list provided by Rad Grad and each of them consists of points for one or more categories based on the properties of that certain experience. Even if I don’t end up using Rad Grad in the future, having a balanced experience as a undergraduate is a plus for any path I end up taking.
+
+
+
