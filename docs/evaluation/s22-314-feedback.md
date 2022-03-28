@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Overview
 
-This page contains feedback from approximately 14 out of 18 (Section 1) and 10 out of 19 (Section 2) students who completed the New Student Tutorial in ICS 314, Fall 2022.  This is a combined 24 out of 37, or 65% response rate. 
+This page contains feedback from approximately 14 out of 18 (Section 1) and 10 out of 19 (Section 2) students who completed the New Student Tutorial in ICS 314, Spring 2022.  This is a combined 24 out of 37, or 65% response rate. 
 
 ## Summary of Observations
 
@@ -381,6 +381,3 @@ As a third year Computer Science student, I currently have no plans on going int
 
 
 One feature of Rad Grad that I thought was compelling was the statistical representation of the student experience in three categories Innovation, Competency, and Experience. In the course plan, we added some opportunities found in the list provided by Rad Grad and each of them consists of points for one or more categories based on the properties of that certain experience. Even if I don’t end up using Rad Grad in the future, having a balanced experience as a undergraduate is a plus for any path I end up taking.
-
-
-

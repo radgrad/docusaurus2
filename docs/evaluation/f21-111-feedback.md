@@ -1,6 +1,6 @@
 ---
-title: Fall 2021 User Feedback
-sidebar_label: F21 Feedback
+title: Fall 2021, ICS 111 User Feedback
+sidebar_label: F21 ICS 111 Feedback
 hide_table_of_contents: true
 ---
 
