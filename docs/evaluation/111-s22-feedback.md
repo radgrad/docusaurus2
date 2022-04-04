@@ -5,8 +5,10 @@ sidebar_label: 111 S22
 
 ## Overview
 
-ICS111 Section 1:         27 students, 26 participants. 
-ICS111 Section 2:         15 students, 15 participants. 
+ICS111 Section 1:  27 students, 26 participants. 
+ICS111 Section 2:  15 students, 15 participants.
+
+Total: 42 students, 41 responses, 97% response rate.
 
 ## 111-S22-01
 
