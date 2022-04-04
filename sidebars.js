@@ -7,6 +7,7 @@ module.exports = {
     'evaluation/314-f21-feedback',
     'evaluation/314-s22-feedback',
     'evaluation/exit-questionnaire-feedback',
+    'evaluation/instrumentation',
   ],
   mainSidebar: {
     Overview: ['overview/motivation', 'overview/goals', 'overview/basic-constructs'],
