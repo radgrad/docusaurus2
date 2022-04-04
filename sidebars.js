@@ -1,5 +1,13 @@
 module.exports = {
-  someSidebar: {
+  evaluationSidebar: [
+    'evaluation/overview',
+    'evaluation/111-f21-feedback',
+    'evaluation/111-s22-feedback',
+    'evaluation/211-s22-feedback',
+    'evaluation/314-f21-feedback',
+    'evaluation/314-s22-feedback',
+  ],
+  mainSidebar: {
     Overview: ['overview/motivation', 'overview/goals', 'overview/basic-constructs'],
     'User Guide': [
       'users/overview',
