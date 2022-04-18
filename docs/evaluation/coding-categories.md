@@ -21,14 +21,16 @@ Here are the initial set of coding categories.  For each category, I provide exa
 
 The code is either "+1" if the essay indicates agreement with that category, or "-1" if the essay indicates disagreement with that category.
 
-## 0. RadGrad is "amazing" or "awesome".
-(Note: I don't think we have to manually code this category; I can look for the occurrence of those words automatically.)
+## 0. RadGrad is "amazing", "awesome", or "overwhelming"
+(Note: I don't think we have to manually code this category; I can look for the occurrence of those words automatically. These three words came up frequently enough that I think it will be useful to code for them explicitly.)
 
 * "RadGrad is an amazing tool for ICS Students."
 * "All in all, RadGrad is a pretty amazing site"
 * "Radgrad is an awesome friendly user interface"
 * "RadGrad is awesome!"
 * "Overall, I think that RadGrad is and will be an amazing resource for students like me to use in planning their classes for the next 4 years. "
+* "The first time I encountered RadGrad, I felt very overwhelmed. "
+* "My first experience about RadGrad is that I need to understand my plan about my ICS life and with that being said it is a little bit overwhelming."
 
 ### 1. RadGrad provides useful information
 
@@ -94,11 +96,6 @@ The code is either "+1" if the essay indicates agreement with that category, or 
 * "I also like the feature to allow others to see your interests and shared pathways. This can lead to collaboration which is very beneficial for personal and career growth."
 * "This website also allows me to meet people who have the same hobbies as me. I can also get more information from those people about their courses and careers."
 
-### 14. RadGrad is overwhelming.
-
-* "The first time I encountered RadGrad, I felt very overwhelmed. "
-* "My first experience about RadGrad is that I need to understand my plan about my ICS life and with that being said it is a little bit overwhelming."
-
-### 15. Internships are important to include in RadGrad.
+### 14. Internships are important to include in RadGrad.
 
 * "I wish I could see the internship opportunities because one thing I learned from my siblings is that interning is very important."
