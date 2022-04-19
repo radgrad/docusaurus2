@@ -22,7 +22,7 @@ Here are the initial set of coding categories.  For each category, I provide exa
 The code is either "+1" if the essay indicates agreement with that category, or "-1" if the essay indicates disagreement with that category.
 
 ### 0. RadGrad is "amazing", "awesome", or "overwhelming"
-(Note: I don't think we have to manually code this category; I can look for the occurrence of those words automatically. These three words came up frequently enough that I think it will be useful to code for them explicitly.)
+(Note: I don't think we have to manually code up this category; I can look for the occurrence of those words automatically. These three words came up frequently enough that I think it will be useful to code for them explicitly.)
 
 * "RadGrad is an amazing tool for ICS Students."
 * "All in all, RadGrad is a pretty amazing site"
