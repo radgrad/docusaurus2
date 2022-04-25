@@ -99,3 +99,8 @@ The code is either "+1" if the essay indicates agreement with that category, or 
 ### 14. Internships are important to include in RadGrad.
 
 * "I wish I could see the internship opportunities because one thing I learned from my siblings is that interning is very important."
+
+### 15. RadGrad broadened my perspective on computer science.
+
+* "It truly opened up my eyes to the many things open for me to further my college experience."
+* "There were a lot of options for interests and career goals which I find very helpful to a novice in the field of computer science."
