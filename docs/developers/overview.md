@@ -11,7 +11,6 @@ Welcome to the RadGrad developers guide. This section of the site provides docum
   * [Checklists](/docs/developers/checklists/overview) is our evolving set of "best practices" for software development in RadGrad.
   * [Testing](/docs/developers/testing/overview) provides information on how to test the system, and how to write tests.
   * [Deployment](/docs/developers/deployment/overview) provides information on how to deploy the system to production.
-  * [Documentation](/docs/developers/documentation/overview) provides information on how to document the system, which includes how to maintain this site.
   * [Reference](/docs/developers/reference/overview) provides access to the code-level JSDocs.
 
 Our documentation attempts to follow the [Divio Documentation Guidelines](https://documentation.divio.com/structure/), which recommends providing documentation of four types: tutorials, how-to guides, explanation (concepts), and reference.  So, many of the above sections have subsections for concepts and how-to guides.

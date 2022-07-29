@@ -333,71 +333,8 @@ module.exports = {
         ],
       },
     ],
+    'Administrator Guide': ['administrators/overview'],
     'Computer Engineering': ['compeng/overview', 'compeng/design', 'compeng/interests', 'compeng/career_goals', 'compeng/opportunities'],
-    'About us': ['about/team', 'about/publications', 'about/opportunities', 'about/spring-2021', 'about/summer-2021', 'about/fall-2021',  'about/contact-us'],
-    Archive: [
-      {
-        type: 'category',
-        label: 'Deployment (Docker)',
-        items: [
-          'archive/docker/setup-production-server',
-          'archive/docker/build-a-release',
-          'archive/docker/deploy-a-release',
-          'archive/docker/docker-management',
-          'archive/docker/setup-ssh',
-          'archive/docker/docker-commands',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'Internbit',
-        items: ['archive/internbit/goals', 'archive/internbit/resources', 'archive/internbit/scraping', 'archive/internbit/needs-assessment', 'archive/internbit/canonical-schema', 'archive/internbit/evaluation'],
-      },
-      {
-        type: 'category',
-        label: 'CSExplore',
-        items: [
-          'archive/csexplore/goals',
-          'archive/csexplore/resources',
-          'archive/csexplore/organizing-principle',
-          'archive/csexplore/evaluation',
-          {
-            type: 'category',
-            label: 'Mockups',
-            items: [
-              'archive/csexplore/annotated-mockup/save-hawaii-with-computer-science',
-              'archive/csexplore/annotated-mockup/csexplore-ocean-earth',
-              'archive/csexplore/annotated-mockup/find-the-path',
-              'archive/csexplore/annotated-mockup/CS-Explore-Chat',
-              'archive/csexplore/annotated-mockup/build-your-community'
-            ]
-          }],
-      },
-      {
-        type: 'category',
-        label: 'DevOps',
-        items: [
-          'archive/devops/goals',
-          'archive/devops/resources',
-          'archive/devops/evaluation',
-          {
-            type: 'category',
-            label: 'Deployment',
-            items: [
-              'archive/devops/deployment/heroku',
-              'archive/devops/deployment/nodechef',
-              'archive/devops/deployment/digital-ocean',
-              'archive/devops/deployment/google-cloud',
-              'archive/devops/deployment/microsoft-azure',
-              'archive/devops/deployment/uh-its',
-              'archive/devops/deployment/aws',
-              'archive/devops/deployment/mongo-url',
-              'archive/devops/deployment/waves-hosting'
-            ]
-          }
-        ],
-      }
-    ],
-
-  },
+    'About us': ['about/team', 'about/publications', 'about/opportunities', 'about/spring-2021', 'about/summer-2021', 'about/fall-2021', 'about/contact-us'],
+  }
 };

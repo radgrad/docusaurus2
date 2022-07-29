@@ -22,22 +22,8 @@ There are two scripts for running RadGrad: start and start-custom.
 
 You can now edit `custom/settings.development.json` and the `meteor npm run start-custom` command will use that configuration.
 
-Please be aware that if you want to use custom Assets in your configuration (e.g. a custom `databaseRestoreFileName`), you will need to place the custom file into `app/private/` due to the way Meteor loads assets. If you wish to exclude the custom asset from commits to the repository, place it into a `custom/` directory anywhere in `app/private/`. For more information on the `custom/` convention, see [source code organization](/docs/developers/getting-started/concepts/source-code-organization).
+Please be aware that if you want to use custom Assets in your configuration (e.g. a custom `databaseRestoreFileName`), you will need to place the custom file into `app/private/` due to the way Meteor loads assets. If you wish to exclude the custom asset from commits to the repository, place it into a `custom/` directory anywhere in `app/private/`. For more information on the `custom/` convention, see source code organization.
 
 ## Scripts for testing
 
 There are a variety of additional scripts for testing. Their documentation is available [here](../../testing/reference/testing-scripts).
-
-
-
-
-
-
-
-
-
-
-
-
-
-

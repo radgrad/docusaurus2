@@ -3,7 +3,7 @@ title: How to manage users
 sidebar_label: Manage users
 ---
 
-RadGrad implements a user management scheme that combines two constructs: the Meteor User collection as well as a set of "Profile" collections that provide the specific information required for the role associated with a user. See the [Users and Profiles](/docs/developers/design/concepts/entity-relationship-model#users-and-profiles) section for more information on the representation of users and profiles.
+RadGrad implements a user management scheme that combines two constructs: the Meteor User collection as well as a set of "Profile" collections that provide the specific information required for the role associated with a user. See the Users and Profiles section for more information on the representation of users and profiles.
 
 ## Usernames
 
@@ -46,6 +46,3 @@ In the data model as a whole, references within collection documents to users al
 Profile docIDs are never stored as "foreign keys" in other collections.  
 
 As a result, you might see fields or variables named userID, studentID, adminID, sponsorID, facultyID, etc.  None of these refer to the profile.  They always refer to either the Meteor.users docID or to the user's account name (a.k.a. email address).
-
-
-
