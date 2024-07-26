@@ -4,6 +4,8 @@ title: Pubs, Grants, Talks
 
 ## Publications
 
+Philip M. Johnson, Carleton Moore, Peter Leong, Seungoh Paek, **Improving engagement, diversity, and retention in computer science with RadGrad: Results of a case study**, Available at [ArXiv](https://arxiv.org/abs/2407.17473#).
+
 Seungoh Paek, Peter Leong, Philip M. Johnson, Carleton A. Moore, **Is GPA enough? A platform for promoting computer science undergraduates' pursuit of career related extracurricular activities**, In International Journal of Technology in Education and Science, Volume 5, Number 1, January 2021. ([pdf](http://csdl.ics.hawaii.edu/techreports/2020/20-09/20-09.pdf))
 
 Seungoh Paek, Peter Leong, Philip M. Johnson, Carleton A. Moore, **Beyond course work: expanding what's valued in computer science degree programs**, In Journal of Applied Research in Higher Education, Volume 12, Number 4, September 2020, ([pdf](http://csdl.ics.hawaii.edu/techreports/2020/20-08/20-08.pdf))
